@@ -1,0 +1,12 @@
+﻿Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NTY2MjQ3QDMxMzkyZTM0MmUzMElrdGxkVTFQK3MzSGkwRDlaQjBPZkdaRnprdTRXQzNNdThLQ0hyZmV3YVU9");
+
+Smart Temperature Monitoring EX1 
+13/01/2022 Meeting with End user
+- Sampling time -> user สามารถเลือกได้ แยกแต่ล่ะ zone (ต่ำสุดที่ 5min)
+- Line notify   -> Normal to Hi/Low
+                -> Hi/Low to Normal
+                -> Change setpoint Hi/Low
+                -> Daily summary event at 8:00 am
+- Email report  -> ให้ Omron ออกแบบ report บันทึกค่าเฉลี่ยแต่ล่ะชั่วโมง และสรุปค่า Avg, Max, Min
+                -> Daily report at 8:00 am
+                
