@@ -28,6 +28,9 @@ namespace Smart_Temperature_Monitoring
         {
             InitializeComponent();
 
+            // Set area name
+            txtArea.Text = ConfigurationManager.AppSettings["AreaName"].ToString();
+
             // Count monitor
             foreach (var screen in Screen.AllScreens)
                 _monitorCount++;
@@ -61,7 +64,7 @@ namespace Smart_Temperature_Monitoring
                 {
                     dt = DateTime.Now;
                     BtnCurrentTime.Text = dt.ToString("HH:mm:ss");
-                    LbDate.Text = dt.ToString("dd/M/yyyy", CultureInfo.InvariantCulture);
+                    LbDate.Text = dt.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
 
                     //  Blink LbTimeBlink
                     if (LbTimeBlink.BackColor == _blinkBgTimeColor[0])
@@ -145,6 +148,12 @@ namespace Smart_Temperature_Monitoring
             log.Info("Program exit by user");
             System.Windows.Forms.Application.ExitThread();
             System.Environment.Exit(0);
+        }
+
+        private void btnSettingAll_Click(object sender, EventArgs e)
+        {
+            sfrmSettingAll sfrmSettingAll = new sfrmSettingAll();
+            sfrmSettingAll.Show();
         }
     }
 }

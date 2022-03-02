@@ -36,13 +36,9 @@ namespace Smart_Temperature_Monitoring
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtArea = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.PnReFeed = new System.Windows.Forms.Panel();
-            this.panel60 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.LbDate = new System.Windows.Forms.Label();
-            this.BtnCurrentTime = new System.Windows.Forms.Button();
             this.panel56 = new System.Windows.Forms.Panel();
             this.LbTimeBlink = new System.Windows.Forms.Label();
             this.panel59 = new System.Windows.Forms.Panel();
@@ -54,15 +50,19 @@ namespace Smart_Temperature_Monitoring
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.btnSettingAll = new System.Windows.Forms.Button();
+            this.LbDate = new System.Windows.Forms.Label();
+            this.panel60 = new System.Windows.Forms.Panel();
+            this.BtnCurrentTime = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             this.PnReFeed.SuspendLayout();
-            this.panel60.SuspendLayout();
             this.panel56.SuspendLayout();
             this.panel55.SuspendLayout();
+            this.panel60.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,9 +71,9 @@ namespace Smart_Temperature_Monitoring
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 748);
+            this.panel1.Location = new System.Drawing.Point(0, 1040);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1386, 40);
+            this.panel1.Size = new System.Drawing.Size(1920, 40);
             this.panel1.TabIndex = 2;
             // 
             // panel12
@@ -81,7 +81,7 @@ namespace Smart_Temperature_Monitoring
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.Controls.Add(this.pictureBox4);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel12.Location = new System.Drawing.Point(1268, 0);
+            this.panel12.Location = new System.Drawing.Point(1802, 0);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(118, 40);
             this.panel12.TabIndex = 2;
@@ -105,7 +105,7 @@ namespace Smart_Temperature_Monitoring
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1386, 40);
+            this.label1.Size = new System.Drawing.Size(1920, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Copyright © 2022 Ajinomoto Co., (Thailand) Ltd. All rights reserved.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,7 +125,7 @@ namespace Smart_Temperature_Monitoring
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.txtArea);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.PnReFeed);
@@ -136,20 +136,20 @@ namespace Smart_Temperature_Monitoring
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1386, 60);
+            this.panel2.Size = new System.Drawing.Size(1920, 60);
             this.panel2.TabIndex = 3;
             // 
-            // label6
+            // txtArea
             // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
-            this.label6.Font = new System.Drawing.Font("Calibri", 28F);
-            this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(676, 5);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 47);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "EX-1";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.txtArea.Font = new System.Drawing.Font("Calibri", 28F);
+            this.txtArea.ForeColor = System.Drawing.Color.Yellow;
+            this.txtArea.Location = new System.Drawing.Point(676, 5);
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(117, 47);
+            this.txtArea.TabIndex = 3;
+            this.txtArea.Text = "AREA";
+            this.txtArea.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
@@ -159,7 +159,7 @@ namespace Smart_Temperature_Monitoring
             this.label4.Location = new System.Drawing.Point(206, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(697, 60);
+            this.label4.Size = new System.Drawing.Size(1150, 60);
             this.label4.TabIndex = 24;
             this.label4.Text = "  SMART TEMPERATURE MONITORING";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,63 +167,13 @@ namespace Smart_Temperature_Monitoring
             // PnReFeed
             // 
             this.PnReFeed.Controls.Add(this.panel60);
-            this.PnReFeed.Controls.Add(this.BtnCurrentTime);
             this.PnReFeed.Controls.Add(this.panel56);
             this.PnReFeed.Controls.Add(this.panel55);
             this.PnReFeed.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PnReFeed.Location = new System.Drawing.Point(878, 0);
+            this.PnReFeed.Location = new System.Drawing.Point(1497, 0);
             this.PnReFeed.Name = "PnReFeed";
-            this.PnReFeed.Size = new System.Drawing.Size(508, 60);
+            this.PnReFeed.Size = new System.Drawing.Size(423, 60);
             this.PnReFeed.TabIndex = 23;
-            // 
-            // panel60
-            // 
-            this.panel60.Controls.Add(this.label13);
-            this.panel60.Controls.Add(this.LbDate);
-            this.panel60.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel60.Location = new System.Drawing.Point(-13, 0);
-            this.panel60.Name = "panel60";
-            this.panel60.Size = new System.Drawing.Size(168, 60);
-            this.panel60.TabIndex = 23;
-            // 
-            // label13
-            // 
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Calibri", 18F);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(0, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(168, 28);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "เวลาปัจจุบัน";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
-            // LbDate
-            // 
-            this.LbDate.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.LbDate.Font = new System.Drawing.Font("Calibri", 15F);
-            this.LbDate.ForeColor = System.Drawing.Color.White;
-            this.LbDate.Location = new System.Drawing.Point(0, 28);
-            this.LbDate.Name = "LbDate";
-            this.LbDate.Size = new System.Drawing.Size(168, 32);
-            this.LbDate.TabIndex = 20;
-            this.LbDate.Text = "00 / 00 / 0000";
-            this.LbDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // BtnCurrentTime
-            // 
-            this.BtnCurrentTime.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnCurrentTime.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.BtnCurrentTime.FlatAppearance.BorderSize = 0;
-            this.BtnCurrentTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCurrentTime.Font = new System.Drawing.Font("Calibri", 24F);
-            this.BtnCurrentTime.ForeColor = System.Drawing.Color.White;
-            this.BtnCurrentTime.Location = new System.Drawing.Point(155, 0);
-            this.BtnCurrentTime.Name = "BtnCurrentTime";
-            this.BtnCurrentTime.Size = new System.Drawing.Size(142, 60);
-            this.BtnCurrentTime.TabIndex = 21;
-            this.BtnCurrentTime.Text = "00:00:00";
-            this.BtnCurrentTime.UseVisualStyleBackColor = true;
             // 
             // panel56
             // 
@@ -231,7 +181,7 @@ namespace Smart_Temperature_Monitoring
             this.panel56.Controls.Add(this.panel59);
             this.panel56.Controls.Add(this.panel58);
             this.panel56.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel56.Location = new System.Drawing.Point(297, 0);
+            this.panel56.Location = new System.Drawing.Point(171, 0);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(10, 60);
             this.panel56.TabIndex = 22;
@@ -266,12 +216,13 @@ namespace Smart_Temperature_Monitoring
             // 
             // panel55
             // 
+            this.panel55.Controls.Add(this.btnSettingAll);
             this.panel55.Controls.Add(this.btn_minimize);
             this.panel55.Controls.Add(this.btn_exit);
             this.panel55.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel55.Location = new System.Drawing.Point(307, 0);
+            this.panel55.Location = new System.Drawing.Point(181, 0);
             this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(201, 60);
+            this.panel55.Size = new System.Drawing.Size(242, 60);
             this.panel55.TabIndex = 21;
             // 
             // btn_minimize
@@ -281,9 +232,9 @@ namespace Smart_Temperature_Monitoring
             this.btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_minimize.Font = new System.Drawing.Font("Calibri", 18F);
             this.btn_minimize.ForeColor = System.Drawing.Color.White;
-            this.btn_minimize.Location = new System.Drawing.Point(22, 8);
+            this.btn_minimize.Location = new System.Drawing.Point(63, 9);
             this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.Size = new System.Drawing.Size(42, 41);
+            this.btn_minimize.Size = new System.Drawing.Size(42, 42);
             this.btn_minimize.TabIndex = 11;
             this.btn_minimize.Text = "_";
             this.btn_minimize.UseVisualStyleBackColor = false;
@@ -296,9 +247,9 @@ namespace Smart_Temperature_Monitoring
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Font = new System.Drawing.Font("Calibri", 18F);
             this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Location = new System.Drawing.Point(70, 8);
+            this.btn_exit.Location = new System.Drawing.Point(113, 9);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(119, 41);
+            this.btn_exit.Size = new System.Drawing.Size(119, 42);
             this.btn_exit.TabIndex = 10;
             this.btn_exit.Text = "ออกระบบ";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -346,14 +297,68 @@ namespace Smart_Temperature_Monitoring
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(0, 60);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1386, 688);
+            this.panelChildForm.Size = new System.Drawing.Size(1920, 980);
             this.panelChildForm.TabIndex = 4;
+            // 
+            // btnSettingAll
+            // 
+            this.btnSettingAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSettingAll.FlatAppearance.BorderSize = 0;
+            this.btnSettingAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettingAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSettingAll.ForeColor = System.Drawing.Color.White;
+            this.btnSettingAll.Image = ((System.Drawing.Image)(resources.GetObject("btnSettingAll.Image")));
+            this.btnSettingAll.Location = new System.Drawing.Point(11, 9);
+            this.btnSettingAll.Name = "btnSettingAll";
+            this.btnSettingAll.Size = new System.Drawing.Size(42, 42);
+            this.btnSettingAll.TabIndex = 25;
+            this.btnSettingAll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettingAll.UseVisualStyleBackColor = false;
+            this.btnSettingAll.Click += new System.EventHandler(this.btnSettingAll_Click);
+            // 
+            // LbDate
+            // 
+            this.LbDate.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.LbDate.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbDate.ForeColor = System.Drawing.Color.White;
+            this.LbDate.Location = new System.Drawing.Point(0, 40);
+            this.LbDate.Name = "LbDate";
+            this.LbDate.Size = new System.Drawing.Size(168, 20);
+            this.LbDate.TabIndex = 20;
+            this.LbDate.Text = "00 / 00 / 0000";
+            this.LbDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // panel60
+            // 
+            this.panel60.Controls.Add(this.LbDate);
+            this.panel60.Controls.Add(this.BtnCurrentTime);
+            this.panel60.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel60.Location = new System.Drawing.Point(3, 0);
+            this.panel60.Name = "panel60";
+            this.panel60.Size = new System.Drawing.Size(168, 60);
+            this.panel60.TabIndex = 23;
+            // 
+            // BtnCurrentTime
+            // 
+            this.BtnCurrentTime.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCurrentTime.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.BtnCurrentTime.FlatAppearance.BorderSize = 0;
+            this.BtnCurrentTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCurrentTime.Font = new System.Drawing.Font("Calibri", 24F);
+            this.BtnCurrentTime.ForeColor = System.Drawing.Color.White;
+            this.BtnCurrentTime.Location = new System.Drawing.Point(0, 0);
+            this.BtnCurrentTime.Name = "BtnCurrentTime";
+            this.BtnCurrentTime.Size = new System.Drawing.Size(168, 44);
+            this.BtnCurrentTime.TabIndex = 22;
+            this.BtnCurrentTime.Text = "00:00:00";
+            this.BtnCurrentTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnCurrentTime.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -371,9 +376,9 @@ namespace Smart_Temperature_Monitoring
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.PnReFeed.ResumeLayout(false);
-            this.panel60.ResumeLayout(false);
             this.panel56.ResumeLayout(false);
             this.panel55.ResumeLayout(false);
+            this.panel60.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -393,16 +398,16 @@ namespace Smart_Temperature_Monitoring
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel PnReFeed;
-        private System.Windows.Forms.Panel panel60;
-        internal System.Windows.Forms.Label LbDate;
-        private System.Windows.Forms.Button BtnCurrentTime;
         private System.Windows.Forms.Panel panel56;
         internal System.Windows.Forms.Label LbTimeBlink;
         private System.Windows.Forms.Panel panel59;
         private System.Windows.Forms.Panel panel58;
         private System.Windows.Forms.Panel panel55;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label txtArea;
         private System.Windows.Forms.Label label4;
-        internal System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel60;
+        internal System.Windows.Forms.Label LbDate;
+        private System.Windows.Forms.Button BtnCurrentTime;
+        private System.Windows.Forms.Button btnSettingAll;
     }
 }

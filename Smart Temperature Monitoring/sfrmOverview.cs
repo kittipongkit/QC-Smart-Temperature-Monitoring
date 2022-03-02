@@ -138,114 +138,114 @@ namespace Smart_Temperature_Monitoring
             _pGet_Temp_actual = new DataTable();
             _pGet_Temp_actual = pGet_Temp_actual();
 
-            if (_pGet_Temp_actual != null && _pGet_Temp_actual.Rows.Count > 0)
-            { 
-                // actual temp
-                lbValue1.Text = _pGet_Temp_actual.Rows[0]["temp1"].ToString();
-                lbValue2.Text = _pGet_Temp_actual.Rows[0]["temp2"].ToString();
-                lbValue3.Text = _pGet_Temp_actual.Rows[0]["temp3"].ToString();
+            //if (_pGet_Temp_actual != null && _pGet_Temp_actual.Rows.Count > 0)
+            //{ 
+            //    // actual temp
+            //    lbValue1.Text = _pGet_Temp_actual.Rows[0]["temp1"].ToString();
+            //    lbValue2.Text = _pGet_Temp_actual.Rows[0]["temp2"].ToString();
+            //    lbValue3.Text = _pGet_Temp_actual.Rows[0]["temp3"].ToString();
 
-                // change background coler
-                if ((_pGet_Temp_actual.Rows[0]["temp1_result"]).ToString() == "OK")
-                {
-                    panelMain1.BackColor = Color.FromArgb(128, 255, 128);
-                    lbZone1.BackColor = Color.FromArgb(0, 192, 0);
-                }
-                else
-                {
-                    panelMain1.BackColor = Color.FromArgb(255, 128, 128);
-                    lbZone1.BackColor = Color.Red;
-                }
+            //    // change background coler
+            //    if ((_pGet_Temp_actual.Rows[0]["temp1_result"]).ToString() == "OK")
+            //    {
+            //        panelMain1.BackColor = Color.FromArgb(128, 255, 128);
+            //        lbZone1.BackColor = Color.FromArgb(0, 192, 0);
+            //    }
+            //    else
+            //    {
+            //        panelMain1.BackColor = Color.FromArgb(255, 128, 128);
+            //        lbZone1.BackColor = Color.Red;
+            //    }
 
-                if ((_pGet_Temp_actual.Rows[0]["temp2_result"]).ToString() == "OK")
-                {
-                    panelMain2.BackColor = Color.FromArgb(128, 255, 128);
-                    lbZone2.BackColor = Color.FromArgb(0, 192, 0);
-                }
-                else
-                {
-                    panelMain2.BackColor = Color.FromArgb(255, 128, 128);
-                    lbZone2.BackColor = Color.Red;
-                }
+            //    if ((_pGet_Temp_actual.Rows[0]["temp2_result"]).ToString() == "OK")
+            //    {
+            //        panelMain2.BackColor = Color.FromArgb(128, 255, 128);
+            //        lbZone2.BackColor = Color.FromArgb(0, 192, 0);
+            //    }
+            //    else
+            //    {
+            //        panelMain2.BackColor = Color.FromArgb(255, 128, 128);
+            //        lbZone2.BackColor = Color.Red;
+            //    }
 
-                if ((_pGet_Temp_actual.Rows[0]["temp3_result"]).ToString() == "OK")
-                {
-                    panelMain3.BackColor = Color.FromArgb(128, 255, 128);
-                    lbZone3.BackColor = Color.FromArgb(0, 192, 0);
-                }
-                else
-                {
-                    panelMain3.BackColor = Color.FromArgb(255, 128, 128);
-                    lbZone3.BackColor = Color.Red;
-                }
+            //    if ((_pGet_Temp_actual.Rows[0]["temp3_result"]).ToString() == "OK")
+            //    {
+            //        panelMain3.BackColor = Color.FromArgb(128, 255, 128);
+            //        lbZone3.BackColor = Color.FromArgb(0, 192, 0);
+            //    }
+            //    else
+            //    {
+            //        panelMain3.BackColor = Color.FromArgb(255, 128, 128);
+            //        lbZone3.BackColor = Color.Red;
+            //    }
 
-                // Check new data
-                if (_currentCntPoint != no_pGet_Temp_data)
-                    _currentCntPoint = no_pGet_Temp_data;
-                else
-                    return;   // Not have new data  
+            //    // Check new data
+            //    if (_currentCntPoint != no_pGet_Temp_data)
+            //        _currentCntPoint = no_pGet_Temp_data;
+            //    else
+            //        return;   // Not have new data  
 
-                // plot graph
-                if (chTemp1.Series[0].Values.Count <= sampling_all_day)
-                {
-                    chTemp1.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1"])));
-                    chTemp1.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_hi"])));
-                    chTemp1.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_lo"])));
+            //    // plot graph
+            //    if (chTemp1.Series[0].Values.Count <= sampling_all_day)
+            //    {
+            //        chTemp1.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1"])));
+            //        chTemp1.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_hi"])));
+            //        chTemp1.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_lo"])));
 
-                    chTemp2.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2"])));
-                    chTemp2.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_hi"])));
-                    chTemp2.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_lo"])));
+            //        chTemp2.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2"])));
+            //        chTemp2.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_hi"])));
+            //        chTemp2.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_lo"])));
 
-                    chTemp3.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3"])));
-                    chTemp3.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_hi"])));
-                    chTemp3.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_lo"])));
+            //        chTemp3.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3"])));
+            //        chTemp3.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_hi"])));
+            //        chTemp3.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_lo"])));
 
-                }
+            //    }
 
-                // plot status
-                try
-                {
-                    if ((_pGet_Temp_actual.Rows[0]["temp1_result"]).ToString() == "NG")
-                    {
-                        gvData1.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(255, 128, 128);
-                        gvData1.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                    }
-                    else
-                    {
-                        gvData1.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(128, 255, 128);
-                        gvData1.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                    }
+            //    // plot status
+            //    try
+            //    {
+            //        if ((_pGet_Temp_actual.Rows[0]["temp1_result"]).ToString() == "NG")
+            //        {
+            //            gvData1.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(255, 128, 128);
+            //            gvData1.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(255, 128, 128);
+            //        }
+            //        else
+            //        {
+            //            gvData1.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(128, 255, 128);
+            //            gvData1.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(128, 255, 128);
+            //        }
 
-                    if ((_pGet_Temp_actual.Rows[0]["temp2_result"]).ToString() == "NG")
-                    {
-                        gvData2.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(255, 128, 128);
-                        gvData2.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                    }
-                    else
-                    {
-                        gvData2.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(128, 255, 128);
-                        gvData2.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                    }
+            //        if ((_pGet_Temp_actual.Rows[0]["temp2_result"]).ToString() == "NG")
+            //        {
+            //            gvData2.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(255, 128, 128);
+            //            gvData2.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(255, 128, 128);
+            //        }
+            //        else
+            //        {
+            //            gvData2.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(128, 255, 128);
+            //            gvData2.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(128, 255, 128);
+            //        }
 
-                    if ((_pGet_Temp_actual.Rows[0]["temp3_result"]).ToString() == "NG")
-                    {
-                        gvData3.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(255, 128, 128);
-                        gvData3.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                    }
-                    else
-                    {
-                        gvData3.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(128, 255, 128);
-                        gvData3.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("ThreadSamplingTime Exception (gvData1) : " + ex.Message);
-                    log.Error("ThreadSamplingTime Exception (gvData1)  : " + ex.Message);
-                }
+            //        if ((_pGet_Temp_actual.Rows[0]["temp3_result"]).ToString() == "NG")
+            //        {
+            //            gvData3.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(255, 128, 128);
+            //            gvData3.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(255, 128, 128);
+            //        }
+            //        else
+            //        {
+            //            gvData3.Rows[0].Cells[actualGvCell].Style.BackColor = Color.FromArgb(128, 255, 128);
+            //            gvData3.Rows[0].Cells[actualGvCell].Style.ForeColor = Color.FromArgb(128, 255, 128);
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show("ThreadSamplingTime Exception (gvData1) : " + ex.Message);
+            //        log.Error("ThreadSamplingTime Exception (gvData1)  : " + ex.Message);
+            //    }
 
-                actualGvCell += 1;
-            }
+            //    actualGvCell += 1;
+            //}
         }
 
         // Get real-time setting
@@ -255,17 +255,17 @@ namespace Smart_Temperature_Monitoring
             _pGet_setting_actual = pGet_setting_actual();
             if (_pGet_setting_actual != null && _pGet_setting_actual.Rows.Count > 0)
             {
-                lbZone1.Text = _pGet_setting_actual.Rows[0]["zone_name"].ToString();
-                lbLow1.Text = _pGet_setting_actual.Rows[0]["limit_low"].ToString();
-                lbHigh1.Text = _pGet_setting_actual.Rows[0]["limit_hi"].ToString();
+                //lbZone11.Text = _pGet_setting_actual.Rows[0]["zone_name"].ToString();
+                //lbLow11.Text = _pGet_setting_actual.Rows[0]["limit_low"].ToString();
+                //lbHigh11.Text = _pGet_setting_actual.Rows[0]["limit_hi"].ToString();
 
-                lbZone2.Text = _pGet_setting_actual.Rows[1]["zone_name"].ToString();
-                lbLow2.Text = _pGet_setting_actual.Rows[1]["limit_low"].ToString();
-                lbHigh2.Text = _pGet_setting_actual.Rows[1]["limit_hi"].ToString();
+                //lbZone2.Text = _pGet_setting_actual.Rows[1]["zone_name"].ToString();
+                //lbLow2.Text = _pGet_setting_actual.Rows[1]["limit_low"].ToString();
+                //lbHigh2.Text = _pGet_setting_actual.Rows[1]["limit_hi"].ToString();
 
-                lbZone3.Text = _pGet_setting_actual.Rows[2]["zone_name"].ToString();
-                lbLow3.Text = _pGet_setting_actual.Rows[2]["limit_low"].ToString();
-                lbHigh3.Text = _pGet_setting_actual.Rows[2]["limit_hi"].ToString();
+                //lbZone3.Text = _pGet_setting_actual.Rows[2]["zone_name"].ToString();
+                //lbLow3.Text = _pGet_setting_actual.Rows[2]["limit_low"].ToString();
+                //lbHigh3.Text = _pGet_setting_actual.Rows[2]["limit_hi"].ToString();
             }
         }
 
@@ -304,7 +304,7 @@ namespace Smart_Temperature_Monitoring
 
             _pGet_Temp_data = new DataTable();
             _pGet_Temp_data = pGet_Temp_data();
-            if (_pGet_Temp_data != null && _pGet_Temp_data.Rows.Count > 0)
+            //if (_pGet_Temp_data != null && _pGet_Temp_data.Rows.Count > 0)
             {
                 var values1 = new ChartValues<double>();
                 var values2 = new ChartValues<double>();
@@ -337,112 +337,112 @@ namespace Smart_Temperature_Monitoring
                     lo3.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp3_lo"]));
                 }
 
-                chTemp1.Series.Add(new LineSeries
-                {
-                    Name = "Actual",
-                    Title = "Actual",
-                    Values = values1,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    StrokeThickness = 2
-                });
+                //chTemp1.Series.Add(new LineSeries
+                //{
+                //    Name = "Actual",
+                //    Title = "Actual",
+                //    Values = values1,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    StrokeThickness = 2
+                //});
 
-                chTemp1.Series.Add(new LineSeries
-                {
-                    Name = "LimitHigh",
-                    Title = "Limit High",
-                    Values = hi1,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    Stroke = Brushes.Salmon,
-                    StrokeThickness = 1
-                });
+                //chTemp1.Series.Add(new LineSeries
+                //{
+                //    Name = "LimitHigh",
+                //    Title = "Limit High",
+                //    Values = hi1,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    Stroke = Brushes.Salmon,
+                //    StrokeThickness = 1
+                //});
 
-                chTemp1.Series.Add(new LineSeries
-                {
-                    Name = "LimitLow",
-                    Title = "Limit Low",
-                    Values = lo1,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    Stroke = Brushes.Salmon,
-                    StrokeThickness = 1
-                });
+                //chTemp1.Series.Add(new LineSeries
+                //{
+                //    Name = "LimitLow",
+                //    Title = "Limit Low",
+                //    Values = lo1,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    Stroke = Brushes.Salmon,
+                //    StrokeThickness = 1
+                //});
 
-                chTemp2.Series.Add(new LineSeries
-                {
-                    Name = "Actual",
-                    Title = "Actual",
-                    Values = values2,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    StrokeThickness = 2
-                });
+                //chTemp2.Series.Add(new LineSeries
+                //{
+                //    Name = "Actual",
+                //    Title = "Actual",
+                //    Values = values2,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    StrokeThickness = 2
+                //});
 
-                chTemp2.Series.Add(new LineSeries
-                {
-                    Name = "LimitHigh",
-                    Title = "Limit High",
-                    Values = hi2,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    Stroke = Brushes.Salmon,
-                    StrokeThickness = 1
-                });
+                //chTemp2.Series.Add(new LineSeries
+                //{
+                //    Name = "LimitHigh",
+                //    Title = "Limit High",
+                //    Values = hi2,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    Stroke = Brushes.Salmon,
+                //    StrokeThickness = 1
+                //});
 
-                chTemp2.Series.Add(new LineSeries
-                {
-                    Name = "LimitLow",
-                    Title = "Limit Low",
-                    Values = lo2,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    Stroke = Brushes.Salmon,
-                    StrokeThickness = 1
-                });
+                //chTemp2.Series.Add(new LineSeries
+                //{
+                //    Name = "LimitLow",
+                //    Title = "Limit Low",
+                //    Values = lo2,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    Stroke = Brushes.Salmon,
+                //    StrokeThickness = 1
+                //});
 
-                chTemp3.Series.Add(new LineSeries
-                {
-                    Name = "Actual",
-                    Title = "Actual",
-                    Values = values3,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    StrokeThickness = 2
-                });
+                //chTemp3.Series.Add(new LineSeries
+                //{
+                //    Name = "Actual",
+                //    Title = "Actual",
+                //    Values = values3,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    StrokeThickness = 2
+                //});
 
-                chTemp3.Series.Add(new LineSeries
-                {
-                    Name = "LimitHigh",
-                    Title = "Limit High",
-                    Values = hi3,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    Stroke = Brushes.Salmon,
-                    StrokeThickness = 1
-                });
+                //chTemp3.Series.Add(new LineSeries
+                //{
+                //    Name = "LimitHigh",
+                //    Title = "Limit High",
+                //    Values = hi3,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    Stroke = Brushes.Salmon,
+                //    StrokeThickness = 1
+                //});
 
-                chTemp3.Series.Add(new LineSeries
-                {
-                    Name = "LimitLow",
-                    Title = "Limit Low",
-                    Values = lo3,
-                    Fill = Brushes.Transparent,
-                    PointGeometrySize = 0,
-                    Stroke = Brushes.Salmon,
-                    StrokeThickness = 1
-                });
+                //chTemp3.Series.Add(new LineSeries
+                //{
+                //    Name = "LimitLow",
+                //    Title = "Limit Low",
+                //    Values = lo3,
+                //    Fill = Brushes.Transparent,
+                //    PointGeometrySize = 0,
+                //    Stroke = Brushes.Salmon,
+                //    StrokeThickness = 1
+                //});
 
                 IList<string> labelX = new List<string>();
                 for (int i = 0; i <= sampling_all_day; i++)
                     labelX.Add(System.DateTime.MinValue.AddMinutes(i * sampling_time).ToString("HH:mm"));
 
-                chTemp1.AxisX.Add(new Axis
-                {
-                    MinValue = 0,
-                    MaxValue = 288,
-                    Labels = labelX
-                });
+                //chTemp1.AxisX.Add(new Axis
+                //{
+                //    MinValue = 0,
+                //    MaxValue = 288,
+                //    Labels = labelX
+                //});
 
                 //chTemp1.AxisY.Add(new Axis
                 //{
@@ -450,12 +450,12 @@ namespace Smart_Temperature_Monitoring
                 //    MaxValue = 30
                 //});
 
-                chTemp2.AxisX.Add(new Axis
-                {
-                    MinValue = 0,
-                    MaxValue = 288,
-                    Labels = labelX
-                });
+                //chTemp2.AxisX.Add(new Axis
+                //{
+                //    MinValue = 0,
+                //    MaxValue = 288,
+                //    Labels = labelX
+                //});
 
                 //chTemp2.AxisY.Add(new Axis
                 //{
@@ -463,12 +463,12 @@ namespace Smart_Temperature_Monitoring
                 //    MaxValue = 30
                 //});
 
-                chTemp3.AxisX.Add(new Axis
-                {
-                    MinValue = 0,
-                    MaxValue = 288,
-                    Labels = labelX
-                });
+                //chTemp3.AxisX.Add(new Axis
+                //{
+                //    MinValue = 0,
+                //    MaxValue = 288,
+                //    Labels = labelX
+                //});
 
                 //chTemp3.AxisY.Add(new Axis
                 //{
@@ -480,31 +480,36 @@ namespace Smart_Temperature_Monitoring
                 // plot gv status
 
                 //Declare array for keep data
-                string[] status1 = new string[sampling_all_day];
-                string[] status2 = new string[sampling_all_day];
-                string[] status3 = new string[sampling_all_day];
+                //string[] status1 = new string[sampling_all_day];                
+                //string[] status2 = new string[sampling_all_day];
+                //string[] status3 = new string[sampling_all_day];
+
+                string[] status1 = { "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK", "OK", "OK", "OK" };
+                string[] status2 = { "OK", "OK", "NG", "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK" };
+                string[] status3 = { "OK", "OK", "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK", "OK" };
 
                 //Keep data to array
-                for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
-                {
-                    status1[i] = _pGet_Temp_data.Rows[i]["temp1_result"].ToString();
-                    status2[i] = _pGet_Temp_data.Rows[i]["temp2_result"].ToString();
-                    status3[i] = _pGet_Temp_data.Rows[i]["temp3_result"].ToString();
-                }
+                //for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
+                //{
+                //    status1[i] = _pGet_Temp_data.Rows[i]["temp1_result"].ToString();
+                //    status2[i] = _pGet_Temp_data.Rows[i]["temp2_result"].ToString();
+                //    status3[i] = _pGet_Temp_data.Rows[i]["temp3_result"].ToString();
+                //}
 
-                gvData1.Rows.Clear();
-                gvData2.Rows.Clear();
-                gvData3.Rows.Clear();
+                //gvData1.Rows.Clear();
+                //gvData2.Rows.Clear();
+                //gvData3.Rows.Clear();
 
-                //Add array to DataGridView
+                ////Add array to DataGridView
                 gvData1.Rows.Add(status1);
                 gvData2.Rows.Add(status2);
                 gvData3.Rows.Add(status3);
 
-                for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
+                //for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
+                for (int i = 0; i < 12 ; i++)
                 {
-                    if (status1[i] == "NG")
-                    {
+                   if (status1[i] == "NG")
+                   {
                         gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
                         gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
                     }
@@ -549,47 +554,47 @@ namespace Smart_Temperature_Monitoring
             string[] status1 = new string[] { };
 
             // Clear data grid view
-            gvData1.Rows.Clear();
-            gvData2.Rows.Clear();
-            gvData3.Rows.Clear();
+            //gvData1.Rows.Clear();
+            //gvData2.Rows.Clear();
+            //gvData3.Rows.Clear();
 
-            // Add empty list into data grid view
-            gvData1.Rows.Add(status1);
-            gvData1.ClearSelection();
+            //// Add empty list into data grid view
+            //gvData1.Rows.Add(status1);
+            //gvData1.ClearSelection();
 
-            gvData2.Rows.Add(status1);
-            gvData2.ClearSelection();
+            //gvData2.Rows.Add(status1);
+            //gvData2.ClearSelection();
 
-            gvData3.Rows.Add(status1);
-            gvData3.ClearSelection();
+            //gvData3.Rows.Add(status1);
+            //gvData3.ClearSelection();
 
-            actualGvCell = 0;
+            //actualGvCell = 0;
 
-            // Clear chart series
-            chTemp1.Series[0].Values.Clear();
-            chTemp1.Series[1].Values.Clear();
-            chTemp1.Series[2].Values.Clear();
+            //// Clear chart series
+            //chTemp1.Series[0].Values.Clear();
+            //chTemp1.Series[1].Values.Clear();
+            //chTemp1.Series[2].Values.Clear();
 
-            chTemp2.Series[0].Values.Clear();
-            chTemp2.Series[1].Values.Clear();
-            chTemp2.Series[2].Values.Clear();
+            //chTemp2.Series[0].Values.Clear();
+            //chTemp2.Series[1].Values.Clear();
+            //chTemp2.Series[2].Values.Clear();
 
-            chTemp3.Series[0].Values.Clear();
-            chTemp3.Series[1].Values.Clear();
-            chTemp3.Series[2].Values.Clear();
+            //chTemp3.Series[0].Values.Clear();
+            //chTemp3.Series[1].Values.Clear();
+            //chTemp3.Series[2].Values.Clear();
 
-            // Add data to initial series
-            chTemp1.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1"])));
-            chTemp1.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_hi"])));
-            chTemp1.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_lo"])));
+            //// Add data to initial series
+            //chTemp1.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1"])));
+            //chTemp1.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_hi"])));
+            //chTemp1.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_lo"])));
 
-            chTemp2.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2"])));
-            chTemp2.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_hi"])));
-            chTemp2.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_lo"])));
+            //chTemp2.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2"])));
+            //chTemp2.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_hi"])));
+            //chTemp2.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_lo"])));
 
-            chTemp3.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3"])));
-            chTemp3.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_hi"])));
-            chTemp3.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_lo"])));
+            //chTemp3.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3"])));
+            //chTemp3.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_hi"])));
+            //chTemp3.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_lo"])));
         }
 
         ////////////////////////////////////////////////////////////
@@ -839,8 +844,43 @@ namespace Smart_Temperature_Monitoring
             LineNotifyMsg("hj1TGTJOwYq8L78D2fYbhPKQhOAsgaG1KfJ1QRLa3Tb", message);
         }
 
+        private void lbValue11_Click(object sender, EventArgs e)
+        {
+            _selectedData = 11;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
 
+        private void lbZone11_Click(object sender, EventArgs e)
+        {
+            _SettingZoneId = 1;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
 
+        private void lbLow11_Click(object sender, EventArgs e)
+        {
+            _SettingZoneId = 1;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
 
+        private void lbHigh11_Click(object sender, EventArgs e)
+        {
+            _SettingZoneId = 1;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void panel14_Click(object sender, EventArgs e)
+        {
+            sfrmEvent1 sfrmEvent1 = new sfrmEvent1();
+            sfrmEvent1.Show();
+        }
+
+        private void label65_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
