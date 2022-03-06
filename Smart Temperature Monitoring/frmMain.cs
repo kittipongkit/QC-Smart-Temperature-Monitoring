@@ -152,7 +152,7 @@ namespace Smart_Temperature_Monitoring
 
         private void btnSettingAll_Click(object sender, EventArgs e)
         {
-            sfrmSettingAll sfrmSettingAll = new sfrmSettingAll();
+            sfrmSetting_ref sfrmSettingAll = new sfrmSetting_ref();
             sfrmSettingAll.Show();
         }
     }

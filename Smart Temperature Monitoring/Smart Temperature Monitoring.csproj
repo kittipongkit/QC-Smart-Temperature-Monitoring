@@ -218,11 +218,11 @@
     <Compile Include="sfrmSetting1.Designer.cs">
       <DependentUpon>sfrmSetting1.cs</DependentUpon>
     </Compile>
-    <Compile Include="sfrmSettingAll.cs">
+    <Compile Include="sfrmSetting_ref.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sfrmSettingAll.Designer.cs">
-      <DependentUpon>sfrmSettingAll.cs</DependentUpon>
+    <Compile Include="sfrmSetting_ref.Designer.cs">
+      <DependentUpon>sfrmSetting_ref.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -252,8 +252,8 @@
     <EmbeddedResource Include="sfrmSetting1.resx">
       <DependentUpon>sfrmSetting1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="sfrmSettingAll.resx">
-      <DependentUpon>sfrmSettingAll.cs</DependentUpon>
+    <EmbeddedResource Include="sfrmSetting_ref.resx">
+      <DependentUpon>sfrmSetting_ref.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
