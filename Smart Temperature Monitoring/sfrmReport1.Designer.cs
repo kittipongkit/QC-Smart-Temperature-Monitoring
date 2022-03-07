@@ -36,12 +36,14 @@
             this.btnOk = new System.Windows.Forms.Button();
             this.calenReport = new System.Windows.Forms.MonthCalendar();
             this.txtDateSelected = new System.Windows.Forms.Label();
+            this.cbbSelectedTool = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
@@ -49,7 +51,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(744, 90);
+            this.panel1.Size = new System.Drawing.Size(690, 90);
             this.panel1.TabIndex = 54;
             // 
             // label6
@@ -97,7 +99,7 @@
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.Color.White;
-            this.btnOk.Location = new System.Drawing.Point(416, 269);
+            this.btnOk.Location = new System.Drawing.Point(527, 196);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(79, 34);
             this.btnOk.TabIndex = 54;
@@ -107,7 +109,8 @@
             // 
             // calenReport
             // 
-            this.calenReport.Location = new System.Drawing.Point(268, 102);
+            this.calenReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calenReport.Location = new System.Drawing.Point(82, 102);
             this.calenReport.MaxSelectionCount = 1;
             this.calenReport.Name = "calenReport";
             this.calenReport.TabIndex = 55;
@@ -118,18 +121,42 @@
             this.txtDateSelected.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
             this.txtDateSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDateSelected.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtDateSelected.Location = new System.Drawing.Point(270, 269);
+            this.txtDateSelected.Location = new System.Drawing.Point(377, 196);
             this.txtDateSelected.Name = "txtDateSelected";
-            this.txtDateSelected.Size = new System.Drawing.Size(140, 34);
+            this.txtDateSelected.Size = new System.Drawing.Size(144, 34);
             this.txtDateSelected.TabIndex = 56;
             this.txtDateSelected.Text = "Date";
             this.txtDateSelected.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cbbSelectedTool
+            // 
+            this.cbbSelectedTool.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSelectedTool.FormattingEnabled = true;
+            this.cbbSelectedTool.ItemHeight = 26;
+            this.cbbSelectedTool.Location = new System.Drawing.Point(378, 139);
+            this.cbbSelectedTool.Name = "cbbSelectedTool";
+            this.cbbSelectedTool.Size = new System.Drawing.Size(229, 34);
+            this.cbbSelectedTool.TabIndex = 58;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(378, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(229, 34);
+            this.label2.TabIndex = 57;
+            this.label2.Text = "TOOL :";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // sfrmReport1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 311);
+            this.ClientSize = new System.Drawing.Size(690, 328);
+            this.Controls.Add(this.cbbSelectedTool);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDateSelected);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.calenReport);
@@ -153,5 +180,7 @@
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.MonthCalendar calenReport;
         private System.Windows.Forms.Label txtDateSelected;
+        private System.Windows.Forms.ComboBox cbbSelectedTool;
+        private System.Windows.Forms.Label label2;
     }
 }

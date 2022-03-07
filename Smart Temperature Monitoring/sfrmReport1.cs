@@ -25,14 +25,30 @@ namespace Smart_Temperature_Monitoring
         //  Declare Logging
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        
+        private static DataTable _pGet_tool_name = new DataTable();
+
+
 
         //private Spreadsheet spreadsheet;
         public sfrmReport1()
         {
             InitializeComponent();
+            get_tool_name();
+
             calenReport.SelectionRange.Start = calenReport.TodayDate;
             txtDateSelected.Text = calenReport.SelectionRange.Start.ToString("dd/MM/yyyy");
+        }
+        private void get_tool_name()
+        {
+            _pGet_tool_name = new DataTable();
+            _pGet_tool_name = pGet_tool_name();
+            if (_pGet_tool_name != null)
+            {
+                cbbSelectedTool.DisplayMember = "tool_name";
+                cbbSelectedTool.ValueMember = "tool_id";
+                cbbSelectedTool.DataSource = _pGet_tool_name;
+                cbbSelectedTool.SelectedValue = sfrmOverview._ReportTool;
+            }
         }
 
         private static DataTable pGet_Temp_Range(DateTime selected_date, int sampling_min)
@@ -57,6 +73,31 @@ namespace Smart_Temperature_Monitoring
             {
                 dataTable = null;
                 log.Error("Report pGet_Temp_Range Exception : " + ex.Message);
+            }
+            return dataTable;
+        }
+
+        private static DataTable pGet_tool_name()
+        {
+            DataTable dataTable = new DataTable();
+            DataSet ds = new DataSet();
+            try
+            {
+                //  อ่านค่าจาก Store pGet_tool_name
+                SqlParameterCollection param = new SqlCommand().Parameters;
+                ds = new DBClass().SqlExcSto("pGet_tool_name", "DbSet", param);
+                dataTable = ds.Tables[0];
+
+            }
+            catch (SqlException e)
+            {
+                dataTable = null;
+                log.Error("pGet_tool_name SqlException : " + e.Message);
+            }
+            catch (Exception ex)
+            {
+                dataTable = null;
+                log.Error("pGet_tool_name Exception : " + ex.Message);
             }
             return dataTable;
         }

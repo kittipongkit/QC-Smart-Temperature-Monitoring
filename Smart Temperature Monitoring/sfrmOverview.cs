@@ -24,15 +24,18 @@ namespace Smart_Temperature_Monitoring
         //  Global varriable
         public static int _selectedTempNoData = 0;
         public static int _SettingNumber = 0;
-        public static int _EventZoneId = 0;
+        public static int _EventTool = 0;
         public static int _SettingTool = 0;
         public static int _DataTool = 0;
+        public static int _ReportTool = 0;
 
         //  Local varriable
         private static DataTable _pGet_Temp_actual = new DataTable();
         private static DataTable _pGet_setting_actual = new DataTable();
         private static DataTable _pGet_Temp_data = new DataTable();
         private static DataTable _pGet_event_all = new DataTable();
+        private static DataTable _pGet_status = new DataTable();
+        private static DataTable _pGet_status_tool = new DataTable();
 
         private static int sampling_time = 5;   // sampling_time in minute
         private static int sampling_all_day = 24 * 60 / sampling_time;
@@ -83,6 +86,7 @@ namespace Smart_Temperature_Monitoring
                 try
                 {
                     _actualTemp();
+                    _get_status();
                 }
                 catch (Exception ex)
                 {
@@ -104,6 +108,7 @@ namespace Smart_Temperature_Monitoring
                 {
                     _actual_setting();
                     _get_event_all();
+                    _get_status_tool();
                 }
                 catch (Exception ex)
                 {
@@ -302,9 +307,15 @@ namespace Smart_Temperature_Monitoring
                     //  Clear gv
                     gvEventAll.Rows.Clear();
 
+                    gvEventAll.Columns[1].Width = 100;
+                    gvEventAll.Columns[2].Width = 100;
+                    gvEventAll.Columns[3].Width = 100;
+                    gvEventAll.Columns[0].Width = gvEventAll.Width - (gvEventAll.Columns[1].Width + gvEventAll.Columns[2].Width + gvEventAll.Columns[3].Width);
+
                     // Plot data to gridView
                     for (int i = 0; i < _pGet_event_all.Rows.Count; i++)
-                        gvEventAll.Rows.Add(_pGet_event_all.Rows[i]["create_datetime"], _pGet_event_all.Rows[i]["zone_name"], _pGet_event_all.Rows[i]["event_detail"]);
+                        gvEventAll.Rows.Add(_pGet_event_all.Rows[i]["create_datetime"], _pGet_event_all.Rows[i]["temp_name"]
+                            , _pGet_event_all.Rows[i]["tool_name"], _pGet_event_all.Rows[i]["event_type"]);
 
                     // Keep Id for check next time
                     _EventId = Convert.ToInt32(_pGet_event_all.Rows[0]["ID"]);
@@ -312,6 +323,120 @@ namespace Smart_Temperature_Monitoring
                     gvEventAll.ClearSelection();
                 }
             }
+        }
+
+        // Get status alarm/warning for tool  
+        public void _get_status()
+        {
+            _pGet_status = new DataTable();
+            _pGet_status = pGet_status();
+
+            if (_pGet_status != null)
+            {
+                tool1_avg.Text = "Average : " + _pGet_status.Rows[0]["tool1avg"].ToString() + " C";
+                lbTool1_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool1_warning"].ToString() + " Times";
+                lbTool1_alarm.Text  = "Out of range: " + _pGet_status.Rows[0]["tool1_alarm"].ToString() + " Times";
+
+                tool2_avg.Text = "Average : " + _pGet_status.Rows[0]["tool2avg"].ToString() + " C";
+                lbTool2_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool2_warning"].ToString() + " Times";
+                lbTool2_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool2_alarm"].ToString() + " Times";
+
+                tool3_avg.Text = "Average : " + _pGet_status.Rows[0]["tool3avg"].ToString() + " C";
+                lbTool3_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool3_warning"].ToString() + " Times";
+                lbTool3_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool3_alarm"].ToString() + " Times";
+            }
+        }
+
+        // Get status alarm/warning for tool  
+        public void _get_status_tool()
+        {
+            //Declare array for keep data
+            int[] status1 = new int[24];
+            int[] status2 = new int[24];
+            int[] status3 = new int[24];
+
+            _pGet_status_tool = new DataTable();
+            _pGet_status_tool = pGet_status_tool();
+
+                if (_pGet_status_tool != null && actualGvCell != _pGet_status_tool.Rows.Count)
+                {   //Keep data to array
+                    for (int i = 0; i < _pGet_status_tool.Rows.Count && i < 24; i++)
+                    {
+                        status1[i] = Convert.ToInt32(_pGet_status_tool.Rows[i]["tool_status1"]);
+                        status2[i] = Convert.ToInt32(_pGet_status_tool.Rows[i]["tool_status2"]);
+                        status3[i] = Convert.ToInt32(_pGet_status_tool.Rows[i]["tool_status3"]);
+                    }
+
+                    gvData1.Rows.Clear();
+                    gvData2.Rows.Clear();
+                    gvData3.Rows.Clear();
+                    
+
+                    //Add array to DataGridView
+                    gvData1.Rows.Add(status1);
+                    gvData2.Rows.Add(status2);
+                    gvData3.Rows.Add(status3);
+
+                    for (int i = 0; i < _pGet_status_tool.Rows.Count && i < 24; i++)
+                    {
+                        if (status1[i] == 3)
+                        {
+                            gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
+                            gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
+                        }
+                        else if (status1[i] == 2)
+                        {
+                            gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 192, 128);
+                            gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 192, 128);
+                        }
+                        else
+                        {
+                            gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
+                            gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
+                        }
+
+                        if (status2[i] == 3)
+                        {
+                            gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
+                            gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
+                        }
+                        else if (status2[i] == 2)
+                        {
+                            gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 192, 128);
+                            gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 192, 128);
+                        }
+                        else
+                        {
+                            gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
+                            gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
+                        }
+
+                        if (status3[i] == 3)
+                        {
+                            gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
+                            gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
+                        }
+                        else if (status3[i] == 2)
+                        {
+                            gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 192, 128);
+                            gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 192, 128);
+                        }
+                        else
+                        {
+                            gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
+                            gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
+                        }
+
+                        actualGvCell = _pGet_status_tool.Rows.Count;
+                    }
+                    gvData1.ClearSelection();
+                    gvData2.ClearSelection();
+                    gvData3.ClearSelection();
+
+                }
+            
+            
+
         }
 
         // First time start up : plot data all day
@@ -403,70 +528,70 @@ namespace Smart_Temperature_Monitoring
 
                 // plot gv status
 
-                //Declare array for keep data
-                //string[] status1 = new string[sampling_all_day];                
-                //string[] status2 = new string[sampling_all_day];
-                //string[] status3 = new string[sampling_all_day];
+                ////Declare array for keep data
+                ////string[] status1 = new string[sampling_all_day];                
+                ////string[] status2 = new string[sampling_all_day];
+                ////string[] status3 = new string[sampling_all_day];
 
-                string[] status1 = { "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK", "OK", "OK", "OK" };
-                string[] status2 = { "OK", "OK", "NG", "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK" };
-                string[] status3 = { "OK", "OK", "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK", "OK" };
+                //string[] status1 = { "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK", "OK", "OK", "OK" };
+                //string[] status2 = { "OK", "OK", "NG", "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK" };
+                //string[] status3 = { "OK", "OK", "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK", "OK" };
 
-                //Keep data to array
-                //for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
+                ////Keep data to array
+                ////for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
+                ////{
+                ////    status1[i] = _pGet_Temp_data.Rows[i]["temp1_result"].ToString();
+                ////    status2[i] = _pGet_Temp_data.Rows[i]["temp2_result"].ToString();
+                ////    status3[i] = _pGet_Temp_data.Rows[i]["temp3_result"].ToString();
+                ////}
+
+                ////gvData1.Rows.Clear();
+                ////gvData2.Rows.Clear();
+                ////gvData3.Rows.Clear();
+
+                //////Add array to DataGridView
+                //gvData1.Rows.Add(status1);
+                //gvData2.Rows.Add(status2);
+                //gvData3.Rows.Add(status3);
+
+                ////for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
+                //for (int i = 0; i < 12 ; i++)
                 //{
-                //    status1[i] = _pGet_Temp_data.Rows[i]["temp1_result"].ToString();
-                //    status2[i] = _pGet_Temp_data.Rows[i]["temp2_result"].ToString();
-                //    status3[i] = _pGet_Temp_data.Rows[i]["temp3_result"].ToString();
+                //   if (status1[i] == "NG")
+                //   {
+                //        gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
+                //        gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
+                //    }
+                //    else
+                //    {
+                //        gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
+                //        gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
+                //    }
+
+                //    if (status2[i] == "NG")
+                //    {
+                //        gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
+                //        gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
+                //    }
+                //    else
+                //    {
+                //        gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
+                //        gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
+                //    }
+
+                //    if (status3[i] == "NG")
+                //    {
+                //        gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
+                //        gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
+                //    }
+                //    else
+                //    {
+                //        gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
+                //        gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
+                //    }
+
+                //    actualGvCell = _pGet_Temp_data.Rows.Count;
                 //}
-
-                //gvData1.Rows.Clear();
-                //gvData2.Rows.Clear();
-                //gvData3.Rows.Clear();
-
-                ////Add array to DataGridView
-                gvData1.Rows.Add(status1);
-                gvData2.Rows.Add(status2);
-                gvData3.Rows.Add(status3);
-
-                //for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
-                for (int i = 0; i < 12 ; i++)
-                {
-                   if (status1[i] == "NG")
-                   {
-                        gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
-                        gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                    }
-                    else
-                    {
-                        gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
-                        gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                    }
-
-                    if (status2[i] == "NG")
-                    {
-                        gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
-                        gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                    }
-                    else
-                    {
-                        gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
-                        gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                    }
-
-                    if (status3[i] == "NG")
-                    {
-                        gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
-                        gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                    }
-                    else
-                    {
-                        gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
-                        gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                    }
-
-                    actualGvCell = _pGet_Temp_data.Rows.Count;
-                }
 
             }
 
@@ -621,84 +746,57 @@ namespace Smart_Temperature_Monitoring
             return dataTable;
         }
 
+        private static DataTable pGet_status()
+        {
+            DataTable dataTable = new DataTable();
+            DataSet ds = new DataSet();
+            try
+            {
+                //  อ่านค่าจาก Store pGet_actual_value
+                SqlParameterCollection param = new SqlCommand().Parameters;
+                ds = new DBClass().SqlExcSto("pGet_status", "DbSet", param);
+                dataTable = ds.Tables[0];
+            }
+            catch (SqlException e)
+            {
+                dataTable = null;
+                log.Error("pGet_event_all SqlException : " + e.Message);
+            }
+            catch (Exception ex)
+            {
+                dataTable = null;
+                log.Error("pGet_event_all Exception : " + ex.Message);
+            }
+            return dataTable;
+        }
+
+        private static DataTable pGet_status_tool()
+        {
+            DataTable dataTable = new DataTable();
+            DataSet ds = new DataSet();
+            try
+            {
+                //  อ่านค่าจาก Store pGet_actual_value
+                SqlParameterCollection param = new SqlCommand().Parameters;
+                ds = new DBClass().SqlExcSto("pGet_status_tool", "DbSet", param);
+                dataTable = ds.Tables[0];
+            }
+            catch (SqlException e)
+            {
+                dataTable = null;
+                log.Error("pGet_event_all SqlException : " + e.Message);
+            }
+            catch (Exception ex)
+            {
+                dataTable = null;
+                log.Error("pGet_event_all Exception : " + ex.Message);
+            }
+            return dataTable;
+        }
         ////////////////////////////////////////////////////////////
         //////////////////////  Button event  //////////////////////
         ////////////////////////////////////////////////////////////
-        private void btnEven1_Click(object sender, EventArgs e)
-        {
-            _EventZoneId = 1;
-            sfrmEvent1 sfrmEvent1 = new sfrmEvent1();
-            sfrmEvent1.Show();
-        }
-
-        private void btnEven2_Click(object sender, EventArgs e)
-        {
-            _EventZoneId = 2;
-            sfrmEvent1 sfrmEvent1 = new sfrmEvent1();
-            sfrmEvent1.Show();
-        }
-
-        private void btnEven3_Click(object sender, EventArgs e)
-        {
-            _EventZoneId = 3;
-            sfrmEvent1 sfrmEvent1 = new sfrmEvent1();
-            sfrmEvent1.Show();
-        }
-
-        private void btnReport1_Click(object sender, EventArgs e)
-        {
-            sfrmReport1 sfrmExport1 = new sfrmReport1();
-            sfrmExport1.Show();
-        }
-
-        private void btnReport2_MouseClick(object sender, MouseEventArgs e)
-        {
-            sfrmReport1 sfrmExport1 = new sfrmReport1();
-            sfrmExport1.Show();
-        }
-
-        private void btnReport3_MouseClick(object sender, MouseEventArgs e)
-        {
-            sfrmReport1 sfrmExport1 = new sfrmReport1();
-            sfrmExport1.Show();
-        }
-        private void btnData1_Click(object sender, EventArgs e)
-        {
-            _selectedTempNoData = 1;
-            sfrmData1 sfrmData1 = new sfrmData1();
-            sfrmData1.Show();
-        }
-        private void btnData2_Click(object sender, EventArgs e)
-        {
-            _selectedTempNoData = 2;
-            sfrmData1 sfrmData1 = new sfrmData1();
-            sfrmData1.Show();
-        }
-        private void btnData3_Click(object sender, EventArgs e)
-        {
-            _selectedTempNoData = 3;
-            sfrmData1 sfrmData1 = new sfrmData1();
-            sfrmData1.Show();
-        }
-
-        //private void btnSetting1_Click(object sender, EventArgs e)
-        //{
-        //    _SettingZoneId = 1;
-        //    sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
-        //    sfrmSetting1.Show();
-        //}
-        //private void btnSetting2_Click(object sender, EventArgs e)
-        //{
-        //    _SettingZoneId = 2;
-        //    sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
-        //    sfrmSetting1.Show();
-        //}
-        //private void btnSetting3_Click(object sender, EventArgs e)
-        //{
-        //    _SettingZoneId = 3;
-        //    sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
-        //    sfrmSetting1.Show();
-        //}
+        
 
         //  Local function
         private void LineNotifyMsg(string lineToken, string message)
@@ -769,33 +867,7 @@ namespace Smart_Temperature_Monitoring
             LineNotifyMsg("hj1TGTJOwYq8L78D2fYbhPKQhOAsgaG1KfJ1QRLa3Tb", message);
         }
 
-        private void lbValue11_Click(object sender, EventArgs e)
-        {
-            _selectedTempNoData = 11;
-            sfrmData1 sfrmData1 = new sfrmData1();
-            sfrmData1.Show();
-        }
-
-        private void lbZone11_Click(object sender, EventArgs e)
-        {
-            //_SettingZoneId = 1;
-            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
-            sfrmSetting1.Show();
-        }
-
-        //private void lbLow11_Click(object sender, EventArgs e)
-        //{
-        //    _SettingZoneId = 1;
-        //    sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
-        //    sfrmSetting1.Show();
-        //}
-
-        //private void lbHigh11_Click(object sender, EventArgs e)
-        //{
-        //    _SettingZoneId = 1;
-        //    sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
-        //    sfrmSetting1.Show();
-        //}
+        
 
         private void panel14_Click(object sender, EventArgs e)
         {
@@ -808,12 +880,7 @@ namespace Smart_Temperature_Monitoring
 
         }
 
-        private void btSetting1_Click(object sender, EventArgs e)
-        {
-            _SettingTool = 1;
-            sfrmSetting_ref sfrmSetting_ref = new sfrmSetting_ref();
-            sfrmSetting_ref.Show();
-        }
+       
 
         private void lbName1_Click(object sender, EventArgs e)
         {
@@ -835,5 +902,83 @@ namespace Smart_Temperature_Monitoring
             sfrmData1 sfrmData1 = new sfrmData1();
             sfrmData1.Show();
         }
+
+        private void btData2_Click(object sender, EventArgs e)
+        {
+            _DataTool = 2;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void btData3_Click(object sender, EventArgs e)
+        {
+            _DataTool = 3;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void btEvent1_Click(object sender, EventArgs e)
+        {
+            _EventTool = 1;
+            sfrmEvent1 sfrmEvent1 = new sfrmEvent1();
+            sfrmEvent1.Show();
+        }
+
+        private void btEvent2_Click(object sender, EventArgs e)
+        {
+            _EventTool = 2;
+            sfrmEvent1 sfrmEvent1 = new sfrmEvent1();
+            sfrmEvent1.Show();
+        }
+
+        private void btEvent3_Click(object sender, EventArgs e)
+        {
+            _EventTool = 3;
+            sfrmEvent1 sfrmEvent1 = new sfrmEvent1();
+            sfrmEvent1.Show();
+        }
+
+        private void btReport1_Click(object sender, EventArgs e)
+        {
+            _ReportTool = 1;
+            sfrmReport1 sfrmReport1 = new sfrmReport1();
+            sfrmReport1.Show();
+        }
+
+        private void btReport2_Click(object sender, EventArgs e)
+        {
+            _ReportTool = 2;
+            sfrmReport1 sfrmReport1 = new sfrmReport1();
+            sfrmReport1.Show();
+        }
+
+        private void btReport3_Click(object sender, EventArgs e)
+        {
+            _ReportTool = 3;
+            sfrmReport1 sfrmReport1 = new sfrmReport1();
+            sfrmReport1.Show();
+        }
+
+        private void btSetting1_Click(object sender, EventArgs e)
+        {
+            _SettingTool = 1;
+            sfrmSetting_ref sfrmSetting_ref = new sfrmSetting_ref();
+            sfrmSetting_ref.Show();
+        }
+
+        private void btSetting2_Click(object sender, EventArgs e)
+        {
+            _SettingTool = 2;
+            sfrmSetting_ref sfrmSetting_ref = new sfrmSetting_ref();
+            sfrmSetting_ref.Show();
+        }
+
+        private void btSetting3_Click(object sender, EventArgs e)
+        {
+            _SettingTool = 3;
+            sfrmSetting_ref sfrmSetting_ref = new sfrmSetting_ref();
+            sfrmSetting_ref.Show();
+        }
+
     }
 }

@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sfrmOverview));
             this.gvData1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,8 +64,9 @@
             this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gvEventAll = new System.Windows.Forms.DataGridView();
             this.Date_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Zone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Event = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Temp_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tool = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -258,9 +259,9 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
+            this.tool2_avg = new System.Windows.Forms.Label();
+            this.lbTool2_warning = new System.Windows.Forms.Label();
+            this.lbTool2_alarm = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
@@ -359,9 +360,9 @@
             this.lbWL1 = new System.Windows.Forms.Label();
             this.lbTemp1 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
+            this.tool1_avg = new System.Windows.Forms.Label();
+            this.lbTool1_warning = new System.Windows.Forms.Label();
+            this.lbTool1_alarm = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
             this.panel41 = new System.Windows.Forms.Panel();
             this.btData3 = new System.Windows.Forms.Button();
@@ -459,9 +460,9 @@
             this.label290 = new System.Windows.Forms.Label();
             this.label291 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.label105 = new System.Windows.Forms.Label();
-            this.label125 = new System.Windows.Forms.Label();
-            this.label126 = new System.Windows.Forms.Label();
+            this.tool3_avg = new System.Windows.Forms.Label();
+            this.lbTool3_warning = new System.Windows.Forms.Label();
+            this.lbTool3_alarm = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvData1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvEventAll)).BeginInit();
             this.panel1.SuspendLayout();
@@ -528,14 +529,14 @@
             this.gvData1.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData1.CausesValidation = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle49.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle49;
             this.gvData1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData1.ColumnHeadersVisible = false;
             this.gvData1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -566,19 +567,21 @@
             this.gvData1.Enabled = false;
             this.gvData1.EnableHeadersVisualStyles = false;
             this.gvData1.GridColor = System.Drawing.SystemColors.Window;
-            this.gvData1.Location = new System.Drawing.Point(125, 34);
+            this.gvData1.Location = new System.Drawing.Point(125, 45);
             this.gvData1.MultiSelect = false;
             this.gvData1.Name = "gvData1";
             this.gvData1.ReadOnly = true;
             this.gvData1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvData1.RowHeadersVisible = false;
             this.gvData1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gvData1.RowTemplate.Height = 30;
+            this.gvData1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.gvData1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.gvData1.ShowCellErrors = false;
             this.gvData1.ShowCellToolTips = false;
             this.gvData1.ShowEditingIcon = false;
             this.gvData1.ShowRowErrors = false;
-            this.gvData1.Size = new System.Drawing.Size(1155, 40);
+            this.gvData1.Size = new System.Drawing.Size(1155, 30);
             this.gvData1.TabIndex = 4;
             this.gvData1.TabStop = false;
             // 
@@ -738,46 +741,47 @@
             this.gvEventAll.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvEventAll.CausesValidation = false;
             this.gvEventAll.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvEventAll.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvEventAll.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.gvEventAll.ColumnHeadersHeight = 30;
             this.gvEventAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gvEventAll.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date_Time,
-            this.Zone,
-            this.Event});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvEventAll.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Temp_Name,
+            this.Tool,
+            this.Status});
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvEventAll.DefaultCellStyle = dataGridViewCellStyle51;
             this.gvEventAll.Enabled = false;
             this.gvEventAll.Location = new System.Drawing.Point(1, -1);
             this.gvEventAll.MultiSelect = false;
             this.gvEventAll.Name = "gvEventAll";
             this.gvEventAll.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvEventAll.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle52.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvEventAll.RowHeadersDefaultCellStyle = dataGridViewCellStyle52;
             this.gvEventAll.RowHeadersVisible = false;
             this.gvEventAll.RowHeadersWidth = 42;
             this.gvEventAll.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvEventAll.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvEventAll.RowsDefaultCellStyle = dataGridViewCellStyle53;
             this.gvEventAll.RowTemplate.Height = 30;
             this.gvEventAll.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.gvEventAll.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -791,23 +795,29 @@
             // Date_Time
             // 
             this.Date_Time.FillWeight = 81.21828F;
-            this.Date_Time.HeaderText = "Date_Time";
+            this.Date_Time.HeaderText = "Date Time";
             this.Date_Time.Name = "Date_Time";
             this.Date_Time.ReadOnly = true;
             // 
-            // Zone
+            // Temp_Name
             // 
-            this.Zone.FillWeight = 79.31783F;
-            this.Zone.HeaderText = "Zone";
-            this.Zone.Name = "Zone";
-            this.Zone.ReadOnly = true;
+            this.Temp_Name.FillWeight = 79.31783F;
+            this.Temp_Name.HeaderText = "Temp Name";
+            this.Temp_Name.Name = "Temp_Name";
+            this.Temp_Name.ReadOnly = true;
             // 
-            // Event
+            // Tool
             // 
-            this.Event.FillWeight = 119.732F;
-            this.Event.HeaderText = "Event";
-            this.Event.Name = "Event";
-            this.Event.ReadOnly = true;
+            this.Tool.HeaderText = "Tool";
+            this.Tool.Name = "Tool";
+            this.Tool.ReadOnly = true;
+            // 
+            // Status
+            // 
+            this.Status.FillWeight = 119.732F;
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
             // 
             // panel1
             // 
@@ -831,7 +841,7 @@
             this.label36.ForeColor = System.Drawing.Color.Gray;
             this.label36.Location = new System.Drawing.Point(3, 132);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(123, 40);
+            this.label36.Size = new System.Drawing.Size(123, 30);
             this.label36.TabIndex = 5;
             this.label36.Text = "Oven";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -841,9 +851,9 @@
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.Gray;
-            this.label35.Location = new System.Drawing.Point(3, 83);
+            this.label35.Location = new System.Drawing.Point(3, 90);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(123, 40);
+            this.label35.Size = new System.Drawing.Size(123, 30);
             this.label35.TabIndex = 5;
             this.label35.Text = "Incubator";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -853,9 +863,9 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.Gray;
-            this.label34.Location = new System.Drawing.Point(3, 34);
+            this.label34.Location = new System.Drawing.Point(3, 45);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(123, 40);
+            this.label34.Size = new System.Drawing.Size(123, 30);
             this.label34.TabIndex = 5;
             this.label34.Text = "Refrigerator";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -871,14 +881,14 @@
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView3.CausesValidation = false;
             this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle54.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle54;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn49,
@@ -908,7 +918,7 @@
             this.dataGridView3.Enabled = false;
             this.dataGridView3.EnableHeadersVisualStyles = false;
             this.dataGridView3.GridColor = System.Drawing.SystemColors.Window;
-            this.dataGridView3.Location = new System.Drawing.Point(125, 3);
+            this.dataGridView3.Location = new System.Drawing.Point(125, 7);
             this.dataGridView3.MultiSelect = false;
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
@@ -1078,14 +1088,14 @@
             this.gvData3.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData3.CausesValidation = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle55;
             this.gvData3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData3.ColumnHeadersVisible = false;
             this.gvData3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1123,12 +1133,13 @@
             this.gvData3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvData3.RowHeadersVisible = false;
             this.gvData3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gvData3.RowTemplate.Height = 30;
             this.gvData3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.gvData3.ShowCellErrors = false;
             this.gvData3.ShowCellToolTips = false;
             this.gvData3.ShowEditingIcon = false;
             this.gvData3.ShowRowErrors = false;
-            this.gvData3.Size = new System.Drawing.Size(1155, 40);
+            this.gvData3.Size = new System.Drawing.Size(1155, 30);
             this.gvData3.TabIndex = 4;
             this.gvData3.TabStop = false;
             // 
@@ -1286,14 +1297,14 @@
             this.gvData2.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData2.CausesValidation = false;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle56.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle56.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle56;
             this.gvData2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData2.ColumnHeadersVisible = false;
             this.gvData2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1324,19 +1335,20 @@
             this.gvData2.Enabled = false;
             this.gvData2.EnableHeadersVisualStyles = false;
             this.gvData2.GridColor = System.Drawing.SystemColors.Window;
-            this.gvData2.Location = new System.Drawing.Point(125, 83);
+            this.gvData2.Location = new System.Drawing.Point(125, 90);
             this.gvData2.MultiSelect = false;
             this.gvData2.Name = "gvData2";
             this.gvData2.ReadOnly = true;
             this.gvData2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvData2.RowHeadersVisible = false;
             this.gvData2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gvData2.RowTemplate.Height = 30;
             this.gvData2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.gvData2.ShowCellErrors = false;
             this.gvData2.ShowCellToolTips = false;
             this.gvData2.ShowEditingIcon = false;
             this.gvData2.ShowRowErrors = false;
-            this.gvData2.Size = new System.Drawing.Size(1155, 40);
+            this.gvData2.Size = new System.Drawing.Size(1155, 30);
             this.gvData2.TabIndex = 4;
             this.gvData2.TabStop = false;
             // 
@@ -1521,6 +1533,7 @@
             this.btData2.Size = new System.Drawing.Size(42, 42);
             this.btData2.TabIndex = 1;
             this.btData2.UseVisualStyleBackColor = false;
+            this.btData2.Click += new System.EventHandler(this.btData2_Click);
             // 
             // btEvent2
             // 
@@ -1536,6 +1549,7 @@
             this.btEvent2.TabIndex = 8;
             this.btEvent2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btEvent2.UseVisualStyleBackColor = false;
+            this.btEvent2.Click += new System.EventHandler(this.btEvent2_Click);
             // 
             // btSetting2
             // 
@@ -1551,6 +1565,7 @@
             this.btSetting2.TabIndex = 26;
             this.btSetting2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSetting2.UseVisualStyleBackColor = false;
+            this.btSetting2.Click += new System.EventHandler(this.btSetting2_Click);
             // 
             // btReport2
             // 
@@ -1566,6 +1581,7 @@
             this.btReport2.TabIndex = 9;
             this.btReport2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btReport2.UseVisualStyleBackColor = false;
+            this.btReport2.Click += new System.EventHandler(this.btReport2_Click);
             // 
             // label30
             // 
@@ -1626,7 +1642,6 @@
             this.label57.TabIndex = 4;
             this.label57.Text = "F1";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label57.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label58
             // 
@@ -1721,7 +1736,6 @@
             this.label50.TabIndex = 4;
             this.label50.Text = "F1";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label50.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label51
             // 
@@ -1816,7 +1830,6 @@
             this.label43.TabIndex = 4;
             this.label43.Text = "F1";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label43.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label44
             // 
@@ -1911,7 +1924,6 @@
             this.label93.TabIndex = 4;
             this.label93.Text = "F1";
             this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label93.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label94
             // 
@@ -2006,7 +2018,6 @@
             this.label86.TabIndex = 4;
             this.label86.Text = "F1";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label86.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label87
             // 
@@ -2101,7 +2112,6 @@
             this.label22.TabIndex = 4;
             this.label22.Text = "F1";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label22.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label23
             // 
@@ -2196,7 +2206,6 @@
             this.label79.TabIndex = 4;
             this.label79.Text = "F1";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label79.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label80
             // 
@@ -2291,7 +2300,6 @@
             this.label15.TabIndex = 4;
             this.label15.Text = "F1";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label16
             // 
@@ -2386,7 +2394,6 @@
             this.label40.TabIndex = 4;
             this.label40.Text = "F1";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label40.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label69
             // 
@@ -2481,7 +2488,6 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "F1";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label9
             // 
@@ -2576,7 +2582,6 @@
             this.label29.TabIndex = 4;
             this.label29.Text = "F1";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label29.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label31
             // 
@@ -2671,7 +2676,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "F1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label2
             // 
@@ -2766,7 +2770,6 @@
             this.label70.TabIndex = 4;
             this.label70.Text = "F1";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label70.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label62
             // 
@@ -2837,56 +2840,56 @@
             // 
             // panel22
             // 
-            this.panel22.Controls.Add(this.label66);
-            this.panel22.Controls.Add(this.label67);
-            this.panel22.Controls.Add(this.label68);
+            this.panel22.Controls.Add(this.tool2_avg);
+            this.panel22.Controls.Add(this.lbTool2_warning);
+            this.panel22.Controls.Add(this.lbTool2_alarm);
             this.panel22.Location = new System.Drawing.Point(849, 5);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(845, 44);
             this.panel22.TabIndex = 4;
             // 
-            // label66
+            // tool2_avg
             // 
-            this.label66.BackColor = System.Drawing.Color.Transparent;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.Color.Gray;
-            this.label66.Location = new System.Drawing.Point(0, 6);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(274, 30);
-            this.label66.TabIndex = 4;
-            this.label66.Text = "Average : 2.6 C";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tool2_avg.BackColor = System.Drawing.Color.Transparent;
+            this.tool2_avg.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tool2_avg.ForeColor = System.Drawing.Color.Gray;
+            this.tool2_avg.Location = new System.Drawing.Point(0, 6);
+            this.tool2_avg.Name = "tool2_avg";
+            this.tool2_avg.Size = new System.Drawing.Size(274, 30);
+            this.tool2_avg.TabIndex = 4;
+            this.tool2_avg.Text = "Average : 2.6 C";
+            this.tool2_avg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label67
+            // lbTool2_warning
             // 
-            this.label67.BackColor = System.Drawing.Color.Transparent;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.ForeColor = System.Drawing.Color.Gray;
-            this.label67.Location = new System.Drawing.Point(275, 6);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(274, 30);
-            this.label67.TabIndex = 4;
-            this.label67.Text = "Warning : 2 Times";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTool2_warning.BackColor = System.Drawing.Color.Transparent;
+            this.lbTool2_warning.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTool2_warning.ForeColor = System.Drawing.Color.Gray;
+            this.lbTool2_warning.Location = new System.Drawing.Point(275, 6);
+            this.lbTool2_warning.Name = "lbTool2_warning";
+            this.lbTool2_warning.Size = new System.Drawing.Size(274, 30);
+            this.lbTool2_warning.TabIndex = 4;
+            this.lbTool2_warning.Text = "Warning : 2 Times";
+            this.lbTool2_warning.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label68
+            // lbTool2_alarm
             // 
-            this.label68.BackColor = System.Drawing.Color.Transparent;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.ForeColor = System.Drawing.Color.Gray;
-            this.label68.Location = new System.Drawing.Point(565, 6);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(274, 30);
-            this.label68.TabIndex = 4;
-            this.label68.Text = "Out of range : 0 Times";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTool2_alarm.BackColor = System.Drawing.Color.Transparent;
+            this.lbTool2_alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTool2_alarm.ForeColor = System.Drawing.Color.Gray;
+            this.lbTool2_alarm.Location = new System.Drawing.Point(549, 6);
+            this.lbTool2_alarm.Name = "lbTool2_alarm";
+            this.lbTool2_alarm.Size = new System.Drawing.Size(293, 30);
+            this.lbTool2_alarm.TabIndex = 4;
+            this.lbTool2_alarm.Text = "Out of range : 0 Times";
+            this.lbTool2_alarm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel14
             // 
             this.panel14.Controls.Add(this.gvEventAll);
             this.panel14.Location = new System.Drawing.Point(7, 800);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(607, 175);
+            this.panel14.Size = new System.Drawing.Size(610, 175);
             this.panel14.TabIndex = 7;
             this.panel14.Click += new System.EventHandler(this.panel14_Click);
             // 
@@ -2943,6 +2946,7 @@
             this.btEvent1.TabIndex = 8;
             this.btEvent1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btEvent1.UseVisualStyleBackColor = false;
+            this.btEvent1.Click += new System.EventHandler(this.btEvent1_Click);
             // 
             // btSetting1
             // 
@@ -2974,6 +2978,7 @@
             this.btReport1.TabIndex = 9;
             this.btReport1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btReport1.UseVisualStyleBackColor = false;
+            this.btReport1.Click += new System.EventHandler(this.btReport1_Click);
             // 
             // label102
             // 
@@ -3032,7 +3037,6 @@
             this.lbFoor4.TabIndex = 4;
             this.lbFoor4.Text = "F1";
             this.lbFoor4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor4.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName4
             // 
@@ -3127,8 +3131,6 @@
             this.lbFoor3.TabIndex = 4;
             this.lbFoor3.Text = "F1";
             this.lbFoor3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor3.Click += new System.EventHandler(this.lbZone11_Click);
-            // 
             // lbName3
             // 
             this.lbName3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -3222,7 +3224,6 @@
             this.lbFoor2.TabIndex = 4;
             this.lbFoor2.Text = "F1";
             this.lbFoor2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor2.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName2
             // 
@@ -3317,7 +3318,6 @@
             this.lbFoor8.TabIndex = 4;
             this.lbFoor8.Text = "F1";
             this.lbFoor8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor8.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName8
             // 
@@ -3412,7 +3412,6 @@
             this.lbFoor11.TabIndex = 4;
             this.lbFoor11.Text = "F1";
             this.lbFoor11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor11.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName11
             // 
@@ -3507,7 +3506,6 @@
             this.lbFoor7.TabIndex = 4;
             this.lbFoor7.Text = "F1";
             this.lbFoor7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor7.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName7
             // 
@@ -3602,7 +3600,6 @@
             this.lbFoor10.TabIndex = 4;
             this.lbFoor10.Text = "F1";
             this.lbFoor10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor10.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName10
             // 
@@ -3697,7 +3694,6 @@
             this.lbFoor6.TabIndex = 4;
             this.lbFoor6.Text = "F1";
             this.lbFoor6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor6.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName6
             // 
@@ -3792,7 +3788,6 @@
             this.lbFoor9.TabIndex = 4;
             this.lbFoor9.Text = "F1";
             this.lbFoor9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor9.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName9
             // 
@@ -3887,7 +3882,6 @@
             this.lbFoor5.TabIndex = 4;
             this.lbFoor5.Text = "F1";
             this.lbFoor5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor5.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName5
             // 
@@ -3982,7 +3976,6 @@
             this.lbFoor1.TabIndex = 4;
             this.lbFoor1.Text = "F1";
             this.lbFoor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbFoor1.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // lbName1
             // 
@@ -4053,49 +4046,49 @@
             // 
             // panel25
             // 
-            this.panel25.Controls.Add(this.label73);
-            this.panel25.Controls.Add(this.label100);
-            this.panel25.Controls.Add(this.label101);
+            this.panel25.Controls.Add(this.tool1_avg);
+            this.panel25.Controls.Add(this.lbTool1_warning);
+            this.panel25.Controls.Add(this.lbTool1_alarm);
             this.panel25.Location = new System.Drawing.Point(849, 6);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(845, 44);
             this.panel25.TabIndex = 4;
             // 
-            // label73
+            // tool1_avg
             // 
-            this.label73.BackColor = System.Drawing.Color.Transparent;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.ForeColor = System.Drawing.Color.Gray;
-            this.label73.Location = new System.Drawing.Point(0, 6);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(274, 30);
-            this.label73.TabIndex = 4;
-            this.label73.Text = "Average : 2.6 C";
-            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tool1_avg.BackColor = System.Drawing.Color.Transparent;
+            this.tool1_avg.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tool1_avg.ForeColor = System.Drawing.Color.Gray;
+            this.tool1_avg.Location = new System.Drawing.Point(0, 6);
+            this.tool1_avg.Name = "tool1_avg";
+            this.tool1_avg.Size = new System.Drawing.Size(274, 30);
+            this.tool1_avg.TabIndex = 4;
+            this.tool1_avg.Text = "Average : 2.6 C";
+            this.tool1_avg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label100
+            // lbTool1_warning
             // 
-            this.label100.BackColor = System.Drawing.Color.Transparent;
-            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.ForeColor = System.Drawing.Color.Gray;
-            this.label100.Location = new System.Drawing.Point(275, 6);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(274, 30);
-            this.label100.TabIndex = 4;
-            this.label100.Text = "Warning : 2 Times";
-            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTool1_warning.BackColor = System.Drawing.Color.Transparent;
+            this.lbTool1_warning.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTool1_warning.ForeColor = System.Drawing.Color.Gray;
+            this.lbTool1_warning.Location = new System.Drawing.Point(275, 6);
+            this.lbTool1_warning.Name = "lbTool1_warning";
+            this.lbTool1_warning.Size = new System.Drawing.Size(274, 30);
+            this.lbTool1_warning.TabIndex = 4;
+            this.lbTool1_warning.Text = "Warning : 2 Times";
+            this.lbTool1_warning.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label101
+            // lbTool1_alarm
             // 
-            this.label101.BackColor = System.Drawing.Color.Transparent;
-            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.ForeColor = System.Drawing.Color.Gray;
-            this.label101.Location = new System.Drawing.Point(565, 6);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(274, 30);
-            this.label101.TabIndex = 4;
-            this.label101.Text = "Out of range : 0 Times";
-            this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTool1_alarm.BackColor = System.Drawing.Color.Transparent;
+            this.lbTool1_alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTool1_alarm.ForeColor = System.Drawing.Color.Gray;
+            this.lbTool1_alarm.Location = new System.Drawing.Point(549, 6);
+            this.lbTool1_alarm.Name = "lbTool1_alarm";
+            this.lbTool1_alarm.Size = new System.Drawing.Size(293, 30);
+            this.lbTool1_alarm.TabIndex = 4;
+            this.lbTool1_alarm.Text = "Out of range : 0 Times";
+            this.lbTool1_alarm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel35
             // 
@@ -4134,6 +4127,7 @@
             this.btData3.Size = new System.Drawing.Size(42, 42);
             this.btData3.TabIndex = 1;
             this.btData3.UseVisualStyleBackColor = false;
+            this.btData3.Click += new System.EventHandler(this.btData3_Click);
             // 
             // btEvent3
             // 
@@ -4149,6 +4143,7 @@
             this.btEvent3.TabIndex = 8;
             this.btEvent3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btEvent3.UseVisualStyleBackColor = false;
+            this.btEvent3.Click += new System.EventHandler(this.btEvent3_Click);
             // 
             // btSetting3
             // 
@@ -4164,6 +4159,7 @@
             this.btSetting3.TabIndex = 26;
             this.btSetting3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSetting3.UseVisualStyleBackColor = false;
+            this.btSetting3.Click += new System.EventHandler(this.btSetting3_Click);
             // 
             // btReport3
             // 
@@ -4179,6 +4175,7 @@
             this.btReport3.TabIndex = 9;
             this.btReport3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btReport3.UseVisualStyleBackColor = false;
+            this.btReport3.Click += new System.EventHandler(this.btReport3_Click);
             // 
             // label200
             // 
@@ -4237,7 +4234,6 @@
             this.label201.TabIndex = 4;
             this.label201.Text = "F1";
             this.label201.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label201.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label202
             // 
@@ -4332,7 +4328,6 @@
             this.label208.TabIndex = 4;
             this.label208.Text = "F1";
             this.label208.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label208.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label209
             // 
@@ -4427,7 +4422,6 @@
             this.label215.TabIndex = 4;
             this.label215.Text = "F1";
             this.label215.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label215.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label216
             // 
@@ -4522,7 +4516,6 @@
             this.label236.TabIndex = 4;
             this.label236.Text = "F1";
             this.label236.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label236.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label237
             // 
@@ -4617,7 +4610,6 @@
             this.label243.TabIndex = 4;
             this.label243.Text = "F1";
             this.label243.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label243.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label244
             // 
@@ -4712,7 +4704,6 @@
             this.label250.TabIndex = 4;
             this.label250.Text = "F1";
             this.label250.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label250.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label251
             // 
@@ -4807,7 +4798,6 @@
             this.label257.TabIndex = 4;
             this.label257.Text = "F1";
             this.label257.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label257.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label258
             // 
@@ -4902,7 +4892,6 @@
             this.label264.TabIndex = 4;
             this.label264.Text = "F1";
             this.label264.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label264.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label265
             // 
@@ -4997,7 +4986,6 @@
             this.label271.TabIndex = 4;
             this.label271.Text = "F1";
             this.label271.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label271.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label272
             // 
@@ -5092,7 +5080,6 @@
             this.label278.TabIndex = 4;
             this.label278.Text = "F1";
             this.label278.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label278.Click += new System.EventHandler(this.lbZone11_Click);
             // 
             // label279
             // 
@@ -5186,8 +5173,7 @@
             this.label285.Size = new System.Drawing.Size(28, 21);
             this.label285.TabIndex = 4;
             this.label285.Text = "F1";
-            this.label285.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label285.Click += new System.EventHandler(this.lbZone11_Click);
+            this.label285.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;;
             // 
             // label286
             // 
@@ -5258,49 +5244,49 @@
             // 
             // panel34
             // 
-            this.panel34.Controls.Add(this.label105);
-            this.panel34.Controls.Add(this.label125);
-            this.panel34.Controls.Add(this.label126);
+            this.panel34.Controls.Add(this.tool3_avg);
+            this.panel34.Controls.Add(this.lbTool3_warning);
+            this.panel34.Controls.Add(this.lbTool3_alarm);
             this.panel34.Location = new System.Drawing.Point(850, 5);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(845, 44);
             this.panel34.TabIndex = 4;
             // 
-            // label105
+            // tool3_avg
             // 
-            this.label105.BackColor = System.Drawing.Color.Transparent;
-            this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label105.ForeColor = System.Drawing.Color.Gray;
-            this.label105.Location = new System.Drawing.Point(0, 6);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(274, 30);
-            this.label105.TabIndex = 4;
-            this.label105.Text = "Average : 2.6 C";
-            this.label105.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tool3_avg.BackColor = System.Drawing.Color.Transparent;
+            this.tool3_avg.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tool3_avg.ForeColor = System.Drawing.Color.Gray;
+            this.tool3_avg.Location = new System.Drawing.Point(0, 6);
+            this.tool3_avg.Name = "tool3_avg";
+            this.tool3_avg.Size = new System.Drawing.Size(274, 30);
+            this.tool3_avg.TabIndex = 4;
+            this.tool3_avg.Text = "Average : 2.6 C";
+            this.tool3_avg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label125
+            // lbTool3_warning
             // 
-            this.label125.BackColor = System.Drawing.Color.Transparent;
-            this.label125.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label125.ForeColor = System.Drawing.Color.Gray;
-            this.label125.Location = new System.Drawing.Point(275, 6);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(274, 30);
-            this.label125.TabIndex = 4;
-            this.label125.Text = "Warning : 2 Times";
-            this.label125.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTool3_warning.BackColor = System.Drawing.Color.Transparent;
+            this.lbTool3_warning.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTool3_warning.ForeColor = System.Drawing.Color.Gray;
+            this.lbTool3_warning.Location = new System.Drawing.Point(275, 6);
+            this.lbTool3_warning.Name = "lbTool3_warning";
+            this.lbTool3_warning.Size = new System.Drawing.Size(274, 30);
+            this.lbTool3_warning.TabIndex = 4;
+            this.lbTool3_warning.Text = "Warning : 2 Times";
+            this.lbTool3_warning.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label126
+            // lbTool3_alarm
             // 
-            this.label126.BackColor = System.Drawing.Color.Transparent;
-            this.label126.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label126.ForeColor = System.Drawing.Color.Gray;
-            this.label126.Location = new System.Drawing.Point(565, 6);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(274, 30);
-            this.label126.TabIndex = 4;
-            this.label126.Text = "Out of range : 0 Times";
-            this.label126.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTool3_alarm.BackColor = System.Drawing.Color.Transparent;
+            this.lbTool3_alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTool3_alarm.ForeColor = System.Drawing.Color.Gray;
+            this.lbTool3_alarm.Location = new System.Drawing.Point(549, 6);
+            this.lbTool3_alarm.Name = "lbTool3_alarm";
+            this.lbTool3_alarm.Size = new System.Drawing.Size(293, 30);
+            this.lbTool3_alarm.TabIndex = 4;
+            this.lbTool3_alarm.Text = "Out of range : 0 Times";
+            this.lbTool3_alarm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // sfrmOverview
             // 
@@ -5490,9 +5476,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date_Time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Zone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Event;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label41;
@@ -5780,26 +5763,30 @@
         private System.Windows.Forms.Label label291;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label tool1_avg;
+        private System.Windows.Forms.Label lbTool1_warning;
+        private System.Windows.Forms.Label lbTool1_alarm;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Button btData2;
         private System.Windows.Forms.Button btEvent2;
         private System.Windows.Forms.Button btSetting2;
         private System.Windows.Forms.Button btReport2;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label tool2_avg;
+        private System.Windows.Forms.Label lbTool2_warning;
+        private System.Windows.Forms.Label lbTool2_alarm;
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.Button btData3;
         private System.Windows.Forms.Button btEvent3;
         private System.Windows.Forms.Button btSetting3;
         private System.Windows.Forms.Button btReport3;
         private System.Windows.Forms.Panel panel34;
-        private System.Windows.Forms.Label label105;
-        private System.Windows.Forms.Label label125;
-        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label tool3_avg;
+        private System.Windows.Forms.Label lbTool3_warning;
+        private System.Windows.Forms.Label lbTool3_alarm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date_Time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Temp_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tool;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
     }
 }
