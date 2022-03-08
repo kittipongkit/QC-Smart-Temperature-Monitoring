@@ -86,7 +86,7 @@ namespace Smart_Temperature_Monitoring
                 try
                 {
                     _actualTemp();
-                    _get_status();
+                    _actual_setting();
                 }
                 catch (Exception ex)
                 {
@@ -105,9 +105,9 @@ namespace Smart_Temperature_Monitoring
             while (true)
             {
                 try
-                {
-                    _actual_setting();
+                {    
                     _get_event_all();
+                    _get_status();
                     _get_status_tool();
                 }
                 catch (Exception ex)
@@ -144,7 +144,7 @@ namespace Smart_Temperature_Monitoring
             }
 
             //read data from list
-            for (int i=1; i<=11; i++)
+            for (int i=1; i<=35; i++)
             {
                 //change temp value
                 var lbTemp = Controls.Find("lbTemp" + i, true);
@@ -154,44 +154,50 @@ namespace Smart_Temperature_Monitoring
                     label.Text = tempdata[i-1].Rows[0]["temp_actual"].ToString();
                 }
 
-                //change panel background color
-                var pnTemp = Controls.Find("pnTemp" + i, true);
-                if (pnTemp.Length > 0)
+                //change background color
+                DataTable dt = pGet_setting_actual();
+                if(dt.Rows[i-1]["temp_active"].ToString() == "Y")  //check temp_active 
                 {
-                    var panel = (Panel)pnTemp[0];
-                    if (tempdata[i- 1].Rows[0]["temp_result"].ToString() == "OK")
-                        panel.BackColor = Color.FromArgb(128, 255, 128);
-                    else if ((tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WH") || (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WL"))
-                        panel.BackColor = Color.FromArgb(255, 192, 128);
-                    else
-                        panel.BackColor = Color.FromArgb(255, 128, 128);
-                }
+                    //panel
+                    var pnTemp = Controls.Find("pnTemp" + i, true);
+                    if (pnTemp.Length > 0)
+                    {
+                        var panel = (Panel)pnTemp[0];                        
+                        if (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "OK")
+                            panel.BackColor = Color.FromArgb(128, 255, 128);
+                        else if ((tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WH") || (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WL"))
+                            panel.BackColor = Color.FromArgb(255, 192, 128);
+                        else
+                            panel.BackColor = Color.FromArgb(255, 128, 128);
 
-                //change lbName background color
-                var lbName = Controls.Find("lbName" + i, true);
-                if (lbName.Length > 0)
-                {
-                    var label = (Label)lbName[0];
-                    if (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "OK")
-                        label.BackColor = Color.FromArgb(0, 192, 0);
-                    else if ((tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WH") || (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WL"))
-                        label.BackColor = Color.FromArgb(255, 128, 0); 
-                    else
-                        label.BackColor = Color.Red;
-                }
+                    }
 
-                //change lbFoor background color
-                var lbFoor = Controls.Find("lbFoor" + i, true);
-                if (lbFoor.Length > 0)
-                {
-                    var label = (Label)lbFoor[0];
-                    if (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "OK")
-                        label.BackColor = Color.FromArgb(128, 255, 128);
-                    else if ((tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WH") || (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WL"))
-                        label.BackColor = Color.FromArgb(255, 192, 128);
-                    else
-                        label.BackColor = Color.FromArgb(255, 128, 128);
-                }
+                    //lbName
+                    var lbName = Controls.Find("lbName" + i, true);
+                    if (lbName.Length > 0)
+                    {
+                        var label = (Label)lbName[0];
+                        if (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "OK")
+                            label.BackColor = Color.FromArgb(0, 192, 0);
+                        else if ((tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WH") || (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WL"))
+                            label.BackColor = Color.FromArgb(255, 128, 0);
+                        else
+                            label.BackColor = Color.Red;
+                    }
+
+                    //lbFoor
+                    var lbFoor = Controls.Find("lbFoor" + i, true);
+                    if (lbFoor.Length > 0)
+                    {
+                        var label = (Label)lbFoor[0];
+                        if (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "OK")
+                            label.BackColor = Color.FromArgb(128, 255, 128);
+                        else if ((tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WH") || (tempdata[i - 1].Rows[0]["temp_result"].ToString() == "WL"))
+                            label.BackColor = Color.FromArgb(255, 192, 128);
+                        else
+                            label.BackColor = Color.FromArgb(255, 128, 128);
+                    }
+                }                         
             }
         }
 
@@ -202,15 +208,31 @@ namespace Smart_Temperature_Monitoring
             _pGet_setting_actual = pGet_setting_actual();
             if (_pGet_setting_actual != null && _pGet_setting_actual.Rows.Count > 0)
             {
-                //read data from list
-                for (int i = 1; i <= 11; i++) 
+                //read data from list 
+                for (int i = 1; i <= 35; i++) 
                 {
+                    //change panel background color 
+                    var pnTemp = Controls.Find("pnTemp" + i, true);
+                    if (pnTemp.Length > 0)
+                    {                        
+                        if (_pGet_setting_actual.Rows[i - 1]["temp_active"].ToString() == "N")
+                        {
+                            var panel = (Panel)pnTemp[0];
+                            panel.BackColor = Color.FromArgb(224, 224, 224);
+                        }
+                    }
+
                     //change temp setting name
                     var lbName = Controls.Find("lbName" + i, true);
                     if (lbName.Length > 0)
                     {
                         var label = (Label)lbName[0];
                         label.Text = _pGet_setting_actual.Rows[i - 1]["temp_name"].ToString();
+
+                        if (_pGet_setting_actual.Rows[i - 1]["temp_active"].ToString() == "N")
+                        {
+                            label.BackColor = Color.Gray;
+                        }
                     }
 
                     //change temp foor_name 
@@ -219,6 +241,11 @@ namespace Smart_Temperature_Monitoring
                     {
                         var label = (Label)lbFoor[0];
                         label.Text = _pGet_setting_actual.Rows[i - 1]["foor_name"].ToString();
+
+                        if (_pGet_setting_actual.Rows[i - 1]["temp_active"].ToString() == "N")
+                        {
+                            label.BackColor = Color.FromArgb(224, 224, 224);
+                        }
                     }
 
                     //change temp setting warning hi and visible
@@ -238,7 +265,7 @@ namespace Smart_Temperature_Monitoring
                         }
                     }
 
-                    //change temp setting warning hi and visible
+                    //change temp setting warning low and visible
                     var lbWL = Controls.Find("lbWL" + i, true);
                     var label_lbWL = (Label)lbWL[0];
                     if (lbWL.Length > 0)
@@ -272,7 +299,7 @@ namespace Smart_Temperature_Monitoring
                         }
                     }
 
-                    //change temp setting warning hi and visible
+                    //change temp setting warning low and visible
                     var lbAL = Controls.Find("lbAL" + i, true);
                     var label_lbAL = (Label)lbAL[0];
                     if (lbAL.Length > 0)
@@ -793,10 +820,34 @@ namespace Smart_Temperature_Monitoring
             }
             return dataTable;
         }
+
+        private static DataTable pAutoInsert_tr_temp()
+        {
+            DataTable dataTable = new DataTable();
+            DataSet ds = new DataSet();
+            try
+            {
+                //  อ่านค่าจาก Store pGet_actual_value
+                SqlParameterCollection param = new SqlCommand().Parameters;
+                ds = new DBClass().SqlExcSto("pAutoInsert_tr_temp", "DbSet", param);
+                dataTable = ds.Tables[0];
+            }
+            catch (SqlException e)
+            {
+                dataTable = null;
+                log.Error("pAutoInsert_tr_temp SqlException : " + e.Message);
+            }
+            catch (Exception ex)
+            {
+                dataTable = null;
+                log.Error("pAutoInsert_tr_temp Exception : " + ex.Message);
+            }
+            return dataTable;
+        }
         ////////////////////////////////////////////////////////////
         //////////////////////  Button event  //////////////////////
         ////////////////////////////////////////////////////////////
-        
+
 
         //  Local function
         private void LineNotifyMsg(string lineToken, string message)
@@ -980,5 +1031,9 @@ namespace Smart_Temperature_Monitoring
             sfrmSetting_ref.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pAutoInsert_tr_temp();
+        }
     }
 }

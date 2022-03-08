@@ -49,8 +49,17 @@ namespace Smart_Temperature_Monitoring
             //_pGet_setting = pGet_setting(1);
             if (_pGet_setting != null)
             {
-                for (int i = 1; i <= 2; i++)
+                for (int i = 1; i <= _pGet_setting.Rows.Count; i++)
                 {
+                    
+                    //show  panel
+                       var pnSetting = Controls.Find("pnSetting" + i, true);
+                    if (pnSetting.Length > 0)
+                    {
+                        var panel = (Panel)pnSetting[0];
+                        panel.Visible = true;
+                    }
+
                     //show  tool
                     var lbTool = Controls.Find("lbTool" + i, true);
                     if (lbTool.Length > 0)
@@ -175,7 +184,7 @@ namespace Smart_Temperature_Monitoring
             }
         }
 
-        private void SaveSetting(int i)
+        private void SaveSetting(int i, int temp_number)
         {
             try
             {
@@ -193,14 +202,14 @@ namespace Smart_Temperature_Monitoring
 
 
                 //Update setting table            
-                pUpdate_setting(i, lbName.Text, Convert.ToDouble(numAL.Value), Convert.ToDouble(numAH.Value), Convert.ToDouble(numWL.Value), Convert.ToDouble(numWH.Value),
+                pUpdate_setting(temp_number, lbName.Text, Convert.ToDouble(numAH.Value), Convert.ToDouble(numAL.Value), Convert.ToDouble(numWH.Value), Convert.ToDouble(numWL.Value),
                         cbAH.Checked == true ? 'Y' : 'N', cbAL.Checked == true ? 'Y' : 'N', cbWH.Checked == true ? 'Y' : 'N', cbWL.Checked == true ? 'Y' : 'N',
                         cbLine.Checked == true ? 'Y' : 'N', cbUse.Checked == true ? 'Y' : 'N');
 
 
 
                 MessageBox.Show("แก้ไขข้อมูลเรียบร้อยแล้ว", "ข้อความจากระบบ");
-                this.Hide();
+                //this.Hide();
             }
             catch (Exception ex)
             {
@@ -279,12 +288,77 @@ namespace Smart_Temperature_Monitoring
         ////////////////////////////////////////////////////////////
         private void btSave1_Click(object sender, EventArgs e)
         {
-            SaveSetting(1);
+            SaveSetting(1, Convert.ToInt32(lbTempNo1.Text));
         }
 
         private void btSave2_Click(object sender, EventArgs e)
         {
-            SaveSetting(2);
+            SaveSetting(2, Convert.ToInt32(lbTempNo2.Text));
+        }
+
+        private void btSave3_Click(object sender, EventArgs e)
+        {
+            SaveSetting(3, Convert.ToInt32(lbTempNo3.Text));
+        }
+
+        private void btSave4_Click(object sender, EventArgs e)
+        {
+            SaveSetting(4,  Convert.ToInt32(lbTempNo4.Text));
+        }
+
+        private void btSave5_Click(object sender, EventArgs e)
+        {
+            SaveSetting(5, Convert.ToInt32(lbTempNo5.Text));
+        }
+
+        private void btSave6_Click(object sender, EventArgs e)
+        {
+            SaveSetting(6, Convert.ToInt32(lbTempNo6.Text));
+        }
+
+        private void btSave7_Click(object sender, EventArgs e)
+        {
+            SaveSetting(7, Convert.ToInt32(lbTempNo7.Text));
+        }
+
+        private void btSave8_Click(object sender, EventArgs e)
+        {
+            SaveSetting(8, Convert.ToInt32(lbTempNo8.Text));
+        }
+
+        private void btSave9_Click(object sender, EventArgs e)
+        {
+            SaveSetting(9, Convert.ToInt32(lbTempNo9.Text));
+        }
+
+        private void btSave10_Click(object sender, EventArgs e)
+        {
+            SaveSetting(10, Convert.ToInt32(lbTempNo10.Text));
+        }
+
+        private void btSave11_Click(object sender, EventArgs e)
+        {
+            SaveSetting(11, Convert.ToInt32(lbTempNo11.Text));
+        }
+
+        private void btSave12_Click(object sender, EventArgs e)
+        {
+            SaveSetting(12, Convert.ToInt32(lbTempNo12.Text));
+        }
+
+        private void btSave13_Click(object sender, EventArgs e)
+        {
+            SaveSetting(13, Convert.ToInt32(lbTempNo13.Text));
+        }
+
+        private void btSave14_Click(object sender, EventArgs e)
+        {
+            SaveSetting(14, Convert.ToInt32(lbTempNo14.Text));
+        }
+
+        private void btSave15_Click(object sender, EventArgs e)
+        {
+            SaveSetting(15, Convert.ToInt32(lbTempNo15.Text));
         }
     }
 }

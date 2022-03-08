@@ -39,6 +39,9 @@ namespace Smart_Temperature_Monitoring
             this.txtArea = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.PnReFeed = new System.Windows.Forms.Panel();
+            this.panel60 = new System.Windows.Forms.Panel();
+            this.LbDate = new System.Windows.Forms.Label();
+            this.BtnCurrentTime = new System.Windows.Forms.Button();
             this.panel56 = new System.Windows.Forms.Panel();
             this.LbTimeBlink = new System.Windows.Forms.Label();
             this.panel59 = new System.Windows.Forms.Panel();
@@ -50,19 +53,15 @@ namespace Smart_Temperature_Monitoring
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.btnSettingAll = new System.Windows.Forms.Button();
-            this.LbDate = new System.Windows.Forms.Label();
-            this.panel60 = new System.Windows.Forms.Panel();
-            this.BtnCurrentTime = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             this.PnReFeed.SuspendLayout();
+            this.panel60.SuspendLayout();
             this.panel56.SuspendLayout();
             this.panel55.SuspendLayout();
-            this.panel60.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -175,6 +174,44 @@ namespace Smart_Temperature_Monitoring
             this.PnReFeed.Size = new System.Drawing.Size(423, 60);
             this.PnReFeed.TabIndex = 23;
             // 
+            // panel60
+            // 
+            this.panel60.Controls.Add(this.LbDate);
+            this.panel60.Controls.Add(this.BtnCurrentTime);
+            this.panel60.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel60.Location = new System.Drawing.Point(3, 0);
+            this.panel60.Name = "panel60";
+            this.panel60.Size = new System.Drawing.Size(168, 60);
+            this.panel60.TabIndex = 23;
+            // 
+            // LbDate
+            // 
+            this.LbDate.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.LbDate.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbDate.ForeColor = System.Drawing.Color.White;
+            this.LbDate.Location = new System.Drawing.Point(0, 40);
+            this.LbDate.Name = "LbDate";
+            this.LbDate.Size = new System.Drawing.Size(168, 20);
+            this.LbDate.TabIndex = 20;
+            this.LbDate.Text = "00 / 00 / 0000";
+            this.LbDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BtnCurrentTime
+            // 
+            this.BtnCurrentTime.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCurrentTime.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.BtnCurrentTime.FlatAppearance.BorderSize = 0;
+            this.BtnCurrentTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCurrentTime.Font = new System.Drawing.Font("Calibri", 24F);
+            this.BtnCurrentTime.ForeColor = System.Drawing.Color.White;
+            this.BtnCurrentTime.Location = new System.Drawing.Point(0, 0);
+            this.BtnCurrentTime.Name = "BtnCurrentTime";
+            this.BtnCurrentTime.Size = new System.Drawing.Size(168, 44);
+            this.BtnCurrentTime.TabIndex = 22;
+            this.BtnCurrentTime.Text = "00:00:00";
+            this.BtnCurrentTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnCurrentTime.UseVisualStyleBackColor = true;
+            // 
             // panel56
             // 
             this.panel56.Controls.Add(this.LbTimeBlink);
@@ -216,7 +253,6 @@ namespace Smart_Temperature_Monitoring
             // 
             // panel55
             // 
-            this.panel55.Controls.Add(this.btnSettingAll);
             this.panel55.Controls.Add(this.btn_minimize);
             this.panel55.Controls.Add(this.btn_exit);
             this.panel55.Dock = System.Windows.Forms.DockStyle.Right;
@@ -300,60 +336,6 @@ namespace Smart_Temperature_Monitoring
             this.panelChildForm.Size = new System.Drawing.Size(1920, 980);
             this.panelChildForm.TabIndex = 4;
             // 
-            // btnSettingAll
-            // 
-            this.btnSettingAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSettingAll.FlatAppearance.BorderSize = 0;
-            this.btnSettingAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettingAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSettingAll.ForeColor = System.Drawing.Color.White;
-            this.btnSettingAll.Image = ((System.Drawing.Image)(resources.GetObject("btnSettingAll.Image")));
-            this.btnSettingAll.Location = new System.Drawing.Point(11, 9);
-            this.btnSettingAll.Name = "btnSettingAll";
-            this.btnSettingAll.Size = new System.Drawing.Size(42, 42);
-            this.btnSettingAll.TabIndex = 25;
-            this.btnSettingAll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettingAll.UseVisualStyleBackColor = false;
-            this.btnSettingAll.Click += new System.EventHandler(this.btnSettingAll_Click);
-            // 
-            // LbDate
-            // 
-            this.LbDate.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.LbDate.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbDate.ForeColor = System.Drawing.Color.White;
-            this.LbDate.Location = new System.Drawing.Point(0, 40);
-            this.LbDate.Name = "LbDate";
-            this.LbDate.Size = new System.Drawing.Size(168, 20);
-            this.LbDate.TabIndex = 20;
-            this.LbDate.Text = "00 / 00 / 0000";
-            this.LbDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // panel60
-            // 
-            this.panel60.Controls.Add(this.LbDate);
-            this.panel60.Controls.Add(this.BtnCurrentTime);
-            this.panel60.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel60.Location = new System.Drawing.Point(3, 0);
-            this.panel60.Name = "panel60";
-            this.panel60.Size = new System.Drawing.Size(168, 60);
-            this.panel60.TabIndex = 23;
-            // 
-            // BtnCurrentTime
-            // 
-            this.BtnCurrentTime.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnCurrentTime.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.BtnCurrentTime.FlatAppearance.BorderSize = 0;
-            this.BtnCurrentTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCurrentTime.Font = new System.Drawing.Font("Calibri", 24F);
-            this.BtnCurrentTime.ForeColor = System.Drawing.Color.White;
-            this.BtnCurrentTime.Location = new System.Drawing.Point(0, 0);
-            this.BtnCurrentTime.Name = "BtnCurrentTime";
-            this.BtnCurrentTime.Size = new System.Drawing.Size(168, 44);
-            this.BtnCurrentTime.TabIndex = 22;
-            this.BtnCurrentTime.Text = "00:00:00";
-            this.BtnCurrentTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnCurrentTime.UseVisualStyleBackColor = true;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,9 +358,9 @@ namespace Smart_Temperature_Monitoring
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.PnReFeed.ResumeLayout(false);
+            this.panel60.ResumeLayout(false);
             this.panel56.ResumeLayout(false);
             this.panel55.ResumeLayout(false);
-            this.panel60.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -408,6 +390,5 @@ namespace Smart_Temperature_Monitoring
         private System.Windows.Forms.Panel panel60;
         internal System.Windows.Forms.Label LbDate;
         private System.Windows.Forms.Button BtnCurrentTime;
-        private System.Windows.Forms.Button btnSettingAll;
     }
 }
