@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sfrmOverview));
             this.gvData1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -351,6 +352,7 @@
             this.btReport1 = new System.Windows.Forms.Button();
             this.label102 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnTemp28 = new System.Windows.Forms.Panel();
             this.lbFoor28 = new System.Windows.Forms.Label();
             this.lbName28 = new System.Windows.Forms.Label();
@@ -463,7 +465,7 @@
             this.tool3_avg = new System.Windows.Forms.Label();
             this.lbTool3_warning = new System.Windows.Forms.Label();
             this.lbTool3_alarm = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gvData1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvEventAll)).BeginInit();
             this.panel1.SuspendLayout();
@@ -530,14 +532,14 @@
             this.gvData1.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData1.CausesValidation = false;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gvData1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData1.ColumnHeadersVisible = false;
             this.gvData1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -742,14 +744,14 @@
             this.gvEventAll.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvEventAll.CausesValidation = false;
             this.gvEventAll.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvEventAll.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvEventAll.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.gvEventAll.ColumnHeadersHeight = 30;
             this.gvEventAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gvEventAll.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -757,32 +759,32 @@
             this.Temp_Name,
             this.Tool,
             this.Status});
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvEventAll.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvEventAll.DefaultCellStyle = dataGridViewCellStyle11;
             this.gvEventAll.Enabled = false;
             this.gvEventAll.Location = new System.Drawing.Point(1, -1);
             this.gvEventAll.MultiSelect = false;
             this.gvEventAll.Name = "gvEventAll";
             this.gvEventAll.ReadOnly = true;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvEventAll.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvEventAll.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.gvEventAll.RowHeadersVisible = false;
             this.gvEventAll.RowHeadersWidth = 42;
             this.gvEventAll.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvEventAll.RowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvEventAll.RowsDefaultCellStyle = dataGridViewCellStyle13;
             this.gvEventAll.RowTemplate.Height = 30;
             this.gvEventAll.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.gvEventAll.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -834,6 +836,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1288, 175);
             this.panel1.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.panel1, "Alarm Status");
             // 
             // label36
             // 
@@ -882,14 +885,14 @@
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView3.CausesValidation = false;
             this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn49,
@@ -1089,14 +1092,14 @@
             this.gvData3.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData3.CausesValidation = false;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.gvData3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData3.ColumnHeadersVisible = false;
             this.gvData3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1298,14 +1301,14 @@
             this.gvData2.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData2.CausesValidation = false;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.gvData2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData2.ColumnHeadersVisible = false;
             this.gvData2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1523,6 +1526,7 @@
             // btData2
             // 
             this.btData2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(199)))), ((int)(((byte)(231)))));
+            this.btData2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btData2.FlatAppearance.BorderSize = 0;
             this.btData2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btData2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -1533,12 +1537,14 @@
             this.btData2.Name = "btData2";
             this.btData2.Size = new System.Drawing.Size(42, 42);
             this.btData2.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btData2, "Trend");
             this.btData2.UseVisualStyleBackColor = false;
             this.btData2.Click += new System.EventHandler(this.btData2_Click);
             // 
             // btEvent2
             // 
             this.btEvent2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btEvent2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btEvent2.FlatAppearance.BorderSize = 0;
             this.btEvent2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEvent2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -1549,12 +1555,14 @@
             this.btEvent2.Size = new System.Drawing.Size(42, 42);
             this.btEvent2.TabIndex = 8;
             this.btEvent2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btEvent2, "Events");
             this.btEvent2.UseVisualStyleBackColor = false;
             this.btEvent2.Click += new System.EventHandler(this.btEvent2_Click);
             // 
             // btSetting2
             // 
             this.btSetting2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btSetting2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSetting2.FlatAppearance.BorderSize = 0;
             this.btSetting2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSetting2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -1565,12 +1573,14 @@
             this.btSetting2.Size = new System.Drawing.Size(42, 42);
             this.btSetting2.TabIndex = 26;
             this.btSetting2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btSetting2, "Setting");
             this.btSetting2.UseVisualStyleBackColor = false;
             this.btSetting2.Click += new System.EventHandler(this.btSetting2_Click);
             // 
             // btReport2
             // 
             this.btReport2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
+            this.btReport2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btReport2.FlatAppearance.BorderSize = 0;
             this.btReport2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btReport2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -1581,6 +1591,7 @@
             this.btReport2.Size = new System.Drawing.Size(42, 42);
             this.btReport2.TabIndex = 9;
             this.btReport2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btReport2, "Report");
             this.btReport2.UseVisualStyleBackColor = false;
             this.btReport2.Click += new System.EventHandler(this.btReport2_Click);
             // 
@@ -1647,6 +1658,7 @@
             // lbName27
             // 
             this.lbName27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbName27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName27.Location = new System.Drawing.Point(0, 0);
             this.lbName27.Name = "lbName27";
@@ -1654,6 +1666,8 @@
             this.lbName27.TabIndex = 4;
             this.lbName27.Text = "Number27";
             this.lbName27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName27, "Setting");
+            this.lbName27.Click += new System.EventHandler(this.lbName27_Click);
             // 
             // lbAH27
             // 
@@ -1697,6 +1711,7 @@
             // 
             // lbTemp27
             // 
+            this.lbTemp27.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp27.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp27.Location = new System.Drawing.Point(3, 71);
             this.lbTemp27.Name = "lbTemp27";
@@ -1704,6 +1719,8 @@
             this.lbTemp27.TabIndex = 3;
             this.lbTemp27.Text = "999.9";
             this.lbTemp27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp27, "Trend");
+            this.lbTemp27.Click += new System.EventHandler(this.lbTemp27_Click);
             // 
             // pnTemp26
             // 
@@ -1735,6 +1752,7 @@
             // lbName26
             // 
             this.lbName26.BackColor = System.Drawing.Color.Red;
+            this.lbName26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName26.Location = new System.Drawing.Point(0, 0);
             this.lbName26.Name = "lbName26";
@@ -1742,6 +1760,8 @@
             this.lbName26.TabIndex = 4;
             this.lbName26.Text = "Number26";
             this.lbName26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName26, "Setting");
+            this.lbName26.Click += new System.EventHandler(this.lbName26_Click);
             // 
             // lbAH26
             // 
@@ -1785,6 +1805,7 @@
             // 
             // lbTemp26
             // 
+            this.lbTemp26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp26.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp26.Location = new System.Drawing.Point(3, 71);
             this.lbTemp26.Name = "lbTemp26";
@@ -1792,6 +1813,8 @@
             this.lbTemp26.TabIndex = 3;
             this.lbTemp26.Text = "999.9";
             this.lbTemp26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp26, "Trend");
+            this.lbTemp26.Click += new System.EventHandler(this.lbTemp26_Click);
             // 
             // pnTemp14
             // 
@@ -1823,6 +1846,7 @@
             // lbName14
             // 
             this.lbName14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbName14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName14.Location = new System.Drawing.Point(0, 0);
             this.lbName14.Name = "lbName14";
@@ -1830,6 +1854,8 @@
             this.lbName14.TabIndex = 4;
             this.lbName14.Text = "Number14";
             this.lbName14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName14, "Setting");
+            this.lbName14.Click += new System.EventHandler(this.lbName14_Click);
             // 
             // lbAH14
             // 
@@ -1873,6 +1899,7 @@
             // 
             // lbTemp14
             // 
+            this.lbTemp14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp14.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp14.Location = new System.Drawing.Point(3, 71);
             this.lbTemp14.Name = "lbTemp14";
@@ -1880,6 +1907,8 @@
             this.lbTemp14.TabIndex = 3;
             this.lbTemp14.Text = "999.9";
             this.lbTemp14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp14, "Trend");
+            this.lbTemp14.Click += new System.EventHandler(this.lbTemp14_Click);
             // 
             // pnTemp13
             // 
@@ -1911,6 +1940,7 @@
             // lbName13
             // 
             this.lbName13.BackColor = System.Drawing.Color.Red;
+            this.lbName13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName13.Location = new System.Drawing.Point(0, 0);
             this.lbName13.Name = "lbName13";
@@ -1918,6 +1948,8 @@
             this.lbName13.TabIndex = 4;
             this.lbName13.Text = "Number13";
             this.lbName13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName13, "Setting");
+            this.lbName13.Click += new System.EventHandler(this.lbName13_Click);
             // 
             // lbAH13
             // 
@@ -1961,6 +1993,7 @@
             // 
             // lbTemp13
             // 
+            this.lbTemp13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp13.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp13.Location = new System.Drawing.Point(3, 71);
             this.lbTemp13.Name = "lbTemp13";
@@ -1968,6 +2001,8 @@
             this.lbTemp13.TabIndex = 3;
             this.lbTemp13.Text = "999.9";
             this.lbTemp13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp13, "Trend");
+            this.lbTemp13.Click += new System.EventHandler(this.lbTemp13_Click);
             // 
             // pnTemp12
             // 
@@ -1999,6 +2034,7 @@
             // lbName12
             // 
             this.lbName12.BackColor = System.Drawing.Color.Gray;
+            this.lbName12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName12.Location = new System.Drawing.Point(0, 0);
             this.lbName12.Name = "lbName12";
@@ -2006,6 +2042,8 @@
             this.lbName12.TabIndex = 4;
             this.lbName12.Text = "Number12";
             this.lbName12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName12, "Setting");
+            this.lbName12.Click += new System.EventHandler(this.lbName12_Click);
             // 
             // lbAH12
             // 
@@ -2049,6 +2087,7 @@
             // 
             // lbTemp12
             // 
+            this.lbTemp12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp12.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp12.Location = new System.Drawing.Point(3, 71);
             this.lbTemp12.Name = "lbTemp12";
@@ -2056,6 +2095,8 @@
             this.lbTemp12.TabIndex = 3;
             this.lbTemp12.Text = "999.9";
             this.lbTemp12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp12, "Trend");
+            this.lbTemp12.Click += new System.EventHandler(this.lbTemp12_Click);
             // 
             // pnTemp4
             // 
@@ -2087,6 +2128,7 @@
             // lbName4
             // 
             this.lbName4.BackColor = System.Drawing.Color.Lime;
+            this.lbName4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName4.Location = new System.Drawing.Point(0, 0);
             this.lbName4.Name = "lbName4";
@@ -2094,6 +2136,8 @@
             this.lbName4.TabIndex = 4;
             this.lbName4.Text = "Number04";
             this.lbName4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName4, "Setting");
+            this.lbName4.Click += new System.EventHandler(this.lbName4_Click);
             // 
             // lbAH4
             // 
@@ -2137,6 +2181,7 @@
             // 
             // lbTemp4
             // 
+            this.lbTemp4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp4.Location = new System.Drawing.Point(3, 71);
             this.lbTemp4.Name = "lbTemp4";
@@ -2144,6 +2189,8 @@
             this.lbTemp4.TabIndex = 3;
             this.lbTemp4.Text = "999.9";
             this.lbTemp4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp4, "Trend");
+            this.lbTemp4.Click += new System.EventHandler(this.lbTemp4_Click);
             // 
             // pnTemp8
             // 
@@ -2175,6 +2222,7 @@
             // lbName8
             // 
             this.lbName8.BackColor = System.Drawing.Color.Gray;
+            this.lbName8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName8.Location = new System.Drawing.Point(0, 0);
             this.lbName8.Name = "lbName8";
@@ -2182,6 +2230,8 @@
             this.lbName8.TabIndex = 4;
             this.lbName8.Text = "Number08";
             this.lbName8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName8, "Setting");
+            this.lbName8.Click += new System.EventHandler(this.lbName8_Click);
             // 
             // lbAH8
             // 
@@ -2225,6 +2275,7 @@
             // 
             // lbTemp8
             // 
+            this.lbTemp8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp8.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp8.Location = new System.Drawing.Point(3, 71);
             this.lbTemp8.Name = "lbTemp8";
@@ -2232,6 +2283,8 @@
             this.lbTemp8.TabIndex = 3;
             this.lbTemp8.Text = "999.9";
             this.lbTemp8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp8, "Trend");
+            this.lbTemp8.Click += new System.EventHandler(this.lbTemp8_Click);
             // 
             // pnTemp11
             // 
@@ -2263,6 +2316,7 @@
             // lbName11
             // 
             this.lbName11.BackColor = System.Drawing.Color.Gray;
+            this.lbName11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName11.Location = new System.Drawing.Point(0, 0);
             this.lbName11.Name = "lbName11";
@@ -2270,6 +2324,8 @@
             this.lbName11.TabIndex = 4;
             this.lbName11.Text = "Number11";
             this.lbName11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName11, "Setting");
+            this.lbName11.Click += new System.EventHandler(this.lbName11_Click);
             // 
             // lbAH11
             // 
@@ -2313,6 +2369,7 @@
             // 
             // lbTemp11
             // 
+            this.lbTemp11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp11.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp11.Location = new System.Drawing.Point(3, 71);
             this.lbTemp11.Name = "lbTemp11";
@@ -2320,6 +2377,8 @@
             this.lbTemp11.TabIndex = 3;
             this.lbTemp11.Text = "999.9";
             this.lbTemp11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp11, "Trend");
+            this.lbTemp11.Click += new System.EventHandler(this.lbTemp11_Click);
             // 
             // pnTemp5
             // 
@@ -2351,6 +2410,7 @@
             // lbName5
             // 
             this.lbName5.BackColor = System.Drawing.Color.Gray;
+            this.lbName5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName5.Location = new System.Drawing.Point(0, 0);
             this.lbName5.Name = "lbName5";
@@ -2358,6 +2418,8 @@
             this.lbName5.TabIndex = 4;
             this.lbName5.Text = "Number05";
             this.lbName5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName5, "Setting");
+            this.lbName5.Click += new System.EventHandler(this.lbName5_Click);
             // 
             // lbAH5
             // 
@@ -2401,6 +2463,7 @@
             // 
             // lbTemp5
             // 
+            this.lbTemp5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp5.Location = new System.Drawing.Point(3, 71);
             this.lbTemp5.Name = "lbTemp5";
@@ -2408,6 +2471,8 @@
             this.lbTemp5.TabIndex = 3;
             this.lbTemp5.Text = "999.9";
             this.lbTemp5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp5, "Trend");
+            this.lbTemp5.Click += new System.EventHandler(this.lbTemp5_Click);
             // 
             // pnTemp7
             // 
@@ -2439,6 +2504,7 @@
             // lbName7
             // 
             this.lbName7.BackColor = System.Drawing.Color.Gray;
+            this.lbName7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName7.Location = new System.Drawing.Point(0, 0);
             this.lbName7.Name = "lbName7";
@@ -2446,6 +2512,8 @@
             this.lbName7.TabIndex = 4;
             this.lbName7.Text = "Number07";
             this.lbName7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName7, "Setting");
+            this.lbName7.Click += new System.EventHandler(this.lbName7_Click);
             // 
             // lbAH7
             // 
@@ -2489,6 +2557,7 @@
             // 
             // lbTemp7
             // 
+            this.lbTemp7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp7.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp7.Location = new System.Drawing.Point(3, 71);
             this.lbTemp7.Name = "lbTemp7";
@@ -2496,6 +2565,8 @@
             this.lbTemp7.TabIndex = 3;
             this.lbTemp7.Text = "999.9";
             this.lbTemp7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp7, "Trend");
+            this.lbTemp7.Click += new System.EventHandler(this.lbTemp7_Click);
             // 
             // pnTemp9
             // 
@@ -2527,6 +2598,7 @@
             // lbName9
             // 
             this.lbName9.BackColor = System.Drawing.Color.Gray;
+            this.lbName9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName9.Location = new System.Drawing.Point(0, 0);
             this.lbName9.Name = "lbName9";
@@ -2534,6 +2606,8 @@
             this.lbName9.TabIndex = 4;
             this.lbName9.Text = "Number09";
             this.lbName9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName9, "Setting");
+            this.lbName9.Click += new System.EventHandler(this.lbName9_Click);
             // 
             // lbAH9
             // 
@@ -2577,6 +2651,7 @@
             // 
             // lbTemp9
             // 
+            this.lbTemp9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp9.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp9.Location = new System.Drawing.Point(3, 71);
             this.lbTemp9.Name = "lbTemp9";
@@ -2584,6 +2659,8 @@
             this.lbTemp9.TabIndex = 3;
             this.lbTemp9.Text = "999.9";
             this.lbTemp9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp9, "Trend");
+            this.lbTemp9.Click += new System.EventHandler(this.lbTemp9_Click);
             // 
             // pnTemp10
             // 
@@ -2615,6 +2692,7 @@
             // lbName10
             // 
             this.lbName10.BackColor = System.Drawing.Color.Gray;
+            this.lbName10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName10.Location = new System.Drawing.Point(0, 0);
             this.lbName10.Name = "lbName10";
@@ -2622,6 +2700,8 @@
             this.lbName10.TabIndex = 4;
             this.lbName10.Text = "Number10";
             this.lbName10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName10, "Setting");
+            this.lbName10.Click += new System.EventHandler(this.lbName10_Click);
             // 
             // lbAH10
             // 
@@ -2665,6 +2745,7 @@
             // 
             // lbTemp10
             // 
+            this.lbTemp10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp10.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp10.Location = new System.Drawing.Point(3, 71);
             this.lbTemp10.Name = "lbTemp10";
@@ -2672,6 +2753,8 @@
             this.lbTemp10.TabIndex = 3;
             this.lbTemp10.Text = "999.9";
             this.lbTemp10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp10, "Trend");
+            this.lbTemp10.Click += new System.EventHandler(this.lbTemp10_Click);
             // 
             // pnTemp6
             // 
@@ -2703,6 +2786,7 @@
             // lbName6
             // 
             this.lbName6.BackColor = System.Drawing.Color.Gray;
+            this.lbName6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName6.Location = new System.Drawing.Point(0, 0);
             this.lbName6.Name = "lbName6";
@@ -2710,6 +2794,8 @@
             this.lbName6.TabIndex = 4;
             this.lbName6.Text = "Number06";
             this.lbName6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName6, "Setting");
+            this.lbName6.Click += new System.EventHandler(this.lbName6_Click);
             // 
             // lbAH6
             // 
@@ -2753,6 +2839,7 @@
             // 
             // lbTemp6
             // 
+            this.lbTemp6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp6.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp6.Location = new System.Drawing.Point(3, 71);
             this.lbTemp6.Name = "lbTemp6";
@@ -2760,6 +2847,8 @@
             this.lbTemp6.TabIndex = 3;
             this.lbTemp6.Text = "999.9";
             this.lbTemp6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp6, "Trend");
+            this.lbTemp6.Click += new System.EventHandler(this.lbTemp6_Click);
             // 
             // panel22
             // 
@@ -2837,6 +2926,7 @@
             // lbName15
             // 
             this.lbName15.BackColor = System.Drawing.Color.Lime;
+            this.lbName15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName15.Location = new System.Drawing.Point(0, 0);
             this.lbName15.Name = "lbName15";
@@ -2844,6 +2934,8 @@
             this.lbName15.TabIndex = 4;
             this.lbName15.Text = "Number15";
             this.lbName15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName15, "Setting");
+            this.lbName15.Click += new System.EventHandler(this.lbName15_Click);
             // 
             // lbAH15
             // 
@@ -2854,7 +2946,7 @@
             this.lbAH15.TabIndex = 4;
             this.lbAH15.Text = "999.9";
             this.lbAH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH15.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
+            
             // 
             // lbWH15
             // 
@@ -2865,7 +2957,7 @@
             this.lbWH15.TabIndex = 4;
             this.lbWH15.Text = "999.9";
             this.lbWH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH15.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
+            
             // 
             // lbAL15
             // 
@@ -2876,7 +2968,7 @@
             this.lbAL15.TabIndex = 4;
             this.lbAL15.Text = "999.9";
             this.lbAL15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL15.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
+            
             // 
             // lbWL15
             // 
@@ -2887,10 +2979,11 @@
             this.lbWL15.TabIndex = 4;
             this.lbWL15.Text = "999.9";
             this.lbWL15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL15.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
+            
             // 
             // lbTemp15
             // 
+            this.lbTemp15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp15.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp15.Location = new System.Drawing.Point(3, 71);
             this.lbTemp15.Name = "lbTemp15";
@@ -2898,8 +2991,8 @@
             this.lbTemp15.TabIndex = 3;
             this.lbTemp15.Text = "999.9";
             this.lbTemp15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp15.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp15.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp15, "Trend");
+            this.lbTemp15.Click += new System.EventHandler(this.lbTemp15_Click);
             // 
             // pnTemp24
             // 
@@ -2931,6 +3024,7 @@
             // lbName24
             // 
             this.lbName24.BackColor = System.Drawing.Color.Gray;
+            this.lbName24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName24.Location = new System.Drawing.Point(0, 0);
             this.lbName24.Name = "lbName24";
@@ -2938,6 +3032,8 @@
             this.lbName24.TabIndex = 4;
             this.lbName24.Text = "Number24";
             this.lbName24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName24, "Setting");
+            this.lbName24.Click += new System.EventHandler(this.lbName24_Click);
             // 
             // lbAH24
             // 
@@ -2948,7 +3044,7 @@
             this.lbAH24.TabIndex = 4;
             this.lbAH24.Text = "999.9";
             this.lbAH24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH24.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
+            
             // 
             // lbWH24
             // 
@@ -2959,7 +3055,7 @@
             this.lbWH24.TabIndex = 4;
             this.lbWH24.Text = "999.9";
             this.lbWH24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH24.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
+            
             // 
             // lbAL24
             // 
@@ -2970,7 +3066,6 @@
             this.lbAL24.TabIndex = 4;
             this.lbAL24.Text = "999.9";
             this.lbAL24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL24.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL24
             // 
@@ -2981,10 +3076,10 @@
             this.lbWL24.TabIndex = 4;
             this.lbWL24.Text = "999.9";
             this.lbWL24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL24.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp24
             // 
+            this.lbTemp24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp24.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp24.Location = new System.Drawing.Point(3, 71);
             this.lbTemp24.Name = "lbTemp24";
@@ -2992,8 +3087,8 @@
             this.lbTemp24.TabIndex = 3;
             this.lbTemp24.Text = "999.9";
             this.lbTemp24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp24.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp24.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp24, "Trend");
+            this.lbTemp24.Click += new System.EventHandler(this.lbTemp24_Click);
             // 
             // pnTemp23
             // 
@@ -3025,6 +3120,7 @@
             // lbName23
             // 
             this.lbName23.BackColor = System.Drawing.Color.Gray;
+            this.lbName23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName23.Location = new System.Drawing.Point(0, 0);
             this.lbName23.Name = "lbName23";
@@ -3032,6 +3128,8 @@
             this.lbName23.TabIndex = 4;
             this.lbName23.Text = "Number23";
             this.lbName23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName23, "Setting");
+            this.lbName23.Click += new System.EventHandler(this.lbName23_Click);
             // 
             // lbAH23
             // 
@@ -3042,7 +3140,6 @@
             this.lbAH23.TabIndex = 4;
             this.lbAH23.Text = "999.9";
             this.lbAH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH23.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH23
             // 
@@ -3053,7 +3150,6 @@
             this.lbWH23.TabIndex = 4;
             this.lbWH23.Text = "999.9";
             this.lbWH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH23.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL23
             // 
@@ -3064,7 +3160,6 @@
             this.lbAL23.TabIndex = 4;
             this.lbAL23.Text = "999.9";
             this.lbAL23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL23.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL23
             // 
@@ -3075,10 +3170,10 @@
             this.lbWL23.TabIndex = 4;
             this.lbWL23.Text = "999.9";
             this.lbWL23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL23.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp23
             // 
+            this.lbTemp23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp23.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp23.Location = new System.Drawing.Point(3, 71);
             this.lbTemp23.Name = "lbTemp23";
@@ -3086,8 +3181,8 @@
             this.lbTemp23.TabIndex = 3;
             this.lbTemp23.Text = "999.9";
             this.lbTemp23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp23.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp23.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp23, "Trend");
+            this.lbTemp23.Click += new System.EventHandler(this.lbTemp23_Click);
             // 
             // pnTemp19
             // 
@@ -3119,6 +3214,7 @@
             // lbName19
             // 
             this.lbName19.BackColor = System.Drawing.Color.Gray;
+            this.lbName19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName19.Location = new System.Drawing.Point(0, 0);
             this.lbName19.Name = "lbName19";
@@ -3126,6 +3222,8 @@
             this.lbName19.TabIndex = 4;
             this.lbName19.Text = "Number19";
             this.lbName19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName19, "Setting");
+            this.lbName19.Click += new System.EventHandler(this.lbName19_Click);
             // 
             // lbAH19
             // 
@@ -3136,7 +3234,6 @@
             this.lbAH19.TabIndex = 4;
             this.lbAH19.Text = "999.9";
             this.lbAH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH19.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH19
             // 
@@ -3147,7 +3244,6 @@
             this.lbWH19.TabIndex = 4;
             this.lbWH19.Text = "999.9";
             this.lbWH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH19.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL19
             // 
@@ -3158,8 +3254,6 @@
             this.lbAL19.TabIndex = 4;
             this.lbAL19.Text = "999.9";
             this.lbAL19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL19.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
-            // 
             // lbWL19
             // 
             this.lbWL19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3169,10 +3263,10 @@
             this.lbWL19.TabIndex = 4;
             this.lbWL19.Text = "999.9";
             this.lbWL19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL19.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp19
             // 
+            this.lbTemp19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp19.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp19.Location = new System.Drawing.Point(3, 71);
             this.lbTemp19.Name = "lbTemp19";
@@ -3180,8 +3274,8 @@
             this.lbTemp19.TabIndex = 3;
             this.lbTemp19.Text = "999.9";
             this.lbTemp19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp19.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp19.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp19, "Trend");
+            this.lbTemp19.Click += new System.EventHandler(this.lbTemp19_Click);
             // 
             // pnTemp22
             // 
@@ -3213,6 +3307,7 @@
             // lbName22
             // 
             this.lbName22.BackColor = System.Drawing.Color.Gray;
+            this.lbName22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName22.Location = new System.Drawing.Point(0, 0);
             this.lbName22.Name = "lbName22";
@@ -3220,6 +3315,8 @@
             this.lbName22.TabIndex = 4;
             this.lbName22.Text = "Number22";
             this.lbName22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName22, "Setting");
+            this.lbName22.Click += new System.EventHandler(this.lbName22_Click);
             // 
             // lbAH22
             // 
@@ -3230,7 +3327,6 @@
             this.lbAH22.TabIndex = 4;
             this.lbAH22.Text = "999.9";
             this.lbAH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH22.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH22
             // 
@@ -3241,7 +3337,6 @@
             this.lbWH22.TabIndex = 4;
             this.lbWH22.Text = "999.9";
             this.lbWH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH22.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL22
             // 
@@ -3252,7 +3347,6 @@
             this.lbAL22.TabIndex = 4;
             this.lbAL22.Text = "999.9";
             this.lbAL22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL22.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL22
             // 
@@ -3263,10 +3357,10 @@
             this.lbWL22.TabIndex = 4;
             this.lbWL22.Text = "999.9";
             this.lbWL22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL22.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp22
             // 
+            this.lbTemp22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp22.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp22.Location = new System.Drawing.Point(3, 71);
             this.lbTemp22.Name = "lbTemp22";
@@ -3274,8 +3368,8 @@
             this.lbTemp22.TabIndex = 3;
             this.lbTemp22.Text = "999.9";
             this.lbTemp22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp22.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp22.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp22, "Trend");
+            this.lbTemp22.Click += new System.EventHandler(this.lbTemp22_Click);
             // 
             // pnTemp18
             // 
@@ -3307,6 +3401,7 @@
             // lbName18
             // 
             this.lbName18.BackColor = System.Drawing.Color.Gray;
+            this.lbName18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName18.Location = new System.Drawing.Point(0, 0);
             this.lbName18.Name = "lbName18";
@@ -3314,6 +3409,8 @@
             this.lbName18.TabIndex = 4;
             this.lbName18.Text = "Number18";
             this.lbName18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName18, "Setting");
+            this.lbName18.Click += new System.EventHandler(this.lbName18_Click);
             // 
             // lbAH18
             // 
@@ -3324,7 +3421,6 @@
             this.lbAH18.TabIndex = 4;
             this.lbAH18.Text = "999.9";
             this.lbAH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH18.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH18
             // 
@@ -3335,7 +3431,6 @@
             this.lbWH18.TabIndex = 4;
             this.lbWH18.Text = "999.9";
             this.lbWH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH18.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL18
             // 
@@ -3346,7 +3441,6 @@
             this.lbAL18.TabIndex = 4;
             this.lbAL18.Text = "999.9";
             this.lbAL18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL18.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL18
             // 
@@ -3357,10 +3451,10 @@
             this.lbWL18.TabIndex = 4;
             this.lbWL18.Text = "999.9";
             this.lbWL18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL18.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp18
             // 
+            this.lbTemp18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp18.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp18.Location = new System.Drawing.Point(3, 71);
             this.lbTemp18.Name = "lbTemp18";
@@ -3368,8 +3462,8 @@
             this.lbTemp18.TabIndex = 3;
             this.lbTemp18.Text = "999.9";
             this.lbTemp18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp18.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp18.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp18, "Trend");
+            this.lbTemp18.Click += new System.EventHandler(this.lbTemp18_Click);
             // 
             // pnTemp21
             // 
@@ -3401,6 +3495,7 @@
             // lbName21
             // 
             this.lbName21.BackColor = System.Drawing.Color.Gray;
+            this.lbName21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName21.Location = new System.Drawing.Point(0, 0);
             this.lbName21.Name = "lbName21";
@@ -3408,6 +3503,8 @@
             this.lbName21.TabIndex = 4;
             this.lbName21.Text = "Number21";
             this.lbName21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName21, "Setting");
+            this.lbName21.Click += new System.EventHandler(this.lbName21_Click);
             // 
             // lbAH21
             // 
@@ -3418,7 +3515,6 @@
             this.lbAH21.TabIndex = 4;
             this.lbAH21.Text = "999.9";
             this.lbAH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH21.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH21
             // 
@@ -3429,7 +3525,6 @@
             this.lbWH21.TabIndex = 4;
             this.lbWH21.Text = "999.9";
             this.lbWH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH21.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL21
             // 
@@ -3440,7 +3535,6 @@
             this.lbAL21.TabIndex = 4;
             this.lbAL21.Text = "999.9";
             this.lbAL21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL21.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL21
             // 
@@ -3451,10 +3545,10 @@
             this.lbWL21.TabIndex = 4;
             this.lbWL21.Text = "999.9";
             this.lbWL21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL21.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp21
             // 
+            this.lbTemp21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp21.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp21.Location = new System.Drawing.Point(3, 71);
             this.lbTemp21.Name = "lbTemp21";
@@ -3462,8 +3556,8 @@
             this.lbTemp21.TabIndex = 3;
             this.lbTemp21.Text = "999.9";
             this.lbTemp21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp21.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp21.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp21, "Trend");
+            this.lbTemp21.Click += new System.EventHandler(this.lbTemp21_Click);
             // 
             // pnTemp17
             // 
@@ -3495,6 +3589,7 @@
             // lbName17
             // 
             this.lbName17.BackColor = System.Drawing.Color.Gray;
+            this.lbName17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName17.Location = new System.Drawing.Point(0, 0);
             this.lbName17.Name = "lbName17";
@@ -3502,6 +3597,8 @@
             this.lbName17.TabIndex = 4;
             this.lbName17.Text = "Number17";
             this.lbName17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName17, "Setting");
+            this.lbName17.Click += new System.EventHandler(this.lbName17_Click);
             // 
             // lbAH17
             // 
@@ -3512,7 +3609,6 @@
             this.lbAH17.TabIndex = 4;
             this.lbAH17.Text = "999.9";
             this.lbAH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH17.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH17
             // 
@@ -3523,7 +3619,6 @@
             this.lbWH17.TabIndex = 4;
             this.lbWH17.Text = "999.9";
             this.lbWH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH17.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL17
             // 
@@ -3534,7 +3629,6 @@
             this.lbAL17.TabIndex = 4;
             this.lbAL17.Text = "999.9";
             this.lbAL17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL17.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL17
             // 
@@ -3545,10 +3639,10 @@
             this.lbWL17.TabIndex = 4;
             this.lbWL17.Text = "999.9";
             this.lbWL17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL17.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp17
             // 
+            this.lbTemp17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp17.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp17.Location = new System.Drawing.Point(3, 71);
             this.lbTemp17.Name = "lbTemp17";
@@ -3556,8 +3650,8 @@
             this.lbTemp17.TabIndex = 3;
             this.lbTemp17.Text = "999.9";
             this.lbTemp17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp17.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp17.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp17, "Trend");
+            this.lbTemp17.Click += new System.EventHandler(this.lbTemp17_Click);
             // 
             // pnTemp20
             // 
@@ -3589,6 +3683,7 @@
             // lbName20
             // 
             this.lbName20.BackColor = System.Drawing.Color.Gray;
+            this.lbName20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName20.Location = new System.Drawing.Point(0, 0);
             this.lbName20.Name = "lbName20";
@@ -3596,6 +3691,8 @@
             this.lbName20.TabIndex = 4;
             this.lbName20.Text = "Number20";
             this.lbName20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName20, "Setting");
+            this.lbName20.Click += new System.EventHandler(this.lbName20_Click);
             // 
             // lbAH20
             // 
@@ -3606,7 +3703,6 @@
             this.lbAH20.TabIndex = 4;
             this.lbAH20.Text = "999.9";
             this.lbAH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH20.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH20
             // 
@@ -3617,7 +3713,6 @@
             this.lbWH20.TabIndex = 4;
             this.lbWH20.Text = "999.9";
             this.lbWH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH20.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL20
             // 
@@ -3628,7 +3723,6 @@
             this.lbAL20.TabIndex = 4;
             this.lbAL20.Text = "999.9";
             this.lbAL20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL20.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL20
             // 
@@ -3639,10 +3733,10 @@
             this.lbWL20.TabIndex = 4;
             this.lbWL20.Text = "999.9";
             this.lbWL20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL20.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp20
             // 
+            this.lbTemp20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp20.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp20.Location = new System.Drawing.Point(3, 71);
             this.lbTemp20.Name = "lbTemp20";
@@ -3650,8 +3744,8 @@
             this.lbTemp20.TabIndex = 3;
             this.lbTemp20.Text = "999.9";
             this.lbTemp20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp20.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp20.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp20, "Trend");
+            this.lbTemp20.Click += new System.EventHandler(this.lbTemp20_Click);
             // 
             // pnTemp16
             // 
@@ -3683,6 +3777,7 @@
             // lbName16
             // 
             this.lbName16.BackColor = System.Drawing.Color.Gray;
+            this.lbName16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName16.Location = new System.Drawing.Point(0, 0);
             this.lbName16.Name = "lbName16";
@@ -3690,6 +3785,8 @@
             this.lbName16.TabIndex = 4;
             this.lbName16.Text = "Number16";
             this.lbName16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName16, "Setting");
+            this.lbName16.Click += new System.EventHandler(this.lbName16_Click);
             // 
             // lbAH16
             // 
@@ -3700,7 +3797,6 @@
             this.lbAH16.TabIndex = 4;
             this.lbAH16.Text = "999.9";
             this.lbAH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH16.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH16
             // 
@@ -3711,8 +3807,6 @@
             this.lbWH16.TabIndex = 4;
             this.lbWH16.Text = "999.9";
             this.lbWH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH16.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
-            // 
             // lbAL16
             // 
             this.lbAL16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3722,7 +3816,6 @@
             this.lbAL16.TabIndex = 4;
             this.lbAL16.Text = "999.9";
             this.lbAL16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL16.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL16
             // 
@@ -3733,10 +3826,10 @@
             this.lbWL16.TabIndex = 4;
             this.lbWL16.Text = "999.9";
             this.lbWL16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL16.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp16
             // 
+            this.lbTemp16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp16.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp16.Location = new System.Drawing.Point(3, 71);
             this.lbTemp16.Name = "lbTemp16";
@@ -3744,16 +3837,18 @@
             this.lbTemp16.TabIndex = 3;
             this.lbTemp16.Text = "999.9";
             this.lbTemp16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp16.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp16.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp16, "Trend");
+            this.lbTemp16.Click += new System.EventHandler(this.lbTemp16_Click);
             // 
             // panel14
             // 
             this.panel14.Controls.Add(this.gvEventAll);
+            this.panel14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel14.Location = new System.Drawing.Point(7, 800);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(610, 175);
             this.panel14.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.panel14, "Show all Events");
             this.panel14.Click += new System.EventHandler(this.panel14_Click);
             // 
             // panel11
@@ -3782,6 +3877,7 @@
             // btData1
             // 
             this.btData1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(199)))), ((int)(((byte)(231)))));
+            this.btData1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btData1.FlatAppearance.BorderSize = 0;
             this.btData1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btData1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -3792,12 +3888,14 @@
             this.btData1.Name = "btData1";
             this.btData1.Size = new System.Drawing.Size(42, 42);
             this.btData1.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btData1, "Trend");
             this.btData1.UseVisualStyleBackColor = false;
             this.btData1.Click += new System.EventHandler(this.btData1_Click);
             // 
             // btEvent1
             // 
             this.btEvent1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btEvent1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btEvent1.FlatAppearance.BorderSize = 0;
             this.btEvent1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEvent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -3808,12 +3906,14 @@
             this.btEvent1.Size = new System.Drawing.Size(42, 42);
             this.btEvent1.TabIndex = 8;
             this.btEvent1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btEvent1, "Events");
             this.btEvent1.UseVisualStyleBackColor = false;
             this.btEvent1.Click += new System.EventHandler(this.btEvent1_Click);
             // 
             // btSetting1
             // 
             this.btSetting1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btSetting1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSetting1.FlatAppearance.BorderSize = 0;
             this.btSetting1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSetting1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -3824,12 +3924,14 @@
             this.btSetting1.Size = new System.Drawing.Size(42, 42);
             this.btSetting1.TabIndex = 26;
             this.btSetting1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btSetting1, "Setting");
             this.btSetting1.UseVisualStyleBackColor = false;
             this.btSetting1.Click += new System.EventHandler(this.btSetting1_Click);
             // 
             // btReport1
             // 
             this.btReport1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
+            this.btReport1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btReport1.FlatAppearance.BorderSize = 0;
             this.btReport1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btReport1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -3840,6 +3942,7 @@
             this.btReport1.Size = new System.Drawing.Size(42, 42);
             this.btReport1.TabIndex = 9;
             this.btReport1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btReport1, "Report");
             this.btReport1.UseVisualStyleBackColor = false;
             this.btReport1.Click += new System.EventHandler(this.btReport1_Click);
             // 
@@ -3875,6 +3978,17 @@
             this.panel18.Size = new System.Drawing.Size(1890, 202);
             this.panel18.TabIndex = 4;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(1823, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(62, 27);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Temp";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pnTemp28
             // 
             this.pnTemp28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -3905,6 +4019,7 @@
             // lbName28
             // 
             this.lbName28.BackColor = System.Drawing.Color.Lime;
+            this.lbName28.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName28.Location = new System.Drawing.Point(0, 0);
             this.lbName28.Name = "lbName28";
@@ -3912,6 +4027,8 @@
             this.lbName28.TabIndex = 4;
             this.lbName28.Text = "Number28";
             this.lbName28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName28, "Setting");
+            this.lbName28.Click += new System.EventHandler(this.lbName28_Click);
             // 
             // lbAH28
             // 
@@ -3955,6 +4072,7 @@
             // 
             // lbTemp28
             // 
+            this.lbTemp28.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp28.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp28.Location = new System.Drawing.Point(3, 71);
             this.lbTemp28.Name = "lbTemp28";
@@ -3962,6 +4080,8 @@
             this.lbTemp28.TabIndex = 3;
             this.lbTemp28.Text = "999.9";
             this.lbTemp28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp28, "Trend");
+            this.lbTemp28.Click += new System.EventHandler(this.lbTemp28_Click);
             // 
             // pnTemp32
             // 
@@ -3993,6 +4113,7 @@
             // lbName32
             // 
             this.lbName32.BackColor = System.Drawing.Color.Gray;
+            this.lbName32.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName32.Location = new System.Drawing.Point(0, 0);
             this.lbName32.Name = "lbName32";
@@ -4000,6 +4121,8 @@
             this.lbName32.TabIndex = 4;
             this.lbName32.Text = "Number32";
             this.lbName32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName32, "Setting");
+            this.lbName32.Click += new System.EventHandler(this.lbName32_Click);
             // 
             // lbAH32
             // 
@@ -4043,6 +4166,7 @@
             // 
             // lbTemp32
             // 
+            this.lbTemp32.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp32.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp32.Location = new System.Drawing.Point(3, 71);
             this.lbTemp32.Name = "lbTemp32";
@@ -4050,6 +4174,8 @@
             this.lbTemp32.TabIndex = 3;
             this.lbTemp32.Text = "999.9";
             this.lbTemp32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp32, "Trend");
+            this.lbTemp32.Click += new System.EventHandler(this.lbTemp32_Click);
             // 
             // pnTemp35
             // 
@@ -4081,6 +4207,7 @@
             // lbName35
             // 
             this.lbName35.BackColor = System.Drawing.Color.Gray;
+            this.lbName35.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName35.Location = new System.Drawing.Point(0, 0);
             this.lbName35.Name = "lbName35";
@@ -4088,6 +4215,8 @@
             this.lbName35.TabIndex = 4;
             this.lbName35.Text = "Number35";
             this.lbName35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName35, "Setting");
+            this.lbName35.Click += new System.EventHandler(this.lbName35_Click);
             // 
             // lbAH35
             // 
@@ -4131,6 +4260,7 @@
             // 
             // lbTemp35
             // 
+            this.lbTemp35.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp35.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp35.Location = new System.Drawing.Point(3, 71);
             this.lbTemp35.Name = "lbTemp35";
@@ -4138,6 +4268,8 @@
             this.lbTemp35.TabIndex = 3;
             this.lbTemp35.Text = "999.9";
             this.lbTemp35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp35, "Trend");
+            this.lbTemp35.Click += new System.EventHandler(this.lbTemp35_Click);
             // 
             // pnTemp31
             // 
@@ -4169,6 +4301,7 @@
             // lbName31
             // 
             this.lbName31.BackColor = System.Drawing.Color.Gray;
+            this.lbName31.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName31.Location = new System.Drawing.Point(0, 0);
             this.lbName31.Name = "lbName31";
@@ -4176,6 +4309,8 @@
             this.lbName31.TabIndex = 4;
             this.lbName31.Text = "Number31";
             this.lbName31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName31, "Setting");
+            this.lbName31.Click += new System.EventHandler(this.lbName31_Click);
             // 
             // lbAH31
             // 
@@ -4219,6 +4354,7 @@
             // 
             // lbTemp31
             // 
+            this.lbTemp31.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp31.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp31.Location = new System.Drawing.Point(3, 71);
             this.lbTemp31.Name = "lbTemp31";
@@ -4226,6 +4362,8 @@
             this.lbTemp31.TabIndex = 3;
             this.lbTemp31.Text = "999.9";
             this.lbTemp31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp31, "Trend");
+            this.lbTemp31.Click += new System.EventHandler(this.lbTemp31_Click);
             // 
             // pnTemp34
             // 
@@ -4257,6 +4395,7 @@
             // lbName34
             // 
             this.lbName34.BackColor = System.Drawing.Color.Gray;
+            this.lbName34.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName34.Location = new System.Drawing.Point(0, 0);
             this.lbName34.Name = "lbName34";
@@ -4264,6 +4403,8 @@
             this.lbName34.TabIndex = 4;
             this.lbName34.Text = "Number34";
             this.lbName34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName34, "Setting");
+            this.lbName34.Click += new System.EventHandler(this.lbName34_Click);
             // 
             // lbAH34
             // 
@@ -4307,6 +4448,7 @@
             // 
             // lbTemp34
             // 
+            this.lbTemp34.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp34.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp34.Location = new System.Drawing.Point(3, 71);
             this.lbTemp34.Name = "lbTemp34";
@@ -4314,6 +4456,8 @@
             this.lbTemp34.TabIndex = 3;
             this.lbTemp34.Text = "999.9";
             this.lbTemp34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp34, "Trend");
+            this.lbTemp34.Click += new System.EventHandler(this.lbTemp34_Click);
             // 
             // pnTemp30
             // 
@@ -4345,6 +4489,7 @@
             // lbName30
             // 
             this.lbName30.BackColor = System.Drawing.Color.Gray;
+            this.lbName30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName30.Location = new System.Drawing.Point(0, 0);
             this.lbName30.Name = "lbName30";
@@ -4352,6 +4497,8 @@
             this.lbName30.TabIndex = 4;
             this.lbName30.Text = "Number30";
             this.lbName30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName30, "Setting");
+            this.lbName30.Click += new System.EventHandler(this.lbName30_Click);
             // 
             // lbAH30
             // 
@@ -4395,6 +4542,7 @@
             // 
             // lbTemp30
             // 
+            this.lbTemp30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp30.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp30.Location = new System.Drawing.Point(3, 71);
             this.lbTemp30.Name = "lbTemp30";
@@ -4402,6 +4550,8 @@
             this.lbTemp30.TabIndex = 3;
             this.lbTemp30.Text = "999.9";
             this.lbTemp30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp30, "Trend");
+            this.lbTemp30.Click += new System.EventHandler(this.lbTemp30_Click);
             // 
             // pnTemp33
             // 
@@ -4433,6 +4583,7 @@
             // lbName33
             // 
             this.lbName33.BackColor = System.Drawing.Color.Gray;
+            this.lbName33.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName33.Location = new System.Drawing.Point(0, 0);
             this.lbName33.Name = "lbName33";
@@ -4440,6 +4591,8 @@
             this.lbName33.TabIndex = 4;
             this.lbName33.Text = "Number33";
             this.lbName33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName33, "Setting");
+            this.lbName33.Click += new System.EventHandler(this.lbName33_Click);
             // 
             // lbAH33
             // 
@@ -4483,6 +4636,7 @@
             // 
             // lbTemp33
             // 
+            this.lbTemp33.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp33.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp33.Location = new System.Drawing.Point(3, 71);
             this.lbTemp33.Name = "lbTemp33";
@@ -4490,6 +4644,8 @@
             this.lbTemp33.TabIndex = 3;
             this.lbTemp33.Text = "999.9";
             this.lbTemp33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp33, "Trend");
+            this.lbTemp33.Click += new System.EventHandler(this.lbTemp33_Click);
             // 
             // pnTemp29
             // 
@@ -4521,6 +4677,7 @@
             // lbName29
             // 
             this.lbName29.BackColor = System.Drawing.Color.Gray;
+            this.lbName29.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName29.Location = new System.Drawing.Point(0, 0);
             this.lbName29.Name = "lbName29";
@@ -4528,6 +4685,8 @@
             this.lbName29.TabIndex = 4;
             this.lbName29.Text = "Number29";
             this.lbName29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName29, "Setting");
+            this.lbName29.Click += new System.EventHandler(this.lbName29_Click);
             // 
             // lbAH29
             // 
@@ -4571,6 +4730,7 @@
             // 
             // lbTemp29
             // 
+            this.lbTemp29.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp29.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp29.Location = new System.Drawing.Point(3, 71);
             this.lbTemp29.Name = "lbTemp29";
@@ -4578,6 +4738,8 @@
             this.lbTemp29.TabIndex = 3;
             this.lbTemp29.Text = "999.9";
             this.lbTemp29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp29, "Trend");
+            this.lbTemp29.Click += new System.EventHandler(this.lbTemp29_Click);
             // 
             // pnTemp3
             // 
@@ -4609,6 +4771,7 @@
             // lbName3
             // 
             this.lbName3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbName3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName3.Location = new System.Drawing.Point(0, 0);
             this.lbName3.Name = "lbName3";
@@ -4616,6 +4779,8 @@
             this.lbName3.TabIndex = 4;
             this.lbName3.Text = "Number03";
             this.lbName3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName3, "Setting");
+            this.lbName3.Click += new System.EventHandler(this.lbName3_Click);
             // 
             // lbAH3
             // 
@@ -4626,7 +4791,6 @@
             this.lbAH3.TabIndex = 4;
             this.lbAH3.Text = "999.9";
             this.lbAH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH3
             // 
@@ -4637,7 +4801,6 @@
             this.lbWH3.TabIndex = 4;
             this.lbWH3.Text = "999.9";
             this.lbWH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL3
             // 
@@ -4648,7 +4811,6 @@
             this.lbAL3.TabIndex = 4;
             this.lbAL3.Text = "999.9";
             this.lbAL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL3
             // 
@@ -4659,10 +4821,10 @@
             this.lbWL3.TabIndex = 4;
             this.lbWL3.Text = "999.9";
             this.lbWL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp3
             // 
+            this.lbTemp3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp3.Location = new System.Drawing.Point(3, 71);
             this.lbTemp3.Name = "lbTemp3";
@@ -4670,8 +4832,8 @@
             this.lbTemp3.TabIndex = 3;
             this.lbTemp3.Text = "999.9";
             this.lbTemp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp3.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp3.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp3, "Trend");
+            this.lbTemp3.Click += new System.EventHandler(this.lbTemp3_Click);
             // 
             // pnTemp2
             // 
@@ -4703,6 +4865,7 @@
             // lbName2
             // 
             this.lbName2.BackColor = System.Drawing.Color.Red;
+            this.lbName2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName2.Location = new System.Drawing.Point(0, 0);
             this.lbName2.Name = "lbName2";
@@ -4710,6 +4873,8 @@
             this.lbName2.TabIndex = 4;
             this.lbName2.Text = "Number02";
             this.lbName2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName2, "Setting");
+            this.lbName2.Click += new System.EventHandler(this.lbName2_Click);
             // 
             // lbAH2
             // 
@@ -4720,7 +4885,6 @@
             this.lbAH2.TabIndex = 4;
             this.lbAH2.Text = "999.9";
             this.lbAH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH2
             // 
@@ -4731,7 +4895,6 @@
             this.lbWH2.TabIndex = 4;
             this.lbWH2.Text = "999.9";
             this.lbWH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL2
             // 
@@ -4742,7 +4905,6 @@
             this.lbAL2.TabIndex = 4;
             this.lbAL2.Text = "999.9";
             this.lbAL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL2
             // 
@@ -4753,10 +4915,10 @@
             this.lbWL2.TabIndex = 4;
             this.lbWL2.Text = "999.9";
             this.lbWL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp2
             // 
+            this.lbTemp2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp2.Location = new System.Drawing.Point(3, 71);
             this.lbTemp2.Name = "lbTemp2";
@@ -4764,8 +4926,8 @@
             this.lbTemp2.TabIndex = 3;
             this.lbTemp2.Text = "999.9";
             this.lbTemp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbTemp2.Click += new System.EventHandler(this.label65_Click);
-            this.lbTemp2.DoubleClick += new System.EventHandler(this.lbValue_DoubleClick);
+            this.toolTip1.SetToolTip(this.lbTemp2, "Trend");
+            this.lbTemp2.Click += new System.EventHandler(this.lbTemp2_Click);
             // 
             // pnTemp1
             // 
@@ -4797,6 +4959,7 @@
             // lbName1
             // 
             this.lbName1.BackColor = System.Drawing.Color.Gray;
+            this.lbName1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName1.Location = new System.Drawing.Point(0, 0);
             this.lbName1.Name = "lbName1";
@@ -4804,6 +4967,7 @@
             this.lbName1.TabIndex = 4;
             this.lbName1.Text = "Number01";
             this.lbName1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName1, "Setting");
             this.lbName1.Click += new System.EventHandler(this.lbName1_Click);
             // 
             // lbAH1
@@ -4815,7 +4979,6 @@
             this.lbAH1.TabIndex = 4;
             this.lbAH1.Text = "999.9";
             this.lbAH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAH1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWH1
             // 
@@ -4826,7 +4989,6 @@
             this.lbWH1.TabIndex = 4;
             this.lbWH1.Text = "999.9";
             this.lbWH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWH1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbAL1
             // 
@@ -4837,7 +4999,6 @@
             this.lbAL1.TabIndex = 4;
             this.lbAL1.Text = "999.9";
             this.lbAL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAL1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbHigh_MouseDoubleClick);
             // 
             // lbWL1
             // 
@@ -4848,10 +5009,10 @@
             this.lbWL1.TabIndex = 4;
             this.lbWL1.Text = "999.9";
             this.lbWL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbWL1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lbLow_MouseDoubleClick);
             // 
             // lbTemp1
             // 
+            this.lbTemp1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp1.Location = new System.Drawing.Point(3, 71);
             this.lbTemp1.Name = "lbTemp1";
@@ -4859,6 +5020,7 @@
             this.lbTemp1.TabIndex = 3;
             this.lbTemp1.Text = "999.9";
             this.lbTemp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp1, "Trend");
             this.lbTemp1.Click += new System.EventHandler(this.lbTemp1_Click);
             // 
             // panel25
@@ -4933,6 +5095,7 @@
             // btData3
             // 
             this.btData3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(199)))), ((int)(((byte)(231)))));
+            this.btData3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btData3.FlatAppearance.BorderSize = 0;
             this.btData3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btData3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -4943,12 +5106,14 @@
             this.btData3.Name = "btData3";
             this.btData3.Size = new System.Drawing.Size(42, 42);
             this.btData3.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btData3, "Trend");
             this.btData3.UseVisualStyleBackColor = false;
             this.btData3.Click += new System.EventHandler(this.btData3_Click);
             // 
             // btEvent3
             // 
             this.btEvent3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btEvent3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btEvent3.FlatAppearance.BorderSize = 0;
             this.btEvent3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEvent3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -4959,12 +5124,14 @@
             this.btEvent3.Size = new System.Drawing.Size(42, 42);
             this.btEvent3.TabIndex = 8;
             this.btEvent3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btEvent3, "Events");
             this.btEvent3.UseVisualStyleBackColor = false;
             this.btEvent3.Click += new System.EventHandler(this.btEvent3_Click);
             // 
             // btSetting3
             // 
             this.btSetting3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btSetting3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btSetting3.FlatAppearance.BorderSize = 0;
             this.btSetting3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSetting3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -4975,12 +5142,14 @@
             this.btSetting3.Size = new System.Drawing.Size(42, 42);
             this.btSetting3.TabIndex = 26;
             this.btSetting3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btSetting3, "Setting");
             this.btSetting3.UseVisualStyleBackColor = false;
             this.btSetting3.Click += new System.EventHandler(this.btSetting3_Click);
             // 
             // btReport3
             // 
             this.btReport3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
+            this.btReport3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btReport3.FlatAppearance.BorderSize = 0;
             this.btReport3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btReport3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
@@ -4991,6 +5160,7 @@
             this.btReport3.Size = new System.Drawing.Size(42, 42);
             this.btReport3.TabIndex = 9;
             this.btReport3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btReport3, "Report");
             this.btReport3.UseVisualStyleBackColor = false;
             this.btReport3.Click += new System.EventHandler(this.btReport3_Click);
             // 
@@ -5055,6 +5225,7 @@
             // lbName25
             // 
             this.lbName25.BackColor = System.Drawing.Color.Gray;
+            this.lbName25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbName25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName25.Location = new System.Drawing.Point(0, 0);
             this.lbName25.Name = "lbName25";
@@ -5062,6 +5233,8 @@
             this.lbName25.TabIndex = 4;
             this.lbName25.Text = "Number25";
             this.lbName25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName25, "Setting");
+            this.lbName25.Click += new System.EventHandler(this.lbName25_Click);
             // 
             // lbAH25
             // 
@@ -5105,6 +5278,7 @@
             // 
             // lbTemp25
             // 
+            this.lbTemp25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTemp25.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTemp25.Location = new System.Drawing.Point(3, 71);
             this.lbTemp25.Name = "lbTemp25";
@@ -5112,6 +5286,8 @@
             this.lbTemp25.TabIndex = 3;
             this.lbTemp25.Text = "999.9";
             this.lbTemp25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp25, "Trend");
+            this.lbTemp25.Click += new System.EventHandler(this.lbTemp25_Click);
             // 
             // panel34
             // 
@@ -5158,16 +5334,6 @@
             this.lbTool3_alarm.TabIndex = 4;
             this.lbTool3_alarm.Text = "Out of range : 0 Times";
             this.lbTool3_alarm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(1823, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 27);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Temp";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // sfrmOverview
             // 
@@ -5670,5 +5836,6 @@
         private System.Windows.Forms.Label lbWL25;
         private System.Windows.Forms.Label lbTemp25;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

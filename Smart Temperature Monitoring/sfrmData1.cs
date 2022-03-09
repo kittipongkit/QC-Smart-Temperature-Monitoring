@@ -26,13 +26,11 @@ namespace Smart_Temperature_Monitoring
         private static DataTable _pGet_location_name = new DataTable();
         private static DataTable _pGet_foor_name = new DataTable();
         private static DataTable _pGet_temp_name = new DataTable();
+        private static DataTable _pGet_setting = new DataTable();
+
         public sfrmData1()
         {
             InitializeComponent();
-            get_tool_name();
-            get_location_name();
-            get_foor_name();
-            get_temp_name();
             initTempData();
                      
 
@@ -52,22 +50,83 @@ namespace Smart_Temperature_Monitoring
         private void initTempData()
 #pragma warning restore CS0168 // The variable 'ex' is declared but never used
         {
+            Get_setting();
+
             _pGet_Temp_data = new DataTable();
-            _pGet_Temp_data = pGet_Temp_Range(Convert.ToInt32(cbbSelectedName.SelectedValue), dtDateFrom.Value.Date, dtDateTo.Value, Convert.ToInt32(cbbSampling.SelectedValue));
+            _pGet_Temp_data = pGet_Temp_Range(Convert.ToInt32(sfrmOverview._selectedTempNoData), dtDateFrom.Value.Date, dtDateTo.Value, 1);
             if (_pGet_Temp_data != null && _pGet_Temp_data.Rows.Count > 0)
             {
-                var values1 = new ChartValues<double>();
+                var temp = new ChartValues<double>();
+                var ahi = new ChartValues<double>();
+                var alo = new ChartValues<double>();
+                var whi = new ChartValues<double>();
+                var wlo = new ChartValues<double>();
+
                 for (var i = 0; i < _pGet_Temp_data.Rows.Count; i++)
                 {
-                    values1.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["avg_temp"]));
-                }
+                    temp.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["avg_temp"]));
+                    ahi.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp_ahi"]));
+                    alo.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp_alo"]));
+                    whi.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp_whi"]));
+                    wlo.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp_wlo"]));
+                }                
 
+                cartesianChart1.Series.Add(new LineSeries
+                {
+                    Name = "LimitHigh",
+                    Title = "Limit High",
+                    Values = ahi,
+                    Fill = Brushes.Transparent,
+                    PointGeometrySize = 0,
+                    Stroke = Brushes.DarkRed,
+                    StrokeThickness = 1
+                });
+
+                cartesianChart1.Series.Add(new LineSeries
+                {
+                    Name = "WarningHigh",
+                    Title = "Warning High",
+                    Values = whi,
+                    Fill = Brushes.Transparent,
+                    PointGeometrySize = 0,
+                    Stroke = Brushes.DarkOrange,
+                    StrokeThickness = 1
+                });
+                
                 cartesianChart1.Series.Add(new LineSeries
                 {
                     Name = "TempValue",
                     Title = "Temp Value",
-                    Values = values1
+                    Values = temp,
+                    Fill = Brushes.Transparent,
+                    PointGeometrySize = 0,
+                    Stroke = Brushes.DarkGreen,
+                    StrokeThickness = 2
+                });                
+
+                cartesianChart1.Series.Add(new LineSeries
+                {
+                    Name = "WarningLow",
+                    Title = "Warning Low",
+                    Values = wlo,
+                    Fill = Brushes.Transparent,
+                    PointGeometrySize = 0,
+                    Stroke = Brushes.DarkOrange,
+                    StrokeThickness = 1
                 });
+
+                cartesianChart1.Series.Add(new LineSeries
+                {
+                    Name = "LimitLow",
+                    Title = "Limi tLow",
+                    Values = alo,
+                    Fill = Brushes.Transparent,
+                    PointGeometrySize = 0,
+                    Stroke = Brushes.DarkRed,
+                    StrokeThickness = 1
+                });
+
+
 
                 IList<string> labelX = new List<string>();
                 for (int i = 0; i < _pGet_Temp_data.Rows.Count; i++)
@@ -91,7 +150,6 @@ namespace Smart_Temperature_Monitoring
                 cbbSelectedTool.DisplayMember = "tool_name";
                 cbbSelectedTool.ValueMember = "tool_id";
                 cbbSelectedTool.DataSource = _pGet_tool_name;
-                cbbSelectedTool.SelectedValue = sfrmOverview._selectedTempNoData;
             }
         }
 
@@ -105,7 +163,6 @@ namespace Smart_Temperature_Monitoring
                 cbbSelectedLocation.DisplayMember = "location_name";
                 cbbSelectedLocation.ValueMember = "location_id";
                 cbbSelectedLocation.DataSource = _pGet_location_name;
-                cbbSelectedLocation.SelectedValue = sfrmOverview._selectedTempNoData;
             }
         }
 
@@ -118,7 +175,6 @@ namespace Smart_Temperature_Monitoring
                 cbbSelectedFoor.DisplayMember = "foor_name";
                 cbbSelectedFoor.ValueMember = "foor_id";
                 cbbSelectedFoor.DataSource = _pGet_foor_name;
-                cbbSelectedFoor.SelectedValue = sfrmOverview._selectedTempNoData;
             }
         }
 
@@ -130,9 +186,33 @@ namespace Smart_Temperature_Monitoring
             if (_pGet_temp_name != null)
             {
                 cbbSelectedName.DisplayMember = "temp_name";
-                cbbSelectedName.ValueMember = "temp_id";
+                cbbSelectedName.ValueMember = "temp_number";
                 cbbSelectedName.DataSource = _pGet_temp_name;
-                cbbSelectedName.SelectedValue = sfrmOverview._selectedTempNoData;
+            }
+        }
+
+        private void Get_setting()
+#pragma warning restore CS0168 // The variable 'ex' is declared but never used
+        {
+            _pGet_setting = new DataTable();
+            _pGet_setting = pGet_setting(sfrmOverview._selectedTempNoData);
+            if (_pGet_setting != null)
+            {
+                cbbSelectedTool.DisplayMember = "tool_name";
+                cbbSelectedTool.ValueMember = "tool_id";
+                cbbSelectedTool.DataSource = _pGet_setting;
+
+                cbbSelectedLocation.DisplayMember = "location_name";
+                cbbSelectedLocation.ValueMember = "location_id";
+                cbbSelectedLocation.DataSource = _pGet_setting;
+
+                cbbSelectedFoor.DisplayMember = "foor_name";
+                cbbSelectedFoor.ValueMember = "foor_id";
+                cbbSelectedFoor.DataSource = _pGet_setting;
+
+                cbbSelectedName.DisplayMember = "temp_name";
+                cbbSelectedName.ValueMember = "temp_number";
+                cbbSelectedName.DataSource = _pGet_setting;
             }
         }
 
@@ -315,6 +395,32 @@ namespace Smart_Temperature_Monitoring
             }
             return dataTable;
         }
+        
+
+        private static DataTable pGet_setting(int tempNumber)
+        {
+            DataTable dataTable = new DataTable();
+            DataSet ds = new DataSet();
+            try
+            {
+                //  อ่านค่าจาก Store pGet_actual_value
+                SqlParameterCollection param = new SqlCommand().Parameters;
+                param.AddWithValue("@temp_number", SqlDbType.Int).Value = tempNumber;
+                ds = new DBClass().SqlExcSto("pGet_setting_by_no", "DbSet", param);
+                dataTable = ds.Tables[0];
+            }
+            catch (SqlException e)
+            {
+                dataTable = null;
+                log.Error("Setting pGet_setting SqlException : " + e.Message);
+            }
+            catch (Exception ex)
+            {
+                dataTable = null;
+                log.Error("Setting pGet_setting Exception : " + ex.Message);
+            }
+            return dataTable;
+        }
 
         ////////////////////////////////////////////////////////////
         //////////////////////  Button event  //////////////////////
@@ -336,20 +442,75 @@ namespace Smart_Temperature_Monitoring
                 if (_pGet_Temp_data != null && _pGet_Temp_data.Rows.Count > 0)
                 {
                     cartesianChart1.Series.Clear();
-                    var values1 = new ChartValues<double>();
+
+                    var temp = new ChartValues<double>();
+                    var ahi = new ChartValues<double>();
+                    var alo = new ChartValues<double>();
+                    var whi = new ChartValues<double>();
+                    var wlo = new ChartValues<double>();
+
                     for (var i = 0; i < _pGet_Temp_data.Rows.Count; i++)
                     {
-                        values1.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["avg_temp"]));
+                        temp.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["avg_temp"]));
+                        ahi.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp_ahi"]));
+                        alo.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp_alo"]));
+                        whi.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp_whi"]));
+                        wlo.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp_wlo"]));
                     }
 
                     cartesianChart1.Series.Add(new LineSeries
                     {
                         Name = "TempValue",
                         Title = "Temp Value",
-                        Values = values1,
-                        //Fill = Brushes.Transparent,
+                        Values = temp,
+                        Fill = Brushes.Transparent,
                         PointGeometrySize = 0,
+                        Stroke = Brushes.DarkGreen,
                         StrokeThickness = 2
+                    });
+
+                    cartesianChart1.Series.Add(new LineSeries
+                    {
+                        Name = "LimitHigh",
+                        Title = "Limit High",
+                        Values = ahi,
+                        Fill = Brushes.Transparent,
+                        PointGeometrySize = 0,
+                        Stroke = Brushes.DarkRed,
+                        StrokeThickness = 1
+                    });
+
+                    cartesianChart1.Series.Add(new LineSeries
+                    {
+                        Name = "LimitLow",
+                        Title = "Limi tLow",
+                        Values = alo,
+                        Fill = Brushes.Transparent,
+                        PointGeometrySize = 0,
+                        Stroke = Brushes.DarkRed,
+                        StrokeThickness = 1
+                    });
+
+                    cartesianChart1.Series.Add(new LineSeries
+                    {
+                        Name = "WarningHigh",
+                        Title = "Warning High",
+                        Values = whi,
+                        Fill = Brushes.Transparent,
+                        PointGeometrySize = 0,
+                        Stroke = Brushes.DarkOrange,
+                        StrokeThickness = 1
+                    });
+
+                    cartesianChart1.Series.Add(new LineSeries
+                    {
+                        Name = "WarningLow",
+                        Title = "Warning Low",
+                        Values = wlo,
+                        Fill = Brushes.Transparent,
+                        PointGeometrySize = 0,
+                        Stroke = Brushes.DarkOrange,
+                        StrokeThickness = 1
                     });
 
                     switch (Convert.ToInt32(cbbSampling.SelectedValue))
@@ -429,6 +590,21 @@ namespace Smart_Temperature_Monitoring
         private void cbbSelectedName_Click(object sender, EventArgs e)
         {
             get_temp_name();
+        }
+
+        private void cbbSelectedTool_Click(object sender, EventArgs e)
+        {
+            get_tool_name();
+        }
+
+        private void cbbSelectedLocation_Click(object sender, EventArgs e)
+        {
+            get_location_name();
+        }
+
+        private void cbbSelectedFoor_Click(object sender, EventArgs e)
+        {
+            get_foor_name();
         }
     }
 }

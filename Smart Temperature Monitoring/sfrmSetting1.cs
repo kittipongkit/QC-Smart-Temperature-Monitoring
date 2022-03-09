@@ -93,7 +93,11 @@ namespace Smart_Temperature_Monitoring
 
 
                 //Update setting table            
-                pUpdate_setting(i, lbName1.Text, Convert.ToDouble(numAL1.Value), Convert.ToDouble(numAH1.Value), Convert.ToDouble(numWL1.Value), Convert.ToDouble(numWH1.Value),
+                //pUpdate_setting(i, lbName1.Text, Convert.ToDouble(numAL1.Value), Convert.ToDouble(numAH1.Value), Convert.ToDouble(numWL1.Value), Convert.ToDouble(numWH1.Value),
+                //        cbAH1.Checked == true ? 'Y' : 'N', cbAL1.Checked == true ? 'Y' : 'N', cbWH1.Checked == true ? 'Y' : 'N', cbWL1.Checked == true ? 'Y' : 'N',
+                //        cbLine1.Checked == true ? 'Y' : 'N', cbUse1.Checked == true ? 'Y' : 'N');
+
+                pUpdate_setting(i, lbName1.Text, Convert.ToDouble(numAH1.Value), Convert.ToDouble(numAL1.Value), Convert.ToDouble(numWH1.Value), Convert.ToDouble(numWL1.Value),
                         cbAH1.Checked == true ? 'Y' : 'N', cbAL1.Checked == true ? 'Y' : 'N', cbWH1.Checked == true ? 'Y' : 'N', cbWL1.Checked == true ? 'Y' : 'N',
                         cbLine1.Checked == true ? 'Y' : 'N', cbUse1.Checked == true ? 'Y' : 'N');
 

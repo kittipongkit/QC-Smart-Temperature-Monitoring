@@ -74,7 +74,6 @@ namespace Smart_Temperature_Monitoring
             Thread threadUpdateSetting = new Thread(ThreadUpdateSetting);
             threadUpdateSetting.IsBackground = true;
             threadUpdateSetting.Start();
-
         }
 
 
@@ -125,8 +124,6 @@ namespace Smart_Temperature_Monitoring
 
 
         //  Display function
-
-        // Run every sampling time : plot data 1 sampling
         public void _actualTemp()
         {                       
             //declare list to keep data
@@ -169,7 +166,6 @@ namespace Smart_Temperature_Monitoring
                             panel.BackColor = Color.FromArgb(255, 192, 128);
                         else
                             panel.BackColor = Color.FromArgb(255, 128, 128);
-
                     }
 
                     //lbName
@@ -261,7 +257,6 @@ namespace Smart_Temperature_Monitoring
                         else
                         {
                             label_lbWH.Visible = false;
-
                         }
                     }
 
@@ -278,7 +273,6 @@ namespace Smart_Temperature_Monitoring
                         else
                         {
                             label_lbWL.Visible = false;
-
                         }
                     }
 
@@ -295,7 +289,6 @@ namespace Smart_Temperature_Monitoring
                         else
                         {
                             label_lbAH.Visible = false;
-
                         }
                     }
 
@@ -312,7 +305,6 @@ namespace Smart_Temperature_Monitoring
                         else
                         {
                             label_lbAL.Visible = false;
-
                         }
                     }
 
@@ -330,7 +322,6 @@ namespace Smart_Temperature_Monitoring
             {
                 if (_EventId != Convert.ToInt32(_pGet_event_all.Rows[0]["ID"]))
                 {
-
                     //  Clear gv
                     gvEventAll.Rows.Clear();
 
@@ -459,219 +450,8 @@ namespace Smart_Temperature_Monitoring
                     gvData1.ClearSelection();
                     gvData2.ClearSelection();
                     gvData3.ClearSelection();
-
-                }
-            
-            
-
-        }
-
-        // First time start up : plot data all day
-        public void initTempData()
-        {
-            DataTable dt = pGet_Temp_data();  // Get today data
-            if (dt != null && dt.Rows.Count > 0)
-                _currentCntPoint = dt.Rows.Count; // if have today data --> no_pGet_Temp_data = today data count
-
-            _pGet_Temp_data = new DataTable();
-            _pGet_Temp_data = pGet_Temp_data();
-            //if (_pGet_Temp_data != null && _pGet_Temp_data.Rows.Count > 0)
-            {
-                var values1 = new ChartValues<double>();
-                var values2 = new ChartValues<double>();
-                var values3 = new ChartValues<double>();
-
-                var hi1 = new ChartValues<double>();
-                var lo1 = new ChartValues<double>();
-
-                var hi2 = new ChartValues<double>();
-                var lo2 = new ChartValues<double>();
-
-                var hi3 = new ChartValues<double>();
-                var lo3 = new ChartValues<double>();
-
-                
-
-                // plot graph
-                for (var i = 0; (i < _pGet_Temp_data.Rows.Count && i < sampling_all_day); i++)
-                {
-                    values1.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp1"]));
-                    hi1.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp1_hi"]));
-                    lo1.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp1_lo"]));
-
-                    values2.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp2"]));
-                    hi2.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp2_hi"]));
-                    lo2.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp2_lo"]));
-
-                    values3.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp3"]));
-                    hi3.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp3_hi"]));
-                    lo3.Add(Convert.ToDouble(_pGet_Temp_data.Rows[i]["temp3_lo"]));
-                }
-
-
-                IList<string> labelX = new List<string>();
-                for (int i = 0; i <= sampling_all_day; i++)
-                    labelX.Add(System.DateTime.MinValue.AddMinutes(i * sampling_time).ToString("HH:mm"));
-
-                //chTemp1.AxisX.Add(new Axis
-                //{
-                //    MinValue = 0,
-                //    MaxValue = 288,
-                //    Labels = labelX
-                //});
-
-                //chTemp1.AxisY.Add(new Axis
-                //{
-                //    MinValue = 20,
-                //    MaxValue = 30
-                //});
-
-                //chTemp2.AxisX.Add(new Axis
-                //{
-                //    MinValue = 0,
-                //    MaxValue = 288,
-                //    Labels = labelX
-                //});
-
-                //chTemp2.AxisY.Add(new Axis
-                //{
-                //    MinValue = 20,
-                //    MaxValue = 30
-                //});
-
-                //chTemp3.AxisX.Add(new Axis
-                //{
-                //    MinValue = 0,
-                //    MaxValue = 288,
-                //    Labels = labelX
-                //});
-
-                //chTemp3.AxisY.Add(new Axis
-                //{
-                //    MinValue = 20,
-                //    MaxValue = 30
-                //});
-
-
-                // plot gv status
-
-                ////Declare array for keep data
-                ////string[] status1 = new string[sampling_all_day];                
-                ////string[] status2 = new string[sampling_all_day];
-                ////string[] status3 = new string[sampling_all_day];
-
-                //string[] status1 = { "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK", "OK", "OK", "OK" };
-                //string[] status2 = { "OK", "OK", "NG", "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK" };
-                //string[] status3 = { "OK", "OK", "OK", "OK", "OK", "OK", "OK", "OK", "NG", "OK", "OK", "OK" };
-
-                ////Keep data to array
-                ////for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
-                ////{
-                ////    status1[i] = _pGet_Temp_data.Rows[i]["temp1_result"].ToString();
-                ////    status2[i] = _pGet_Temp_data.Rows[i]["temp2_result"].ToString();
-                ////    status3[i] = _pGet_Temp_data.Rows[i]["temp3_result"].ToString();
-                ////}
-
-                ////gvData1.Rows.Clear();
-                ////gvData2.Rows.Clear();
-                ////gvData3.Rows.Clear();
-
-                //////Add array to DataGridView
-                //gvData1.Rows.Add(status1);
-                //gvData2.Rows.Add(status2);
-                //gvData3.Rows.Add(status3);
-
-                ////for (int i = 0; i < _pGet_Temp_data.Rows.Count && i < sampling_all_day; i++)
-                //for (int i = 0; i < 12 ; i++)
-                //{
-                //   if (status1[i] == "NG")
-                //   {
-                //        gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
-                //        gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                //    }
-                //    else
-                //    {
-                //        gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
-                //        gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                //    }
-
-                //    if (status2[i] == "NG")
-                //    {
-                //        gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
-                //        gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                //    }
-                //    else
-                //    {
-                //        gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
-                //        gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                //    }
-
-                //    if (status3[i] == "NG")
-                //    {
-                //        gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
-                //        gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                //    }
-                //    else
-                //    {
-                //        gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
-                //        gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                //    }
-
-                //    actualGvCell = _pGet_Temp_data.Rows.Count;
-                //}
-
-            }
-
-        }
-
-        // First time of day : clear and intial chart & status
-        private void clearAndInit()
-        {
-            string[] status1 = new string[] { };
-
-            // Clear data grid view
-            //gvData1.Rows.Clear();
-            //gvData2.Rows.Clear();
-            //gvData3.Rows.Clear();
-
-            //// Add empty list into data grid view
-            //gvData1.Rows.Add(status1);
-            //gvData1.ClearSelection();
-
-            //gvData2.Rows.Add(status1);
-            //gvData2.ClearSelection();
-
-            //gvData3.Rows.Add(status1);
-            //gvData3.ClearSelection();
-
-            //actualGvCell = 0;
-
-            //// Clear chart series
-            //chTemp1.Series[0].Values.Clear();
-            //chTemp1.Series[1].Values.Clear();
-            //chTemp1.Series[2].Values.Clear();
-
-            //chTemp2.Series[0].Values.Clear();
-            //chTemp2.Series[1].Values.Clear();
-            //chTemp2.Series[2].Values.Clear();
-
-            //chTemp3.Series[0].Values.Clear();
-            //chTemp3.Series[1].Values.Clear();
-            //chTemp3.Series[2].Values.Clear();
-
-            //// Add data to initial series
-            //chTemp1.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1"])));
-            //chTemp1.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_hi"])));
-            //chTemp1.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp1_lo"])));
-
-            //chTemp2.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2"])));
-            //chTemp2.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_hi"])));
-            //chTemp2.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp2_lo"])));
-
-            //chTemp3.Series[0].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3"])));
-            //chTemp3.Series[1].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_hi"])));
-            //chTemp3.Series[2].Values.Add(Convert.ToDouble((_pGet_Temp_actual.Rows[0]["temp3_lo"])));
-        }
+                }                  
+        }        
 
         ////////////////////////////////////////////////////////////
         ///////////////// SQL interface section  ///////////////////
@@ -844,126 +624,34 @@ namespace Smart_Temperature_Monitoring
             }
             return dataTable;
         }
+
         ////////////////////////////////////////////////////////////
         //////////////////////  Button event  //////////////////////
-        ////////////////////////////////////////////////////////////
-
-
-        //  Local function
-        private void LineNotifyMsg(string lineToken, string message)
-        {
-            try
-            {
-                //  hj1TGTJOwYq8L78D2fYbhPKQhOAsgaG1KfJ1QRLa3Tb
-                //message = System.Web.HttpUtility.UrlEncode(message, Encoding.UTF8);
-                var request = (HttpWebRequest)WebRequest.Create("https://notify-api.line.me/api/notify");
-                var postData = string.Format("message={0}", message);
-                var data = Encoding.UTF8.GetBytes(postData);
-                request.Method = "POST";
-                request.ContentType = "application/x-www-form-urlencoded";
-                request.ContentLength = data.Length;
-                request.Headers.Add("Authorization", "Bearer " + lineToken);
-                var stream = request.GetRequestStream();
-                stream.Write(data, 0, data.Length);
-                var response = (HttpWebResponse)request.GetResponse();
-                var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-        }
-
-        //  Label test line notify
-        private void lbHigh_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            var label = (Label)sender;
-            string zone = string.Empty;
-            if (label.Name == "lbHigh1") { zone = "Zone A"; }
-            else if (label.Name == "lbHigh2") { zone = "Zone B"; }
-            else if (label.Name == "lbHigh3") { zone = "Zone C"; }
-
-            string message = string.Format("\r\n------Temperature Over Notify !!!------\r\n" +
-                "Datetime : {0}\r\n" +
-                "{1} has value over than {2}.", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-                , zone, label.Text);
-            LineNotifyMsg("hj1TGTJOwYq8L78D2fYbhPKQhOAsgaG1KfJ1QRLa3Tb", message);
-        }
-        private void lbLow_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            var label = (Label)sender;
-            string zone = string.Empty;
-            if (label.Name == "lbLow1") { zone = "Zone A"; }
-            else if (label.Name == "lbLow2") { zone = "Zone B"; }
-            else if (label.Name == "lbLow3") { zone = "Zone C"; }
-
-            string message = string.Format("\r\n------Temperature Lower Notify !!!------\r\n" +
-                "Datetime : {0}\r\n" +
-                "{1} has value lower than {2}.", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-                , zone, label.Text);
-            LineNotifyMsg("hj1TGTJOwYq8L78D2fYbhPKQhOAsgaG1KfJ1QRLa3Tb", message);
-        }
-        private void lbValue_DoubleClick(object sender, EventArgs e)
-        {
-            var label = (Label)sender;
-            string zone = string.Empty;
-            if (label.Name == "lbValue1") { zone = "Zone A"; }
-            else if (label.Name == "lbValue2") { zone = "Zone B"; }
-            else if (label.Name == "lbValue3") { zone = "Zone C"; }
-
-            string message = string.Format("\r\n------Temperature Back Notify !!!------\r\n" +
-                "Datetime : {0}\r\n" +
-                "{1} has value back to lenght at {2}.", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-                , zone, label.Text);
-            LineNotifyMsg("hj1TGTJOwYq8L78D2fYbhPKQhOAsgaG1KfJ1QRLa3Tb", message);
-        }
-
-        
-
+        ////////////////////////////////////////////////////////////            
         private void panel14_Click(object sender, EventArgs e)
         {
+            _EventTool = 0;
             sfrmEvent1 sfrmEvent1 = new sfrmEvent1();
             sfrmEvent1.Show();
-        }
+        }   
 
-        private void label65_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
-        private void lbName1_Click(object sender, EventArgs e)
-        {
-            _SettingNumber = 1;
-            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
-            sfrmSetting1.Show();
-        }
-
-        private void lbTemp1_Click(object sender, EventArgs e)
+        private void btData1_Click(object sender, EventArgs e)
         {
             _selectedTempNoData = 1;
             sfrmData1 sfrmData1 = new sfrmData1();
             sfrmData1.Show();
         }
 
-        private void btData1_Click(object sender, EventArgs e)
-        {
-            _DataTool = 1;
-            sfrmData1 sfrmData1 = new sfrmData1();
-            sfrmData1.Show();
-        }
-
         private void btData2_Click(object sender, EventArgs e)
         {
-            _DataTool = 2;
+            _selectedTempNoData  = 4;
             sfrmData1 sfrmData1 = new sfrmData1();
             sfrmData1.Show();
         }
 
         private void btData3_Click(object sender, EventArgs e)
         {
-            _DataTool = 3;
+            _selectedTempNoData = 15;
             sfrmData1 sfrmData1 = new sfrmData1();
             sfrmData1.Show();
         }
@@ -1034,6 +722,496 @@ namespace Smart_Temperature_Monitoring
         private void button1_Click(object sender, EventArgs e)
         {
             pAutoInsert_tr_temp();
+        }
+
+        private void lbTemp1_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 1;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp2_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 2;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp3_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 3;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp28_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 28;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp29_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 29;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp30_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 30;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp31_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 31;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp32_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 32;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp33_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 33;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp34_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 34;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp35_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 35;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp4_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 4;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp5_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 5;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp6_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 6;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp7_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 7;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp8_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 8;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp9_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 9;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp10_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 10;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp11_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 11;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp12_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 12;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp13_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 13;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp14_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 14;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp26_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 26;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp27_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 27;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp15_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 15;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp16_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 16;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp17_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 17;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp18_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 18;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp19_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 19;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp20_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 20;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp21_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 21;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp22_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 22;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp23_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 23;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp24_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 24;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbTemp25_Click(object sender, EventArgs e)
+        {
+            _selectedTempNoData = 25;
+            sfrmData1 sfrmData1 = new sfrmData1();
+            sfrmData1.Show();
+        }
+
+        private void lbName1_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 1;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName2_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 2;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName3_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 3;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName28_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 28;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName29_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 29;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName30_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 30;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName31_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 31;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName32_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 32;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName33_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 33;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName34_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 34;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName35_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 35;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName4_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 4;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName5_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 5;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName6_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 6;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName7_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 7;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName8_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 8;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName9_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 9;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName10_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 10;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName11_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 11;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName12_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 12;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName13_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 13;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName14_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 14;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName26_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 26;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName27_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 27;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName15_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 15;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName16_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 16;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName17_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 17;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName18_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 18;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName19_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 19;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName20_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 20;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName21_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 21;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName22_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 22;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName23_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 23;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName24_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 24;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
+        }
+
+        private void lbName25_Click(object sender, EventArgs e)
+        {
+            _SettingNumber = 25;
+            sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
+            sfrmSetting1.Show();
         }
     }
 }

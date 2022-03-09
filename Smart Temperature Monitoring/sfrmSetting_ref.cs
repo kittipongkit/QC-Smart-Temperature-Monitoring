@@ -207,7 +207,6 @@ namespace Smart_Temperature_Monitoring
                         cbLine.Checked == true ? 'Y' : 'N', cbUse.Checked == true ? 'Y' : 'N');
 
 
-
                 MessageBox.Show("แก้ไขข้อมูลเรียบร้อยแล้ว", "ข้อความจากระบบ");
                 //this.Hide();
             }

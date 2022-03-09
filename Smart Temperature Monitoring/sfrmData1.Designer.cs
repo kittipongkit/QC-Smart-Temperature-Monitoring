@@ -126,6 +126,7 @@
             this.cbbSelectedTool.Name = "cbbSelectedTool";
             this.cbbSelectedTool.Size = new System.Drawing.Size(174, 34);
             this.cbbSelectedTool.TabIndex = 51;
+            this.cbbSelectedTool.Click += new System.EventHandler(this.cbbSelectedTool_Click);
             // 
             // btnOk
             // 
@@ -215,6 +216,7 @@
             this.cbbSelectedFoor.Name = "cbbSelectedFoor";
             this.cbbSelectedFoor.Size = new System.Drawing.Size(174, 34);
             this.cbbSelectedFoor.TabIndex = 51;
+            this.cbbSelectedFoor.Click += new System.EventHandler(this.cbbSelectedFoor_Click);
             // 
             // cbbSelectedLocation
             // 
@@ -225,6 +227,7 @@
             this.cbbSelectedLocation.Name = "cbbSelectedLocation";
             this.cbbSelectedLocation.Size = new System.Drawing.Size(174, 34);
             this.cbbSelectedLocation.TabIndex = 51;
+            this.cbbSelectedLocation.Click += new System.EventHandler(this.cbbSelectedLocation_Click);
             // 
             // label6
             // 

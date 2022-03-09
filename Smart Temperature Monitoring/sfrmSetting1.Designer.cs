@@ -60,14 +60,13 @@
             this.txtSetting = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.lbFoor1 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.lbLocation1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.lbTool1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btSave1 = new System.Windows.Forms.Button();
-            this.btEdit1 = new System.Windows.Forms.Button();
-            this.lbFoor1 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -103,8 +102,8 @@
             this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.label1);
-            this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.label3);
+            this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.label5);
             this.panel9.Controls.Add(this.label12);
             this.panel9.Location = new System.Drawing.Point(14, 12);
@@ -117,7 +116,7 @@
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(665, 0);
+            this.label10.Location = new System.Drawing.Point(397, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(128, 35);
             this.label10.TabIndex = 57;
@@ -129,7 +128,7 @@
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(531, 0);
+            this.label9.Location = new System.Drawing.Point(263, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 35);
             this.label9.TabIndex = 57;
@@ -141,7 +140,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(397, 0);
+            this.label1.Location = new System.Drawing.Point(665, -1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 35);
             this.label1.TabIndex = 57;
@@ -153,7 +152,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(263, 1);
+            this.label2.Location = new System.Drawing.Point(531, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 35);
             this.label2.TabIndex = 57;
@@ -202,9 +201,9 @@
             this.panel3.Controls.Add(this.panel8);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel10);
+            this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel6);
             this.panel3.Location = new System.Drawing.Point(14, 53);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(801, 35);
@@ -236,7 +235,7 @@
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.cbWH1);
             this.panel8.Controls.Add(this.numWH1);
-            this.panel8.Location = new System.Drawing.Point(665, 1);
+            this.panel8.Location = new System.Drawing.Point(397, 1);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(128, 35);
             this.panel8.TabIndex = 65;
@@ -321,7 +320,7 @@
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.cbWL1);
             this.panel7.Controls.Add(this.numWL1);
-            this.panel7.Location = new System.Drawing.Point(531, 1);
+            this.panel7.Location = new System.Drawing.Point(263, 1);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(128, 35);
             this.panel7.TabIndex = 65;
@@ -368,7 +367,7 @@
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.cbAL1);
             this.panel5.Controls.Add(this.numAL1);
-            this.panel5.Location = new System.Drawing.Point(263, 1);
+            this.panel5.Location = new System.Drawing.Point(531, 1);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(128, 35);
             this.panel5.TabIndex = 65;
@@ -415,7 +414,7 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.cbAH1);
             this.panel6.Controls.Add(this.numAH1);
-            this.panel6.Location = new System.Drawing.Point(397, 1);
+            this.panel6.Location = new System.Drawing.Point(665, 1);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(128, 35);
             this.panel6.TabIndex = 65;
@@ -501,6 +500,30 @@
             this.panel11.Size = new System.Drawing.Size(793, 35);
             this.panel11.TabIndex = 68;
             // 
+            // lbFoor1
+            // 
+            this.lbFoor1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lbFoor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor1.Location = new System.Drawing.Point(609, 0);
+            this.lbFoor1.Name = "lbFoor1";
+            this.lbFoor1.Size = new System.Drawing.Size(192, 35);
+            this.lbFoor1.TabIndex = 83;
+            this.lbFoor1.Text = "Temp Location";
+            this.lbFoor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(534, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(75, 35);
+            this.label13.TabIndex = 82;
+            this.label13.Text = "Foor";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lbLocation1
             // 
             this.lbLocation1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -563,43 +586,6 @@
             this.btSave1.UseVisualStyleBackColor = false;
             this.btSave1.Click += new System.EventHandler(this.btSave1_Click);
             // 
-            // btEdit1
-            // 
-            this.btEdit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btEdit1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEdit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEdit1.ForeColor = System.Drawing.Color.White;
-            this.btEdit1.Location = new System.Drawing.Point(720, 284);
-            this.btEdit1.Name = "btEdit1";
-            this.btEdit1.Size = new System.Drawing.Size(74, 32);
-            this.btEdit1.TabIndex = 76;
-            this.btEdit1.Text = "Edit";
-            this.btEdit1.UseVisualStyleBackColor = false;
-            // 
-            // lbFoor1
-            // 
-            this.lbFoor1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbFoor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor1.Location = new System.Drawing.Point(609, 0);
-            this.lbFoor1.Name = "lbFoor1";
-            this.lbFoor1.Size = new System.Drawing.Size(192, 35);
-            this.lbFoor1.TabIndex = 83;
-            this.lbFoor1.Text = "Temp Location";
-            this.lbFoor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(534, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 35);
-            this.label13.TabIndex = 82;
-            this.label13.Text = "Foor";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // sfrmSetting1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -607,7 +593,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(908, 341);
             this.Controls.Add(this.btSave1);
-            this.Controls.Add(this.btEdit1);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -682,7 +667,6 @@
         private System.Windows.Forms.Label lbTool1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btSave1;
-        private System.Windows.Forms.Button btEdit1;
         private System.Windows.Forms.Label lbFoor1;
         private System.Windows.Forms.Label label13;
     }

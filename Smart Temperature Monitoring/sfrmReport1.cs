@@ -47,7 +47,7 @@ namespace Smart_Temperature_Monitoring
                 cbbSelectedTool.DisplayMember = "tool_name";
                 cbbSelectedTool.ValueMember = "tool_id";
                 cbbSelectedTool.DataSource = _pGet_tool_name;
-                cbbSelectedTool.SelectedValue = sfrmOverview._ReportTool;
+                //cbbSelectedTool.SelectedValue = sfrmOverview._ReportTool;
             }
         }
 
