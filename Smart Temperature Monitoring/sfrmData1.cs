@@ -53,7 +53,7 @@ namespace Smart_Temperature_Monitoring
             Get_setting();
 
             _pGet_Temp_data = new DataTable();
-            _pGet_Temp_data = pGet_Temp_Range(Convert.ToInt32(sfrmOverview._selectedTempNoData), dtDateFrom.Value.Date, dtDateTo.Value, 1);
+            _pGet_Temp_data = pGet_data_with_sampling_time(Convert.ToInt32(sfrmOverview._selectedTempNoData), dtDateFrom.Value.Date, dtDateTo.Value, 1);
             if (_pGet_Temp_data != null && _pGet_Temp_data.Rows.Count > 0)
             {
                 var temp = new ChartValues<double>();
@@ -135,7 +135,7 @@ namespace Smart_Temperature_Monitoring
                 cartesianChart1.AxisX.Add(new Axis
                 {
                     MinValue = 0,
-                    MaxValue = _pGet_Temp_data.Rows.Count-1,
+                    MaxValue = _pGet_Temp_data.Rows.Count,
                     Labels = labelX
                 });
             }
@@ -266,13 +266,13 @@ namespace Smart_Temperature_Monitoring
         ////////////////////////////////////////////////////////////
         ///////////////// SQL interface section  ///////////////////
         ////////////////////////////////////////////////////////////
-        private static DataTable pGet_Temp_Range(int temp_number, DateTime start_date, DateTime end_date, int sampling_no)
+        private static DataTable pGet_data_with_sampling_time(int temp_number, DateTime start_date, DateTime end_date, int sampling_no)
         {
             DataTable dataTable = new DataTable();
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value 2022-01-15 00:00:00.000 pGet_Temp_data
+                //  อ่านค่าจาก Store pGet_data_with_sampling_time
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 param.AddWithValue("@temp_number", SqlDbType.DateTime).Value = temp_number;
                 param.AddWithValue("@start_date", SqlDbType.DateTime).Value = start_date;
@@ -284,12 +284,12 @@ namespace Smart_Temperature_Monitoring
             catch (SqlException e)
             {
                 dataTable = null;
-                log.Error("pGet_Temp_Range SqlException : " + e.Message);
+                log.Error("pGet_data_with_sampling_time SqlException : " + e.Message);
             }
             catch (Exception ex)
             {
                 dataTable = null;
-                log.Error("pGet_Temp_Range Exception : " + ex.Message);
+                log.Error("pGet_data_with_sampling_time Exception : " + ex.Message);
             }
             return dataTable;
         }
@@ -403,7 +403,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  อ่านค่าจาก Store pGet_setting_by_no
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 param.AddWithValue("@temp_number", SqlDbType.Int).Value = tempNumber;
                 ds = new DBClass().SqlExcSto("pGet_setting_by_no", "DbSet", param);
@@ -432,7 +432,7 @@ namespace Smart_Temperature_Monitoring
                 int sampling_minutes = 0;
 
                 _pGet_Temp_data = new DataTable();
-                _pGet_Temp_data = pGet_Temp_Range(Convert.ToInt32(cbbSelectedName.SelectedValue), dtDateFrom.Value.Date, dtDateTo.Value, Convert.ToInt32(cbbSampling.SelectedValue));
+                _pGet_Temp_data = pGet_data_with_sampling_time(Convert.ToInt32(cbbSelectedName.SelectedValue), dtDateFrom.Value.Date, dtDateTo.Value, Convert.ToInt32(cbbSampling.SelectedValue));
 
                 //Clear chart
                 cartesianChart1.Series.Clear();
@@ -529,7 +529,7 @@ namespace Smart_Temperature_Monitoring
                     cartesianChart1.AxisX.Add(new Axis
                     {
                         MinValue = 0,
-                        MaxValue = _pGet_Temp_data.Rows.Count-1,
+                        MaxValue = _pGet_Temp_data.Rows.Count,
                         Labels = labelX
                     });
                 }

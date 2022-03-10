@@ -122,7 +122,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  อ่านค่าจาก Store pGet_setting_by_no
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 param.AddWithValue("@temp_number", SqlDbType.Int).Value = tempNumber;
                 ds = new DBClass().SqlExcSto("pGet_setting_by_no", "DbSet", param);
@@ -148,7 +148,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  บันทึกค่าด้วย Store pUpdate_setting
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 param.AddWithValue("@temp_number", SqlDbType.Int).Value = temp_number;
                 param.AddWithValue("@temp_name", SqlDbType.NVarChar).Value = temp_name;

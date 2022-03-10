@@ -51,13 +51,13 @@ namespace Smart_Temperature_Monitoring
             }
         }
 
-        private static DataTable pGet_Temp_Range(DateTime selected_date, int sampling_min)
+        private static DataTable pGet_data_report_app(DateTime selected_date, int sampling_min)
         {
             DataTable dataTable = new DataTable();
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value 2022-01-15 00:00:00.000 pGet_Temp_data
+                //  อ่านค่าจาก Store pGet_data_report_app 
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 param.AddWithValue("@selected_date", SqlDbType.DateTime).Value = selected_date;
                 param.AddWithValue("@sampling_min", SqlDbType.DateTime).Value = sampling_min;
@@ -67,12 +67,12 @@ namespace Smart_Temperature_Monitoring
             catch (SqlException e)
             {
                 dataTable = null;
-                log.Error("Report pGet_Temp_Range SqlException : " + e.Message);
+                log.Error("Report pGet_data_report_app SqlException : " + e.Message);
             }
             catch (Exception ex)
             {
                 dataTable = null;
-                log.Error("Report pGet_Temp_Range Exception : " + ex.Message);
+                log.Error("Report pGet_data_report_app Exception : " + ex.Message);
             }
             return dataTable;
         }

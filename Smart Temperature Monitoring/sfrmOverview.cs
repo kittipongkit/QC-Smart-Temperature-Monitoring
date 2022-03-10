@@ -325,7 +325,7 @@ namespace Smart_Temperature_Monitoring
                     //  Clear gv
                     gvEventAll.Rows.Clear();
 
-                    gvEventAll.Columns[1].Width = 100;
+                    gvEventAll.Columns[1].Width = 150;
                     gvEventAll.Columns[2].Width = 100;
                     gvEventAll.Columns[3].Width = 100;
                     gvEventAll.Columns[0].Width = gvEventAll.Width - (gvEventAll.Columns[1].Width + gvEventAll.Columns[2].Width + gvEventAll.Columns[3].Width);
@@ -481,29 +481,6 @@ namespace Smart_Temperature_Monitoring
             return dataTable;
         }
 
-        private static DataTable pGet_Temp_data()
-        {
-            DataTable dataTable = new DataTable();
-            DataSet ds = new DataSet();
-            try
-            {
-                //  อ่านค่าจาก Store pGet_Temp_data
-                SqlParameterCollection param = new SqlCommand().Parameters;
-                ds = new DBClass().SqlExcSto("pGet_Temp_data", "DbSet", param);
-                dataTable = ds.Tables[0];
-            }
-            catch (SqlException e)
-            {
-                dataTable = null;
-                log.Error("pGet_Temp_data SqlException : " + e.Message);
-            }
-            catch (Exception ex)
-            {
-                dataTable = null;
-                log.Error("pGet_Temp_data Exception : " + ex.Message);
-            }
-            return dataTable;
-        }
 
         private static DataTable pGet_setting_actual()
         {
@@ -511,7 +488,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  อ่านค่าจาก Store pGet_setting_actual
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 ds = new DBClass().SqlExcSto("pGet_setting_actual", "DbSet", param);
                 dataTable = ds.Tables[0];
@@ -535,7 +512,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  อ่านค่าจาก Store pGet_event_all
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 ds = new DBClass().SqlExcSto("pGet_event_all", "DbSet", param);
                 dataTable = ds.Tables[0];
@@ -559,7 +536,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  อ่านค่าจาก Store pGet_status
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 ds = new DBClass().SqlExcSto("pGet_status", "DbSet", param);
                 dataTable = ds.Tables[0];
@@ -583,7 +560,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  อ่านค่าจาก Store pGet_status_tool
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 ds = new DBClass().SqlExcSto("pGet_status_tool", "DbSet", param);
                 dataTable = ds.Tables[0];
@@ -607,7 +584,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  สุ่มค่าด้วย Store pAutoInsert_tr_temp
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 ds = new DBClass().SqlExcSto("pAutoInsert_tr_temp", "DbSet", param);
                 dataTable = ds.Tables[0];

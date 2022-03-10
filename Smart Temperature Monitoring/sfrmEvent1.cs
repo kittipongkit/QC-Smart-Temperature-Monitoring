@@ -41,7 +41,7 @@ namespace Smart_Temperature_Monitoring
                 gvEvent.DataSource = _pGet_event;
                 gvEvent.Columns[0].Width = 200;
                 gvEvent.Columns[1].Width = 100;
-                gvEvent.Columns[2].Width = 100;
+                gvEvent.Columns[2].Width = 150;
                 gvEvent.Columns[3].Width = 100;
                 gvEvent.Columns[4].Width = 100;
                 gvEvent.Columns[5].Width = 100;
@@ -62,7 +62,7 @@ namespace Smart_Temperature_Monitoring
             DataSet ds = new DataSet();
             try
             {
-                //  อ่านค่าจาก Store pGet_actual_value
+                //  อ่านค่าจาก Store pGet_event
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 param.AddWithValue("@tool_id", SqlDbType.DateTime).Value = zone_id;
                 ds = new DBClass().SqlExcSto("pGet_event", "DbSet", param);
