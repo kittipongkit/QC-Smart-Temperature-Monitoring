@@ -200,6 +200,12 @@
     <Compile Include="sfrmEvent1.Designer.cs">
       <DependentUpon>sfrmEvent1.cs</DependentUpon>
     </Compile>
+    <Compile Include="sfrmOverview_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrmOverview_1.Designer.cs">
+      <DependentUpon>sfrmOverview_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="sfrmReport1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sfrmEvent1.resx">
       <DependentUpon>sfrmEvent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrmOverview_1.resx">
+      <DependentUpon>sfrmOverview_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sfrmReport1.resx">
       <DependentUpon>sfrmReport1.cs</DependentUpon>
@@ -308,6 +317,8 @@
   <ItemGroup>
     <Content Include="icons8-high-temperatures-100.ico" />
     <Content Include="Note.txt" />
+    <None Include="Resources\logo1.JPG" />
+    <None Include="Resources\img_logo_ajinomoto.png" />
     <None Include="Resources\Picture4.png" />
     <None Include="Resources\Picture3.png" />
     <None Include="Resources\Picture2.png" />

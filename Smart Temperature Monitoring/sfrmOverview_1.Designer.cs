@@ -1,6 +1,6 @@
 ﻿namespace Smart_Temperature_Monitoring
 {
-    partial class sfrmOverview
+    partial class sfrmOverview_1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sfrmOverview));
             this.gvData1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -147,6 +147,14 @@
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.btData2 = new System.Windows.Forms.Button();
+            this.btEvent2 = new System.Windows.Forms.Button();
+            this.btSetting2 = new System.Windows.Forms.Button();
+            this.btReport2 = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.pnTemp27 = new System.Windows.Forms.Panel();
             this.lbFoor27 = new System.Windows.Forms.Label();
             this.lbName27 = new System.Windows.Forms.Label();
@@ -227,6 +235,14 @@
             this.lbAL7 = new System.Windows.Forms.Label();
             this.lbWL7 = new System.Windows.Forms.Label();
             this.lbTemp7 = new System.Windows.Forms.Label();
+            this.pnTemp9 = new System.Windows.Forms.Panel();
+            this.lbFoor9 = new System.Windows.Forms.Label();
+            this.lbName9 = new System.Windows.Forms.Label();
+            this.lbAH9 = new System.Windows.Forms.Label();
+            this.lbWH9 = new System.Windows.Forms.Label();
+            this.lbAL9 = new System.Windows.Forms.Label();
+            this.lbWL9 = new System.Windows.Forms.Label();
+            this.lbTemp9 = new System.Windows.Forms.Label();
             this.pnTemp10 = new System.Windows.Forms.Panel();
             this.lbFoor10 = new System.Windows.Forms.Label();
             this.lbName10 = new System.Windows.Forms.Label();
@@ -243,75 +259,20 @@
             this.lbAL6 = new System.Windows.Forms.Label();
             this.lbWL6 = new System.Windows.Forms.Label();
             this.lbTemp6 = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.tool2_avg = new System.Windows.Forms.Label();
+            this.lbTool2_warning = new System.Windows.Forms.Label();
+            this.lbTool2_alarm = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.pnTemp33 = new System.Windows.Forms.Panel();
-            this.lbFoor33 = new System.Windows.Forms.Label();
-            this.lbName33 = new System.Windows.Forms.Label();
-            this.lbAH33 = new System.Windows.Forms.Label();
-            this.lbWH33 = new System.Windows.Forms.Label();
-            this.lbAL33 = new System.Windows.Forms.Label();
-            this.lbWL33 = new System.Windows.Forms.Label();
-            this.lbTemp33 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.btData1 = new System.Windows.Forms.Button();
+            this.btEvent1 = new System.Windows.Forms.Button();
+            this.btSetting1 = new System.Windows.Forms.Button();
+            this.btReport1 = new System.Windows.Forms.Button();
+            this.label102 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.pnTemp3 = new System.Windows.Forms.Panel();
-            this.lbFoor3 = new System.Windows.Forms.Label();
-            this.lbName3 = new System.Windows.Forms.Label();
-            this.lbAH3 = new System.Windows.Forms.Label();
-            this.lbWH3 = new System.Windows.Forms.Label();
-            this.lbAL3 = new System.Windows.Forms.Label();
-            this.lbWL3 = new System.Windows.Forms.Label();
-            this.lbTemp3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.pnTemp32 = new System.Windows.Forms.Panel();
-            this.lbFoor32 = new System.Windows.Forms.Label();
-            this.lbName32 = new System.Windows.Forms.Label();
-            this.lbAH32 = new System.Windows.Forms.Label();
-            this.lbWH32 = new System.Windows.Forms.Label();
-            this.lbAL32 = new System.Windows.Forms.Label();
-            this.lbWL32 = new System.Windows.Forms.Label();
-            this.lbTemp32 = new System.Windows.Forms.Label();
-            this.pnTemp31 = new System.Windows.Forms.Panel();
-            this.lbFoor31 = new System.Windows.Forms.Label();
-            this.lbName31 = new System.Windows.Forms.Label();
-            this.lbAH31 = new System.Windows.Forms.Label();
-            this.lbWH31 = new System.Windows.Forms.Label();
-            this.lbAL31 = new System.Windows.Forms.Label();
-            this.lbWL31 = new System.Windows.Forms.Label();
-            this.lbTemp31 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pnTemp1 = new System.Windows.Forms.Panel();
-            this.lbFoor1 = new System.Windows.Forms.Label();
-            this.lbName1 = new System.Windows.Forms.Label();
-            this.lbAH1 = new System.Windows.Forms.Label();
-            this.lbWH1 = new System.Windows.Forms.Label();
-            this.lbAL1 = new System.Windows.Forms.Label();
-            this.lbWL1 = new System.Windows.Forms.Label();
-            this.lbTemp1 = new System.Windows.Forms.Label();
-            this.pnTemp2 = new System.Windows.Forms.Panel();
-            this.lbFoor2 = new System.Windows.Forms.Label();
-            this.lbName2 = new System.Windows.Forms.Label();
-            this.lbAH2 = new System.Windows.Forms.Label();
-            this.lbWH2 = new System.Windows.Forms.Label();
-            this.lbAL2 = new System.Windows.Forms.Label();
-            this.lbWL2 = new System.Windows.Forms.Label();
-            this.lbTemp2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnTemp28 = new System.Windows.Forms.Panel();
             this.lbFoor28 = new System.Windows.Forms.Label();
             this.lbName28 = new System.Windows.Forms.Label();
@@ -320,14 +281,38 @@
             this.lbAL28 = new System.Windows.Forms.Label();
             this.lbWL28 = new System.Windows.Forms.Label();
             this.lbTemp28 = new System.Windows.Forms.Label();
-            this.pnTemp29 = new System.Windows.Forms.Panel();
-            this.lbFoor29 = new System.Windows.Forms.Label();
-            this.lbName29 = new System.Windows.Forms.Label();
-            this.lbAH29 = new System.Windows.Forms.Label();
-            this.lbWH29 = new System.Windows.Forms.Label();
-            this.lbAL29 = new System.Windows.Forms.Label();
-            this.lbWL29 = new System.Windows.Forms.Label();
-            this.lbTemp29 = new System.Windows.Forms.Label();
+            this.pnTemp32 = new System.Windows.Forms.Panel();
+            this.lbFoor32 = new System.Windows.Forms.Label();
+            this.lbName32 = new System.Windows.Forms.Label();
+            this.lbAH32 = new System.Windows.Forms.Label();
+            this.lbWH32 = new System.Windows.Forms.Label();
+            this.lbAL32 = new System.Windows.Forms.Label();
+            this.lbWL32 = new System.Windows.Forms.Label();
+            this.lbTemp32 = new System.Windows.Forms.Label();
+            this.pnTemp35 = new System.Windows.Forms.Panel();
+            this.lbFoor35 = new System.Windows.Forms.Label();
+            this.lbName35 = new System.Windows.Forms.Label();
+            this.lbAH35 = new System.Windows.Forms.Label();
+            this.lbWH35 = new System.Windows.Forms.Label();
+            this.lbAL35 = new System.Windows.Forms.Label();
+            this.lbWL35 = new System.Windows.Forms.Label();
+            this.lbTemp35 = new System.Windows.Forms.Label();
+            this.pnTemp31 = new System.Windows.Forms.Panel();
+            this.lbFoor31 = new System.Windows.Forms.Label();
+            this.lbName31 = new System.Windows.Forms.Label();
+            this.lbAH31 = new System.Windows.Forms.Label();
+            this.lbWH31 = new System.Windows.Forms.Label();
+            this.lbAL31 = new System.Windows.Forms.Label();
+            this.lbWL31 = new System.Windows.Forms.Label();
+            this.lbTemp31 = new System.Windows.Forms.Label();
+            this.pnTemp34 = new System.Windows.Forms.Panel();
+            this.lbFoor34 = new System.Windows.Forms.Label();
+            this.lbName34 = new System.Windows.Forms.Label();
+            this.lbAH34 = new System.Windows.Forms.Label();
+            this.lbWH34 = new System.Windows.Forms.Label();
+            this.lbAL34 = new System.Windows.Forms.Label();
+            this.lbWL34 = new System.Windows.Forms.Label();
+            this.lbTemp34 = new System.Windows.Forms.Label();
             this.pnTemp30 = new System.Windows.Forms.Panel();
             this.lbFoor30 = new System.Windows.Forms.Label();
             this.lbName30 = new System.Windows.Forms.Label();
@@ -336,13 +321,48 @@
             this.lbAL30 = new System.Windows.Forms.Label();
             this.lbWL30 = new System.Windows.Forms.Label();
             this.lbTemp30 = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.btData1 = new System.Windows.Forms.Button();
-            this.btEvent1 = new System.Windows.Forms.Button();
-            this.btSetting1 = new System.Windows.Forms.Button();
-            this.btReport1 = new System.Windows.Forms.Button();
-            this.label102 = new System.Windows.Forms.Label();
+            this.pnTemp33 = new System.Windows.Forms.Panel();
+            this.lbFoor33 = new System.Windows.Forms.Label();
+            this.lbName33 = new System.Windows.Forms.Label();
+            this.lbAH33 = new System.Windows.Forms.Label();
+            this.lbWH33 = new System.Windows.Forms.Label();
+            this.lbAL33 = new System.Windows.Forms.Label();
+            this.lbWL33 = new System.Windows.Forms.Label();
+            this.lbTemp33 = new System.Windows.Forms.Label();
+            this.pnTemp29 = new System.Windows.Forms.Panel();
+            this.lbFoor29 = new System.Windows.Forms.Label();
+            this.lbName29 = new System.Windows.Forms.Label();
+            this.lbAH29 = new System.Windows.Forms.Label();
+            this.lbWH29 = new System.Windows.Forms.Label();
+            this.lbAL29 = new System.Windows.Forms.Label();
+            this.lbWL29 = new System.Windows.Forms.Label();
+            this.lbTemp29 = new System.Windows.Forms.Label();
+            this.pnTemp3 = new System.Windows.Forms.Panel();
+            this.lbFoor3 = new System.Windows.Forms.Label();
+            this.lbName3 = new System.Windows.Forms.Label();
+            this.lbAH3 = new System.Windows.Forms.Label();
+            this.lbWH3 = new System.Windows.Forms.Label();
+            this.lbAL3 = new System.Windows.Forms.Label();
+            this.lbWL3 = new System.Windows.Forms.Label();
+            this.lbTemp3 = new System.Windows.Forms.Label();
+            this.pnTemp2 = new System.Windows.Forms.Panel();
+            this.lbFoor2 = new System.Windows.Forms.Label();
+            this.lbName2 = new System.Windows.Forms.Label();
+            this.lbAH2 = new System.Windows.Forms.Label();
+            this.lbWH2 = new System.Windows.Forms.Label();
+            this.lbAL2 = new System.Windows.Forms.Label();
+            this.lbWL2 = new System.Windows.Forms.Label();
+            this.lbTemp2 = new System.Windows.Forms.Label();
+            this.pnTemp1 = new System.Windows.Forms.Panel();
+            this.lbFoor1 = new System.Windows.Forms.Label();
+            this.lbName1 = new System.Windows.Forms.Label();
+            this.lbAH1 = new System.Windows.Forms.Label();
+            this.lbWH1 = new System.Windows.Forms.Label();
+            this.lbAL1 = new System.Windows.Forms.Label();
+            this.lbWL1 = new System.Windows.Forms.Label();
+            this.lbTemp1 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.tool1_avg = new System.Windows.Forms.Label();
             this.lbTool1_warning = new System.Windows.Forms.Label();
             this.lbTool1_alarm = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
@@ -351,35 +371,110 @@
             this.btEvent3 = new System.Windows.Forms.Button();
             this.btSetting3 = new System.Windows.Forms.Button();
             this.btReport3 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
             this.label200 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pnTemp9 = new System.Windows.Forms.Panel();
-            this.lbFoor9 = new System.Windows.Forms.Label();
-            this.lbName9 = new System.Windows.Forms.Label();
-            this.lbAH9 = new System.Windows.Forms.Label();
-            this.lbWH9 = new System.Windows.Forms.Label();
-            this.lbAL9 = new System.Windows.Forms.Label();
-            this.lbWL9 = new System.Windows.Forms.Label();
-            this.lbTemp9 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
+            this.tool3_avg = new System.Windows.Forms.Label();
             this.lbTool3_warning = new System.Windows.Forms.Label();
             this.lbTool3_alarm = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pnTemp25 = new System.Windows.Forms.Panel();
+            this.lbFoor25 = new System.Windows.Forms.Label();
+            this.lbName25 = new System.Windows.Forms.Label();
+            this.lbAH25 = new System.Windows.Forms.Label();
+            this.lbWH25 = new System.Windows.Forms.Label();
+            this.lbAL25 = new System.Windows.Forms.Label();
+            this.lbWL25 = new System.Windows.Forms.Label();
+            this.lbTemp25 = new System.Windows.Forms.Label();
+            this.pnTemp15 = new System.Windows.Forms.Panel();
+            this.lbFoor15 = new System.Windows.Forms.Label();
+            this.lbName15 = new System.Windows.Forms.Label();
+            this.lbAH15 = new System.Windows.Forms.Label();
+            this.lbWH15 = new System.Windows.Forms.Label();
+            this.lbAL15 = new System.Windows.Forms.Label();
+            this.lbWL15 = new System.Windows.Forms.Label();
+            this.lbTemp15 = new System.Windows.Forms.Label();
+            this.pnTemp16 = new System.Windows.Forms.Panel();
+            this.lbFoor16 = new System.Windows.Forms.Label();
+            this.lbName16 = new System.Windows.Forms.Label();
+            this.lbAH16 = new System.Windows.Forms.Label();
+            this.lbWH16 = new System.Windows.Forms.Label();
+            this.lbAL16 = new System.Windows.Forms.Label();
+            this.lbWL16 = new System.Windows.Forms.Label();
+            this.lbTemp16 = new System.Windows.Forms.Label();
+            this.pnTemp19 = new System.Windows.Forms.Panel();
+            this.lbFoor19 = new System.Windows.Forms.Label();
+            this.lbName19 = new System.Windows.Forms.Label();
+            this.lbAH19 = new System.Windows.Forms.Label();
+            this.lbWH19 = new System.Windows.Forms.Label();
+            this.lbAL19 = new System.Windows.Forms.Label();
+            this.lbWL19 = new System.Windows.Forms.Label();
+            this.lbTemp19 = new System.Windows.Forms.Label();
+            this.pnTemp17 = new System.Windows.Forms.Panel();
+            this.lbFoor17 = new System.Windows.Forms.Label();
+            this.lbName17 = new System.Windows.Forms.Label();
+            this.lbAH17 = new System.Windows.Forms.Label();
+            this.lbWH17 = new System.Windows.Forms.Label();
+            this.lbAL17 = new System.Windows.Forms.Label();
+            this.lbWL17 = new System.Windows.Forms.Label();
+            this.lbTemp17 = new System.Windows.Forms.Label();
+            this.pnTemp18 = new System.Windows.Forms.Panel();
+            this.lbFoor18 = new System.Windows.Forms.Label();
+            this.lbName18 = new System.Windows.Forms.Label();
+            this.lbAH18 = new System.Windows.Forms.Label();
+            this.lbWH18 = new System.Windows.Forms.Label();
+            this.lbAL18 = new System.Windows.Forms.Label();
+            this.lbWL18 = new System.Windows.Forms.Label();
+            this.lbTemp18 = new System.Windows.Forms.Label();
+            this.pnTemp24 = new System.Windows.Forms.Panel();
+            this.lbFoor24 = new System.Windows.Forms.Label();
+            this.lbName24 = new System.Windows.Forms.Label();
+            this.lbAH24 = new System.Windows.Forms.Label();
+            this.lbWH24 = new System.Windows.Forms.Label();
+            this.lbAL24 = new System.Windows.Forms.Label();
+            this.lbWL24 = new System.Windows.Forms.Label();
+            this.lbTemp24 = new System.Windows.Forms.Label();
+            this.pnTemp20 = new System.Windows.Forms.Panel();
+            this.lbFoor20 = new System.Windows.Forms.Label();
+            this.lbName20 = new System.Windows.Forms.Label();
+            this.lbAH20 = new System.Windows.Forms.Label();
+            this.lbWH20 = new System.Windows.Forms.Label();
+            this.lbAL20 = new System.Windows.Forms.Label();
+            this.lbWL20 = new System.Windows.Forms.Label();
+            this.lbTemp20 = new System.Windows.Forms.Label();
+            this.pnTemp23 = new System.Windows.Forms.Panel();
+            this.lbFoor23 = new System.Windows.Forms.Label();
+            this.lbName23 = new System.Windows.Forms.Label();
+            this.lbAH23 = new System.Windows.Forms.Label();
+            this.lbWH23 = new System.Windows.Forms.Label();
+            this.lbAL23 = new System.Windows.Forms.Label();
+            this.lbWL23 = new System.Windows.Forms.Label();
+            this.lbTemp23 = new System.Windows.Forms.Label();
+            this.pnTemp21 = new System.Windows.Forms.Panel();
+            this.lbFoor21 = new System.Windows.Forms.Label();
+            this.lbName21 = new System.Windows.Forms.Label();
+            this.lbAH21 = new System.Windows.Forms.Label();
+            this.lbWH21 = new System.Windows.Forms.Label();
+            this.lbAL21 = new System.Windows.Forms.Label();
+            this.lbWL21 = new System.Windows.Forms.Label();
+            this.lbTemp21 = new System.Windows.Forms.Label();
+            this.pnTemp22 = new System.Windows.Forms.Panel();
+            this.lbFoor22 = new System.Windows.Forms.Label();
+            this.lbName22 = new System.Windows.Forms.Label();
+            this.lbAH22 = new System.Windows.Forms.Label();
+            this.lbWH22 = new System.Windows.Forms.Label();
+            this.lbAL22 = new System.Windows.Forms.Label();
+            this.lbWL22 = new System.Windows.Forms.Label();
+            this.lbTemp22 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvData1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvEventAll)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvData3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvData2)).BeginInit();
+            this.panel12.SuspendLayout();
+            this.panel40.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.pnTemp27.SuspendLayout();
             this.pnTemp26.SuspendLayout();
             this.pnTemp14.SuspendLayout();
@@ -390,42 +485,41 @@
             this.pnTemp11.SuspendLayout();
             this.pnTemp5.SuspendLayout();
             this.pnTemp7.SuspendLayout();
+            this.pnTemp9.SuspendLayout();
             this.pnTemp10.SuspendLayout();
             this.pnTemp6.SuspendLayout();
+            this.panel22.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.pnTemp33.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.pnTemp3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.pnTemp32.SuspendLayout();
-            this.pnTemp31.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.pnTemp1.SuspendLayout();
-            this.pnTemp2.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.pnTemp28.SuspendLayout();
-            this.pnTemp29.SuspendLayout();
-            this.pnTemp30.SuspendLayout();
             this.panel24.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.pnTemp28.SuspendLayout();
+            this.pnTemp32.SuspendLayout();
+            this.pnTemp35.SuspendLayout();
+            this.pnTemp31.SuspendLayout();
+            this.pnTemp34.SuspendLayout();
+            this.pnTemp30.SuspendLayout();
+            this.pnTemp33.SuspendLayout();
+            this.pnTemp29.SuspendLayout();
+            this.pnTemp3.SuspendLayout();
+            this.pnTemp2.SuspendLayout();
+            this.pnTemp1.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel35.SuspendLayout();
             this.panel41.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.panel36.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.pnTemp9.SuspendLayout();
             this.panel34.SuspendLayout();
+            this.pnTemp25.SuspendLayout();
+            this.pnTemp15.SuspendLayout();
+            this.pnTemp16.SuspendLayout();
+            this.pnTemp19.SuspendLayout();
+            this.pnTemp17.SuspendLayout();
+            this.pnTemp18.SuspendLayout();
+            this.pnTemp24.SuspendLayout();
+            this.pnTemp20.SuspendLayout();
+            this.pnTemp23.SuspendLayout();
+            this.pnTemp21.SuspendLayout();
+            this.pnTemp22.SuspendLayout();
             this.SuspendLayout();
             // 
             // gvData1
@@ -438,14 +532,14 @@
             this.gvData1.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData1.CausesValidation = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.gvData1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData1.ColumnHeadersVisible = false;
             this.gvData1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -650,14 +744,14 @@
             this.gvEventAll.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvEventAll.CausesValidation = false;
             this.gvEventAll.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvEventAll.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvEventAll.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.gvEventAll.ColumnHeadersHeight = 30;
             this.gvEventAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gvEventAll.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -665,32 +759,32 @@
             this.Temp_Name,
             this.Tool,
             this.Status});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvEventAll.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvEventAll.DefaultCellStyle = dataGridViewCellStyle19;
             this.gvEventAll.Enabled = false;
             this.gvEventAll.Location = new System.Drawing.Point(1, -1);
             this.gvEventAll.MultiSelect = false;
             this.gvEventAll.Name = "gvEventAll";
             this.gvEventAll.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvEventAll.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvEventAll.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.gvEventAll.RowHeadersVisible = false;
             this.gvEventAll.RowHeadersWidth = 42;
             this.gvEventAll.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvEventAll.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvEventAll.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.gvEventAll.RowTemplate.Height = 30;
             this.gvEventAll.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.gvEventAll.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -791,14 +885,14 @@
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView3.CausesValidation = false;
             this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn49,
@@ -998,14 +1092,14 @@
             this.gvData3.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData3.CausesValidation = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.gvData3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData3.ColumnHeadersVisible = false;
             this.gvData3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1207,14 +1301,14 @@
             this.gvData2.BackgroundColor = System.Drawing.Color.LightGray;
             this.gvData2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvData2.CausesValidation = false;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvData2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvData2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.gvData2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvData2.ColumnHeadersVisible = false;
             this.gvData2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1406,6 +1500,135 @@
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
             this.dataGridViewTextBoxColumn24.ReadOnly = true;
             // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Controls.Add(this.panel40);
+            this.panel12.Controls.Add(this.label30);
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Controls.Add(this.panel22);
+            this.panel12.Location = new System.Drawing.Point(9, 273);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1899, 258);
+            this.panel12.TabIndex = 3;
+            // 
+            // panel40
+            // 
+            this.panel40.Controls.Add(this.btData2);
+            this.panel40.Controls.Add(this.btEvent2);
+            this.panel40.Controls.Add(this.btSetting2);
+            this.panel40.Controls.Add(this.btReport2);
+            this.panel40.Location = new System.Drawing.Point(1700, 5);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(195, 44);
+            this.panel40.TabIndex = 27;
+            // 
+            // btData2
+            // 
+            this.btData2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(199)))), ((int)(((byte)(231)))));
+            this.btData2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btData2.FlatAppearance.BorderSize = 0;
+            this.btData2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btData2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btData2.ForeColor = System.Drawing.Color.White;
+            this.btData2.Image = ((System.Drawing.Image)(resources.GetObject("btData2.Image")));
+            this.btData2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btData2.Location = new System.Drawing.Point(0, 1);
+            this.btData2.Name = "btData2";
+            this.btData2.Size = new System.Drawing.Size(42, 42);
+            this.btData2.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btData2, "Trend");
+            this.btData2.UseVisualStyleBackColor = false;
+            this.btData2.Click += new System.EventHandler(this.btData2_Click);
+            // 
+            // btEvent2
+            // 
+            this.btEvent2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btEvent2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btEvent2.FlatAppearance.BorderSize = 0;
+            this.btEvent2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEvent2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btEvent2.ForeColor = System.Drawing.Color.White;
+            this.btEvent2.Image = ((System.Drawing.Image)(resources.GetObject("btEvent2.Image")));
+            this.btEvent2.Location = new System.Drawing.Point(48, 1);
+            this.btEvent2.Name = "btEvent2";
+            this.btEvent2.Size = new System.Drawing.Size(42, 42);
+            this.btEvent2.TabIndex = 8;
+            this.btEvent2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btEvent2, "Events");
+            this.btEvent2.UseVisualStyleBackColor = false;
+            this.btEvent2.Click += new System.EventHandler(this.btEvent2_Click);
+            // 
+            // btSetting2
+            // 
+            this.btSetting2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btSetting2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSetting2.FlatAppearance.BorderSize = 0;
+            this.btSetting2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSetting2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btSetting2.ForeColor = System.Drawing.Color.White;
+            this.btSetting2.Image = ((System.Drawing.Image)(resources.GetObject("btSetting2.Image")));
+            this.btSetting2.Location = new System.Drawing.Point(144, 1);
+            this.btSetting2.Name = "btSetting2";
+            this.btSetting2.Size = new System.Drawing.Size(42, 42);
+            this.btSetting2.TabIndex = 26;
+            this.btSetting2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btSetting2, "Setting");
+            this.btSetting2.UseVisualStyleBackColor = false;
+            this.btSetting2.Click += new System.EventHandler(this.btSetting2_Click);
+            // 
+            // btReport2
+            // 
+            this.btReport2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(114)))), ((int)(((byte)(196)))));
+            this.btReport2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btReport2.FlatAppearance.BorderSize = 0;
+            this.btReport2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btReport2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btReport2.ForeColor = System.Drawing.Color.White;
+            this.btReport2.Image = ((System.Drawing.Image)(resources.GetObject("btReport2.Image")));
+            this.btReport2.Location = new System.Drawing.Point(96, 1);
+            this.btReport2.Name = "btReport2";
+            this.btReport2.Size = new System.Drawing.Size(42, 42);
+            this.btReport2.TabIndex = 9;
+            this.btReport2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.btReport2, "Report");
+            this.btReport2.UseVisualStyleBackColor = false;
+            this.btReport2.Click += new System.EventHandler(this.btReport2_Click);
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.Gray;
+            this.label30.Location = new System.Drawing.Point(7, 5);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(190, 42);
+            this.label30.TabIndex = 4;
+            this.label30.Text = "Incubator";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Transparent;
+            this.panel13.Controls.Add(this.pnTemp25);
+            this.panel13.Controls.Add(this.pnTemp15);
+            this.panel13.Controls.Add(this.pnTemp16);
+            this.panel13.Controls.Add(this.pnTemp19);
+            this.panel13.Controls.Add(this.pnTemp17);
+            this.panel13.Controls.Add(this.pnTemp18);
+            this.panel13.Controls.Add(this.pnTemp24);
+            this.panel13.Controls.Add(this.pnTemp20);
+            this.panel13.Controls.Add(this.pnTemp23);
+            this.panel13.Controls.Add(this.pnTemp21);
+            this.panel13.Controls.Add(this.pnTemp22);
+            this.panel13.Controls.Add(this.pnTemp35);
+            this.panel13.Controls.Add(this.pnTemp34);
+            this.panel13.Location = new System.Drawing.Point(6, 53);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(1890, 202);
+            this.panel13.TabIndex = 4;
+            this.panel13.Visible = false;
+            // 
             // pnTemp27
             // 
             this.pnTemp27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -1416,7 +1639,7 @@
             this.pnTemp27.Controls.Add(this.lbAL27);
             this.pnTemp27.Controls.Add(this.lbWL27);
             this.pnTemp27.Controls.Add(this.lbTemp27);
-            this.pnTemp27.Location = new System.Drawing.Point(14, 32);
+            this.pnTemp27.Location = new System.Drawing.Point(579, 4);
             this.pnTemp27.Name = "pnTemp27";
             this.pnTemp27.Size = new System.Drawing.Size(138, 195);
             this.pnTemp27.TabIndex = 12;
@@ -1510,7 +1733,7 @@
             this.pnTemp26.Controls.Add(this.lbAL26);
             this.pnTemp26.Controls.Add(this.lbWL26);
             this.pnTemp26.Controls.Add(this.lbTemp26);
-            this.pnTemp26.Location = new System.Drawing.Point(14, 33);
+            this.pnTemp26.Location = new System.Drawing.Point(435, 4);
             this.pnTemp26.Name = "pnTemp26";
             this.pnTemp26.Size = new System.Drawing.Size(138, 195);
             this.pnTemp26.TabIndex = 13;
@@ -1604,7 +1827,7 @@
             this.pnTemp14.Controls.Add(this.lbAL14);
             this.pnTemp14.Controls.Add(this.lbWL14);
             this.pnTemp14.Controls.Add(this.lbTemp14);
-            this.pnTemp14.Location = new System.Drawing.Point(445, 33);
+            this.pnTemp14.Location = new System.Drawing.Point(1444, 4);
             this.pnTemp14.Name = "pnTemp14";
             this.pnTemp14.Size = new System.Drawing.Size(138, 195);
             this.pnTemp14.TabIndex = 9;
@@ -1698,7 +1921,7 @@
             this.pnTemp13.Controls.Add(this.lbAL13);
             this.pnTemp13.Controls.Add(this.lbWL13);
             this.pnTemp13.Controls.Add(this.lbTemp13);
-            this.pnTemp13.Location = new System.Drawing.Point(301, 33);
+            this.pnTemp13.Location = new System.Drawing.Point(1300, 4);
             this.pnTemp13.Name = "pnTemp13";
             this.pnTemp13.Size = new System.Drawing.Size(138, 195);
             this.pnTemp13.TabIndex = 10;
@@ -1792,7 +2015,7 @@
             this.pnTemp12.Controls.Add(this.lbAL12);
             this.pnTemp12.Controls.Add(this.lbWL12);
             this.pnTemp12.Controls.Add(this.lbTemp12);
-            this.pnTemp12.Location = new System.Drawing.Point(157, 33);
+            this.pnTemp12.Location = new System.Drawing.Point(1156, 4);
             this.pnTemp12.Name = "pnTemp12";
             this.pnTemp12.Size = new System.Drawing.Size(138, 195);
             this.pnTemp12.TabIndex = 11;
@@ -1886,7 +2109,7 @@
             this.pnTemp4.Controls.Add(this.lbAL4);
             this.pnTemp4.Controls.Add(this.lbWL4);
             this.pnTemp4.Controls.Add(this.lbTemp4);
-            this.pnTemp4.Location = new System.Drawing.Point(7, 33);
+            this.pnTemp4.Location = new System.Drawing.Point(4, 4);
             this.pnTemp4.Name = "pnTemp4";
             this.pnTemp4.Size = new System.Drawing.Size(138, 195);
             this.pnTemp4.TabIndex = 1;
@@ -1980,7 +2203,7 @@
             this.pnTemp8.Controls.Add(this.lbAL8);
             this.pnTemp8.Controls.Add(this.lbWL8);
             this.pnTemp8.Controls.Add(this.lbTemp8);
-            this.pnTemp8.Location = new System.Drawing.Point(583, 32);
+            this.pnTemp8.Location = new System.Drawing.Point(580, 4);
             this.pnTemp8.Name = "pnTemp8";
             this.pnTemp8.Size = new System.Drawing.Size(138, 195);
             this.pnTemp8.TabIndex = 2;
@@ -2074,7 +2297,7 @@
             this.pnTemp11.Controls.Add(this.lbAL11);
             this.pnTemp11.Controls.Add(this.lbWL11);
             this.pnTemp11.Controls.Add(this.lbTemp11);
-            this.pnTemp11.Location = new System.Drawing.Point(13, 33);
+            this.pnTemp11.Location = new System.Drawing.Point(1012, 4);
             this.pnTemp11.Name = "pnTemp11";
             this.pnTemp11.Size = new System.Drawing.Size(138, 195);
             this.pnTemp11.TabIndex = 3;
@@ -2168,7 +2391,7 @@
             this.pnTemp5.Controls.Add(this.lbAL5);
             this.pnTemp5.Controls.Add(this.lbWL5);
             this.pnTemp5.Controls.Add(this.lbTemp5);
-            this.pnTemp5.Location = new System.Drawing.Point(151, 33);
+            this.pnTemp5.Location = new System.Drawing.Point(148, 5);
             this.pnTemp5.Name = "pnTemp5";
             this.pnTemp5.Size = new System.Drawing.Size(138, 195);
             this.pnTemp5.TabIndex = 4;
@@ -2262,7 +2485,7 @@
             this.pnTemp7.Controls.Add(this.lbAL7);
             this.pnTemp7.Controls.Add(this.lbWL7);
             this.pnTemp7.Controls.Add(this.lbTemp7);
-            this.pnTemp7.Location = new System.Drawing.Point(439, 33);
+            this.pnTemp7.Location = new System.Drawing.Point(436, 5);
             this.pnTemp7.Name = "pnTemp7";
             this.pnTemp7.Size = new System.Drawing.Size(138, 195);
             this.pnTemp7.TabIndex = 5;
@@ -2346,6 +2569,100 @@
             this.toolTip1.SetToolTip(this.lbTemp7, "Trend");
             this.lbTemp7.Click += new System.EventHandler(this.lbTemp7_Click);
             // 
+            // pnTemp9
+            // 
+            this.pnTemp9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp9.Controls.Add(this.lbFoor9);
+            this.pnTemp9.Controls.Add(this.lbName9);
+            this.pnTemp9.Controls.Add(this.lbAH9);
+            this.pnTemp9.Controls.Add(this.lbWH9);
+            this.pnTemp9.Controls.Add(this.lbAL9);
+            this.pnTemp9.Controls.Add(this.lbWL9);
+            this.pnTemp9.Controls.Add(this.lbTemp9);
+            this.pnTemp9.Location = new System.Drawing.Point(724, 4);
+            this.pnTemp9.Name = "pnTemp9";
+            this.pnTemp9.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp9.TabIndex = 6;
+            // 
+            // lbFoor9
+            // 
+            this.lbFoor9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor9.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor9.Name = "lbFoor9";
+            this.lbFoor9.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor9.TabIndex = 4;
+            this.lbFoor9.Text = "F1";
+            this.lbFoor9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName9
+            // 
+            this.lbName9.BackColor = System.Drawing.Color.Gray;
+            this.lbName9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName9.Location = new System.Drawing.Point(0, 0);
+            this.lbName9.Name = "lbName9";
+            this.lbName9.Size = new System.Drawing.Size(138, 30);
+            this.lbName9.TabIndex = 4;
+            this.lbName9.Text = "Number09";
+            this.lbName9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName9, "Setting");
+            this.lbName9.Click += new System.EventHandler(this.lbName9_Click);
+            // 
+            // lbAH9
+            // 
+            this.lbAH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH9.Location = new System.Drawing.Point(83, 30);
+            this.lbAH9.Name = "lbAH9";
+            this.lbAH9.Size = new System.Drawing.Size(55, 21);
+            this.lbAH9.TabIndex = 4;
+            this.lbAH9.Text = "999.9";
+            this.lbAH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH9
+            // 
+            this.lbWH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH9.Location = new System.Drawing.Point(0, 30);
+            this.lbWH9.Name = "lbWH9";
+            this.lbWH9.Size = new System.Drawing.Size(55, 21);
+            this.lbWH9.TabIndex = 4;
+            this.lbWH9.Text = "999.9";
+            this.lbWH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL9
+            // 
+            this.lbAL9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL9.Location = new System.Drawing.Point(83, 164);
+            this.lbAL9.Name = "lbAL9";
+            this.lbAL9.Size = new System.Drawing.Size(55, 21);
+            this.lbAL9.TabIndex = 4;
+            this.lbAL9.Text = "999.9";
+            this.lbAL9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL9
+            // 
+            this.lbWL9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL9.Location = new System.Drawing.Point(0, 164);
+            this.lbWL9.Name = "lbWL9";
+            this.lbWL9.Size = new System.Drawing.Size(55, 21);
+            this.lbWL9.TabIndex = 4;
+            this.lbWL9.Text = "999.9";
+            this.lbWL9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp9
+            // 
+            this.lbTemp9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp9.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp9.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp9.Name = "lbTemp9";
+            this.lbTemp9.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp9.TabIndex = 3;
+            this.lbTemp9.Text = "999.9";
+            this.lbTemp9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp9, "Trend");
+            this.lbTemp9.Click += new System.EventHandler(this.lbTemp9_Click);
+            // 
             // pnTemp10
             // 
             this.pnTemp10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -2356,7 +2673,7 @@
             this.pnTemp10.Controls.Add(this.lbAL10);
             this.pnTemp10.Controls.Add(this.lbWL10);
             this.pnTemp10.Controls.Add(this.lbTemp10);
-            this.pnTemp10.Location = new System.Drawing.Point(727, 32);
+            this.pnTemp10.Location = new System.Drawing.Point(868, 4);
             this.pnTemp10.Name = "pnTemp10";
             this.pnTemp10.Size = new System.Drawing.Size(138, 195);
             this.pnTemp10.TabIndex = 7;
@@ -2450,7 +2767,7 @@
             this.pnTemp6.Controls.Add(this.lbAL6);
             this.pnTemp6.Controls.Add(this.lbWL6);
             this.pnTemp6.Controls.Add(this.lbTemp6);
-            this.pnTemp6.Location = new System.Drawing.Point(295, 33);
+            this.pnTemp6.Location = new System.Drawing.Point(292, 5);
             this.pnTemp6.Name = "pnTemp6";
             this.pnTemp6.Size = new System.Drawing.Size(138, 195);
             this.pnTemp6.TabIndex = 8;
@@ -2534,6 +2851,52 @@
             this.toolTip1.SetToolTip(this.lbTemp6, "Trend");
             this.lbTemp6.Click += new System.EventHandler(this.lbTemp6_Click);
             // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.tool2_avg);
+            this.panel22.Controls.Add(this.lbTool2_warning);
+            this.panel22.Controls.Add(this.lbTool2_alarm);
+            this.panel22.Location = new System.Drawing.Point(849, 5);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(845, 44);
+            this.panel22.TabIndex = 4;
+            // 
+            // tool2_avg
+            // 
+            this.tool2_avg.BackColor = System.Drawing.Color.Transparent;
+            this.tool2_avg.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tool2_avg.ForeColor = System.Drawing.Color.Gray;
+            this.tool2_avg.Location = new System.Drawing.Point(0, 6);
+            this.tool2_avg.Name = "tool2_avg";
+            this.tool2_avg.Size = new System.Drawing.Size(274, 30);
+            this.tool2_avg.TabIndex = 4;
+            this.tool2_avg.Text = "Average : 2.6 C";
+            this.tool2_avg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbTool2_warning
+            // 
+            this.lbTool2_warning.BackColor = System.Drawing.Color.Transparent;
+            this.lbTool2_warning.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTool2_warning.ForeColor = System.Drawing.Color.Gray;
+            this.lbTool2_warning.Location = new System.Drawing.Point(275, 6);
+            this.lbTool2_warning.Name = "lbTool2_warning";
+            this.lbTool2_warning.Size = new System.Drawing.Size(274, 30);
+            this.lbTool2_warning.TabIndex = 4;
+            this.lbTool2_warning.Text = "Warning : 2 Times";
+            this.lbTool2_warning.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbTool2_alarm
+            // 
+            this.lbTool2_alarm.BackColor = System.Drawing.Color.Transparent;
+            this.lbTool2_alarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTool2_alarm.ForeColor = System.Drawing.Color.Gray;
+            this.lbTool2_alarm.Location = new System.Drawing.Point(549, 6);
+            this.lbTool2_alarm.Name = "lbTool2_alarm";
+            this.lbTool2_alarm.Size = new System.Drawing.Size(293, 30);
+            this.lbTool2_alarm.TabIndex = 4;
+            this.lbTool2_alarm.Text = "Out of range : 0 Times";
+            this.lbTool2_alarm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // panel14
             // 
             this.panel14.Controls.Add(this.gvEventAll);
@@ -2548,1075 +2911,14 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Controls.Add(this.panel3);
-            this.panel11.Controls.Add(this.panel5);
-            this.panel11.Controls.Add(this.panel18);
-            this.panel11.Controls.Add(this.panel2);
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Controls.Add(this.panel6);
             this.panel11.Controls.Add(this.panel24);
             this.panel11.Controls.Add(this.label102);
+            this.panel11.Controls.Add(this.panel18);
             this.panel11.Controls.Add(this.panel25);
             this.panel11.Location = new System.Drawing.Point(9, 9);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1899, 390);
+            this.panel11.Size = new System.Drawing.Size(1899, 258);
             this.panel11.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.panel20);
-            this.panel3.Location = new System.Drawing.Point(528, 65);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(187, 285);
-            this.panel3.TabIndex = 28;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 30);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Chemical Lab";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.pnTemp26);
-            this.panel20.Location = new System.Drawing.Point(8, 33);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(170, 242);
-            this.panel20.TabIndex = 28;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.panel17);
-            this.panel5.Location = new System.Drawing.Point(1664, 65);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(187, 285);
-            this.panel5.TabIndex = 28;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(341, 30);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Micro lab";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.pnTemp33);
-            this.panel17.Location = new System.Drawing.Point(8, 33);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(170, 242);
-            this.panel17.TabIndex = 28;
-            // 
-            // pnTemp33
-            // 
-            this.pnTemp33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnTemp33.Controls.Add(this.lbFoor33);
-            this.pnTemp33.Controls.Add(this.lbName33);
-            this.pnTemp33.Controls.Add(this.lbAH33);
-            this.pnTemp33.Controls.Add(this.lbWH33);
-            this.pnTemp33.Controls.Add(this.lbAL33);
-            this.pnTemp33.Controls.Add(this.lbWL33);
-            this.pnTemp33.Controls.Add(this.lbTemp33);
-            this.pnTemp33.Location = new System.Drawing.Point(14, 33);
-            this.pnTemp33.Name = "pnTemp33";
-            this.pnTemp33.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp33.TabIndex = 7;
-            // 
-            // lbFoor33
-            // 
-            this.lbFoor33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbFoor33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor33.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor33.Name = "lbFoor33";
-            this.lbFoor33.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor33.TabIndex = 4;
-            this.lbFoor33.Text = "F1";
-            this.lbFoor33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName33
-            // 
-            this.lbName33.BackColor = System.Drawing.Color.Gray;
-            this.lbName33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName33.Location = new System.Drawing.Point(0, 0);
-            this.lbName33.Name = "lbName33";
-            this.lbName33.Size = new System.Drawing.Size(138, 30);
-            this.lbName33.TabIndex = 4;
-            this.lbName33.Text = "Number33";
-            this.lbName33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName33, "Setting");
-            this.lbName33.Click += new System.EventHandler(this.lbName33_Click);
-            // 
-            // lbAH33
-            // 
-            this.lbAH33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH33.Location = new System.Drawing.Point(83, 30);
-            this.lbAH33.Name = "lbAH33";
-            this.lbAH33.Size = new System.Drawing.Size(55, 21);
-            this.lbAH33.TabIndex = 4;
-            this.lbAH33.Text = "999.9";
-            this.lbAH33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH33
-            // 
-            this.lbWH33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH33.Location = new System.Drawing.Point(0, 30);
-            this.lbWH33.Name = "lbWH33";
-            this.lbWH33.Size = new System.Drawing.Size(55, 21);
-            this.lbWH33.TabIndex = 4;
-            this.lbWH33.Text = "999.9";
-            this.lbWH33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL33
-            // 
-            this.lbAL33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL33.Location = new System.Drawing.Point(83, 164);
-            this.lbAL33.Name = "lbAL33";
-            this.lbAL33.Size = new System.Drawing.Size(55, 21);
-            this.lbAL33.TabIndex = 4;
-            this.lbAL33.Text = "999.9";
-            this.lbAL33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL33
-            // 
-            this.lbWL33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL33.Location = new System.Drawing.Point(0, 164);
-            this.lbWL33.Name = "lbWL33";
-            this.lbWL33.Size = new System.Drawing.Size(55, 21);
-            this.lbWL33.TabIndex = 4;
-            this.lbWL33.Text = "999.9";
-            this.lbWL33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp33
-            // 
-            this.lbTemp33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp33.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp33.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp33.Name = "lbTemp33";
-            this.lbTemp33.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp33.TabIndex = 3;
-            this.lbTemp33.Text = "999.9";
-            this.lbTemp33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp33, "Trend");
-            this.lbTemp33.Click += new System.EventHandler(this.lbTemp33_Click);
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel18.Controls.Add(this.label6);
-            this.panel18.Controls.Add(this.panel19);
-            this.panel18.Location = new System.Drawing.Point(335, 65);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(187, 285);
-            this.panel18.TabIndex = 28;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(196, 30);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Chemical Lab";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.White;
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.pnTemp3);
-            this.panel19.Location = new System.Drawing.Point(8, 34);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(170, 242);
-            this.panel19.TabIndex = 28;
-            // 
-            // pnTemp3
-            // 
-            this.pnTemp3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.pnTemp3.Controls.Add(this.lbFoor3);
-            this.pnTemp3.Controls.Add(this.lbName3);
-            this.pnTemp3.Controls.Add(this.lbAH3);
-            this.pnTemp3.Controls.Add(this.lbWH3);
-            this.pnTemp3.Controls.Add(this.lbAL3);
-            this.pnTemp3.Controls.Add(this.lbWL3);
-            this.pnTemp3.Controls.Add(this.lbTemp3);
-            this.pnTemp3.Location = new System.Drawing.Point(14, 33);
-            this.pnTemp3.Name = "pnTemp3";
-            this.pnTemp3.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp3.TabIndex = 0;
-            // 
-            // lbFoor3
-            // 
-            this.lbFoor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lbFoor3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor3.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor3.Name = "lbFoor3";
-            this.lbFoor3.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor3.TabIndex = 4;
-            this.lbFoor3.Text = "F1";
-            this.lbFoor3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName3
-            // 
-            this.lbName3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbName3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName3.Location = new System.Drawing.Point(0, 0);
-            this.lbName3.Name = "lbName3";
-            this.lbName3.Size = new System.Drawing.Size(138, 30);
-            this.lbName3.TabIndex = 4;
-            this.lbName3.Text = "Number03";
-            this.lbName3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName3, "Setting");
-            this.lbName3.Click += new System.EventHandler(this.lbName3_Click);
-            // 
-            // lbAH3
-            // 
-            this.lbAH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH3.Location = new System.Drawing.Point(83, 30);
-            this.lbAH3.Name = "lbAH3";
-            this.lbAH3.Size = new System.Drawing.Size(55, 21);
-            this.lbAH3.TabIndex = 4;
-            this.lbAH3.Text = "999.9";
-            this.lbAH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH3
-            // 
-            this.lbWH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH3.Location = new System.Drawing.Point(0, 30);
-            this.lbWH3.Name = "lbWH3";
-            this.lbWH3.Size = new System.Drawing.Size(55, 21);
-            this.lbWH3.TabIndex = 4;
-            this.lbWH3.Text = "999.9";
-            this.lbWH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL3
-            // 
-            this.lbAL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL3.Location = new System.Drawing.Point(83, 164);
-            this.lbAL3.Name = "lbAL3";
-            this.lbAL3.Size = new System.Drawing.Size(55, 21);
-            this.lbAL3.TabIndex = 4;
-            this.lbAL3.Text = "999.9";
-            this.lbAL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL3
-            // 
-            this.lbWL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL3.Location = new System.Drawing.Point(0, 164);
-            this.lbWL3.Name = "lbWL3";
-            this.lbWL3.Size = new System.Drawing.Size(55, 21);
-            this.lbWL3.TabIndex = 4;
-            this.lbWL3.Text = "999.9";
-            this.lbWL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp3
-            // 
-            this.lbTemp3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp3.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp3.Name = "lbTemp3";
-            this.lbTemp3.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp3.TabIndex = 3;
-            this.lbTemp3.Text = "999.9";
-            this.lbTemp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp3, "Trend");
-            this.lbTemp3.Click += new System.EventHandler(this.lbTemp3_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.panel15);
-            this.panel2.Location = new System.Drawing.Point(1342, 65);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(316, 285);
-            this.panel2.TabIndex = 28;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 30);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Reserve room";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.pnTemp32);
-            this.panel15.Controls.Add(this.pnTemp31);
-            this.panel15.Location = new System.Drawing.Point(8, 33);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(300, 242);
-            this.panel15.TabIndex = 28;
-            // 
-            // pnTemp32
-            // 
-            this.pnTemp32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnTemp32.Controls.Add(this.lbFoor32);
-            this.pnTemp32.Controls.Add(this.lbName32);
-            this.pnTemp32.Controls.Add(this.lbAH32);
-            this.pnTemp32.Controls.Add(this.lbWH32);
-            this.pnTemp32.Controls.Add(this.lbAL32);
-            this.pnTemp32.Controls.Add(this.lbWL32);
-            this.pnTemp32.Controls.Add(this.lbTemp32);
-            this.pnTemp32.Location = new System.Drawing.Point(152, 32);
-            this.pnTemp32.Name = "pnTemp32";
-            this.pnTemp32.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp32.TabIndex = 2;
-            // 
-            // lbFoor32
-            // 
-            this.lbFoor32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbFoor32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor32.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor32.Name = "lbFoor32";
-            this.lbFoor32.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor32.TabIndex = 4;
-            this.lbFoor32.Text = "F1";
-            this.lbFoor32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName32
-            // 
-            this.lbName32.BackColor = System.Drawing.Color.Gray;
-            this.lbName32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName32.Location = new System.Drawing.Point(0, 0);
-            this.lbName32.Name = "lbName32";
-            this.lbName32.Size = new System.Drawing.Size(138, 30);
-            this.lbName32.TabIndex = 4;
-            this.lbName32.Text = "Number32";
-            this.lbName32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName32, "Setting");
-            this.lbName32.Click += new System.EventHandler(this.lbName32_Click);
-            // 
-            // lbAH32
-            // 
-            this.lbAH32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH32.Location = new System.Drawing.Point(83, 30);
-            this.lbAH32.Name = "lbAH32";
-            this.lbAH32.Size = new System.Drawing.Size(55, 21);
-            this.lbAH32.TabIndex = 4;
-            this.lbAH32.Text = "999.9";
-            this.lbAH32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH32
-            // 
-            this.lbWH32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH32.Location = new System.Drawing.Point(0, 30);
-            this.lbWH32.Name = "lbWH32";
-            this.lbWH32.Size = new System.Drawing.Size(55, 21);
-            this.lbWH32.TabIndex = 4;
-            this.lbWH32.Text = "999.9";
-            this.lbWH32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL32
-            // 
-            this.lbAL32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL32.Location = new System.Drawing.Point(83, 164);
-            this.lbAL32.Name = "lbAL32";
-            this.lbAL32.Size = new System.Drawing.Size(55, 21);
-            this.lbAL32.TabIndex = 4;
-            this.lbAL32.Text = "999.9";
-            this.lbAL32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL32
-            // 
-            this.lbWL32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL32.Location = new System.Drawing.Point(0, 164);
-            this.lbWL32.Name = "lbWL32";
-            this.lbWL32.Size = new System.Drawing.Size(55, 21);
-            this.lbWL32.TabIndex = 4;
-            this.lbWL32.Text = "999.9";
-            this.lbWL32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp32
-            // 
-            this.lbTemp32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp32.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp32.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp32.Name = "lbTemp32";
-            this.lbTemp32.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp32.TabIndex = 3;
-            this.lbTemp32.Text = "999.9";
-            this.lbTemp32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp32, "Trend");
-            this.lbTemp32.Click += new System.EventHandler(this.lbTemp32_Click);
-            // 
-            // pnTemp31
-            // 
-            this.pnTemp31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnTemp31.Controls.Add(this.lbFoor31);
-            this.pnTemp31.Controls.Add(this.lbName31);
-            this.pnTemp31.Controls.Add(this.lbAH31);
-            this.pnTemp31.Controls.Add(this.lbWH31);
-            this.pnTemp31.Controls.Add(this.lbAL31);
-            this.pnTemp31.Controls.Add(this.lbWL31);
-            this.pnTemp31.Controls.Add(this.lbTemp31);
-            this.pnTemp31.Location = new System.Drawing.Point(8, 33);
-            this.pnTemp31.Name = "pnTemp31";
-            this.pnTemp31.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp31.TabIndex = 4;
-            // 
-            // lbFoor31
-            // 
-            this.lbFoor31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbFoor31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor31.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor31.Name = "lbFoor31";
-            this.lbFoor31.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor31.TabIndex = 4;
-            this.lbFoor31.Text = "F1";
-            this.lbFoor31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName31
-            // 
-            this.lbName31.BackColor = System.Drawing.Color.Gray;
-            this.lbName31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName31.Location = new System.Drawing.Point(0, 0);
-            this.lbName31.Name = "lbName31";
-            this.lbName31.Size = new System.Drawing.Size(138, 30);
-            this.lbName31.TabIndex = 4;
-            this.lbName31.Text = "Number31";
-            this.lbName31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName31, "Setting");
-            this.lbName31.Click += new System.EventHandler(this.lbName31_Click);
-            // 
-            // lbAH31
-            // 
-            this.lbAH31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH31.Location = new System.Drawing.Point(83, 30);
-            this.lbAH31.Name = "lbAH31";
-            this.lbAH31.Size = new System.Drawing.Size(55, 21);
-            this.lbAH31.TabIndex = 4;
-            this.lbAH31.Text = "999.9";
-            this.lbAH31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH31
-            // 
-            this.lbWH31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH31.Location = new System.Drawing.Point(0, 30);
-            this.lbWH31.Name = "lbWH31";
-            this.lbWH31.Size = new System.Drawing.Size(55, 21);
-            this.lbWH31.TabIndex = 4;
-            this.lbWH31.Text = "999.9";
-            this.lbWH31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL31
-            // 
-            this.lbAL31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL31.Location = new System.Drawing.Point(83, 164);
-            this.lbAL31.Name = "lbAL31";
-            this.lbAL31.Size = new System.Drawing.Size(55, 21);
-            this.lbAL31.TabIndex = 4;
-            this.lbAL31.Text = "999.9";
-            this.lbAL31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL31
-            // 
-            this.lbWL31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL31.Location = new System.Drawing.Point(0, 164);
-            this.lbWL31.Name = "lbWL31";
-            this.lbWL31.Size = new System.Drawing.Size(55, 21);
-            this.lbWL31.TabIndex = 4;
-            this.lbWL31.Text = "999.9";
-            this.lbWL31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp31
-            // 
-            this.lbTemp31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp31.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp31.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp31.Name = "lbTemp31";
-            this.lbTemp31.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp31.TabIndex = 3;
-            this.lbTemp31.Text = "999.9";
-            this.lbTemp31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp31, "Trend");
-            this.lbTemp31.Click += new System.EventHandler(this.lbTemp31_Click);
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel12.Controls.Add(this.label8);
-            this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(13, 65);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(316, 285);
-            this.panel12.TabIndex = 28;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(316, 30);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Micro lab";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.pnTemp1);
-            this.panel13.Controls.Add(this.pnTemp2);
-            this.panel13.Controls.Add(this.label9);
-            this.panel13.Location = new System.Drawing.Point(7, 34);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(300, 242);
-            this.panel13.TabIndex = 28;
-            // 
-            // pnTemp1
-            // 
-            this.pnTemp1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnTemp1.Controls.Add(this.lbFoor1);
-            this.pnTemp1.Controls.Add(this.lbName1);
-            this.pnTemp1.Controls.Add(this.lbAH1);
-            this.pnTemp1.Controls.Add(this.lbWH1);
-            this.pnTemp1.Controls.Add(this.lbAL1);
-            this.pnTemp1.Controls.Add(this.lbWL1);
-            this.pnTemp1.Controls.Add(this.lbTemp1);
-            this.pnTemp1.Location = new System.Drawing.Point(7, 32);
-            this.pnTemp1.Name = "pnTemp1";
-            this.pnTemp1.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp1.TabIndex = 0;
-            // 
-            // lbFoor1
-            // 
-            this.lbFoor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbFoor1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor1.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor1.Name = "lbFoor1";
-            this.lbFoor1.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor1.TabIndex = 4;
-            this.lbFoor1.Text = "F1";
-            this.lbFoor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName1
-            // 
-            this.lbName1.BackColor = System.Drawing.Color.Gray;
-            this.lbName1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName1.Location = new System.Drawing.Point(0, 0);
-            this.lbName1.Name = "lbName1";
-            this.lbName1.Size = new System.Drawing.Size(138, 30);
-            this.lbName1.TabIndex = 4;
-            this.lbName1.Text = "Number01";
-            this.lbName1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName1, "Setting");
-            this.lbName1.Click += new System.EventHandler(this.lbName1_Click);
-            // 
-            // lbAH1
-            // 
-            this.lbAH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH1.Location = new System.Drawing.Point(83, 30);
-            this.lbAH1.Name = "lbAH1";
-            this.lbAH1.Size = new System.Drawing.Size(55, 21);
-            this.lbAH1.TabIndex = 4;
-            this.lbAH1.Text = "999.9";
-            this.lbAH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH1
-            // 
-            this.lbWH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH1.Location = new System.Drawing.Point(0, 30);
-            this.lbWH1.Name = "lbWH1";
-            this.lbWH1.Size = new System.Drawing.Size(55, 21);
-            this.lbWH1.TabIndex = 4;
-            this.lbWH1.Text = "999.9";
-            this.lbWH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL1
-            // 
-            this.lbAL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL1.Location = new System.Drawing.Point(83, 164);
-            this.lbAL1.Name = "lbAL1";
-            this.lbAL1.Size = new System.Drawing.Size(55, 21);
-            this.lbAL1.TabIndex = 4;
-            this.lbAL1.Text = "999.9";
-            this.lbAL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL1
-            // 
-            this.lbWL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL1.Location = new System.Drawing.Point(0, 164);
-            this.lbWL1.Name = "lbWL1";
-            this.lbWL1.Size = new System.Drawing.Size(55, 21);
-            this.lbWL1.TabIndex = 4;
-            this.lbWL1.Text = "999.9";
-            this.lbWL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp1
-            // 
-            this.lbTemp1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp1.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp1.Name = "lbTemp1";
-            this.lbTemp1.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp1.TabIndex = 3;
-            this.lbTemp1.Text = "999.9";
-            this.lbTemp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp1, "Trend");
-            this.lbTemp1.Click += new System.EventHandler(this.lbTemp1_Click);
-            // 
-            // pnTemp2
-            // 
-            this.pnTemp2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pnTemp2.Controls.Add(this.lbFoor2);
-            this.pnTemp2.Controls.Add(this.lbName2);
-            this.pnTemp2.Controls.Add(this.lbAH2);
-            this.pnTemp2.Controls.Add(this.lbWH2);
-            this.pnTemp2.Controls.Add(this.lbAL2);
-            this.pnTemp2.Controls.Add(this.lbWL2);
-            this.pnTemp2.Controls.Add(this.lbTemp2);
-            this.pnTemp2.Location = new System.Drawing.Point(151, 32);
-            this.pnTemp2.Name = "pnTemp2";
-            this.pnTemp2.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp2.TabIndex = 0;
-            // 
-            // lbFoor2
-            // 
-            this.lbFoor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbFoor2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor2.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor2.Name = "lbFoor2";
-            this.lbFoor2.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor2.TabIndex = 4;
-            this.lbFoor2.Text = "F1";
-            this.lbFoor2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName2
-            // 
-            this.lbName2.BackColor = System.Drawing.Color.Red;
-            this.lbName2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName2.Location = new System.Drawing.Point(0, 0);
-            this.lbName2.Name = "lbName2";
-            this.lbName2.Size = new System.Drawing.Size(138, 30);
-            this.lbName2.TabIndex = 4;
-            this.lbName2.Text = "Number02";
-            this.lbName2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName2, "Setting");
-            this.lbName2.Click += new System.EventHandler(this.lbName2_Click);
-            // 
-            // lbAH2
-            // 
-            this.lbAH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH2.Location = new System.Drawing.Point(83, 30);
-            this.lbAH2.Name = "lbAH2";
-            this.lbAH2.Size = new System.Drawing.Size(55, 21);
-            this.lbAH2.TabIndex = 4;
-            this.lbAH2.Text = "999.9";
-            this.lbAH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH2
-            // 
-            this.lbWH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH2.Location = new System.Drawing.Point(0, 30);
-            this.lbWH2.Name = "lbWH2";
-            this.lbWH2.Size = new System.Drawing.Size(55, 21);
-            this.lbWH2.TabIndex = 4;
-            this.lbWH2.Text = "999.9";
-            this.lbWH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL2
-            // 
-            this.lbAL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL2.Location = new System.Drawing.Point(83, 164);
-            this.lbAL2.Name = "lbAL2";
-            this.lbAL2.Size = new System.Drawing.Size(55, 21);
-            this.lbAL2.TabIndex = 4;
-            this.lbAL2.Text = "999.9";
-            this.lbAL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL2
-            // 
-            this.lbWL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL2.Location = new System.Drawing.Point(0, 164);
-            this.lbWL2.Name = "lbWL2";
-            this.lbWL2.Size = new System.Drawing.Size(55, 21);
-            this.lbWL2.TabIndex = 4;
-            this.lbWL2.Text = "999.9";
-            this.lbWL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp2
-            // 
-            this.lbTemp2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp2.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp2.Name = "lbTemp2";
-            this.lbTemp2.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp2.TabIndex = 3;
-            this.lbTemp2.Text = "999.9";
-            this.lbTemp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp2, "Trend");
-            this.lbTemp2.Click += new System.EventHandler(this.lbTemp2_Click);
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(-1, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(300, 30);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Clean Room";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.panel16);
-            this.panel6.Location = new System.Drawing.Point(721, 65);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(615, 285);
-            this.panel6.TabIndex = 28;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(635, 30);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Sensory lab";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.White;
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.pnTemp27);
-            this.panel16.Controls.Add(this.pnTemp28);
-            this.panel16.Controls.Add(this.pnTemp29);
-            this.panel16.Controls.Add(this.pnTemp30);
-            this.panel16.Location = new System.Drawing.Point(8, 34);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(598, 242);
-            this.panel16.TabIndex = 28;
-            // 
-            // pnTemp28
-            // 
-            this.pnTemp28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pnTemp28.Controls.Add(this.lbFoor28);
-            this.pnTemp28.Controls.Add(this.lbName28);
-            this.pnTemp28.Controls.Add(this.lbAH28);
-            this.pnTemp28.Controls.Add(this.lbWH28);
-            this.pnTemp28.Controls.Add(this.lbAL28);
-            this.pnTemp28.Controls.Add(this.lbWL28);
-            this.pnTemp28.Controls.Add(this.lbTemp28);
-            this.pnTemp28.Location = new System.Drawing.Point(158, 31);
-            this.pnTemp28.Name = "pnTemp28";
-            this.pnTemp28.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp28.TabIndex = 1;
-            // 
-            // lbFoor28
-            // 
-            this.lbFoor28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbFoor28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor28.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor28.Name = "lbFoor28";
-            this.lbFoor28.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor28.TabIndex = 4;
-            this.lbFoor28.Text = "F1";
-            this.lbFoor28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName28
-            // 
-            this.lbName28.BackColor = System.Drawing.Color.Lime;
-            this.lbName28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName28.Location = new System.Drawing.Point(0, 0);
-            this.lbName28.Name = "lbName28";
-            this.lbName28.Size = new System.Drawing.Size(138, 30);
-            this.lbName28.TabIndex = 4;
-            this.lbName28.Text = "Number28";
-            this.lbName28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName28, "Setting");
-            this.lbName28.Click += new System.EventHandler(this.lbName28_Click);
-            // 
-            // lbAH28
-            // 
-            this.lbAH28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH28.Location = new System.Drawing.Point(83, 30);
-            this.lbAH28.Name = "lbAH28";
-            this.lbAH28.Size = new System.Drawing.Size(55, 21);
-            this.lbAH28.TabIndex = 4;
-            this.lbAH28.Text = "999.9";
-            this.lbAH28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH28
-            // 
-            this.lbWH28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH28.Location = new System.Drawing.Point(0, 30);
-            this.lbWH28.Name = "lbWH28";
-            this.lbWH28.Size = new System.Drawing.Size(55, 21);
-            this.lbWH28.TabIndex = 4;
-            this.lbWH28.Text = "999.9";
-            this.lbWH28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL28
-            // 
-            this.lbAL28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL28.Location = new System.Drawing.Point(83, 164);
-            this.lbAL28.Name = "lbAL28";
-            this.lbAL28.Size = new System.Drawing.Size(55, 21);
-            this.lbAL28.TabIndex = 4;
-            this.lbAL28.Text = "999.9";
-            this.lbAL28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL28
-            // 
-            this.lbWL28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL28.Location = new System.Drawing.Point(0, 164);
-            this.lbWL28.Name = "lbWL28";
-            this.lbWL28.Size = new System.Drawing.Size(55, 21);
-            this.lbWL28.TabIndex = 4;
-            this.lbWL28.Text = "999.9";
-            this.lbWL28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp28
-            // 
-            this.lbTemp28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp28.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp28.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp28.Name = "lbTemp28";
-            this.lbTemp28.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp28.TabIndex = 3;
-            this.lbTemp28.Text = "999.9";
-            this.lbTemp28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp28, "Trend");
-            this.lbTemp28.Click += new System.EventHandler(this.lbTemp28_Click);
-            // 
-            // pnTemp29
-            // 
-            this.pnTemp29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnTemp29.Controls.Add(this.lbFoor29);
-            this.pnTemp29.Controls.Add(this.lbName29);
-            this.pnTemp29.Controls.Add(this.lbAH29);
-            this.pnTemp29.Controls.Add(this.lbWH29);
-            this.pnTemp29.Controls.Add(this.lbAL29);
-            this.pnTemp29.Controls.Add(this.lbWL29);
-            this.pnTemp29.Controls.Add(this.lbTemp29);
-            this.pnTemp29.Location = new System.Drawing.Point(302, 31);
-            this.pnTemp29.Name = "pnTemp29";
-            this.pnTemp29.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp29.TabIndex = 8;
-            // 
-            // lbFoor29
-            // 
-            this.lbFoor29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbFoor29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor29.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor29.Name = "lbFoor29";
-            this.lbFoor29.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor29.TabIndex = 4;
-            this.lbFoor29.Text = "F1";
-            this.lbFoor29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName29
-            // 
-            this.lbName29.BackColor = System.Drawing.Color.Gray;
-            this.lbName29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName29.Location = new System.Drawing.Point(0, 0);
-            this.lbName29.Name = "lbName29";
-            this.lbName29.Size = new System.Drawing.Size(138, 30);
-            this.lbName29.TabIndex = 4;
-            this.lbName29.Text = "Number29";
-            this.lbName29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName29, "Setting");
-            this.lbName29.Click += new System.EventHandler(this.lbName29_Click);
-            // 
-            // lbAH29
-            // 
-            this.lbAH29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH29.Location = new System.Drawing.Point(83, 30);
-            this.lbAH29.Name = "lbAH29";
-            this.lbAH29.Size = new System.Drawing.Size(55, 21);
-            this.lbAH29.TabIndex = 4;
-            this.lbAH29.Text = "999.9";
-            this.lbAH29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH29
-            // 
-            this.lbWH29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH29.Location = new System.Drawing.Point(0, 30);
-            this.lbWH29.Name = "lbWH29";
-            this.lbWH29.Size = new System.Drawing.Size(55, 21);
-            this.lbWH29.TabIndex = 4;
-            this.lbWH29.Text = "999.9";
-            this.lbWH29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL29
-            // 
-            this.lbAL29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL29.Location = new System.Drawing.Point(83, 164);
-            this.lbAL29.Name = "lbAL29";
-            this.lbAL29.Size = new System.Drawing.Size(55, 21);
-            this.lbAL29.TabIndex = 4;
-            this.lbAL29.Text = "999.9";
-            this.lbAL29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL29
-            // 
-            this.lbWL29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL29.Location = new System.Drawing.Point(0, 164);
-            this.lbWL29.Name = "lbWL29";
-            this.lbWL29.Size = new System.Drawing.Size(55, 21);
-            this.lbWL29.TabIndex = 4;
-            this.lbWL29.Text = "999.9";
-            this.lbWL29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp29
-            // 
-            this.lbTemp29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp29.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp29.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp29.Name = "lbTemp29";
-            this.lbTemp29.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp29.TabIndex = 3;
-            this.lbTemp29.Text = "999.9";
-            this.lbTemp29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp29, "Trend");
-            this.lbTemp29.Click += new System.EventHandler(this.lbTemp29_Click);
-            // 
-            // pnTemp30
-            // 
-            this.pnTemp30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnTemp30.Controls.Add(this.lbFoor30);
-            this.pnTemp30.Controls.Add(this.lbName30);
-            this.pnTemp30.Controls.Add(this.lbAH30);
-            this.pnTemp30.Controls.Add(this.lbWH30);
-            this.pnTemp30.Controls.Add(this.lbAL30);
-            this.pnTemp30.Controls.Add(this.lbWL30);
-            this.pnTemp30.Controls.Add(this.lbTemp30);
-            this.pnTemp30.Location = new System.Drawing.Point(446, 31);
-            this.pnTemp30.Name = "pnTemp30";
-            this.pnTemp30.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp30.TabIndex = 6;
-            // 
-            // lbFoor30
-            // 
-            this.lbFoor30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbFoor30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor30.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor30.Name = "lbFoor30";
-            this.lbFoor30.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor30.TabIndex = 4;
-            this.lbFoor30.Text = "F1";
-            this.lbFoor30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName30
-            // 
-            this.lbName30.BackColor = System.Drawing.Color.Gray;
-            this.lbName30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName30.Location = new System.Drawing.Point(0, 0);
-            this.lbName30.Name = "lbName30";
-            this.lbName30.Size = new System.Drawing.Size(138, 30);
-            this.lbName30.TabIndex = 4;
-            this.lbName30.Text = "Number30";
-            this.lbName30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName30, "Setting");
-            this.lbName30.Click += new System.EventHandler(this.lbName30_Click);
-            // 
-            // lbAH30
-            // 
-            this.lbAH30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH30.Location = new System.Drawing.Point(83, 30);
-            this.lbAH30.Name = "lbAH30";
-            this.lbAH30.Size = new System.Drawing.Size(55, 21);
-            this.lbAH30.TabIndex = 4;
-            this.lbAH30.Text = "999.9";
-            this.lbAH30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH30
-            // 
-            this.lbWH30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH30.Location = new System.Drawing.Point(0, 30);
-            this.lbWH30.Name = "lbWH30";
-            this.lbWH30.Size = new System.Drawing.Size(55, 21);
-            this.lbWH30.TabIndex = 4;
-            this.lbWH30.Text = "999.9";
-            this.lbWH30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL30
-            // 
-            this.lbAL30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL30.Location = new System.Drawing.Point(83, 164);
-            this.lbAL30.Name = "lbAL30";
-            this.lbAL30.Size = new System.Drawing.Size(55, 21);
-            this.lbAL30.TabIndex = 4;
-            this.lbAL30.Text = "999.9";
-            this.lbAL30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL30
-            // 
-            this.lbWL30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL30.Location = new System.Drawing.Point(0, 164);
-            this.lbWL30.Name = "lbWL30";
-            this.lbWL30.Size = new System.Drawing.Size(55, 21);
-            this.lbWL30.TabIndex = 4;
-            this.lbWL30.Text = "999.9";
-            this.lbWL30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp30
-            // 
-            this.lbTemp30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp30.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp30.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp30.Name = "lbTemp30";
-            this.lbTemp30.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp30.TabIndex = 3;
-            this.lbTemp30.Text = "999.9";
-            this.lbTemp30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp30, "Trend");
-            this.lbTemp30.Click += new System.EventHandler(this.lbTemp30_Click);
             // 
             // panel24
             // 
@@ -3713,14 +3015,1092 @@
             this.label102.Text = "Refrigerator";
             this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.Transparent;
+            this.panel18.Controls.Add(this.button1);
+            this.panel18.Controls.Add(this.pnTemp27);
+            this.panel18.Controls.Add(this.pnTemp28);
+            this.panel18.Controls.Add(this.pnTemp26);
+            this.panel18.Controls.Add(this.pnTemp32);
+            this.panel18.Controls.Add(this.pnTemp31);
+            this.panel18.Controls.Add(this.pnTemp30);
+            this.panel18.Controls.Add(this.pnTemp33);
+            this.panel18.Controls.Add(this.pnTemp29);
+            this.panel18.Controls.Add(this.pnTemp3);
+            this.panel18.Controls.Add(this.pnTemp2);
+            this.panel18.Controls.Add(this.pnTemp1);
+            this.panel18.Location = new System.Drawing.Point(6, 53);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(1890, 202);
+            this.panel18.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(1825, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(62, 52);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Test Temp";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pnTemp28
+            // 
+            this.pnTemp28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pnTemp28.Controls.Add(this.lbFoor28);
+            this.pnTemp28.Controls.Add(this.lbName28);
+            this.pnTemp28.Controls.Add(this.lbAH28);
+            this.pnTemp28.Controls.Add(this.lbWH28);
+            this.pnTemp28.Controls.Add(this.lbAL28);
+            this.pnTemp28.Controls.Add(this.lbWL28);
+            this.pnTemp28.Controls.Add(this.lbTemp28);
+            this.pnTemp28.Location = new System.Drawing.Point(723, 3);
+            this.pnTemp28.Name = "pnTemp28";
+            this.pnTemp28.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp28.TabIndex = 1;
+            // 
+            // lbFoor28
+            // 
+            this.lbFoor28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbFoor28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor28.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor28.Name = "lbFoor28";
+            this.lbFoor28.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor28.TabIndex = 4;
+            this.lbFoor28.Text = "F1";
+            this.lbFoor28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName28
+            // 
+            this.lbName28.BackColor = System.Drawing.Color.Lime;
+            this.lbName28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName28.Location = new System.Drawing.Point(0, 0);
+            this.lbName28.Name = "lbName28";
+            this.lbName28.Size = new System.Drawing.Size(138, 30);
+            this.lbName28.TabIndex = 4;
+            this.lbName28.Text = "Number28";
+            this.lbName28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName28, "Setting");
+            this.lbName28.Click += new System.EventHandler(this.lbName28_Click);
+            // 
+            // lbAH28
+            // 
+            this.lbAH28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH28.Location = new System.Drawing.Point(83, 30);
+            this.lbAH28.Name = "lbAH28";
+            this.lbAH28.Size = new System.Drawing.Size(55, 21);
+            this.lbAH28.TabIndex = 4;
+            this.lbAH28.Text = "999.9";
+            this.lbAH28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH28
+            // 
+            this.lbWH28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH28.Location = new System.Drawing.Point(0, 30);
+            this.lbWH28.Name = "lbWH28";
+            this.lbWH28.Size = new System.Drawing.Size(55, 21);
+            this.lbWH28.TabIndex = 4;
+            this.lbWH28.Text = "999.9";
+            this.lbWH28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL28
+            // 
+            this.lbAL28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL28.Location = new System.Drawing.Point(83, 164);
+            this.lbAL28.Name = "lbAL28";
+            this.lbAL28.Size = new System.Drawing.Size(55, 21);
+            this.lbAL28.TabIndex = 4;
+            this.lbAL28.Text = "999.9";
+            this.lbAL28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL28
+            // 
+            this.lbWL28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL28.Location = new System.Drawing.Point(0, 164);
+            this.lbWL28.Name = "lbWL28";
+            this.lbWL28.Size = new System.Drawing.Size(55, 21);
+            this.lbWL28.TabIndex = 4;
+            this.lbWL28.Text = "999.9";
+            this.lbWL28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp28
+            // 
+            this.lbTemp28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp28.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp28.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp28.Name = "lbTemp28";
+            this.lbTemp28.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp28.TabIndex = 3;
+            this.lbTemp28.Text = "999.9";
+            this.lbTemp28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp28, "Trend");
+            this.lbTemp28.Click += new System.EventHandler(this.lbTemp28_Click);
+            // 
+            // pnTemp32
+            // 
+            this.pnTemp32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp32.Controls.Add(this.lbFoor32);
+            this.pnTemp32.Controls.Add(this.lbName32);
+            this.pnTemp32.Controls.Add(this.lbAH32);
+            this.pnTemp32.Controls.Add(this.lbWH32);
+            this.pnTemp32.Controls.Add(this.lbAL32);
+            this.pnTemp32.Controls.Add(this.lbWL32);
+            this.pnTemp32.Controls.Add(this.lbTemp32);
+            this.pnTemp32.Location = new System.Drawing.Point(1299, 3);
+            this.pnTemp32.Name = "pnTemp32";
+            this.pnTemp32.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp32.TabIndex = 2;
+            // 
+            // lbFoor32
+            // 
+            this.lbFoor32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor32.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor32.Name = "lbFoor32";
+            this.lbFoor32.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor32.TabIndex = 4;
+            this.lbFoor32.Text = "F1";
+            this.lbFoor32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName32
+            // 
+            this.lbName32.BackColor = System.Drawing.Color.Gray;
+            this.lbName32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName32.Location = new System.Drawing.Point(0, 0);
+            this.lbName32.Name = "lbName32";
+            this.lbName32.Size = new System.Drawing.Size(138, 30);
+            this.lbName32.TabIndex = 4;
+            this.lbName32.Text = "Number32";
+            this.lbName32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName32, "Setting");
+            this.lbName32.Click += new System.EventHandler(this.lbName32_Click);
+            // 
+            // lbAH32
+            // 
+            this.lbAH32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH32.Location = new System.Drawing.Point(83, 30);
+            this.lbAH32.Name = "lbAH32";
+            this.lbAH32.Size = new System.Drawing.Size(55, 21);
+            this.lbAH32.TabIndex = 4;
+            this.lbAH32.Text = "999.9";
+            this.lbAH32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH32
+            // 
+            this.lbWH32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH32.Location = new System.Drawing.Point(0, 30);
+            this.lbWH32.Name = "lbWH32";
+            this.lbWH32.Size = new System.Drawing.Size(55, 21);
+            this.lbWH32.TabIndex = 4;
+            this.lbWH32.Text = "999.9";
+            this.lbWH32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL32
+            // 
+            this.lbAL32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL32.Location = new System.Drawing.Point(83, 164);
+            this.lbAL32.Name = "lbAL32";
+            this.lbAL32.Size = new System.Drawing.Size(55, 21);
+            this.lbAL32.TabIndex = 4;
+            this.lbAL32.Text = "999.9";
+            this.lbAL32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL32
+            // 
+            this.lbWL32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL32.Location = new System.Drawing.Point(0, 164);
+            this.lbWL32.Name = "lbWL32";
+            this.lbWL32.Size = new System.Drawing.Size(55, 21);
+            this.lbWL32.TabIndex = 4;
+            this.lbWL32.Text = "999.9";
+            this.lbWL32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp32
+            // 
+            this.lbTemp32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp32.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp32.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp32.Name = "lbTemp32";
+            this.lbTemp32.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp32.TabIndex = 3;
+            this.lbTemp32.Text = "999.9";
+            this.lbTemp32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp32, "Trend");
+            this.lbTemp32.Click += new System.EventHandler(this.lbTemp32_Click);
+            // 
+            // pnTemp35
+            // 
+            this.pnTemp35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp35.Controls.Add(this.lbFoor35);
+            this.pnTemp35.Controls.Add(this.lbName35);
+            this.pnTemp35.Controls.Add(this.lbAH35);
+            this.pnTemp35.Controls.Add(this.lbWH35);
+            this.pnTemp35.Controls.Add(this.lbAL35);
+            this.pnTemp35.Controls.Add(this.lbWL35);
+            this.pnTemp35.Controls.Add(this.lbTemp35);
+            this.pnTemp35.Location = new System.Drawing.Point(1731, 4);
+            this.pnTemp35.Name = "pnTemp35";
+            this.pnTemp35.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp35.TabIndex = 3;
+            // 
+            // lbFoor35
+            // 
+            this.lbFoor35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor35.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor35.Name = "lbFoor35";
+            this.lbFoor35.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor35.TabIndex = 4;
+            this.lbFoor35.Text = "F1";
+            this.lbFoor35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName35
+            // 
+            this.lbName35.BackColor = System.Drawing.Color.Gray;
+            this.lbName35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName35.Location = new System.Drawing.Point(0, 0);
+            this.lbName35.Name = "lbName35";
+            this.lbName35.Size = new System.Drawing.Size(138, 30);
+            this.lbName35.TabIndex = 4;
+            this.lbName35.Text = "Number35";
+            this.lbName35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName35, "Setting");
+            this.lbName35.Click += new System.EventHandler(this.lbName35_Click);
+            // 
+            // lbAH35
+            // 
+            this.lbAH35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH35.Location = new System.Drawing.Point(83, 30);
+            this.lbAH35.Name = "lbAH35";
+            this.lbAH35.Size = new System.Drawing.Size(55, 21);
+            this.lbAH35.TabIndex = 4;
+            this.lbAH35.Text = "999.9";
+            this.lbAH35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH35
+            // 
+            this.lbWH35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH35.Location = new System.Drawing.Point(0, 30);
+            this.lbWH35.Name = "lbWH35";
+            this.lbWH35.Size = new System.Drawing.Size(55, 21);
+            this.lbWH35.TabIndex = 4;
+            this.lbWH35.Text = "999.9";
+            this.lbWH35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL35
+            // 
+            this.lbAL35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL35.Location = new System.Drawing.Point(83, 164);
+            this.lbAL35.Name = "lbAL35";
+            this.lbAL35.Size = new System.Drawing.Size(55, 21);
+            this.lbAL35.TabIndex = 4;
+            this.lbAL35.Text = "999.9";
+            this.lbAL35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL35
+            // 
+            this.lbWL35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL35.Location = new System.Drawing.Point(0, 164);
+            this.lbWL35.Name = "lbWL35";
+            this.lbWL35.Size = new System.Drawing.Size(55, 21);
+            this.lbWL35.TabIndex = 4;
+            this.lbWL35.Text = "999.9";
+            this.lbWL35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp35
+            // 
+            this.lbTemp35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp35.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp35.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp35.Name = "lbTemp35";
+            this.lbTemp35.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp35.TabIndex = 3;
+            this.lbTemp35.Text = "999.9";
+            this.lbTemp35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp35, "Trend");
+            this.lbTemp35.Click += new System.EventHandler(this.lbTemp35_Click);
+            // 
+            // pnTemp31
+            // 
+            this.pnTemp31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp31.Controls.Add(this.lbFoor31);
+            this.pnTemp31.Controls.Add(this.lbName31);
+            this.pnTemp31.Controls.Add(this.lbAH31);
+            this.pnTemp31.Controls.Add(this.lbWH31);
+            this.pnTemp31.Controls.Add(this.lbAL31);
+            this.pnTemp31.Controls.Add(this.lbWL31);
+            this.pnTemp31.Controls.Add(this.lbTemp31);
+            this.pnTemp31.Location = new System.Drawing.Point(1155, 4);
+            this.pnTemp31.Name = "pnTemp31";
+            this.pnTemp31.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp31.TabIndex = 4;
+            // 
+            // lbFoor31
+            // 
+            this.lbFoor31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor31.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor31.Name = "lbFoor31";
+            this.lbFoor31.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor31.TabIndex = 4;
+            this.lbFoor31.Text = "F1";
+            this.lbFoor31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName31
+            // 
+            this.lbName31.BackColor = System.Drawing.Color.Gray;
+            this.lbName31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName31.Location = new System.Drawing.Point(0, 0);
+            this.lbName31.Name = "lbName31";
+            this.lbName31.Size = new System.Drawing.Size(138, 30);
+            this.lbName31.TabIndex = 4;
+            this.lbName31.Text = "Number31";
+            this.lbName31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName31, "Setting");
+            this.lbName31.Click += new System.EventHandler(this.lbName31_Click);
+            // 
+            // lbAH31
+            // 
+            this.lbAH31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH31.Location = new System.Drawing.Point(83, 30);
+            this.lbAH31.Name = "lbAH31";
+            this.lbAH31.Size = new System.Drawing.Size(55, 21);
+            this.lbAH31.TabIndex = 4;
+            this.lbAH31.Text = "999.9";
+            this.lbAH31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH31
+            // 
+            this.lbWH31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH31.Location = new System.Drawing.Point(0, 30);
+            this.lbWH31.Name = "lbWH31";
+            this.lbWH31.Size = new System.Drawing.Size(55, 21);
+            this.lbWH31.TabIndex = 4;
+            this.lbWH31.Text = "999.9";
+            this.lbWH31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL31
+            // 
+            this.lbAL31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL31.Location = new System.Drawing.Point(83, 164);
+            this.lbAL31.Name = "lbAL31";
+            this.lbAL31.Size = new System.Drawing.Size(55, 21);
+            this.lbAL31.TabIndex = 4;
+            this.lbAL31.Text = "999.9";
+            this.lbAL31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL31
+            // 
+            this.lbWL31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL31.Location = new System.Drawing.Point(0, 164);
+            this.lbWL31.Name = "lbWL31";
+            this.lbWL31.Size = new System.Drawing.Size(55, 21);
+            this.lbWL31.TabIndex = 4;
+            this.lbWL31.Text = "999.9";
+            this.lbWL31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp31
+            // 
+            this.lbTemp31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp31.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp31.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp31.Name = "lbTemp31";
+            this.lbTemp31.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp31.TabIndex = 3;
+            this.lbTemp31.Text = "999.9";
+            this.lbTemp31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp31, "Trend");
+            this.lbTemp31.Click += new System.EventHandler(this.lbTemp31_Click);
+            // 
+            // pnTemp34
+            // 
+            this.pnTemp34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp34.Controls.Add(this.lbFoor34);
+            this.pnTemp34.Controls.Add(this.lbName34);
+            this.pnTemp34.Controls.Add(this.lbAH34);
+            this.pnTemp34.Controls.Add(this.lbWH34);
+            this.pnTemp34.Controls.Add(this.lbAL34);
+            this.pnTemp34.Controls.Add(this.lbWL34);
+            this.pnTemp34.Controls.Add(this.lbTemp34);
+            this.pnTemp34.Location = new System.Drawing.Point(1587, 4);
+            this.pnTemp34.Name = "pnTemp34";
+            this.pnTemp34.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp34.TabIndex = 5;
+            // 
+            // lbFoor34
+            // 
+            this.lbFoor34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor34.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor34.Name = "lbFoor34";
+            this.lbFoor34.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor34.TabIndex = 4;
+            this.lbFoor34.Text = "F1";
+            this.lbFoor34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName34
+            // 
+            this.lbName34.BackColor = System.Drawing.Color.Gray;
+            this.lbName34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName34.Location = new System.Drawing.Point(0, 0);
+            this.lbName34.Name = "lbName34";
+            this.lbName34.Size = new System.Drawing.Size(138, 30);
+            this.lbName34.TabIndex = 4;
+            this.lbName34.Text = "Number34";
+            this.lbName34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName34, "Setting");
+            this.lbName34.Click += new System.EventHandler(this.lbName34_Click);
+            // 
+            // lbAH34
+            // 
+            this.lbAH34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH34.Location = new System.Drawing.Point(83, 30);
+            this.lbAH34.Name = "lbAH34";
+            this.lbAH34.Size = new System.Drawing.Size(55, 21);
+            this.lbAH34.TabIndex = 4;
+            this.lbAH34.Text = "999.9";
+            this.lbAH34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH34
+            // 
+            this.lbWH34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH34.Location = new System.Drawing.Point(0, 30);
+            this.lbWH34.Name = "lbWH34";
+            this.lbWH34.Size = new System.Drawing.Size(55, 21);
+            this.lbWH34.TabIndex = 4;
+            this.lbWH34.Text = "999.9";
+            this.lbWH34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL34
+            // 
+            this.lbAL34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL34.Location = new System.Drawing.Point(83, 164);
+            this.lbAL34.Name = "lbAL34";
+            this.lbAL34.Size = new System.Drawing.Size(55, 21);
+            this.lbAL34.TabIndex = 4;
+            this.lbAL34.Text = "999.9";
+            this.lbAL34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL34
+            // 
+            this.lbWL34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL34.Location = new System.Drawing.Point(0, 164);
+            this.lbWL34.Name = "lbWL34";
+            this.lbWL34.Size = new System.Drawing.Size(55, 21);
+            this.lbWL34.TabIndex = 4;
+            this.lbWL34.Text = "999.9";
+            this.lbWL34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp34
+            // 
+            this.lbTemp34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp34.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp34.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp34.Name = "lbTemp34";
+            this.lbTemp34.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp34.TabIndex = 3;
+            this.lbTemp34.Text = "999.9";
+            this.lbTemp34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp34, "Trend");
+            this.lbTemp34.Click += new System.EventHandler(this.lbTemp34_Click);
+            // 
+            // pnTemp30
+            // 
+            this.pnTemp30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp30.Controls.Add(this.lbFoor30);
+            this.pnTemp30.Controls.Add(this.lbName30);
+            this.pnTemp30.Controls.Add(this.lbAH30);
+            this.pnTemp30.Controls.Add(this.lbWH30);
+            this.pnTemp30.Controls.Add(this.lbAL30);
+            this.pnTemp30.Controls.Add(this.lbWL30);
+            this.pnTemp30.Controls.Add(this.lbTemp30);
+            this.pnTemp30.Location = new System.Drawing.Point(1011, 4);
+            this.pnTemp30.Name = "pnTemp30";
+            this.pnTemp30.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp30.TabIndex = 6;
+            // 
+            // lbFoor30
+            // 
+            this.lbFoor30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor30.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor30.Name = "lbFoor30";
+            this.lbFoor30.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor30.TabIndex = 4;
+            this.lbFoor30.Text = "F1";
+            this.lbFoor30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName30
+            // 
+            this.lbName30.BackColor = System.Drawing.Color.Gray;
+            this.lbName30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName30.Location = new System.Drawing.Point(0, 0);
+            this.lbName30.Name = "lbName30";
+            this.lbName30.Size = new System.Drawing.Size(138, 30);
+            this.lbName30.TabIndex = 4;
+            this.lbName30.Text = "Number30";
+            this.lbName30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName30, "Setting");
+            this.lbName30.Click += new System.EventHandler(this.lbName30_Click);
+            // 
+            // lbAH30
+            // 
+            this.lbAH30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH30.Location = new System.Drawing.Point(83, 30);
+            this.lbAH30.Name = "lbAH30";
+            this.lbAH30.Size = new System.Drawing.Size(55, 21);
+            this.lbAH30.TabIndex = 4;
+            this.lbAH30.Text = "999.9";
+            this.lbAH30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH30
+            // 
+            this.lbWH30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH30.Location = new System.Drawing.Point(0, 30);
+            this.lbWH30.Name = "lbWH30";
+            this.lbWH30.Size = new System.Drawing.Size(55, 21);
+            this.lbWH30.TabIndex = 4;
+            this.lbWH30.Text = "999.9";
+            this.lbWH30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL30
+            // 
+            this.lbAL30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL30.Location = new System.Drawing.Point(83, 164);
+            this.lbAL30.Name = "lbAL30";
+            this.lbAL30.Size = new System.Drawing.Size(55, 21);
+            this.lbAL30.TabIndex = 4;
+            this.lbAL30.Text = "999.9";
+            this.lbAL30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL30
+            // 
+            this.lbWL30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL30.Location = new System.Drawing.Point(0, 164);
+            this.lbWL30.Name = "lbWL30";
+            this.lbWL30.Size = new System.Drawing.Size(55, 21);
+            this.lbWL30.TabIndex = 4;
+            this.lbWL30.Text = "999.9";
+            this.lbWL30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp30
+            // 
+            this.lbTemp30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp30.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp30.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp30.Name = "lbTemp30";
+            this.lbTemp30.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp30.TabIndex = 3;
+            this.lbTemp30.Text = "999.9";
+            this.lbTemp30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp30, "Trend");
+            this.lbTemp30.Click += new System.EventHandler(this.lbTemp30_Click);
+            // 
+            // pnTemp33
+            // 
+            this.pnTemp33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp33.Controls.Add(this.lbFoor33);
+            this.pnTemp33.Controls.Add(this.lbName33);
+            this.pnTemp33.Controls.Add(this.lbAH33);
+            this.pnTemp33.Controls.Add(this.lbWH33);
+            this.pnTemp33.Controls.Add(this.lbAL33);
+            this.pnTemp33.Controls.Add(this.lbWL33);
+            this.pnTemp33.Controls.Add(this.lbTemp33);
+            this.pnTemp33.Location = new System.Drawing.Point(1443, 3);
+            this.pnTemp33.Name = "pnTemp33";
+            this.pnTemp33.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp33.TabIndex = 7;
+            // 
+            // lbFoor33
+            // 
+            this.lbFoor33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor33.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor33.Name = "lbFoor33";
+            this.lbFoor33.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor33.TabIndex = 4;
+            this.lbFoor33.Text = "F1";
+            this.lbFoor33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName33
+            // 
+            this.lbName33.BackColor = System.Drawing.Color.Gray;
+            this.lbName33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName33.Location = new System.Drawing.Point(0, 0);
+            this.lbName33.Name = "lbName33";
+            this.lbName33.Size = new System.Drawing.Size(138, 30);
+            this.lbName33.TabIndex = 4;
+            this.lbName33.Text = "Number33";
+            this.lbName33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName33, "Setting");
+            this.lbName33.Click += new System.EventHandler(this.lbName33_Click);
+            // 
+            // lbAH33
+            // 
+            this.lbAH33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH33.Location = new System.Drawing.Point(83, 30);
+            this.lbAH33.Name = "lbAH33";
+            this.lbAH33.Size = new System.Drawing.Size(55, 21);
+            this.lbAH33.TabIndex = 4;
+            this.lbAH33.Text = "999.9";
+            this.lbAH33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH33
+            // 
+            this.lbWH33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH33.Location = new System.Drawing.Point(0, 30);
+            this.lbWH33.Name = "lbWH33";
+            this.lbWH33.Size = new System.Drawing.Size(55, 21);
+            this.lbWH33.TabIndex = 4;
+            this.lbWH33.Text = "999.9";
+            this.lbWH33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL33
+            // 
+            this.lbAL33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL33.Location = new System.Drawing.Point(83, 164);
+            this.lbAL33.Name = "lbAL33";
+            this.lbAL33.Size = new System.Drawing.Size(55, 21);
+            this.lbAL33.TabIndex = 4;
+            this.lbAL33.Text = "999.9";
+            this.lbAL33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL33
+            // 
+            this.lbWL33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL33.Location = new System.Drawing.Point(0, 164);
+            this.lbWL33.Name = "lbWL33";
+            this.lbWL33.Size = new System.Drawing.Size(55, 21);
+            this.lbWL33.TabIndex = 4;
+            this.lbWL33.Text = "999.9";
+            this.lbWL33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp33
+            // 
+            this.lbTemp33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp33.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp33.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp33.Name = "lbTemp33";
+            this.lbTemp33.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp33.TabIndex = 3;
+            this.lbTemp33.Text = "999.9";
+            this.lbTemp33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp33, "Trend");
+            this.lbTemp33.Click += new System.EventHandler(this.lbTemp33_Click);
+            // 
+            // pnTemp29
+            // 
+            this.pnTemp29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp29.Controls.Add(this.lbFoor29);
+            this.pnTemp29.Controls.Add(this.lbName29);
+            this.pnTemp29.Controls.Add(this.lbAH29);
+            this.pnTemp29.Controls.Add(this.lbWH29);
+            this.pnTemp29.Controls.Add(this.lbAL29);
+            this.pnTemp29.Controls.Add(this.lbWL29);
+            this.pnTemp29.Controls.Add(this.lbTemp29);
+            this.pnTemp29.Location = new System.Drawing.Point(867, 4);
+            this.pnTemp29.Name = "pnTemp29";
+            this.pnTemp29.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp29.TabIndex = 8;
+            // 
+            // lbFoor29
+            // 
+            this.lbFoor29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor29.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor29.Name = "lbFoor29";
+            this.lbFoor29.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor29.TabIndex = 4;
+            this.lbFoor29.Text = "F1";
+            this.lbFoor29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName29
+            // 
+            this.lbName29.BackColor = System.Drawing.Color.Gray;
+            this.lbName29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName29.Location = new System.Drawing.Point(0, 0);
+            this.lbName29.Name = "lbName29";
+            this.lbName29.Size = new System.Drawing.Size(138, 30);
+            this.lbName29.TabIndex = 4;
+            this.lbName29.Text = "Number29";
+            this.lbName29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName29, "Setting");
+            this.lbName29.Click += new System.EventHandler(this.lbName29_Click);
+            // 
+            // lbAH29
+            // 
+            this.lbAH29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH29.Location = new System.Drawing.Point(83, 30);
+            this.lbAH29.Name = "lbAH29";
+            this.lbAH29.Size = new System.Drawing.Size(55, 21);
+            this.lbAH29.TabIndex = 4;
+            this.lbAH29.Text = "999.9";
+            this.lbAH29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH29
+            // 
+            this.lbWH29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH29.Location = new System.Drawing.Point(0, 30);
+            this.lbWH29.Name = "lbWH29";
+            this.lbWH29.Size = new System.Drawing.Size(55, 21);
+            this.lbWH29.TabIndex = 4;
+            this.lbWH29.Text = "999.9";
+            this.lbWH29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL29
+            // 
+            this.lbAL29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL29.Location = new System.Drawing.Point(83, 164);
+            this.lbAL29.Name = "lbAL29";
+            this.lbAL29.Size = new System.Drawing.Size(55, 21);
+            this.lbAL29.TabIndex = 4;
+            this.lbAL29.Text = "999.9";
+            this.lbAL29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL29
+            // 
+            this.lbWL29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL29.Location = new System.Drawing.Point(0, 164);
+            this.lbWL29.Name = "lbWL29";
+            this.lbWL29.Size = new System.Drawing.Size(55, 21);
+            this.lbWL29.TabIndex = 4;
+            this.lbWL29.Text = "999.9";
+            this.lbWL29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp29
+            // 
+            this.lbTemp29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp29.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp29.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp29.Name = "lbTemp29";
+            this.lbTemp29.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp29.TabIndex = 3;
+            this.lbTemp29.Text = "999.9";
+            this.lbTemp29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp29, "Trend");
+            this.lbTemp29.Click += new System.EventHandler(this.lbTemp29_Click);
+            // 
+            // pnTemp3
+            // 
+            this.pnTemp3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.pnTemp3.Controls.Add(this.lbFoor3);
+            this.pnTemp3.Controls.Add(this.lbName3);
+            this.pnTemp3.Controls.Add(this.lbAH3);
+            this.pnTemp3.Controls.Add(this.lbWH3);
+            this.pnTemp3.Controls.Add(this.lbAL3);
+            this.pnTemp3.Controls.Add(this.lbWL3);
+            this.pnTemp3.Controls.Add(this.lbTemp3);
+            this.pnTemp3.Location = new System.Drawing.Point(291, 3);
+            this.pnTemp3.Name = "pnTemp3";
+            this.pnTemp3.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp3.TabIndex = 0;
+            // 
+            // lbFoor3
+            // 
+            this.lbFoor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lbFoor3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor3.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor3.Name = "lbFoor3";
+            this.lbFoor3.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor3.TabIndex = 4;
+            this.lbFoor3.Text = "F1";
+            this.lbFoor3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName3
+            // 
+            this.lbName3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbName3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName3.Location = new System.Drawing.Point(0, 0);
+            this.lbName3.Name = "lbName3";
+            this.lbName3.Size = new System.Drawing.Size(138, 30);
+            this.lbName3.TabIndex = 4;
+            this.lbName3.Text = "Number03";
+            this.lbName3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName3, "Setting");
+            this.lbName3.Click += new System.EventHandler(this.lbName3_Click);
+            // 
+            // lbAH3
+            // 
+            this.lbAH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH3.Location = new System.Drawing.Point(83, 30);
+            this.lbAH3.Name = "lbAH3";
+            this.lbAH3.Size = new System.Drawing.Size(55, 21);
+            this.lbAH3.TabIndex = 4;
+            this.lbAH3.Text = "999.9";
+            this.lbAH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH3
+            // 
+            this.lbWH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH3.Location = new System.Drawing.Point(0, 30);
+            this.lbWH3.Name = "lbWH3";
+            this.lbWH3.Size = new System.Drawing.Size(55, 21);
+            this.lbWH3.TabIndex = 4;
+            this.lbWH3.Text = "999.9";
+            this.lbWH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL3
+            // 
+            this.lbAL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL3.Location = new System.Drawing.Point(83, 164);
+            this.lbAL3.Name = "lbAL3";
+            this.lbAL3.Size = new System.Drawing.Size(55, 21);
+            this.lbAL3.TabIndex = 4;
+            this.lbAL3.Text = "999.9";
+            this.lbAL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL3
+            // 
+            this.lbWL3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL3.Location = new System.Drawing.Point(0, 164);
+            this.lbWL3.Name = "lbWL3";
+            this.lbWL3.Size = new System.Drawing.Size(55, 21);
+            this.lbWL3.TabIndex = 4;
+            this.lbWL3.Text = "999.9";
+            this.lbWL3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp3
+            // 
+            this.lbTemp3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp3.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp3.Name = "lbTemp3";
+            this.lbTemp3.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp3.TabIndex = 3;
+            this.lbTemp3.Text = "999.9";
+            this.lbTemp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp3, "Trend");
+            this.lbTemp3.Click += new System.EventHandler(this.lbTemp3_Click);
+            // 
+            // pnTemp2
+            // 
+            this.pnTemp2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pnTemp2.Controls.Add(this.lbFoor2);
+            this.pnTemp2.Controls.Add(this.lbName2);
+            this.pnTemp2.Controls.Add(this.lbAH2);
+            this.pnTemp2.Controls.Add(this.lbWH2);
+            this.pnTemp2.Controls.Add(this.lbAL2);
+            this.pnTemp2.Controls.Add(this.lbWL2);
+            this.pnTemp2.Controls.Add(this.lbTemp2);
+            this.pnTemp2.Location = new System.Drawing.Point(147, 3);
+            this.pnTemp2.Name = "pnTemp2";
+            this.pnTemp2.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp2.TabIndex = 0;
+            // 
+            // lbFoor2
+            // 
+            this.lbFoor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbFoor2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor2.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor2.Name = "lbFoor2";
+            this.lbFoor2.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor2.TabIndex = 4;
+            this.lbFoor2.Text = "F1";
+            this.lbFoor2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName2
+            // 
+            this.lbName2.BackColor = System.Drawing.Color.Red;
+            this.lbName2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName2.Location = new System.Drawing.Point(0, 0);
+            this.lbName2.Name = "lbName2";
+            this.lbName2.Size = new System.Drawing.Size(138, 30);
+            this.lbName2.TabIndex = 4;
+            this.lbName2.Text = "Number02";
+            this.lbName2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName2, "Setting");
+            this.lbName2.Click += new System.EventHandler(this.lbName2_Click);
+            // 
+            // lbAH2
+            // 
+            this.lbAH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH2.Location = new System.Drawing.Point(83, 30);
+            this.lbAH2.Name = "lbAH2";
+            this.lbAH2.Size = new System.Drawing.Size(55, 21);
+            this.lbAH2.TabIndex = 4;
+            this.lbAH2.Text = "999.9";
+            this.lbAH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH2
+            // 
+            this.lbWH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH2.Location = new System.Drawing.Point(0, 30);
+            this.lbWH2.Name = "lbWH2";
+            this.lbWH2.Size = new System.Drawing.Size(55, 21);
+            this.lbWH2.TabIndex = 4;
+            this.lbWH2.Text = "999.9";
+            this.lbWH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL2
+            // 
+            this.lbAL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL2.Location = new System.Drawing.Point(83, 164);
+            this.lbAL2.Name = "lbAL2";
+            this.lbAL2.Size = new System.Drawing.Size(55, 21);
+            this.lbAL2.TabIndex = 4;
+            this.lbAL2.Text = "999.9";
+            this.lbAL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL2
+            // 
+            this.lbWL2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL2.Location = new System.Drawing.Point(0, 164);
+            this.lbWL2.Name = "lbWL2";
+            this.lbWL2.Size = new System.Drawing.Size(55, 21);
+            this.lbWL2.TabIndex = 4;
+            this.lbWL2.Text = "999.9";
+            this.lbWL2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp2
+            // 
+            this.lbTemp2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp2.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp2.Name = "lbTemp2";
+            this.lbTemp2.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp2.TabIndex = 3;
+            this.lbTemp2.Text = "999.9";
+            this.lbTemp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp2, "Trend");
+            this.lbTemp2.Click += new System.EventHandler(this.lbTemp2_Click);
+            // 
+            // pnTemp1
+            // 
+            this.pnTemp1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp1.Controls.Add(this.lbFoor1);
+            this.pnTemp1.Controls.Add(this.lbName1);
+            this.pnTemp1.Controls.Add(this.lbAH1);
+            this.pnTemp1.Controls.Add(this.lbWH1);
+            this.pnTemp1.Controls.Add(this.lbAL1);
+            this.pnTemp1.Controls.Add(this.lbWL1);
+            this.pnTemp1.Controls.Add(this.lbTemp1);
+            this.pnTemp1.Location = new System.Drawing.Point(3, 3);
+            this.pnTemp1.Name = "pnTemp1";
+            this.pnTemp1.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp1.TabIndex = 0;
+            // 
+            // lbFoor1
+            // 
+            this.lbFoor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor1.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor1.Name = "lbFoor1";
+            this.lbFoor1.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor1.TabIndex = 4;
+            this.lbFoor1.Text = "F1";
+            this.lbFoor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName1
+            // 
+            this.lbName1.BackColor = System.Drawing.Color.Gray;
+            this.lbName1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName1.Location = new System.Drawing.Point(0, 0);
+            this.lbName1.Name = "lbName1";
+            this.lbName1.Size = new System.Drawing.Size(138, 30);
+            this.lbName1.TabIndex = 4;
+            this.lbName1.Text = "Number01";
+            this.lbName1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName1, "Setting");
+            this.lbName1.Click += new System.EventHandler(this.lbName1_Click);
+            // 
+            // lbAH1
+            // 
+            this.lbAH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH1.Location = new System.Drawing.Point(83, 30);
+            this.lbAH1.Name = "lbAH1";
+            this.lbAH1.Size = new System.Drawing.Size(55, 21);
+            this.lbAH1.TabIndex = 4;
+            this.lbAH1.Text = "999.9";
+            this.lbAH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH1
+            // 
+            this.lbWH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH1.Location = new System.Drawing.Point(0, 30);
+            this.lbWH1.Name = "lbWH1";
+            this.lbWH1.Size = new System.Drawing.Size(55, 21);
+            this.lbWH1.TabIndex = 4;
+            this.lbWH1.Text = "999.9";
+            this.lbWH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL1
+            // 
+            this.lbAL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL1.Location = new System.Drawing.Point(83, 164);
+            this.lbAL1.Name = "lbAL1";
+            this.lbAL1.Size = new System.Drawing.Size(55, 21);
+            this.lbAL1.TabIndex = 4;
+            this.lbAL1.Text = "999.9";
+            this.lbAL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL1
+            // 
+            this.lbWL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL1.Location = new System.Drawing.Point(0, 164);
+            this.lbWL1.Name = "lbWL1";
+            this.lbWL1.Size = new System.Drawing.Size(55, 21);
+            this.lbWL1.TabIndex = 4;
+            this.lbWL1.Text = "999.9";
+            this.lbWL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp1
+            // 
+            this.lbTemp1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp1.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp1.Name = "lbTemp1";
+            this.lbTemp1.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp1.TabIndex = 3;
+            this.lbTemp1.Text = "999.9";
+            this.lbTemp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp1, "Trend");
+            this.lbTemp1.Click += new System.EventHandler(this.lbTemp1_Click);
+            // 
             // panel25
             // 
+            this.panel25.Controls.Add(this.tool1_avg);
             this.panel25.Controls.Add(this.lbTool1_warning);
             this.panel25.Controls.Add(this.lbTool1_alarm);
             this.panel25.Location = new System.Drawing.Point(849, 6);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(845, 44);
             this.panel25.TabIndex = 4;
+            // 
+            // tool1_avg
+            // 
+            this.tool1_avg.BackColor = System.Drawing.Color.Transparent;
+            this.tool1_avg.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tool1_avg.ForeColor = System.Drawing.Color.Gray;
+            this.tool1_avg.Location = new System.Drawing.Point(0, 6);
+            this.tool1_avg.Name = "tool1_avg";
+            this.tool1_avg.Size = new System.Drawing.Size(274, 30);
+            this.tool1_avg.TabIndex = 4;
+            this.tool1_avg.Text = "Average : 2.6 C";
+            this.tool1_avg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbTool1_warning
             // 
@@ -3750,13 +4130,12 @@
             // 
             this.panel35.BackColor = System.Drawing.Color.White;
             this.panel35.Controls.Add(this.panel41);
-            this.panel35.Controls.Add(this.panel7);
             this.panel35.Controls.Add(this.label200);
             this.panel35.Controls.Add(this.panel36);
             this.panel35.Controls.Add(this.panel34);
-            this.panel35.Location = new System.Drawing.Point(9, 404);
+            this.panel35.Location = new System.Drawing.Point(8, 539);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(1899, 390);
+            this.panel35.Size = new System.Drawing.Size(1899, 258);
             this.panel35.TabIndex = 3;
             // 
             // panel41
@@ -3842,54 +4221,6 @@
             this.btReport3.UseVisualStyleBackColor = false;
             this.btReport3.Click += new System.EventHandler(this.btReport3_Click);
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.panel10);
-            this.panel7.Location = new System.Drawing.Point(1089, 77);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(615, 285);
-            this.panel7.TabIndex = 28;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(635, 30);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Chemical Lab";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.label16);
-            this.panel10.Controls.Add(this.pnTemp14);
-            this.panel10.Controls.Add(this.pnTemp11);
-            this.panel10.Controls.Add(this.pnTemp13);
-            this.panel10.Controls.Add(this.pnTemp12);
-            this.panel10.Location = new System.Drawing.Point(9, 33);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(598, 242);
-            this.panel10.TabIndex = 28;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(-1, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(602, 30);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Chemical Room";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label200
             // 
             this.label200.BackColor = System.Drawing.Color.Transparent;
@@ -3904,180 +4235,44 @@
             // 
             // panel36
             // 
-            this.panel36.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel36.Controls.Add(this.panel9);
-            this.panel36.Controls.Add(this.label14);
-            this.panel36.Controls.Add(this.panel8);
-            this.panel36.Location = new System.Drawing.Point(13, 77);
+            this.panel36.BackColor = System.Drawing.Color.Transparent;
+            this.panel36.Controls.Add(this.pnTemp14);
+            this.panel36.Controls.Add(this.pnTemp4);
+            this.panel36.Controls.Add(this.pnTemp13);
+            this.panel36.Controls.Add(this.pnTemp6);
+            this.panel36.Controls.Add(this.pnTemp12);
+            this.panel36.Controls.Add(this.pnTemp10);
+            this.panel36.Controls.Add(this.pnTemp9);
+            this.panel36.Controls.Add(this.pnTemp7);
+            this.panel36.Controls.Add(this.pnTemp8);
+            this.panel36.Controls.Add(this.pnTemp5);
+            this.panel36.Controls.Add(this.pnTemp11);
+            this.panel36.Location = new System.Drawing.Point(6, 53);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(1070, 285);
+            this.panel36.Size = new System.Drawing.Size(1890, 202);
             this.panel36.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label19);
-            this.panel9.Controls.Add(this.pnTemp4);
-            this.panel9.Controls.Add(this.pnTemp5);
-            this.panel9.Controls.Add(this.pnTemp8);
-            this.panel9.Controls.Add(this.pnTemp7);
-            this.panel9.Controls.Add(this.pnTemp10);
-            this.panel9.Controls.Add(this.pnTemp6);
-            this.panel9.Location = new System.Drawing.Point(7, 33);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(876, 242);
-            this.panel9.TabIndex = 28;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(0, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(891, 30);
-            this.label19.TabIndex = 4;
-            this.label19.Text = "Semi-clean Room";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(0, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(1067, 30);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Micro Lab";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.pnTemp9);
-            this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(889, 33);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(170, 242);
-            this.panel8.TabIndex = 28;
-            // 
-            // pnTemp9
-            // 
-            this.pnTemp9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnTemp9.Controls.Add(this.lbFoor9);
-            this.pnTemp9.Controls.Add(this.lbName9);
-            this.pnTemp9.Controls.Add(this.lbAH9);
-            this.pnTemp9.Controls.Add(this.lbWH9);
-            this.pnTemp9.Controls.Add(this.lbAL9);
-            this.pnTemp9.Controls.Add(this.lbWL9);
-            this.pnTemp9.Controls.Add(this.lbTemp9);
-            this.pnTemp9.Location = new System.Drawing.Point(15, 33);
-            this.pnTemp9.Name = "pnTemp9";
-            this.pnTemp9.Size = new System.Drawing.Size(138, 195);
-            this.pnTemp9.TabIndex = 6;
-            // 
-            // lbFoor9
-            // 
-            this.lbFoor9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbFoor9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbFoor9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor9.Location = new System.Drawing.Point(4, 4);
-            this.lbFoor9.Name = "lbFoor9";
-            this.lbFoor9.Size = new System.Drawing.Size(28, 21);
-            this.lbFoor9.TabIndex = 4;
-            this.lbFoor9.Text = "F1";
-            this.lbFoor9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbName9
-            // 
-            this.lbName9.BackColor = System.Drawing.Color.Gray;
-            this.lbName9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbName9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName9.Location = new System.Drawing.Point(0, 0);
-            this.lbName9.Name = "lbName9";
-            this.lbName9.Size = new System.Drawing.Size(138, 30);
-            this.lbName9.TabIndex = 4;
-            this.lbName9.Text = "Number09";
-            this.lbName9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip1.SetToolTip(this.lbName9, "Setting");
-            this.lbName9.Click += new System.EventHandler(this.lbName9_Click);
-            // 
-            // lbAH9
-            // 
-            this.lbAH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAH9.Location = new System.Drawing.Point(83, 30);
-            this.lbAH9.Name = "lbAH9";
-            this.lbAH9.Size = new System.Drawing.Size(55, 21);
-            this.lbAH9.TabIndex = 4;
-            this.lbAH9.Text = "999.9";
-            this.lbAH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWH9
-            // 
-            this.lbWH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWH9.Location = new System.Drawing.Point(0, 30);
-            this.lbWH9.Name = "lbWH9";
-            this.lbWH9.Size = new System.Drawing.Size(55, 21);
-            this.lbWH9.TabIndex = 4;
-            this.lbWH9.Text = "999.9";
-            this.lbWH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAL9
-            // 
-            this.lbAL9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAL9.Location = new System.Drawing.Point(83, 164);
-            this.lbAL9.Name = "lbAL9";
-            this.lbAL9.Size = new System.Drawing.Size(55, 21);
-            this.lbAL9.TabIndex = 4;
-            this.lbAL9.Text = "999.9";
-            this.lbAL9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbWL9
-            // 
-            this.lbWL9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWL9.Location = new System.Drawing.Point(0, 164);
-            this.lbWL9.Name = "lbWL9";
-            this.lbWL9.Size = new System.Drawing.Size(55, 21);
-            this.lbWL9.TabIndex = 4;
-            this.lbWL9.Text = "999.9";
-            this.lbWL9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbTemp9
-            // 
-            this.lbTemp9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbTemp9.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTemp9.Location = new System.Drawing.Point(3, 71);
-            this.lbTemp9.Name = "lbTemp9";
-            this.lbTemp9.Size = new System.Drawing.Size(132, 75);
-            this.lbTemp9.TabIndex = 3;
-            this.lbTemp9.Text = "999.9";
-            this.lbTemp9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.lbTemp9, "Trend");
-            this.lbTemp9.Click += new System.EventHandler(this.lbTemp9_Click);
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(-1, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(172, 30);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Incubation Room";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel34
             // 
+            this.panel34.Controls.Add(this.tool3_avg);
             this.panel34.Controls.Add(this.lbTool3_warning);
             this.panel34.Controls.Add(this.lbTool3_alarm);
             this.panel34.Location = new System.Drawing.Point(850, 5);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(845, 44);
             this.panel34.TabIndex = 4;
+            // 
+            // tool3_avg
+            // 
+            this.tool3_avg.BackColor = System.Drawing.Color.Transparent;
+            this.tool3_avg.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tool3_avg.ForeColor = System.Drawing.Color.Gray;
+            this.tool3_avg.Location = new System.Drawing.Point(0, 6);
+            this.tool3_avg.Name = "tool3_avg";
+            this.tool3_avg.Size = new System.Drawing.Size(274, 30);
+            this.tool3_avg.TabIndex = 4;
+            this.tool3_avg.Text = "Average : 2.6 C";
+            this.tool3_avg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbTool3_warning
             // 
@@ -4103,6 +4298,1018 @@
             this.lbTool3_alarm.Text = "Out of range : 0 Times";
             this.lbTool3_alarm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pnTemp25
+            // 
+            this.pnTemp25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp25.Controls.Add(this.lbFoor25);
+            this.pnTemp25.Controls.Add(this.lbName25);
+            this.pnTemp25.Controls.Add(this.lbAH25);
+            this.pnTemp25.Controls.Add(this.lbWH25);
+            this.pnTemp25.Controls.Add(this.lbAL25);
+            this.pnTemp25.Controls.Add(this.lbWL25);
+            this.pnTemp25.Controls.Add(this.lbTemp25);
+            this.pnTemp25.Location = new System.Drawing.Point(1443, 2);
+            this.pnTemp25.Name = "pnTemp25";
+            this.pnTemp25.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp25.TabIndex = 16;
+            // 
+            // lbFoor25
+            // 
+            this.lbFoor25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor25.Location = new System.Drawing.Point(5, 5);
+            this.lbFoor25.Name = "lbFoor25";
+            this.lbFoor25.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor25.TabIndex = 4;
+            this.lbFoor25.Text = "F1";
+            this.lbFoor25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName25
+            // 
+            this.lbName25.BackColor = System.Drawing.Color.Gray;
+            this.lbName25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName25.Location = new System.Drawing.Point(0, 0);
+            this.lbName25.Name = "lbName25";
+            this.lbName25.Size = new System.Drawing.Size(138, 30);
+            this.lbName25.TabIndex = 4;
+            this.lbName25.Text = "Number25";
+            this.lbName25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName25, "Setting");
+            // 
+            // lbAH25
+            // 
+            this.lbAH25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH25.Location = new System.Drawing.Point(83, 30);
+            this.lbAH25.Name = "lbAH25";
+            this.lbAH25.Size = new System.Drawing.Size(55, 21);
+            this.lbAH25.TabIndex = 4;
+            this.lbAH25.Text = "999.9";
+            this.lbAH25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH25
+            // 
+            this.lbWH25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH25.Location = new System.Drawing.Point(0, 30);
+            this.lbWH25.Name = "lbWH25";
+            this.lbWH25.Size = new System.Drawing.Size(55, 21);
+            this.lbWH25.TabIndex = 4;
+            this.lbWH25.Text = "999.9";
+            this.lbWH25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL25
+            // 
+            this.lbAL25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL25.Location = new System.Drawing.Point(83, 164);
+            this.lbAL25.Name = "lbAL25";
+            this.lbAL25.Size = new System.Drawing.Size(55, 21);
+            this.lbAL25.TabIndex = 4;
+            this.lbAL25.Text = "999.9";
+            this.lbAL25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL25
+            // 
+            this.lbWL25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL25.Location = new System.Drawing.Point(0, 164);
+            this.lbWL25.Name = "lbWL25";
+            this.lbWL25.Size = new System.Drawing.Size(55, 21);
+            this.lbWL25.TabIndex = 4;
+            this.lbWL25.Text = "999.9";
+            this.lbWL25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp25
+            // 
+            this.lbTemp25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp25.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp25.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp25.Name = "lbTemp25";
+            this.lbTemp25.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp25.TabIndex = 3;
+            this.lbTemp25.Text = "999.9";
+            this.lbTemp25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp25, "Trend");
+            // 
+            // pnTemp15
+            // 
+            this.pnTemp15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.pnTemp15.Controls.Add(this.lbFoor15);
+            this.pnTemp15.Controls.Add(this.lbName15);
+            this.pnTemp15.Controls.Add(this.lbAH15);
+            this.pnTemp15.Controls.Add(this.lbWH15);
+            this.pnTemp15.Controls.Add(this.lbAL15);
+            this.pnTemp15.Controls.Add(this.lbWL15);
+            this.pnTemp15.Controls.Add(this.lbTemp15);
+            this.pnTemp15.Location = new System.Drawing.Point(3, 3);
+            this.pnTemp15.Name = "pnTemp15";
+            this.pnTemp15.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp15.TabIndex = 6;
+            // 
+            // lbFoor15
+            // 
+            this.lbFoor15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbFoor15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor15.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor15.Name = "lbFoor15";
+            this.lbFoor15.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor15.TabIndex = 4;
+            this.lbFoor15.Text = "F1";
+            this.lbFoor15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName15
+            // 
+            this.lbName15.BackColor = System.Drawing.Color.Lime;
+            this.lbName15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName15.Location = new System.Drawing.Point(0, 0);
+            this.lbName15.Name = "lbName15";
+            this.lbName15.Size = new System.Drawing.Size(138, 30);
+            this.lbName15.TabIndex = 4;
+            this.lbName15.Text = "Number15";
+            this.lbName15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName15, "Setting");
+            // 
+            // lbAH15
+            // 
+            this.lbAH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH15.Location = new System.Drawing.Point(83, 30);
+            this.lbAH15.Name = "lbAH15";
+            this.lbAH15.Size = new System.Drawing.Size(55, 21);
+            this.lbAH15.TabIndex = 4;
+            this.lbAH15.Text = "999.9";
+            this.lbAH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH15
+            // 
+            this.lbWH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH15.Location = new System.Drawing.Point(0, 30);
+            this.lbWH15.Name = "lbWH15";
+            this.lbWH15.Size = new System.Drawing.Size(55, 21);
+            this.lbWH15.TabIndex = 4;
+            this.lbWH15.Text = "999.9";
+            this.lbWH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL15
+            // 
+            this.lbAL15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL15.Location = new System.Drawing.Point(83, 164);
+            this.lbAL15.Name = "lbAL15";
+            this.lbAL15.Size = new System.Drawing.Size(55, 21);
+            this.lbAL15.TabIndex = 4;
+            this.lbAL15.Text = "999.9";
+            this.lbAL15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL15
+            // 
+            this.lbWL15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL15.Location = new System.Drawing.Point(0, 164);
+            this.lbWL15.Name = "lbWL15";
+            this.lbWL15.Size = new System.Drawing.Size(55, 21);
+            this.lbWL15.TabIndex = 4;
+            this.lbWL15.Text = "999.9";
+            this.lbWL15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp15
+            // 
+            this.lbTemp15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp15.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp15.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp15.Name = "lbTemp15";
+            this.lbTemp15.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp15.TabIndex = 3;
+            this.lbTemp15.Text = "999.9";
+            this.lbTemp15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp15, "Trend");
+            // 
+            // pnTemp16
+            // 
+            this.pnTemp16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp16.Controls.Add(this.lbFoor16);
+            this.pnTemp16.Controls.Add(this.lbName16);
+            this.pnTemp16.Controls.Add(this.lbAH16);
+            this.pnTemp16.Controls.Add(this.lbWH16);
+            this.pnTemp16.Controls.Add(this.lbAL16);
+            this.pnTemp16.Controls.Add(this.lbWL16);
+            this.pnTemp16.Controls.Add(this.lbTemp16);
+            this.pnTemp16.Location = new System.Drawing.Point(147, 4);
+            this.pnTemp16.Name = "pnTemp16";
+            this.pnTemp16.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp16.TabIndex = 7;
+            // 
+            // lbFoor16
+            // 
+            this.lbFoor16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor16.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor16.Name = "lbFoor16";
+            this.lbFoor16.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor16.TabIndex = 4;
+            this.lbFoor16.Text = "F1";
+            this.lbFoor16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName16
+            // 
+            this.lbName16.BackColor = System.Drawing.Color.Gray;
+            this.lbName16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName16.Location = new System.Drawing.Point(0, 0);
+            this.lbName16.Name = "lbName16";
+            this.lbName16.Size = new System.Drawing.Size(138, 30);
+            this.lbName16.TabIndex = 4;
+            this.lbName16.Text = "Number16";
+            this.lbName16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName16, "Setting");
+            // 
+            // lbAH16
+            // 
+            this.lbAH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH16.Location = new System.Drawing.Point(83, 30);
+            this.lbAH16.Name = "lbAH16";
+            this.lbAH16.Size = new System.Drawing.Size(55, 21);
+            this.lbAH16.TabIndex = 4;
+            this.lbAH16.Text = "999.9";
+            this.lbAH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH16
+            // 
+            this.lbWH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH16.Location = new System.Drawing.Point(0, 30);
+            this.lbWH16.Name = "lbWH16";
+            this.lbWH16.Size = new System.Drawing.Size(55, 21);
+            this.lbWH16.TabIndex = 4;
+            this.lbWH16.Text = "999.9";
+            this.lbWH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL16
+            // 
+            this.lbAL16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL16.Location = new System.Drawing.Point(83, 164);
+            this.lbAL16.Name = "lbAL16";
+            this.lbAL16.Size = new System.Drawing.Size(55, 21);
+            this.lbAL16.TabIndex = 4;
+            this.lbAL16.Text = "999.9";
+            this.lbAL16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL16
+            // 
+            this.lbWL16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL16.Location = new System.Drawing.Point(0, 164);
+            this.lbWL16.Name = "lbWL16";
+            this.lbWL16.Size = new System.Drawing.Size(55, 21);
+            this.lbWL16.TabIndex = 4;
+            this.lbWL16.Text = "999.9";
+            this.lbWL16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp16
+            // 
+            this.lbTemp16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp16.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp16.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp16.Name = "lbTemp16";
+            this.lbTemp16.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp16.TabIndex = 3;
+            this.lbTemp16.Text = "999.9";
+            this.lbTemp16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp16, "Trend");
+            // 
+            // pnTemp19
+            // 
+            this.pnTemp19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp19.Controls.Add(this.lbFoor19);
+            this.pnTemp19.Controls.Add(this.lbName19);
+            this.pnTemp19.Controls.Add(this.lbAH19);
+            this.pnTemp19.Controls.Add(this.lbWH19);
+            this.pnTemp19.Controls.Add(this.lbAL19);
+            this.pnTemp19.Controls.Add(this.lbWL19);
+            this.pnTemp19.Controls.Add(this.lbTemp19);
+            this.pnTemp19.Location = new System.Drawing.Point(579, 3);
+            this.pnTemp19.Name = "pnTemp19";
+            this.pnTemp19.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp19.TabIndex = 8;
+            // 
+            // lbFoor19
+            // 
+            this.lbFoor19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor19.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor19.Name = "lbFoor19";
+            this.lbFoor19.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor19.TabIndex = 4;
+            this.lbFoor19.Text = "F1";
+            this.lbFoor19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName19
+            // 
+            this.lbName19.BackColor = System.Drawing.Color.Gray;
+            this.lbName19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName19.Location = new System.Drawing.Point(0, 0);
+            this.lbName19.Name = "lbName19";
+            this.lbName19.Size = new System.Drawing.Size(138, 30);
+            this.lbName19.TabIndex = 4;
+            this.lbName19.Text = "Number19";
+            this.lbName19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName19, "Setting");
+            // 
+            // lbAH19
+            // 
+            this.lbAH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH19.Location = new System.Drawing.Point(83, 30);
+            this.lbAH19.Name = "lbAH19";
+            this.lbAH19.Size = new System.Drawing.Size(55, 21);
+            this.lbAH19.TabIndex = 4;
+            this.lbAH19.Text = "999.9";
+            this.lbAH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH19
+            // 
+            this.lbWH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH19.Location = new System.Drawing.Point(0, 30);
+            this.lbWH19.Name = "lbWH19";
+            this.lbWH19.Size = new System.Drawing.Size(55, 21);
+            this.lbWH19.TabIndex = 4;
+            this.lbWH19.Text = "999.9";
+            this.lbWH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL19
+            // 
+            this.lbAL19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL19.Location = new System.Drawing.Point(83, 164);
+            this.lbAL19.Name = "lbAL19";
+            this.lbAL19.Size = new System.Drawing.Size(55, 21);
+            this.lbAL19.TabIndex = 4;
+            this.lbAL19.Text = "999.9";
+            this.lbAL19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL19
+            // 
+            this.lbWL19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL19.Location = new System.Drawing.Point(0, 164);
+            this.lbWL19.Name = "lbWL19";
+            this.lbWL19.Size = new System.Drawing.Size(55, 21);
+            this.lbWL19.TabIndex = 4;
+            this.lbWL19.Text = "999.9";
+            this.lbWL19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp19
+            // 
+            this.lbTemp19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp19.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp19.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp19.Name = "lbTemp19";
+            this.lbTemp19.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp19.TabIndex = 3;
+            this.lbTemp19.Text = "999.9";
+            this.lbTemp19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp19, "Trend");
+            // 
+            // pnTemp17
+            // 
+            this.pnTemp17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp17.Controls.Add(this.lbFoor17);
+            this.pnTemp17.Controls.Add(this.lbName17);
+            this.pnTemp17.Controls.Add(this.lbAH17);
+            this.pnTemp17.Controls.Add(this.lbWH17);
+            this.pnTemp17.Controls.Add(this.lbAL17);
+            this.pnTemp17.Controls.Add(this.lbWL17);
+            this.pnTemp17.Controls.Add(this.lbTemp17);
+            this.pnTemp17.Location = new System.Drawing.Point(291, 4);
+            this.pnTemp17.Name = "pnTemp17";
+            this.pnTemp17.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp17.TabIndex = 9;
+            // 
+            // lbFoor17
+            // 
+            this.lbFoor17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor17.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor17.Name = "lbFoor17";
+            this.lbFoor17.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor17.TabIndex = 4;
+            this.lbFoor17.Text = "F1";
+            this.lbFoor17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName17
+            // 
+            this.lbName17.BackColor = System.Drawing.Color.Gray;
+            this.lbName17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName17.Location = new System.Drawing.Point(0, 0);
+            this.lbName17.Name = "lbName17";
+            this.lbName17.Size = new System.Drawing.Size(138, 30);
+            this.lbName17.TabIndex = 4;
+            this.lbName17.Text = "Number17";
+            this.lbName17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName17, "Setting");
+            // 
+            // lbAH17
+            // 
+            this.lbAH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH17.Location = new System.Drawing.Point(83, 30);
+            this.lbAH17.Name = "lbAH17";
+            this.lbAH17.Size = new System.Drawing.Size(55, 21);
+            this.lbAH17.TabIndex = 4;
+            this.lbAH17.Text = "999.9";
+            this.lbAH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH17
+            // 
+            this.lbWH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH17.Location = new System.Drawing.Point(0, 30);
+            this.lbWH17.Name = "lbWH17";
+            this.lbWH17.Size = new System.Drawing.Size(55, 21);
+            this.lbWH17.TabIndex = 4;
+            this.lbWH17.Text = "999.9";
+            this.lbWH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL17
+            // 
+            this.lbAL17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL17.Location = new System.Drawing.Point(83, 164);
+            this.lbAL17.Name = "lbAL17";
+            this.lbAL17.Size = new System.Drawing.Size(55, 21);
+            this.lbAL17.TabIndex = 4;
+            this.lbAL17.Text = "999.9";
+            this.lbAL17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL17
+            // 
+            this.lbWL17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL17.Location = new System.Drawing.Point(0, 164);
+            this.lbWL17.Name = "lbWL17";
+            this.lbWL17.Size = new System.Drawing.Size(55, 21);
+            this.lbWL17.TabIndex = 4;
+            this.lbWL17.Text = "999.9";
+            this.lbWL17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp17
+            // 
+            this.lbTemp17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp17.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp17.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp17.Name = "lbTemp17";
+            this.lbTemp17.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp17.TabIndex = 3;
+            this.lbTemp17.Text = "999.9";
+            this.lbTemp17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp17, "Trend");
+            // 
+            // pnTemp18
+            // 
+            this.pnTemp18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp18.Controls.Add(this.lbFoor18);
+            this.pnTemp18.Controls.Add(this.lbName18);
+            this.pnTemp18.Controls.Add(this.lbAH18);
+            this.pnTemp18.Controls.Add(this.lbWH18);
+            this.pnTemp18.Controls.Add(this.lbAL18);
+            this.pnTemp18.Controls.Add(this.lbWL18);
+            this.pnTemp18.Controls.Add(this.lbTemp18);
+            this.pnTemp18.Location = new System.Drawing.Point(435, 4);
+            this.pnTemp18.Name = "pnTemp18";
+            this.pnTemp18.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp18.TabIndex = 10;
+            // 
+            // lbFoor18
+            // 
+            this.lbFoor18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor18.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor18.Name = "lbFoor18";
+            this.lbFoor18.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor18.TabIndex = 4;
+            this.lbFoor18.Text = "F1";
+            this.lbFoor18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName18
+            // 
+            this.lbName18.BackColor = System.Drawing.Color.Gray;
+            this.lbName18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName18.Location = new System.Drawing.Point(0, 0);
+            this.lbName18.Name = "lbName18";
+            this.lbName18.Size = new System.Drawing.Size(138, 30);
+            this.lbName18.TabIndex = 4;
+            this.lbName18.Text = "Number18";
+            this.lbName18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName18, "Setting");
+            // 
+            // lbAH18
+            // 
+            this.lbAH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH18.Location = new System.Drawing.Point(83, 30);
+            this.lbAH18.Name = "lbAH18";
+            this.lbAH18.Size = new System.Drawing.Size(55, 21);
+            this.lbAH18.TabIndex = 4;
+            this.lbAH18.Text = "999.9";
+            this.lbAH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH18
+            // 
+            this.lbWH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH18.Location = new System.Drawing.Point(0, 30);
+            this.lbWH18.Name = "lbWH18";
+            this.lbWH18.Size = new System.Drawing.Size(55, 21);
+            this.lbWH18.TabIndex = 4;
+            this.lbWH18.Text = "999.9";
+            this.lbWH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL18
+            // 
+            this.lbAL18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL18.Location = new System.Drawing.Point(83, 164);
+            this.lbAL18.Name = "lbAL18";
+            this.lbAL18.Size = new System.Drawing.Size(55, 21);
+            this.lbAL18.TabIndex = 4;
+            this.lbAL18.Text = "999.9";
+            this.lbAL18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL18
+            // 
+            this.lbWL18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL18.Location = new System.Drawing.Point(0, 164);
+            this.lbWL18.Name = "lbWL18";
+            this.lbWL18.Size = new System.Drawing.Size(55, 21);
+            this.lbWL18.TabIndex = 4;
+            this.lbWL18.Text = "999.9";
+            this.lbWL18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp18
+            // 
+            this.lbTemp18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp18.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp18.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp18.Name = "lbTemp18";
+            this.lbTemp18.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp18.TabIndex = 3;
+            this.lbTemp18.Text = "999.9";
+            this.lbTemp18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp18, "Trend");
+            // 
+            // pnTemp24
+            // 
+            this.pnTemp24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp24.Controls.Add(this.lbFoor24);
+            this.pnTemp24.Controls.Add(this.lbName24);
+            this.pnTemp24.Controls.Add(this.lbAH24);
+            this.pnTemp24.Controls.Add(this.lbWH24);
+            this.pnTemp24.Controls.Add(this.lbAL24);
+            this.pnTemp24.Controls.Add(this.lbWL24);
+            this.pnTemp24.Controls.Add(this.lbTemp24);
+            this.pnTemp24.Location = new System.Drawing.Point(1299, 2);
+            this.pnTemp24.Name = "pnTemp24";
+            this.pnTemp24.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp24.TabIndex = 11;
+            // 
+            // lbFoor24
+            // 
+            this.lbFoor24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor24.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor24.Name = "lbFoor24";
+            this.lbFoor24.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor24.TabIndex = 4;
+            this.lbFoor24.Text = "F1";
+            this.lbFoor24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName24
+            // 
+            this.lbName24.BackColor = System.Drawing.Color.Gray;
+            this.lbName24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName24.Location = new System.Drawing.Point(0, 0);
+            this.lbName24.Name = "lbName24";
+            this.lbName24.Size = new System.Drawing.Size(138, 30);
+            this.lbName24.TabIndex = 4;
+            this.lbName24.Text = "Number24";
+            this.lbName24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName24, "Setting");
+            // 
+            // lbAH24
+            // 
+            this.lbAH24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH24.Location = new System.Drawing.Point(83, 30);
+            this.lbAH24.Name = "lbAH24";
+            this.lbAH24.Size = new System.Drawing.Size(55, 21);
+            this.lbAH24.TabIndex = 4;
+            this.lbAH24.Text = "999.9";
+            this.lbAH24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH24
+            // 
+            this.lbWH24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH24.Location = new System.Drawing.Point(0, 30);
+            this.lbWH24.Name = "lbWH24";
+            this.lbWH24.Size = new System.Drawing.Size(55, 21);
+            this.lbWH24.TabIndex = 4;
+            this.lbWH24.Text = "999.9";
+            this.lbWH24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL24
+            // 
+            this.lbAL24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL24.Location = new System.Drawing.Point(83, 164);
+            this.lbAL24.Name = "lbAL24";
+            this.lbAL24.Size = new System.Drawing.Size(55, 21);
+            this.lbAL24.TabIndex = 4;
+            this.lbAL24.Text = "999.9";
+            this.lbAL24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL24
+            // 
+            this.lbWL24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL24.Location = new System.Drawing.Point(0, 164);
+            this.lbWL24.Name = "lbWL24";
+            this.lbWL24.Size = new System.Drawing.Size(55, 21);
+            this.lbWL24.TabIndex = 4;
+            this.lbWL24.Text = "999.9";
+            this.lbWL24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp24
+            // 
+            this.lbTemp24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp24.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp24.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp24.Name = "lbTemp24";
+            this.lbTemp24.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp24.TabIndex = 3;
+            this.lbTemp24.Text = "999.9";
+            this.lbTemp24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp24, "Trend");
+            // 
+            // pnTemp20
+            // 
+            this.pnTemp20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp20.Controls.Add(this.lbFoor20);
+            this.pnTemp20.Controls.Add(this.lbName20);
+            this.pnTemp20.Controls.Add(this.lbAH20);
+            this.pnTemp20.Controls.Add(this.lbWH20);
+            this.pnTemp20.Controls.Add(this.lbAL20);
+            this.pnTemp20.Controls.Add(this.lbWL20);
+            this.pnTemp20.Controls.Add(this.lbTemp20);
+            this.pnTemp20.Location = new System.Drawing.Point(723, 3);
+            this.pnTemp20.Name = "pnTemp20";
+            this.pnTemp20.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp20.TabIndex = 12;
+            // 
+            // lbFoor20
+            // 
+            this.lbFoor20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor20.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor20.Name = "lbFoor20";
+            this.lbFoor20.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor20.TabIndex = 4;
+            this.lbFoor20.Text = "F1";
+            this.lbFoor20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName20
+            // 
+            this.lbName20.BackColor = System.Drawing.Color.Gray;
+            this.lbName20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName20.Location = new System.Drawing.Point(0, 0);
+            this.lbName20.Name = "lbName20";
+            this.lbName20.Size = new System.Drawing.Size(138, 30);
+            this.lbName20.TabIndex = 4;
+            this.lbName20.Text = "Number20";
+            this.lbName20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName20, "Setting");
+            // 
+            // lbAH20
+            // 
+            this.lbAH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH20.Location = new System.Drawing.Point(83, 30);
+            this.lbAH20.Name = "lbAH20";
+            this.lbAH20.Size = new System.Drawing.Size(55, 21);
+            this.lbAH20.TabIndex = 4;
+            this.lbAH20.Text = "999.9";
+            this.lbAH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH20
+            // 
+            this.lbWH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH20.Location = new System.Drawing.Point(0, 30);
+            this.lbWH20.Name = "lbWH20";
+            this.lbWH20.Size = new System.Drawing.Size(55, 21);
+            this.lbWH20.TabIndex = 4;
+            this.lbWH20.Text = "999.9";
+            this.lbWH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL20
+            // 
+            this.lbAL20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL20.Location = new System.Drawing.Point(83, 164);
+            this.lbAL20.Name = "lbAL20";
+            this.lbAL20.Size = new System.Drawing.Size(55, 21);
+            this.lbAL20.TabIndex = 4;
+            this.lbAL20.Text = "999.9";
+            this.lbAL20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL20
+            // 
+            this.lbWL20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL20.Location = new System.Drawing.Point(0, 164);
+            this.lbWL20.Name = "lbWL20";
+            this.lbWL20.Size = new System.Drawing.Size(55, 21);
+            this.lbWL20.TabIndex = 4;
+            this.lbWL20.Text = "999.9";
+            this.lbWL20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp20
+            // 
+            this.lbTemp20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp20.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp20.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp20.Name = "lbTemp20";
+            this.lbTemp20.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp20.TabIndex = 3;
+            this.lbTemp20.Text = "999.9";
+            this.lbTemp20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp20, "Trend");
+            // 
+            // pnTemp23
+            // 
+            this.pnTemp23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp23.Controls.Add(this.lbFoor23);
+            this.pnTemp23.Controls.Add(this.lbName23);
+            this.pnTemp23.Controls.Add(this.lbAH23);
+            this.pnTemp23.Controls.Add(this.lbWH23);
+            this.pnTemp23.Controls.Add(this.lbAL23);
+            this.pnTemp23.Controls.Add(this.lbWL23);
+            this.pnTemp23.Controls.Add(this.lbTemp23);
+            this.pnTemp23.Location = new System.Drawing.Point(1155, 2);
+            this.pnTemp23.Name = "pnTemp23";
+            this.pnTemp23.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp23.TabIndex = 13;
+            // 
+            // lbFoor23
+            // 
+            this.lbFoor23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor23.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor23.Name = "lbFoor23";
+            this.lbFoor23.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor23.TabIndex = 4;
+            this.lbFoor23.Text = "F1";
+            this.lbFoor23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName23
+            // 
+            this.lbName23.BackColor = System.Drawing.Color.Gray;
+            this.lbName23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName23.Location = new System.Drawing.Point(0, 0);
+            this.lbName23.Name = "lbName23";
+            this.lbName23.Size = new System.Drawing.Size(138, 30);
+            this.lbName23.TabIndex = 4;
+            this.lbName23.Text = "Number23";
+            this.lbName23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName23, "Setting");
+            // 
+            // lbAH23
+            // 
+            this.lbAH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH23.Location = new System.Drawing.Point(83, 30);
+            this.lbAH23.Name = "lbAH23";
+            this.lbAH23.Size = new System.Drawing.Size(55, 21);
+            this.lbAH23.TabIndex = 4;
+            this.lbAH23.Text = "999.9";
+            this.lbAH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH23
+            // 
+            this.lbWH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH23.Location = new System.Drawing.Point(0, 30);
+            this.lbWH23.Name = "lbWH23";
+            this.lbWH23.Size = new System.Drawing.Size(55, 21);
+            this.lbWH23.TabIndex = 4;
+            this.lbWH23.Text = "999.9";
+            this.lbWH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL23
+            // 
+            this.lbAL23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL23.Location = new System.Drawing.Point(83, 164);
+            this.lbAL23.Name = "lbAL23";
+            this.lbAL23.Size = new System.Drawing.Size(55, 21);
+            this.lbAL23.TabIndex = 4;
+            this.lbAL23.Text = "999.9";
+            this.lbAL23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL23
+            // 
+            this.lbWL23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL23.Location = new System.Drawing.Point(0, 164);
+            this.lbWL23.Name = "lbWL23";
+            this.lbWL23.Size = new System.Drawing.Size(55, 21);
+            this.lbWL23.TabIndex = 4;
+            this.lbWL23.Text = "999.9";
+            this.lbWL23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp23
+            // 
+            this.lbTemp23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp23.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp23.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp23.Name = "lbTemp23";
+            this.lbTemp23.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp23.TabIndex = 3;
+            this.lbTemp23.Text = "999.9";
+            this.lbTemp23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp23, "Trend");
+            // 
+            // pnTemp21
+            // 
+            this.pnTemp21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp21.Controls.Add(this.lbFoor21);
+            this.pnTemp21.Controls.Add(this.lbName21);
+            this.pnTemp21.Controls.Add(this.lbAH21);
+            this.pnTemp21.Controls.Add(this.lbWH21);
+            this.pnTemp21.Controls.Add(this.lbAL21);
+            this.pnTemp21.Controls.Add(this.lbWL21);
+            this.pnTemp21.Controls.Add(this.lbTemp21);
+            this.pnTemp21.Location = new System.Drawing.Point(867, 3);
+            this.pnTemp21.Name = "pnTemp21";
+            this.pnTemp21.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp21.TabIndex = 14;
+            // 
+            // lbFoor21
+            // 
+            this.lbFoor21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor21.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor21.Name = "lbFoor21";
+            this.lbFoor21.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor21.TabIndex = 4;
+            this.lbFoor21.Text = "F1";
+            this.lbFoor21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName21
+            // 
+            this.lbName21.BackColor = System.Drawing.Color.Gray;
+            this.lbName21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName21.Location = new System.Drawing.Point(0, 0);
+            this.lbName21.Name = "lbName21";
+            this.lbName21.Size = new System.Drawing.Size(138, 30);
+            this.lbName21.TabIndex = 4;
+            this.lbName21.Text = "Number21";
+            this.lbName21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName21, "Setting");
+            // 
+            // lbAH21
+            // 
+            this.lbAH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH21.Location = new System.Drawing.Point(83, 30);
+            this.lbAH21.Name = "lbAH21";
+            this.lbAH21.Size = new System.Drawing.Size(55, 21);
+            this.lbAH21.TabIndex = 4;
+            this.lbAH21.Text = "999.9";
+            this.lbAH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH21
+            // 
+            this.lbWH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH21.Location = new System.Drawing.Point(0, 30);
+            this.lbWH21.Name = "lbWH21";
+            this.lbWH21.Size = new System.Drawing.Size(55, 21);
+            this.lbWH21.TabIndex = 4;
+            this.lbWH21.Text = "999.9";
+            this.lbWH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL21
+            // 
+            this.lbAL21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL21.Location = new System.Drawing.Point(83, 164);
+            this.lbAL21.Name = "lbAL21";
+            this.lbAL21.Size = new System.Drawing.Size(55, 21);
+            this.lbAL21.TabIndex = 4;
+            this.lbAL21.Text = "999.9";
+            this.lbAL21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL21
+            // 
+            this.lbWL21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL21.Location = new System.Drawing.Point(0, 164);
+            this.lbWL21.Name = "lbWL21";
+            this.lbWL21.Size = new System.Drawing.Size(55, 21);
+            this.lbWL21.TabIndex = 4;
+            this.lbWL21.Text = "999.9";
+            this.lbWL21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp21
+            // 
+            this.lbTemp21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp21.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp21.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp21.Name = "lbTemp21";
+            this.lbTemp21.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp21.TabIndex = 3;
+            this.lbTemp21.Text = "999.9";
+            this.lbTemp21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp21, "Trend");
+            // 
+            // pnTemp22
+            // 
+            this.pnTemp22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnTemp22.Controls.Add(this.lbFoor22);
+            this.pnTemp22.Controls.Add(this.lbName22);
+            this.pnTemp22.Controls.Add(this.lbAH22);
+            this.pnTemp22.Controls.Add(this.lbWH22);
+            this.pnTemp22.Controls.Add(this.lbAL22);
+            this.pnTemp22.Controls.Add(this.lbWL22);
+            this.pnTemp22.Controls.Add(this.lbTemp22);
+            this.pnTemp22.Location = new System.Drawing.Point(1011, 3);
+            this.pnTemp22.Name = "pnTemp22";
+            this.pnTemp22.Size = new System.Drawing.Size(138, 195);
+            this.pnTemp22.TabIndex = 15;
+            // 
+            // lbFoor22
+            // 
+            this.lbFoor22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbFoor22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbFoor22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFoor22.Location = new System.Drawing.Point(4, 4);
+            this.lbFoor22.Name = "lbFoor22";
+            this.lbFoor22.Size = new System.Drawing.Size(28, 21);
+            this.lbFoor22.TabIndex = 4;
+            this.lbFoor22.Text = "F1";
+            this.lbFoor22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbName22
+            // 
+            this.lbName22.BackColor = System.Drawing.Color.Gray;
+            this.lbName22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbName22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName22.Location = new System.Drawing.Point(0, 0);
+            this.lbName22.Name = "lbName22";
+            this.lbName22.Size = new System.Drawing.Size(138, 30);
+            this.lbName22.TabIndex = 4;
+            this.lbName22.Text = "Number22";
+            this.lbName22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.lbName22, "Setting");
+            // 
+            // lbAH22
+            // 
+            this.lbAH22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAH22.Location = new System.Drawing.Point(83, 30);
+            this.lbAH22.Name = "lbAH22";
+            this.lbAH22.Size = new System.Drawing.Size(55, 21);
+            this.lbAH22.TabIndex = 4;
+            this.lbAH22.Text = "999.9";
+            this.lbAH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWH22
+            // 
+            this.lbWH22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWH22.Location = new System.Drawing.Point(0, 30);
+            this.lbWH22.Name = "lbWH22";
+            this.lbWH22.Size = new System.Drawing.Size(55, 21);
+            this.lbWH22.TabIndex = 4;
+            this.lbWH22.Text = "999.9";
+            this.lbWH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAL22
+            // 
+            this.lbAL22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAL22.Location = new System.Drawing.Point(83, 164);
+            this.lbAL22.Name = "lbAL22";
+            this.lbAL22.Size = new System.Drawing.Size(55, 21);
+            this.lbAL22.TabIndex = 4;
+            this.lbAL22.Text = "999.9";
+            this.lbAL22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbWL22
+            // 
+            this.lbWL22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWL22.Location = new System.Drawing.Point(0, 164);
+            this.lbWL22.Name = "lbWL22";
+            this.lbWL22.Size = new System.Drawing.Size(55, 21);
+            this.lbWL22.TabIndex = 4;
+            this.lbWL22.Text = "999.9";
+            this.lbWL22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTemp22
+            // 
+            this.lbTemp22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbTemp22.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTemp22.Location = new System.Drawing.Point(3, 71);
+            this.lbTemp22.Name = "lbTemp22";
+            this.lbTemp22.Size = new System.Drawing.Size(132, 75);
+            this.lbTemp22.TabIndex = 3;
+            this.lbTemp22.Text = "999.9";
+            this.lbTemp22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.lbTemp22, "Trend");
+            // 
             // sfrmOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4113,6 +5320,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel35);
+            this.Controls.Add(this.panel12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "sfrmOverview";
             this.Text = "sfrmOverview";
@@ -4123,6 +5331,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvData3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvData2)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel40.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
             this.pnTemp27.ResumeLayout(false);
             this.pnTemp26.ResumeLayout(false);
             this.pnTemp14.ResumeLayout(false);
@@ -4133,42 +5344,41 @@
             this.pnTemp11.ResumeLayout(false);
             this.pnTemp5.ResumeLayout(false);
             this.pnTemp7.ResumeLayout(false);
+            this.pnTemp9.ResumeLayout(false);
             this.pnTemp10.ResumeLayout(false);
             this.pnTemp6.ResumeLayout(false);
+            this.panel22.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.pnTemp33.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.pnTemp3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.pnTemp32.ResumeLayout(false);
-            this.pnTemp31.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.pnTemp1.ResumeLayout(false);
-            this.pnTemp2.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.pnTemp28.ResumeLayout(false);
-            this.pnTemp29.ResumeLayout(false);
-            this.pnTemp30.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.pnTemp28.ResumeLayout(false);
+            this.pnTemp32.ResumeLayout(false);
+            this.pnTemp35.ResumeLayout(false);
+            this.pnTemp31.ResumeLayout(false);
+            this.pnTemp34.ResumeLayout(false);
+            this.pnTemp30.ResumeLayout(false);
+            this.pnTemp33.ResumeLayout(false);
+            this.pnTemp29.ResumeLayout(false);
+            this.pnTemp3.ResumeLayout(false);
+            this.pnTemp2.ResumeLayout(false);
+            this.pnTemp1.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.panel35.ResumeLayout(false);
             this.panel41.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
             this.panel36.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.pnTemp9.ResumeLayout(false);
             this.panel34.ResumeLayout(false);
+            this.pnTemp25.ResumeLayout(false);
+            this.pnTemp15.ResumeLayout(false);
+            this.pnTemp16.ResumeLayout(false);
+            this.pnTemp19.ResumeLayout(false);
+            this.pnTemp17.ResumeLayout(false);
+            this.pnTemp18.ResumeLayout(false);
+            this.pnTemp24.ResumeLayout(false);
+            this.pnTemp20.ResumeLayout(false);
+            this.pnTemp23.ResumeLayout(false);
+            this.pnTemp21.ResumeLayout(false);
+            this.pnTemp22.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -4177,6 +5387,9 @@
         private System.Windows.Forms.DataGridView gvData1;
         private System.Windows.Forms.DataGridView gvEventAll;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
@@ -4286,6 +5499,15 @@
         private System.Windows.Forms.Button btReport1;
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.Button btEvent1;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel pnTemp3;
+        private System.Windows.Forms.Label lbFoor3;
+        private System.Windows.Forms.Label lbName3;
+        private System.Windows.Forms.Label lbAH3;
+        private System.Windows.Forms.Label lbWH3;
+        private System.Windows.Forms.Label lbAL3;
+        private System.Windows.Forms.Label lbWL3;
+        private System.Windows.Forms.Label lbTemp3;
         private System.Windows.Forms.Panel pnTemp2;
         private System.Windows.Forms.Label lbFoor2;
         private System.Windows.Forms.Label lbName2;
@@ -4307,14 +5529,25 @@
         private System.Windows.Forms.Panel panel36;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Panel panel25;
+        private System.Windows.Forms.Label tool1_avg;
         private System.Windows.Forms.Label lbTool1_warning;
         private System.Windows.Forms.Label lbTool1_alarm;
+        private System.Windows.Forms.Panel panel40;
+        private System.Windows.Forms.Button btData2;
+        private System.Windows.Forms.Button btEvent2;
+        private System.Windows.Forms.Button btSetting2;
+        private System.Windows.Forms.Button btReport2;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Label tool2_avg;
+        private System.Windows.Forms.Label lbTool2_warning;
+        private System.Windows.Forms.Label lbTool2_alarm;
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.Button btData3;
         private System.Windows.Forms.Button btEvent3;
         private System.Windows.Forms.Button btSetting3;
         private System.Windows.Forms.Button btReport3;
         private System.Windows.Forms.Panel panel34;
+        private System.Windows.Forms.Label tool3_avg;
         private System.Windows.Forms.Label lbTool3_warning;
         private System.Windows.Forms.Label lbTool3_alarm;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date_Time;
@@ -4337,6 +5570,14 @@
         private System.Windows.Forms.Label lbAL32;
         private System.Windows.Forms.Label lbWL32;
         private System.Windows.Forms.Label lbTemp32;
+        private System.Windows.Forms.Panel pnTemp35;
+        private System.Windows.Forms.Label lbFoor35;
+        private System.Windows.Forms.Label lbName35;
+        private System.Windows.Forms.Label lbAH35;
+        private System.Windows.Forms.Label lbWH35;
+        private System.Windows.Forms.Label lbAL35;
+        private System.Windows.Forms.Label lbWL35;
+        private System.Windows.Forms.Label lbTemp35;
         private System.Windows.Forms.Panel pnTemp31;
         private System.Windows.Forms.Label lbFoor31;
         private System.Windows.Forms.Label lbName31;
@@ -4345,6 +5586,14 @@
         private System.Windows.Forms.Label lbAL31;
         private System.Windows.Forms.Label lbWL31;
         private System.Windows.Forms.Label lbTemp31;
+        private System.Windows.Forms.Panel pnTemp34;
+        private System.Windows.Forms.Label lbFoor34;
+        private System.Windows.Forms.Label lbName34;
+        private System.Windows.Forms.Label lbAH34;
+        private System.Windows.Forms.Label lbWH34;
+        private System.Windows.Forms.Label lbAL34;
+        private System.Windows.Forms.Label lbWL34;
+        private System.Windows.Forms.Label lbTemp34;
         private System.Windows.Forms.Panel pnTemp30;
         private System.Windows.Forms.Label lbFoor30;
         private System.Windows.Forms.Label lbName30;
@@ -4449,6 +5698,14 @@
         private System.Windows.Forms.Label lbAL7;
         private System.Windows.Forms.Label lbWL7;
         private System.Windows.Forms.Label lbTemp7;
+        private System.Windows.Forms.Panel pnTemp9;
+        private System.Windows.Forms.Label lbFoor9;
+        private System.Windows.Forms.Label lbName9;
+        private System.Windows.Forms.Label lbAH9;
+        private System.Windows.Forms.Label lbWH9;
+        private System.Windows.Forms.Label lbAL9;
+        private System.Windows.Forms.Label lbWL9;
+        private System.Windows.Forms.Label lbTemp9;
         private System.Windows.Forms.Panel pnTemp10;
         private System.Windows.Forms.Label lbFoor10;
         private System.Windows.Forms.Label lbName10;
@@ -4465,50 +5722,95 @@
         private System.Windows.Forms.Label lbAL6;
         private System.Windows.Forms.Label lbWL6;
         private System.Windows.Forms.Label lbTemp6;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel pnTemp3;
-        private System.Windows.Forms.Label lbFoor3;
-        private System.Windows.Forms.Label lbName3;
-        private System.Windows.Forms.Label lbAH3;
-        private System.Windows.Forms.Label lbWH3;
-        private System.Windows.Forms.Label lbAL3;
-        private System.Windows.Forms.Label lbWL3;
-        private System.Windows.Forms.Label lbTemp3;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel pnTemp9;
-        private System.Windows.Forms.Label lbFoor9;
-        private System.Windows.Forms.Label lbName9;
-        private System.Windows.Forms.Label lbAH9;
-        private System.Windows.Forms.Label lbWH9;
-        private System.Windows.Forms.Label lbAL9;
-        private System.Windows.Forms.Label lbWL9;
-        private System.Windows.Forms.Label lbTemp9;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel pnTemp25;
+        private System.Windows.Forms.Label lbFoor25;
+        private System.Windows.Forms.Label lbName25;
+        private System.Windows.Forms.Label lbAH25;
+        private System.Windows.Forms.Label lbWH25;
+        private System.Windows.Forms.Label lbAL25;
+        private System.Windows.Forms.Label lbWL25;
+        private System.Windows.Forms.Label lbTemp25;
+        private System.Windows.Forms.Panel pnTemp15;
+        private System.Windows.Forms.Label lbFoor15;
+        private System.Windows.Forms.Label lbName15;
+        private System.Windows.Forms.Label lbAH15;
+        private System.Windows.Forms.Label lbWH15;
+        private System.Windows.Forms.Label lbAL15;
+        private System.Windows.Forms.Label lbWL15;
+        private System.Windows.Forms.Label lbTemp15;
+        private System.Windows.Forms.Panel pnTemp16;
+        private System.Windows.Forms.Label lbFoor16;
+        private System.Windows.Forms.Label lbName16;
+        private System.Windows.Forms.Label lbAH16;
+        private System.Windows.Forms.Label lbWH16;
+        private System.Windows.Forms.Label lbAL16;
+        private System.Windows.Forms.Label lbWL16;
+        private System.Windows.Forms.Label lbTemp16;
+        private System.Windows.Forms.Panel pnTemp19;
+        private System.Windows.Forms.Label lbFoor19;
+        private System.Windows.Forms.Label lbName19;
+        private System.Windows.Forms.Label lbAH19;
+        private System.Windows.Forms.Label lbWH19;
+        private System.Windows.Forms.Label lbAL19;
+        private System.Windows.Forms.Label lbWL19;
+        private System.Windows.Forms.Label lbTemp19;
+        private System.Windows.Forms.Panel pnTemp17;
+        private System.Windows.Forms.Label lbFoor17;
+        private System.Windows.Forms.Label lbName17;
+        private System.Windows.Forms.Label lbAH17;
+        private System.Windows.Forms.Label lbWH17;
+        private System.Windows.Forms.Label lbAL17;
+        private System.Windows.Forms.Label lbWL17;
+        private System.Windows.Forms.Label lbTemp17;
+        private System.Windows.Forms.Panel pnTemp18;
+        private System.Windows.Forms.Label lbFoor18;
+        private System.Windows.Forms.Label lbName18;
+        private System.Windows.Forms.Label lbAH18;
+        private System.Windows.Forms.Label lbWH18;
+        private System.Windows.Forms.Label lbAL18;
+        private System.Windows.Forms.Label lbWL18;
+        private System.Windows.Forms.Label lbTemp18;
+        private System.Windows.Forms.Panel pnTemp24;
+        private System.Windows.Forms.Label lbFoor24;
+        private System.Windows.Forms.Label lbName24;
+        private System.Windows.Forms.Label lbAH24;
+        private System.Windows.Forms.Label lbWH24;
+        private System.Windows.Forms.Label lbAL24;
+        private System.Windows.Forms.Label lbWL24;
+        private System.Windows.Forms.Label lbTemp24;
+        private System.Windows.Forms.Panel pnTemp20;
+        private System.Windows.Forms.Label lbFoor20;
+        private System.Windows.Forms.Label lbName20;
+        private System.Windows.Forms.Label lbAH20;
+        private System.Windows.Forms.Label lbWH20;
+        private System.Windows.Forms.Label lbAL20;
+        private System.Windows.Forms.Label lbWL20;
+        private System.Windows.Forms.Label lbTemp20;
+        private System.Windows.Forms.Panel pnTemp23;
+        private System.Windows.Forms.Label lbFoor23;
+        private System.Windows.Forms.Label lbName23;
+        private System.Windows.Forms.Label lbAH23;
+        private System.Windows.Forms.Label lbWH23;
+        private System.Windows.Forms.Label lbAL23;
+        private System.Windows.Forms.Label lbWL23;
+        private System.Windows.Forms.Label lbTemp23;
+        private System.Windows.Forms.Panel pnTemp21;
+        private System.Windows.Forms.Label lbFoor21;
+        private System.Windows.Forms.Label lbName21;
+        private System.Windows.Forms.Label lbAH21;
+        private System.Windows.Forms.Label lbWH21;
+        private System.Windows.Forms.Label lbAL21;
+        private System.Windows.Forms.Label lbWL21;
+        private System.Windows.Forms.Label lbTemp21;
+        private System.Windows.Forms.Panel pnTemp22;
+        private System.Windows.Forms.Label lbFoor22;
+        private System.Windows.Forms.Label lbName22;
+        private System.Windows.Forms.Label lbAH22;
+        private System.Windows.Forms.Label lbWH22;
+        private System.Windows.Forms.Label lbAL22;
+        private System.Windows.Forms.Label lbWL22;
+        private System.Windows.Forms.Label lbTemp22;
     }
 }

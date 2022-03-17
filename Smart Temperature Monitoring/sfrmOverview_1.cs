@@ -16,7 +16,7 @@ using System.Collections.Generic;
 namespace Smart_Temperature_Monitoring
 {
 
-    public partial class sfrmOverview : Form
+    public partial class sfrmOverview_1 : Form
     {
         //  Declare Logging
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -46,7 +46,7 @@ namespace Smart_Temperature_Monitoring
 
 
         //  Form load
-        public sfrmOverview()
+        public sfrmOverview_1()
         {
             InitializeComponent();
                        
@@ -130,11 +130,8 @@ namespace Smart_Temperature_Monitoring
             List<DataTable> tempdata = new List<DataTable>();
 
             //keep data to list
-            for(int i=1; i<=33; i++)
+            for(int i=1; i<=35; i++)
             {
-                //if(i >= 15)
-                //    continue;
-
                 _pGet_Temp_actual = new DataTable();
                 _pGet_Temp_actual = pGet_Temp_actual(i);
                 if (_pGet_Temp_actual != null && _pGet_Temp_actual.Rows.Count > 0)
@@ -144,11 +141,8 @@ namespace Smart_Temperature_Monitoring
             }
 
             //read data from list
-            for (int i=1; i<=33; i++)
+            for (int i=1; i<=35; i++)
             {
-                if (i >= 15 && i<=25)
-                    continue;
-
                 //change temp value
                 var lbTemp = Controls.Find("lbTemp" + i, true);
                 if (lbTemp.Length > 0)
@@ -211,11 +205,8 @@ namespace Smart_Temperature_Monitoring
             if (_pGet_setting_actual != null && _pGet_setting_actual.Rows.Count > 0)
             {
                 //read data from list 
-                for (int i = 1; i <= 33; i++) 
+                for (int i = 1; i <= 35; i++) 
                 {
-                    if (i >= 15 && i <= 25)
-                        continue;
-
                     //change panel background color 
                     var pnTemp = Controls.Find("pnTemp" + i, true);
                     if (pnTemp.Length > 0)
@@ -360,15 +351,15 @@ namespace Smart_Temperature_Monitoring
 
             if (_pGet_status != null)
             {
-                //tool1_avg.Text = "Average : " + _pGet_status.Rows[0]["tool1avg"].ToString() + " C";
+                tool1_avg.Text = "Average : " + _pGet_status.Rows[0]["tool1avg"].ToString() + " C";
                 lbTool1_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool1_warning"].ToString() + " Times";
                 lbTool1_alarm.Text  = "Out of range: " + _pGet_status.Rows[0]["tool1_alarm"].ToString() + " Times";
 
-                //tool2_avg.Text = "Average : " + _pGet_status.Rows[0]["tool2avg"].ToString() + " C";
-                //lbTool2_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool2_warning"].ToString() + " Times";
-                //lbTool2_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool2_alarm"].ToString() + " Times";
+                tool2_avg.Text = "Average : " + _pGet_status.Rows[0]["tool2avg"].ToString() + " C";
+                lbTool2_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool2_warning"].ToString() + " Times";
+                lbTool2_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool2_alarm"].ToString() + " Times";
 
-                //tool3_avg.Text = "Average : " + _pGet_status.Rows[0]["tool3avg"].ToString() + " C";
+                tool3_avg.Text = "Average : " + _pGet_status.Rows[0]["tool3avg"].ToString() + " C";
                 lbTool3_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool3_warning"].ToString() + " Times";
                 lbTool3_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool3_alarm"].ToString() + " Times";
             }
@@ -1199,6 +1190,5 @@ namespace Smart_Temperature_Monitoring
             sfrmSetting1 sfrmSetting1 = new sfrmSetting1();
             sfrmSetting1.Show();
         }
-
     }
 }
