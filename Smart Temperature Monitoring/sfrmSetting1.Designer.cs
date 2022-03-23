@@ -30,32 +30,38 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.numCon1 = new System.Windows.Forms.NumericUpDown();
             this.pnName1 = new System.Windows.Forms.Panel();
             this.lbName1 = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.cbAL1 = new System.Windows.Forms.CheckBox();
+            this.numAL1 = new System.Windows.Forms.NumericUpDown();
             this.panel8 = new System.Windows.Forms.Panel();
             this.cbWH1 = new System.Windows.Forms.CheckBox();
             this.numWH1 = new System.Windows.Forms.NumericUpDown();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.numCL1 = new System.Windows.Forms.NumericUpDown();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbUse1 = new System.Windows.Forms.CheckBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.cbLine1 = new System.Windows.Forms.CheckBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.cbWL1 = new System.Windows.Forms.CheckBox();
-            this.numWL1 = new System.Windows.Forms.NumericUpDown();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.cbAL1 = new System.Windows.Forms.CheckBox();
-            this.numAL1 = new System.Windows.Forms.NumericUpDown();
             this.panel6 = new System.Windows.Forms.Panel();
             this.cbAH1 = new System.Windows.Forms.CheckBox();
             this.numAH1 = new System.Windows.Forms.NumericUpDown();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.cbWL1 = new System.Windows.Forms.CheckBox();
+            this.numWL1 = new System.Windows.Forms.NumericUpDown();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtSetting = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -70,17 +76,21 @@
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numCon1)).BeginInit();
             this.pnName1.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numWH1)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numWL1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAL1)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numWH1)).BeginInit();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numCL1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAH1)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numWL1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -92,31 +102,45 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(40, 178);
+            this.panel1.Location = new System.Drawing.Point(6, 163);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(830, 100);
+            this.panel1.Size = new System.Drawing.Size(1001, 100);
             this.panel1.TabIndex = 50;
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.label4);
             this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.label9);
+            this.panel9.Controls.Add(this.label6);
+            this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.label1);
             this.panel9.Controls.Add(this.label3);
-            this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.label5);
             this.panel9.Controls.Add(this.label12);
             this.panel9.Location = new System.Drawing.Point(14, 12);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(801, 35);
+            this.panel9.Size = new System.Drawing.Size(971, 35);
             this.panel9.TabIndex = 68;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(349, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 35);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Control Limit";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(397, 0);
+            this.label10.Location = new System.Drawing.Point(703, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(128, 35);
             this.label10.TabIndex = 57;
@@ -128,36 +152,48 @@
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(263, 0);
+            this.label9.Location = new System.Drawing.Point(569, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 35);
             this.label9.TabIndex = 57;
             this.label9.Text = "Warning low";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // label6
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(665, -1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 35);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Upper";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(263, -1);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 35);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "Center Line (CL)";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(531, 0);
+            this.label2.Location = new System.Drawing.Point(435, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 35);
             this.label2.TabIndex = 57;
-            this.label2.Text = "Lower";
+            this.label2.Text = "Lower Control Limit (LCL)";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(837, -1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 35);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Upper Control Limit (UCL)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -197,23 +233,62 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.panel12);
             this.panel3.Controls.Add(this.pnName1);
+            this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel8);
+            this.panel3.Controls.Add(this.panel13);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.panel10);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel5);
             this.panel3.Location = new System.Drawing.Point(14, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(801, 35);
+            this.panel3.Size = new System.Drawing.Size(971, 35);
             this.panel3.TabIndex = 70;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Controls.Add(this.numCon1);
+            this.panel12.Location = new System.Drawing.Point(350, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(80, 35);
+            this.panel12.TabIndex = 68;
+            // 
+            // numCon1
+            // 
+            this.numCon1.BackColor = System.Drawing.Color.White;
+            this.numCon1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numCon1.DecimalPlaces = 1;
+            this.numCon1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCon1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numCon1.Location = new System.Drawing.Point(1, 5);
+            this.numCon1.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            65536});
+            this.numCon1.Name = "numCon1";
+            this.numCon1.Size = new System.Drawing.Size(80, 25);
+            this.numCon1.TabIndex = 68;
+            this.numCon1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numCon1.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            65536});
+            this.numCon1.ValueChanged += new System.EventHandler(this.numCon1_ValueChanged);
             // 
             // pnName1
             // 
             this.pnName1.BackColor = System.Drawing.Color.White;
             this.pnName1.Controls.Add(this.lbName1);
-            this.pnName1.Location = new System.Drawing.Point(97, 1);
+            this.pnName1.Location = new System.Drawing.Point(97, 0);
             this.pnName1.Name = "pnName1";
             this.pnName1.Size = new System.Drawing.Size(160, 35);
             this.pnName1.TabIndex = 67;
@@ -230,144 +305,12 @@
             this.lbName1.Text = "NAME";
             this.lbName1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.cbWH1);
-            this.panel8.Controls.Add(this.numWH1);
-            this.panel8.Location = new System.Drawing.Point(397, 1);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(128, 35);
-            this.panel8.TabIndex = 65;
-            // 
-            // cbWH1
-            // 
-            this.cbWH1.AutoSize = true;
-            this.cbWH1.Location = new System.Drawing.Point(20, 10);
-            this.cbWH1.Name = "cbWH1";
-            this.cbWH1.Size = new System.Drawing.Size(15, 14);
-            this.cbWH1.TabIndex = 59;
-            this.cbWH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbWH1.UseVisualStyleBackColor = true;
-            // 
-            // numWH1
-            // 
-            this.numWH1.BackColor = System.Drawing.Color.White;
-            this.numWH1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numWH1.DecimalPlaces = 1;
-            this.numWH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numWH1.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.numWH1.Location = new System.Drawing.Point(48, 5);
-            this.numWH1.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            65536});
-            this.numWH1.Name = "numWH1";
-            this.numWH1.Size = new System.Drawing.Size(80, 25);
-            this.numWH1.TabIndex = 68;
-            this.numWH1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numWH1.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            65536});
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.cbUse1);
-            this.panel4.Location = new System.Drawing.Point(49, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(42, 35);
-            this.panel4.TabIndex = 65;
-            // 
-            // cbUse1
-            // 
-            this.cbUse1.AutoSize = true;
-            this.cbUse1.Location = new System.Drawing.Point(14, 10);
-            this.cbUse1.Name = "cbUse1";
-            this.cbUse1.Size = new System.Drawing.Size(15, 14);
-            this.cbUse1.TabIndex = 59;
-            this.cbUse1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbUse1.UseVisualStyleBackColor = true;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.cbLine1);
-            this.panel10.Location = new System.Drawing.Point(1, 1);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(42, 35);
-            this.panel10.TabIndex = 65;
-            // 
-            // cbLine1
-            // 
-            this.cbLine1.AutoSize = true;
-            this.cbLine1.Location = new System.Drawing.Point(14, 10);
-            this.cbLine1.Name = "cbLine1";
-            this.cbLine1.Size = new System.Drawing.Size(15, 14);
-            this.cbLine1.TabIndex = 59;
-            this.cbLine1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbLine1.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.cbWL1);
-            this.panel7.Controls.Add(this.numWL1);
-            this.panel7.Location = new System.Drawing.Point(263, 1);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(128, 35);
-            this.panel7.TabIndex = 65;
-            // 
-            // cbWL1
-            // 
-            this.cbWL1.AutoSize = true;
-            this.cbWL1.Location = new System.Drawing.Point(20, 10);
-            this.cbWL1.Name = "cbWL1";
-            this.cbWL1.Size = new System.Drawing.Size(15, 14);
-            this.cbWL1.TabIndex = 59;
-            this.cbWL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbWL1.UseVisualStyleBackColor = true;
-            // 
-            // numWL1
-            // 
-            this.numWL1.BackColor = System.Drawing.Color.White;
-            this.numWL1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numWL1.DecimalPlaces = 1;
-            this.numWL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numWL1.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.numWL1.Location = new System.Drawing.Point(48, 5);
-            this.numWL1.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            65536});
-            this.numWL1.Name = "numWL1";
-            this.numWL1.Size = new System.Drawing.Size(80, 25);
-            this.numWL1.TabIndex = 68;
-            this.numWL1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numWL1.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            65536});
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.cbAL1);
             this.panel5.Controls.Add(this.numAL1);
-            this.panel5.Location = new System.Drawing.Point(531, 1);
+            this.panel5.Location = new System.Drawing.Point(434, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(128, 35);
             this.panel5.TabIndex = 65;
@@ -409,12 +352,134 @@
             0,
             65536});
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.cbWH1);
+            this.panel8.Controls.Add(this.numWH1);
+            this.panel8.Location = new System.Drawing.Point(703, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(128, 35);
+            this.panel8.TabIndex = 65;
+            // 
+            // cbWH1
+            // 
+            this.cbWH1.AutoSize = true;
+            this.cbWH1.Location = new System.Drawing.Point(20, 10);
+            this.cbWH1.Name = "cbWH1";
+            this.cbWH1.Size = new System.Drawing.Size(15, 14);
+            this.cbWH1.TabIndex = 59;
+            this.cbWH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbWH1.UseVisualStyleBackColor = true;
+            // 
+            // numWH1
+            // 
+            this.numWH1.BackColor = System.Drawing.Color.White;
+            this.numWH1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numWH1.DecimalPlaces = 1;
+            this.numWH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numWH1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numWH1.Location = new System.Drawing.Point(48, 5);
+            this.numWH1.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            65536});
+            this.numWH1.Name = "numWH1";
+            this.numWH1.Size = new System.Drawing.Size(80, 25);
+            this.numWH1.TabIndex = 68;
+            this.numWH1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numWH1.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            65536});
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.Controls.Add(this.numCL1);
+            this.panel13.Location = new System.Drawing.Point(263, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(80, 35);
+            this.panel13.TabIndex = 69;
+            // 
+            // numCL1
+            // 
+            this.numCL1.BackColor = System.Drawing.Color.White;
+            this.numCL1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numCL1.DecimalPlaces = 1;
+            this.numCL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCL1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numCL1.Location = new System.Drawing.Point(1, 5);
+            this.numCL1.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            65536});
+            this.numCL1.Name = "numCL1";
+            this.numCL1.Size = new System.Drawing.Size(80, 25);
+            this.numCL1.TabIndex = 68;
+            this.numCL1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numCL1.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            65536});
+            this.numCL1.ValueChanged += new System.EventHandler(this.numCL1_ValueChanged);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.cbUse1);
+            this.panel4.Location = new System.Drawing.Point(49, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(42, 35);
+            this.panel4.TabIndex = 65;
+            // 
+            // cbUse1
+            // 
+            this.cbUse1.AutoSize = true;
+            this.cbUse1.Location = new System.Drawing.Point(14, 10);
+            this.cbUse1.Name = "cbUse1";
+            this.cbUse1.Size = new System.Drawing.Size(15, 14);
+            this.cbUse1.TabIndex = 59;
+            this.cbUse1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbUse1.UseVisualStyleBackColor = true;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Controls.Add(this.cbLine1);
+            this.panel10.Location = new System.Drawing.Point(1, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(42, 35);
+            this.panel10.TabIndex = 65;
+            // 
+            // cbLine1
+            // 
+            this.cbLine1.AutoSize = true;
+            this.cbLine1.Location = new System.Drawing.Point(14, 10);
+            this.cbLine1.Name = "cbLine1";
+            this.cbLine1.Size = new System.Drawing.Size(15, 14);
+            this.cbLine1.TabIndex = 59;
+            this.cbLine1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbLine1.UseVisualStyleBackColor = true;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Controls.Add(this.cbAH1);
             this.panel6.Controls.Add(this.numAH1);
-            this.panel6.Location = new System.Drawing.Point(665, 1);
+            this.panel6.Location = new System.Drawing.Point(838, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(128, 35);
             this.panel6.TabIndex = 65;
@@ -456,6 +521,53 @@
             0,
             65536});
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.cbWL1);
+            this.panel7.Controls.Add(this.numWL1);
+            this.panel7.Location = new System.Drawing.Point(569, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(128, 35);
+            this.panel7.TabIndex = 65;
+            // 
+            // cbWL1
+            // 
+            this.cbWL1.AutoSize = true;
+            this.cbWL1.Location = new System.Drawing.Point(20, 10);
+            this.cbWL1.Name = "cbWL1";
+            this.cbWL1.Size = new System.Drawing.Size(15, 14);
+            this.cbWL1.TabIndex = 59;
+            this.cbWL1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbWL1.UseVisualStyleBackColor = true;
+            // 
+            // numWL1
+            // 
+            this.numWL1.BackColor = System.Drawing.Color.White;
+            this.numWL1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numWL1.DecimalPlaces = 1;
+            this.numWL1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numWL1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numWL1.Location = new System.Drawing.Point(48, 5);
+            this.numWL1.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            65536});
+            this.numWL1.Name = "numWL1";
+            this.numWL1.Size = new System.Drawing.Size(80, 25);
+            this.numWL1.TabIndex = 68;
+            this.numWL1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numWL1.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            65536});
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -463,7 +575,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(908, 90);
+            this.panel2.Size = new System.Drawing.Size(1014, 90);
             this.panel2.TabIndex = 55;
             // 
             // txtSetting
@@ -473,7 +585,7 @@
             this.txtSetting.ForeColor = System.Drawing.Color.White;
             this.txtSetting.Location = new System.Drawing.Point(0, 0);
             this.txtSetting.Name = "txtSetting";
-            this.txtSetting.Size = new System.Drawing.Size(908, 90);
+            this.txtSetting.Size = new System.Drawing.Size(1014, 90);
             this.txtSetting.TabIndex = 47;
             this.txtSetting.Text = "SYSTEM SETTING";
             this.txtSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -482,9 +594,9 @@
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
             this.panel14.Controls.Add(this.panel11);
-            this.panel14.Location = new System.Drawing.Point(40, 111);
+            this.panel14.Location = new System.Drawing.Point(6, 96);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(830, 61);
+            this.panel14.Size = new System.Drawing.Size(1001, 61);
             this.panel14.TabIndex = 74;
             // 
             // panel11
@@ -497,18 +609,18 @@
             this.panel11.Controls.Add(this.label11);
             this.panel11.Location = new System.Drawing.Point(15, 12);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(793, 35);
+            this.panel11.Size = new System.Drawing.Size(981, 35);
             this.panel11.TabIndex = 68;
             // 
             // lbFoor1
             // 
             this.lbFoor1.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbFoor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFoor1.Location = new System.Drawing.Point(609, 0);
+            this.lbFoor1.Location = new System.Drawing.Point(735, 0);
             this.lbFoor1.Name = "lbFoor1";
-            this.lbFoor1.Size = new System.Drawing.Size(192, 35);
+            this.lbFoor1.Size = new System.Drawing.Size(230, 35);
             this.lbFoor1.TabIndex = 83;
-            this.lbFoor1.Text = "Temp Location";
+            this.lbFoor1.Text = "Temp Floor";
             this.lbFoor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
@@ -517,20 +629,20 @@
             this.label13.Dock = System.Windows.Forms.DockStyle.Left;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(534, 0);
+            this.label13.Location = new System.Drawing.Point(660, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(75, 35);
             this.label13.TabIndex = 82;
-            this.label13.Text = "Foor";
+            this.label13.Text = "Floor";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbLocation1
             // 
             this.lbLocation1.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbLocation1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLocation1.Location = new System.Drawing.Point(342, 0);
+            this.lbLocation1.Location = new System.Drawing.Point(430, 0);
             this.lbLocation1.Name = "lbLocation1";
-            this.lbLocation1.Size = new System.Drawing.Size(192, 35);
+            this.lbLocation1.Size = new System.Drawing.Size(230, 35);
             this.lbLocation1.TabIndex = 81;
             this.lbLocation1.Text = "Temp Location";
             this.lbLocation1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -541,7 +653,7 @@
             this.label15.Dock = System.Windows.Forms.DockStyle.Left;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(267, 0);
+            this.label15.Location = new System.Drawing.Point(355, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(75, 35);
             this.label15.TabIndex = 80;
@@ -554,7 +666,7 @@
             this.lbTool1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTool1.Location = new System.Drawing.Point(75, 0);
             this.lbTool1.Name = "lbTool1";
-            this.lbTool1.Size = new System.Drawing.Size(192, 35);
+            this.lbTool1.Size = new System.Drawing.Size(280, 35);
             this.lbTool1.TabIndex = 78;
             this.lbTool1.Text = "Temp Tool";
             this.lbTool1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -578,9 +690,9 @@
             this.btSave1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSave1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSave1.ForeColor = System.Drawing.Color.White;
-            this.btSave1.Location = new System.Drawing.Point(796, 284);
+            this.btSave1.Location = new System.Drawing.Point(891, 271);
             this.btSave1.Name = "btSave1";
-            this.btSave1.Size = new System.Drawing.Size(74, 32);
+            this.btSave1.Size = new System.Drawing.Size(116, 40);
             this.btSave1.TabIndex = 75;
             this.btSave1.Text = "Save";
             this.btSave1.UseVisualStyleBackColor = false;
@@ -591,7 +703,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.ClientSize = new System.Drawing.Size(908, 341);
+            this.ClientSize = new System.Drawing.Size(1014, 321);
             this.Controls.Add(this.btSave1);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel2);
@@ -604,24 +716,28 @@
             this.panel1.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numCon1)).EndInit();
             this.pnName1.ResumeLayout(false);
             this.pnName1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAL1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numWH1)).EndInit();
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numCL1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numWL1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numAL1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAH1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numWL1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
@@ -669,5 +785,11 @@
         private System.Windows.Forms.Button btSave1;
         private System.Windows.Forms.Label lbFoor1;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.NumericUpDown numCon1;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.NumericUpDown numCL1;
     }
 }

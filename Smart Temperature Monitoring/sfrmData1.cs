@@ -142,27 +142,41 @@ namespace Smart_Temperature_Monitoring
         }
 
         private void get_tool_name()
-        {            
+        {
             _pGet_tool_name = new DataTable();
             _pGet_tool_name = pGet_tool_name();
             if (_pGet_tool_name != null)
             {
-                cbbSelectedTool.DisplayMember = "tool_name";
-                cbbSelectedTool.ValueMember = "tool_id";
+                //Insert the Default Item to DataTable.
+                DataRow row = _pGet_tool_name.NewRow();
+                row[0] = 0;
+                row[1] = "Please select";
+                _pGet_tool_name.Rows.InsertAt(row, 0);
+
+                //Assign DataTable as DataSource.
                 cbbSelectedTool.DataSource = _pGet_tool_name;
+                cbbSelectedTool.DisplayMember = "tool_name"; ;
+                cbbSelectedTool.ValueMember = "tool_id";
             }
         }
 
+
         private void get_location_name()
         {
-
             _pGet_location_name = new DataTable();
             _pGet_location_name = pGet_location_name();
             if (_pGet_location_name != null)
             {
+                //Insert the Default Item to DataTable.
+                DataRow row = _pGet_location_name.NewRow();
+                row[0] = 0;
+                row[1] = "Please select";
+                _pGet_location_name.Rows.InsertAt(row, 0);
+
+                //Assign DataTable as DataSource.
+                cbbSelectedLocation.DataSource = _pGet_location_name;
                 cbbSelectedLocation.DisplayMember = "location_name";
                 cbbSelectedLocation.ValueMember = "location_id";
-                cbbSelectedLocation.DataSource = _pGet_location_name;
             }
         }
 
@@ -172,9 +186,16 @@ namespace Smart_Temperature_Monitoring
             _pGet_foor_name = pGet_foor_name();
             if (_pGet_foor_name != null)
             {
+                //Insert the Default Item to DataTable.
+                DataRow row = _pGet_foor_name.NewRow();
+                row[0] = 0;
+                row[1] = "Please select";
+                _pGet_foor_name.Rows.InsertAt(row, 0);
+
+                //Assign DataTable as DataSource.
+                cbbSelectedFoor.DataSource = _pGet_foor_name;
                 cbbSelectedFoor.DisplayMember = "foor_name";
                 cbbSelectedFoor.ValueMember = "foor_id";
-                cbbSelectedFoor.DataSource = _pGet_foor_name;
             }
         }
 
@@ -555,7 +576,7 @@ namespace Smart_Temperature_Monitoring
                     Directory.CreateDirectory(DestinationPath);
                 }
 
-                string dt = "EXPORT_TEMP_EX1" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".csv";
+                string dt = "EXPORT_TEMP_" + cbbSelectedTool.Text + "_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".csv";
                 string filePath = DestinationPath + dt ;
                 CreateCSVFile(ref _pGet_Temp_data, filePath);
 

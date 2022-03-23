@@ -116,6 +116,22 @@ namespace Smart_Temperature_Monitoring
                         textbox.Text = _pGet_setting.Rows[i - 1]["temp_name"].ToString();
                     }
 
+                    //show setting center line
+                    var numCL = Controls.Find("numCL" + i, true);
+                    if (numCL.Length > 0)
+                    {
+                        var num = (NumericUpDown)numCL[0];
+                        num.Value = Convert.ToDecimal(_pGet_setting.Rows[i - 1]["temp_cl"]);
+                    }
+
+                    //show setting control limit
+                    var numCon = Controls.Find("numCon" + i, true);
+                    if (numCon.Length > 0)
+                    {
+                        var num = (NumericUpDown)numCon[0];
+                        num.Value = Convert.ToDecimal(_pGet_setting.Rows[i - 1]["temp_control"]);
+                    }
+
                     //show setting alarm low
                     var numAL = Controls.Find("numAL" + i, true);
                     if (numAL.Length > 0)
@@ -189,6 +205,8 @@ namespace Smart_Temperature_Monitoring
             try
             {
                 var lbName = (TextBox)Controls.Find("lbName" + i, true)[0];
+                var numCL = (NumericUpDown)Controls.Find("numCL" + i, true)[0];
+                var numCon = (NumericUpDown)Controls.Find("numCon" + i, true)[0];
                 var numAL = (NumericUpDown)Controls.Find("numAL" + i, true)[0];
                 var numAH = (NumericUpDown)Controls.Find("numAH" + i, true)[0];
                 var numWL = (NumericUpDown)Controls.Find("numWL" + i, true)[0];
@@ -202,7 +220,7 @@ namespace Smart_Temperature_Monitoring
 
 
                 //Update setting table            
-                pUpdate_setting(temp_number, lbName.Text, Convert.ToDouble(numAH.Value), Convert.ToDouble(numAL.Value), Convert.ToDouble(numWH.Value), Convert.ToDouble(numWL.Value),
+                pUpdate_setting(temp_number, lbName.Text, Convert.ToDouble(numCL.Value), Convert.ToDouble(numCon.Value), Convert.ToDouble(numAH.Value), Convert.ToDouble(numAL.Value), Convert.ToDouble(numWH.Value), Convert.ToDouble(numWL.Value),
                         cbAH.Checked == true ? 'Y' : 'N', cbAL.Checked == true ? 'Y' : 'N', cbWH.Checked == true ? 'Y' : 'N', cbWL.Checked == true ? 'Y' : 'N',
                         cbLine.Checked == true ? 'Y' : 'N', cbUse.Checked == true ? 'Y' : 'N');
 
@@ -215,6 +233,71 @@ namespace Smart_Temperature_Monitoring
                 MessageBox.Show(ex.Message, "ข้อความจากระบบ");
                 log.Error("Setting btnSave_MouseDown Exception : " + ex.Message);
             }
+        }
+
+        private void CalLimit(int i)
+        {
+            
+            try
+            {
+                decimal tempCL = 0, tempCon = 0;
+
+                //keep center line
+                var numCL = Controls.Find("numCL" + i, true);
+                if (numCL.Length > 0)
+                {
+                    var num = (NumericUpDown)numCL[0];
+                    tempCL = Convert.ToDecimal(num.Value);
+                }
+
+                //keep center line
+                var numCon = Controls.Find("numCon" + i, true);
+                if (numCon.Length > 0)
+                {
+                    var num = (NumericUpDown)numCon[0];
+                    tempCon = Convert.ToDecimal(num.Value);
+                    num.Maximum = tempCL;
+                }
+
+                //calculate alarm high
+                var numAH = Controls.Find("numAH" + i, true);
+                if (numAH.Length > 0)
+                {
+                    var num = (NumericUpDown)numAH[0];
+                    num.Value = tempCL + tempCon;
+                }
+
+                //calculate alarm low
+                var numAL = Controls.Find("numAL" + i, true);
+                if (numAL.Length > 0)
+                {
+                    var num = (NumericUpDown)numAL[0];
+                    num.Value = tempCL - tempCon;
+                }
+
+                //calculate warning high
+                var numWH = Controls.Find("numWH" + i, true);
+                if (numWH.Length > 0)
+                {
+                    var num = (NumericUpDown)numWH[0];
+                    num.Value = tempCL + (Convert.ToDecimal(tempCon) * Convert.ToDecimal(0.8));
+                }
+
+                //calculate warning low
+                var numWL = Controls.Find("numWL" + i, true);
+                if (numWL.Length > 0)
+                {
+                    var num = (NumericUpDown)numWL[0];
+                    num.Value = tempCL - (Convert.ToDecimal(tempCon) * Convert.ToDecimal(0.8));
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ข้อความจากระบบ");
+                log.Error("CalLimit Exception : " + ex.Message);
+            }
+            
         }
 
         ////////////////////////////////////////////////////////////
@@ -245,7 +328,7 @@ namespace Smart_Temperature_Monitoring
             return dataTable;
         }
 
-        private static DataTable pUpdate_setting(int temp_number, string temp_name, double limit_hi, double limit_low, double warning_hi, double warning_low, 
+        private static DataTable pUpdate_setting(int temp_number, string temp_name, double center_line, double control_limit, double limit_hi, double limit_low, double warning_hi, double warning_low, 
             char enable_limit_hi, char enable_limit_low, char enable_warning_hi, char enable_warning_low, char line_active, char temp_active)
         {
             DataTable dataTable = new DataTable();
@@ -256,6 +339,8 @@ namespace Smart_Temperature_Monitoring
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 param.AddWithValue("@temp_number", SqlDbType.Int).Value = temp_number;
                 param.AddWithValue("@temp_name", SqlDbType.NVarChar).Value = temp_name;
+                param.AddWithValue("@center_line", SqlDbType.Decimal).Value = center_line;
+                param.AddWithValue("@control_limit", SqlDbType.Decimal).Value = control_limit;
                 param.AddWithValue("@limit_hi", SqlDbType.Decimal).Value = limit_hi;
                 param.AddWithValue("@limit_low", SqlDbType.Decimal).Value = limit_low;
                 param.AddWithValue("@warning_hi", SqlDbType.Decimal).Value = warning_hi;
@@ -358,6 +443,85 @@ namespace Smart_Temperature_Monitoring
         private void btSave15_Click(object sender, EventArgs e)
         {
             SaveSetting(15, Convert.ToInt32(lbTempNo15.Text));
+        }
+
+        private void numCL1_ValueChanged(object sender, EventArgs e)
+        {
+            //CalLimit(1);
+        }
+
+        private void numCon1_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(1);
+        }
+
+        private void numCon2_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(2);
+        }
+
+        private void numCon3_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(3);
+        }
+        private void numCon4_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(4);
+        }
+
+        private void numCon5_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(5);
+        }
+
+        private void numCon6_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(6);
+        }
+
+        private void numCon7_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(7);
+        }
+
+        private void numCon8_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(8);
+        }
+
+        private void numCon9_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(9);
+        }
+
+        private void numCon10_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(10);
+        }
+
+        private void numCon11_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(11);
+        }
+
+        private void numCon12_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(12);
+        }
+
+        private void numCon13_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(13);
+        }
+
+        private void numCon14_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(14);
+        }
+
+        private void numCon15_ValueChanged(object sender, EventArgs e)
+        {
+            CalLimit(15);
         }
     }
 }

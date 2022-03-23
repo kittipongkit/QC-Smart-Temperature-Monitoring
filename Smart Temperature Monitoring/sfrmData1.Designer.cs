@@ -248,7 +248,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(174, 34);
             this.label5.TabIndex = 47;
-            this.label5.Text = "FOOR :";
+            this.label5.Text = "FLOOR :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7

@@ -67,6 +67,8 @@ namespace Smart_Temperature_Monitoring
                 cbWL1.Checked = _pGet_setting.Rows[0]["enable_wlow"].ToString() == "Y" ? true : false;
                 cbWH1.Checked = _pGet_setting.Rows[0]["enable_whi"].ToString() == "Y" ? true : false;
 
+                numCL1.Value = Convert.ToDecimal(_pGet_setting.Rows[0]["temp_cl"]);
+                numCon1.Value = Convert.ToDecimal(_pGet_setting.Rows[0]["temp_control"]);
                 numAL1.Value = Convert.ToDecimal(_pGet_setting.Rows[0]["temp_alow"]);
                 numAH1.Value = Convert.ToDecimal(_pGet_setting.Rows[0]["temp_ahi"]);
                 numWL1.Value = Convert.ToDecimal(_pGet_setting.Rows[0]["temp_wlow"]);
@@ -78,30 +80,11 @@ namespace Smart_Temperature_Monitoring
         private void SaveSetting(int i)
         {
             try
-           {
-            //    var lbName = (TextBox)Controls.Find("lbName" + i, true)[0];
-            //    var numAL = (NumericUpDown)Controls.Find("numAL" + i, true)[0];
-            //    var numAH = (NumericUpDown)Controls.Find("numAH" + i, true)[0];
-            //    var numWL = (NumericUpDown)Controls.Find("numWL" + i, true)[0];
-            //    var numWH = (NumericUpDown)Controls.Find("numWH" + i, true)[0];
-            //    var cbAL = (CheckBox)Controls.Find("cbAH" + i, true)[0];
-            //    var cbAH = (CheckBox)Controls.Find("cbAH" + i, true)[0];
-            //    var cbWL = (CheckBox)Controls.Find("cbWH" + i, true)[0];
-            //    var cbWH = (CheckBox)Controls.Find("cbWH" + i, true)[0];
-            //    var cbLine = (CheckBox)Controls.Find("cbLine" + i, true)[0];
-            //    var cbUse = (CheckBox)Controls.Find("cbUse" + i, true)[0];
+           {           
 
-
-                //Update setting table            
-                //pUpdate_setting(i, lbName1.Text, Convert.ToDouble(numAL1.Value), Convert.ToDouble(numAH1.Value), Convert.ToDouble(numWL1.Value), Convert.ToDouble(numWH1.Value),
-                //        cbAH1.Checked == true ? 'Y' : 'N', cbAL1.Checked == true ? 'Y' : 'N', cbWH1.Checked == true ? 'Y' : 'N', cbWL1.Checked == true ? 'Y' : 'N',
-                //        cbLine1.Checked == true ? 'Y' : 'N', cbUse1.Checked == true ? 'Y' : 'N');
-
-                pUpdate_setting(i, lbName1.Text, Convert.ToDouble(numAH1.Value), Convert.ToDouble(numAL1.Value), Convert.ToDouble(numWH1.Value), Convert.ToDouble(numWL1.Value),
+                pUpdate_setting(i, lbName1.Text, Convert.ToDouble(numCL1.Value), Convert.ToDouble(numCon1.Value), Convert.ToDouble(numAH1.Value), Convert.ToDouble(numAL1.Value), Convert.ToDouble(numWH1.Value), Convert.ToDouble(numWL1.Value),
                         cbAH1.Checked == true ? 'Y' : 'N', cbAL1.Checked == true ? 'Y' : 'N', cbWH1.Checked == true ? 'Y' : 'N', cbWL1.Checked == true ? 'Y' : 'N',
                         cbLine1.Checked == true ? 'Y' : 'N', cbUse1.Checked == true ? 'Y' : 'N');
-
-
 
                 MessageBox.Show("แก้ไขข้อมูลเรียบร้อยแล้ว", "ข้อความจากระบบ");
                 this.Hide();
@@ -141,7 +124,7 @@ namespace Smart_Temperature_Monitoring
             return dataTable;
         }
 
-        private static DataTable pUpdate_setting(int temp_number, string temp_name, double limit_hi, double limit_low, double warning_hi, double warning_low,
+        private static DataTable pUpdate_setting(int temp_number, string temp_name, double center_line, double control_limit, double limit_hi, double limit_low, double warning_hi, double warning_low,
             char enable_limit_hi, char enable_limit_low, char enable_warning_hi, char enable_warning_low, char line_active, char temp_active)
         {
             DataTable dataTable = new DataTable();
@@ -152,6 +135,8 @@ namespace Smart_Temperature_Monitoring
                 SqlParameterCollection param = new SqlCommand().Parameters;
                 param.AddWithValue("@temp_number", SqlDbType.Int).Value = temp_number;
                 param.AddWithValue("@temp_name", SqlDbType.NVarChar).Value = temp_name;
+                param.AddWithValue("@center_line", SqlDbType.Decimal).Value = center_line;
+                param.AddWithValue("@control_limit", SqlDbType.Decimal).Value = control_limit;
                 param.AddWithValue("@limit_hi", SqlDbType.Decimal).Value = limit_hi;
                 param.AddWithValue("@limit_low", SqlDbType.Decimal).Value = limit_low;
                 param.AddWithValue("@warning_hi", SqlDbType.Decimal).Value = warning_hi;
@@ -182,49 +167,39 @@ namespace Smart_Temperature_Monitoring
         ////////////////////////////////////////////////////////////
         //////////////////////  Button event  //////////////////////
         ////////////////////////////////////////////////////////////
-        private void btnSave_MouseDown(object sender, MouseEventArgs e)
-        {
-            //try
-            //{
-            //    // Check invalid
-            //    if (string.IsNullOrEmpty(txtZone.Text) || txtZone.Text == "-")
-            //    {
-            //        MessageBox.Show("กรูณาใส่ ZONE NAME ให้ครบถ้วน", "ข้อความจากระบบ");
-            //        return;
-            //    }
-
-            //    if (string.IsNullOrEmpty(numHi.Value.ToString()) || numHi.Value.ToString() == "-")
-            //    {
-            //        MessageBox.Show("กรูณาใส่ TEMP. HIGH LIMIT ให้ครบถ้วน", "ข้อความจากระบบ");
-            //        return;
-            //    }
-
-            //    if (string.IsNullOrEmpty(numLo.Value.ToString()) || numLo.Value.ToString() == "-")
-            //    {
-            //        MessageBox.Show("กรูณาใส่ TEMP. LOW LIMIT ให้ครบถ้วน", "ข้อความจากระบบ");
-            //        return;
-            //    }
-
-            //    //Update setting table            
-            //    pUpdate_setting(sfrmOverview._SettingZoneId, txtZone.Text, Convert.ToDouble(numHi.Value), Convert.ToDouble(numLo.Value));
-
-            //    //Get new setting
-            //    //sfrmOverview f = new sfrmOverview();
-            //    //f._actual_setting();
-
-            //    MessageBox.Show("แก้ไขข้อมูลเรียบร้อยแล้ว", "ข้อความจากระบบ");
-            //    this.Hide();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message, "ข้อความจากระบบ");
-            //    log.Error("Setting btnSave_MouseDown Exception : " + ex.Message);
-            //}
-        }
-
         private void btSave1_Click(object sender, EventArgs e)
         {
             SaveSetting(Convert.ToInt32(_pGet_setting.Rows[0]["temp_number"]));
         }
+
+        private void numCL1_ValueChanged(object sender, EventArgs e)
+        {
+            ////set Maximun value
+            //numCon1.Maximum = numCL1.Value;
+
+            ////calulate Alarm hi/low
+            //numAH1.Value = numCL1.Value + numCon1.Value;
+            //numAL1.Value = numCL1.Value - numCon1.Value;            
+
+            ////calulate warning hi/low by 80% of control limit
+            //numWH1.Value = numCL1.Value + (Convert.ToDecimal(numCon1.Value) * Convert.ToDecimal(0.8));
+            //numWL1.Value = numCL1.Value - (Convert.ToDecimal(numCon1.Value) * Convert.ToDecimal(0.8));
+        }
+
+        private void numCon1_ValueChanged(object sender, EventArgs e)
+        {
+            //set Maximun value
+            numCon1.Maximum = numCL1.Value;
+
+            //calulate Alarm hi/low
+            numAH1.Value = numCL1.Value + numCon1.Value;
+            numAL1.Value = numCL1.Value - numCon1.Value;
+
+            //calulate warning hi/low by 80% of control limit
+            numWH1.Value = numCL1.Value + (Convert.ToDecimal(numCon1.Value) * Convert.ToDecimal(0.8));
+            numWL1.Value = numCL1.Value - (Convert.ToDecimal(numCon1.Value) * Convert.ToDecimal(0.8));
+        }
+
+        
     }
 }

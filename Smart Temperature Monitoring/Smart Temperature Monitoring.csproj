@@ -187,6 +187,7 @@
     <Compile Include="InterfaceDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report_type.cs" />
     <Compile Include="sampling_time.cs" />
     <Compile Include="sfrmData1.cs">
       <SubType>Form</SubType>

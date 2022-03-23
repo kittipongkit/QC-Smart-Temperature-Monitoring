@@ -61,7 +61,7 @@ namespace Smart_Temperature_Monitoring
 
             // clear selection on status
             gvData1.ClearSelection();
-            gvData2.ClearSelection();
+            //gvData2.ClearSelection();
             gvData3.ClearSelection();
 
 
@@ -149,13 +149,20 @@ namespace Smart_Temperature_Monitoring
                 if (i >= 15 && i<=25)
                     continue;
 
-                //change temp value
-                var lbTemp = Controls.Find("lbTemp" + i, true);
-                if (lbTemp.Length > 0)
                 {
-                    var label = (Label)lbTemp[0];
-                    label.Text = tempdata[i-1].Rows[0]["temp_actual"].ToString();
+                    //change temp value 
+                    var lbTemp = Controls.Find("lbTemp" + i, true);
+                    if (lbTemp.Length > 0)
+                    {
+                        var label = (Label)lbTemp[0];
+                        if (i >= 4 && i <= 14) //oven format ###
+                            label.Text = Convert.ToDouble(tempdata[i-1].Rows[0]["temp_actual"]).ToString("N0");
+                        else
+                            label.Text = Convert.ToDouble(tempdata[i - 1].Rows[0]["temp_actual"]).ToString("N1");
+                    }
                 }
+                
+                    
 
                 //change background color
                 DataTable dt = pGet_setting_actual();
@@ -253,14 +260,23 @@ namespace Smart_Temperature_Monitoring
                         }
                     }
 
-                    //change temp setting warning hi and visible
-                    var lbWH = Controls.Find("lbWH" + i, true);
+                    
+                    
+
+                    
+
+                        //change temp setting warning hi and visible
+                        var lbWH = Controls.Find("lbWH" + i, true);
                     var label_lbWH = (Label)lbWH[0];
                     if (lbWH.Length > 0)
                     {
                         if (_pGet_setting_actual.Rows[i - 1]["enable_warning_hi"].ToString() == "Y")
-                        {                            
-                            label_lbWH.Text = _pGet_setting_actual.Rows[i - 1]["warning_hi"].ToString();
+                        {
+                            if (i >= 4 && i <= 14) // Oven format ###
+                                label_lbWH.Text = Convert.ToDouble(_pGet_setting_actual.Rows[i - 1]["warning_hi"]).ToString("N0");
+                            else
+                                label_lbWH.Text = Convert.ToDouble(_pGet_setting_actual.Rows[i - 1]["warning_hi"]).ToString("N1");
+
                             label_lbWH.Visible = true;
                         }
                         else
@@ -276,7 +292,11 @@ namespace Smart_Temperature_Monitoring
                     {
                         if (_pGet_setting_actual.Rows[i - 1]["enable_warning_low"].ToString() == "Y")
                         {
-                            label_lbWL.Text = _pGet_setting_actual.Rows[i - 1]["warning_low"].ToString();
+                            if (i >= 4 && i <= 14) // Oven format ###
+                                label_lbWL.Text = Convert.ToDouble(_pGet_setting_actual.Rows[i - 1]["warning_low"]).ToString("N0");
+                            else
+                                label_lbWL.Text = Convert.ToDouble(_pGet_setting_actual.Rows[i - 1]["warning_low"]).ToString("N1");
+
                             label_lbWL.Visible = true;
                         }
                         else
@@ -292,7 +312,11 @@ namespace Smart_Temperature_Monitoring
                     {
                         if (_pGet_setting_actual.Rows[i - 1]["enable_limit_hi"].ToString() == "Y")
                         {
-                            label_lbAH.Text = _pGet_setting_actual.Rows[i - 1]["limit_hi"].ToString();
+                            if (i >= 4 && i <= 14) // Oven format ###
+                                label_lbAH.Text = Convert.ToDouble(_pGet_setting_actual.Rows[i - 1]["limit_hi"]).ToString("N0");
+                            else
+                                label_lbAH.Text = Convert.ToDouble(_pGet_setting_actual.Rows[i - 1]["limit_hi"]).ToString("N1");
+
                             label_lbAH.Visible = true;
                         }
                         else
@@ -308,7 +332,11 @@ namespace Smart_Temperature_Monitoring
                     {
                         if (_pGet_setting_actual.Rows[i - 1]["enable_limit_low"].ToString() == "Y")
                         {
-                            label_lbAL.Text = _pGet_setting_actual.Rows[i - 1]["limit_low"].ToString();
+                            if (i >= 4 && i <= 14) // Oven format ###
+                                label_lbAL.Text = Convert.ToDouble(_pGet_setting_actual.Rows[i - 1]["limit_low"]).ToString("N0");
+                            else
+                                label_lbAL.Text = Convert.ToDouble(_pGet_setting_actual.Rows[i - 1]["limit_low"]).ToString("N1");
+
                             label_lbAL.Visible = true;
                         }
                         else
@@ -395,13 +423,13 @@ namespace Smart_Temperature_Monitoring
                     }
 
                     gvData1.Rows.Clear();
-                    gvData2.Rows.Clear();
+                    //gvData2.Rows.Clear();
                     gvData3.Rows.Clear();
                     
 
                     //Add array to DataGridView
                     gvData1.Rows.Add(status1);
-                    gvData2.Rows.Add(status2);
+                    //gvData2.Rows.Add(status2);
                     gvData3.Rows.Add(status3);
 
                     for (int i = 0; i < _pGet_status_tool.Rows.Count && i < 24; i++)
@@ -422,21 +450,21 @@ namespace Smart_Temperature_Monitoring
                             gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
                         }
 
-                        if (status2[i] == 3)
-                        {
-                            gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
-                            gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
-                        }
-                        else if (status2[i] == 2)
-                        {
-                            gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 192, 128);
-                            gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 192, 128);
-                        }
-                        else
-                        {
-                            gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
-                            gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
-                        }
+                        //if (status2[i] == 3)
+                        //{
+                        //    gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
+                        //    gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
+                        //}
+                        //else if (status2[i] == 2)
+                        //{
+                        //    gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 192, 128);
+                        //    gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 192, 128);
+                        //}
+                        //else
+                        //{
+                        //    gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(128, 255, 128);
+                        //    gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
+                        //}
 
                         if (status3[i] == 3)
                         {
@@ -457,7 +485,7 @@ namespace Smart_Temperature_Monitoring
                         actualGvCell = _pGet_status_tool.Rows.Count;
                     }
                     gvData1.ClearSelection();
-                    gvData2.ClearSelection();
+                    //gvData2.ClearSelection();
                     gvData3.ClearSelection();
                 }                  
         }        
@@ -1200,5 +1228,9 @@ namespace Smart_Temperature_Monitoring
             sfrmSetting1.Show();
         }
 
+        private void label34_Click(object sender, EventArgs e)
+        {
+            pAutoInsert_tr_temp();
+        }
     }
 }
