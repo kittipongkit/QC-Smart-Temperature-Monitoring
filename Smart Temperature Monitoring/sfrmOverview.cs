@@ -434,12 +434,12 @@ namespace Smart_Temperature_Monitoring
 
                     for (int i = 0; i < _pGet_status_tool.Rows.Count && i < 24; i++)
                     {
-                        if (status1[i] == 3)
+                        if (status1[i] == 2)
                         {
                             gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
                             gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
                         }
-                        else if (status1[i] == 2)
+                        else if (status1[i] == 1)
                         {
                             gvData1.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 192, 128);
                             gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 192, 128);
@@ -450,12 +450,12 @@ namespace Smart_Temperature_Monitoring
                             gvData1.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
                         }
 
-                        //if (status2[i] == 3)
+                        //if (status2[i] == 2)
                         //{
                         //    gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
                         //    gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
                         //}
-                        //else if (status2[i] == 2)
+                        //else if (status2[i] == 1)
                         //{
                         //    gvData2.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 192, 128);
                         //    gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 192, 128);
@@ -466,12 +466,12 @@ namespace Smart_Temperature_Monitoring
                         //    gvData2.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(128, 255, 128);
                         //}
 
-                        if (status3[i] == 3)
+                        if (status3[i] == 2)
                         {
                             gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 128, 128);
                             gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 128, 128);
                         }
-                        else if (status3[i] == 2)
+                        else if (status3[i] == 1)
                         {
                             gvData3.Rows[0].Cells[i].Style.BackColor = Color.FromArgb(255, 192, 128);
                             gvData3.Rows[0].Cells[i].Style.ForeColor = Color.FromArgb(255, 192, 128);

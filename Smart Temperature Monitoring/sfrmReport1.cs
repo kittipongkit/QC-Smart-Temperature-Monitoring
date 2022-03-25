@@ -353,7 +353,7 @@ namespace Smart_Temperature_Monitoring
                     //  Add data
                     int startRow = 8;
                     //string twoDecimal = "_( #,##0.00_);_( (#,##0.00);_( \"-\"??_);_(@_)";
-                    string twoDecimal = "_( #,#0.0_);_( (#,#0.0);_( \"-\"??_);_(@_)";
+                    string twoDecimal = "_( #,#0.0_);_( (#,#0.0);_(@_)";
 
                     for (int i = 0; i < dataTable.Rows.Count; i++)
                     {
