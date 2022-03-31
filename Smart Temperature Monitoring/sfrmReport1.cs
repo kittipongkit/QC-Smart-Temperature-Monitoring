@@ -514,7 +514,7 @@ namespace Smart_Temperature_Monitoring
                     else
                         report_type = "MONTHLY_REPORT_";
 
-                    string dt = report_type + cbbSelectedName.Text + '_' + DateTime.Now.ToString("yyyyMMdd") + ".xlsx";
+                    string dt = report_type + cbbSelectedName.Text + '_' + calenReport.SelectionRange.Start.ToString("yyyyMMdd") + ".xlsx";
                     string filePath = DestinationPath + dt;
 
                     FileInfo xlFile = new FileInfo(filePath);
