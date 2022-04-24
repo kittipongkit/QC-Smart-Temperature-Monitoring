@@ -61,7 +61,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1326, 100);
+            this.panel2.Size = new System.Drawing.Size(1184, 100);
             this.panel2.TabIndex = 56;
             // 
             // btnExport
@@ -73,7 +73,7 @@
             this.btnExport.ForeColor = System.Drawing.Color.White;
             this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
             this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExport.Location = new System.Drawing.Point(1115, 56);
+            this.btnExport.Location = new System.Drawing.Point(1042, 56);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(122, 34);
             this.btnExport.TabIndex = 65;
@@ -89,7 +89,7 @@
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.Color.White;
-            this.btnOk.Location = new System.Drawing.Point(987, 56);
+            this.btnOk.Location = new System.Drawing.Point(914, 56);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(122, 34);
             this.btnOk.TabIndex = 64;
@@ -102,7 +102,7 @@
             this.cbbSelectedTool.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbSelectedTool.FormattingEnabled = true;
             this.cbbSelectedTool.ItemHeight = 26;
-            this.cbbSelectedTool.Location = new System.Drawing.Point(164, 56);
+            this.cbbSelectedTool.Location = new System.Drawing.Point(91, 56);
             this.cbbSelectedTool.Name = "cbbSelectedTool";
             this.cbbSelectedTool.Size = new System.Drawing.Size(174, 34);
             this.cbbSelectedTool.TabIndex = 63;
@@ -114,7 +114,7 @@
             this.txtSetting.ForeColor = System.Drawing.Color.White;
             this.txtSetting.Location = new System.Drawing.Point(0, 0);
             this.txtSetting.Name = "txtSetting";
-            this.txtSetting.Size = new System.Drawing.Size(1326, 54);
+            this.txtSetting.Size = new System.Drawing.Size(1184, 54);
             this.txtSetting.TabIndex = 47;
             this.txtSetting.Text = "EVENT";
             this.txtSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,7 +125,7 @@
             this.dtDateTo.CustomFormat = "yyyy-MM-dd";
             this.dtDateTo.Font = new System.Drawing.Font("Calibri", 16F);
             this.dtDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDateTo.Location = new System.Drawing.Point(773, 56);
+            this.dtDateTo.Location = new System.Drawing.Point(700, 56);
             this.dtDateTo.Name = "dtDateTo";
             this.dtDateTo.Size = new System.Drawing.Size(174, 34);
             this.dtDateTo.TabIndex = 62;
@@ -136,7 +136,7 @@
             this.dtDateFrom.CustomFormat = "yyyy-MM-dd";
             this.dtDateFrom.Font = new System.Drawing.Font("Calibri", 16F);
             this.dtDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtDateFrom.Location = new System.Drawing.Point(486, 56);
+            this.dtDateFrom.Location = new System.Drawing.Point(413, 56);
             this.dtDateFrom.Name = "dtDateFrom";
             this.dtDateFrom.Size = new System.Drawing.Size(174, 34);
             this.dtDateFrom.TabIndex = 61;
@@ -145,7 +145,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(97, 55);
+            this.label2.Location = new System.Drawing.Point(24, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 34);
             this.label2.TabIndex = 58;
@@ -156,7 +156,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(690, 55);
+            this.label4.Location = new System.Drawing.Point(617, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 34);
             this.label4.TabIndex = 60;
@@ -167,7 +167,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(375, 55);
+            this.label1.Location = new System.Drawing.Point(302, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 34);
             this.label1.TabIndex = 59;
@@ -206,7 +206,7 @@
             this.gvEvent.ShowCellToolTips = false;
             this.gvEvent.ShowEditingIcon = false;
             this.gvEvent.ShowRowErrors = false;
-            this.gvEvent.Size = new System.Drawing.Size(1302, 593);
+            this.gvEvent.Size = new System.Drawing.Size(1160, 443);
             this.gvEvent.TabIndex = 57;
             // 
             // sfrmEvent1
@@ -214,7 +214,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.ClientSize = new System.Drawing.Size(1326, 711);
+            this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.gvEvent);
             this.Controls.Add(this.panel2);
             this.Name = "sfrmEvent1";

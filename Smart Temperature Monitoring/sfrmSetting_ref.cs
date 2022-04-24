@@ -430,20 +430,7 @@ namespace Smart_Temperature_Monitoring
             SaveSetting(12, Convert.ToInt32(lbTempNo12.Text));
         }
 
-        private void btSave13_Click(object sender, EventArgs e)
-        {
-            SaveSetting(13, Convert.ToInt32(lbTempNo13.Text));
-        }
-
-        private void btSave14_Click(object sender, EventArgs e)
-        {
-            SaveSetting(14, Convert.ToInt32(lbTempNo14.Text));
-        }
-
-        private void btSave15_Click(object sender, EventArgs e)
-        {
-            SaveSetting(15, Convert.ToInt32(lbTempNo15.Text));
-        }
+      
 
         private void numCL1_ValueChanged(object sender, EventArgs e)
         {
