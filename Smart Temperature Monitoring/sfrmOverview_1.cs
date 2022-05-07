@@ -111,7 +111,7 @@ namespace Smart_Temperature_Monitoring
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("ThreadUpdateSetting Exception : " + ex.Message);
+                    //MessageBox.Show("ThreadUpdateSetting Exception : " + ex.Message);
                     log.Error("ThreadUpdateSetting Exception : " + ex.Message);
                 }
                 finally
@@ -318,29 +318,39 @@ namespace Smart_Temperature_Monitoring
             _pGet_event_all = new DataTable();
             _pGet_event_all = pGet_event_all();
 
-            if (_pGet_event_all != null)
+            try
             {
-                if (_EventId != Convert.ToInt32(_pGet_event_all.Rows[0]["ID"]))
+                if (_pGet_event_all != null)
                 {
-                    //  Clear gv
-                    gvEventAll.Rows.Clear();
+                    if (_EventId != Convert.ToInt32(_pGet_event_all.Rows[0]["ID"]))
+                    {
+                        //  Clear gv
+                        gvEventAll.Rows.Clear();
 
-                    gvEventAll.Columns[1].Width = 150;
-                    gvEventAll.Columns[2].Width = 100;
-                    gvEventAll.Columns[3].Width = 100;
-                    gvEventAll.Columns[0].Width = gvEventAll.Width - (gvEventAll.Columns[1].Width + gvEventAll.Columns[2].Width + gvEventAll.Columns[3].Width);
+                        gvEventAll.Columns[1].Width = 150;
+                        gvEventAll.Columns[2].Width = 100;
+                        gvEventAll.Columns[3].Width = 100;
+                        gvEventAll.Columns[0].Width = gvEventAll.Width - (gvEventAll.Columns[1].Width + gvEventAll.Columns[2].Width + gvEventAll.Columns[3].Width);
 
-                    // Plot data to gridView
-                    for (int i = 0; i < _pGet_event_all.Rows.Count; i++)
-                        gvEventAll.Rows.Add(_pGet_event_all.Rows[i]["create_datetime"], _pGet_event_all.Rows[i]["temp_name"]
-                            , _pGet_event_all.Rows[i]["tool_name"], _pGet_event_all.Rows[i]["event_type"]);
+                        // Plot data to gridView
+                        for (int i = 0; i < _pGet_event_all.Rows.Count; i++)
+                            gvEventAll.Rows.Add(_pGet_event_all.Rows[i]["create_datetime"], _pGet_event_all.Rows[i]["temp_name"]
+                                , _pGet_event_all.Rows[i]["tool_name"], _pGet_event_all.Rows[i]["event_type"]);
 
-                    // Keep Id for check next time
-                    _EventId = Convert.ToInt32(_pGet_event_all.Rows[0]["ID"]);
+                        // Keep Id for check next time
+                        _EventId = Convert.ToInt32(_pGet_event_all.Rows[0]["ID"]);
 
-                    gvEventAll.ClearSelection();
+                        gvEventAll.ClearSelection();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("_get_event_all Exception : " + ex.Message);
+                log.Error("_get_event_all Exception : " + ex.Message);
+            }
+
+            
         }
 
         // Get status alarm/warning for tool  
@@ -348,21 +358,29 @@ namespace Smart_Temperature_Monitoring
         {
             _pGet_status = new DataTable();
             _pGet_status = pGet_status();
-
-            if (_pGet_status != null)
+            try
             {
-                tool1_avg.Text = "Average : " + _pGet_status.Rows[0]["tool1avg"].ToString() + " C";
-                lbTool1_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool1_warning"].ToString() + " Times";
-                lbTool1_alarm.Text  = "Out of range: " + _pGet_status.Rows[0]["tool1_alarm"].ToString() + " Times";
+                if (_pGet_status != null)
+                {
+                    tool1_avg.Text = "Average : " + _pGet_status.Rows[0]["tool1avg"].ToString() + " C";
+                    lbTool1_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool1_warning"].ToString() + " Times";
+                    lbTool1_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool1_alarm"].ToString() + " Times";
 
-                tool2_avg.Text = "Average : " + _pGet_status.Rows[0]["tool2avg"].ToString() + " C";
-                lbTool2_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool2_warning"].ToString() + " Times";
-                lbTool2_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool2_alarm"].ToString() + " Times";
+                    tool2_avg.Text = "Average : " + _pGet_status.Rows[0]["tool2avg"].ToString() + " C";
+                    lbTool2_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool2_warning"].ToString() + " Times";
+                    lbTool2_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool2_alarm"].ToString() + " Times";
 
-                tool3_avg.Text = "Average : " + _pGet_status.Rows[0]["tool3avg"].ToString() + " C";
-                lbTool3_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool3_warning"].ToString() + " Times";
-                lbTool3_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool3_alarm"].ToString() + " Times";
+                    tool3_avg.Text = "Average : " + _pGet_status.Rows[0]["tool3avg"].ToString() + " C";
+                    lbTool3_warning.Text = "Warning: " + _pGet_status.Rows[0]["tool3_warning"].ToString() + " Times";
+                    lbTool3_alarm.Text = "Out of range: " + _pGet_status.Rows[0]["tool3_alarm"].ToString() + " Times";
+                }
             }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("ThreadUpdateSetting Exception : " + ex.Message);
+                log.Error("_get_status Exception : " + ex.Message);
+            }
+            
         }
 
         // Get status alarm/warning for tool  
@@ -375,7 +393,8 @@ namespace Smart_Temperature_Monitoring
 
             _pGet_status_tool = new DataTable();
             _pGet_status_tool = pGet_status_tool();
-
+            try
+            {
                 if (_pGet_status_tool != null && actualGvCell != _pGet_status_tool.Rows.Count)
                 {   //Keep data to array
                     for (int i = 0; i < _pGet_status_tool.Rows.Count && i < 24; i++)
@@ -388,7 +407,7 @@ namespace Smart_Temperature_Monitoring
                     gvData1.Rows.Clear();
                     gvData2.Rows.Clear();
                     gvData3.Rows.Clear();
-                    
+
 
                     //Add array to DataGridView
                     gvData1.Rows.Add(status1);
@@ -450,7 +469,14 @@ namespace Smart_Temperature_Monitoring
                     gvData1.ClearSelection();
                     gvData2.ClearSelection();
                     gvData3.ClearSelection();
-                }                  
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("ThreadUpdateSetting Exception : " + ex.Message);
+                log.Error("_get_status_tool Exception : " + ex.Message);
+            }
+                              
         }        
 
         ////////////////////////////////////////////////////////////
