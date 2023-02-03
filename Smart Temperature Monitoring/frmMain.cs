@@ -29,7 +29,7 @@ namespace Smart_Temperature_Monitoring
             InitializeComponent();
 
             // Set area name
-            txtArea.Text = ConfigurationManager.AppSettings["AreaName"].ToString();
+            //txtArea.Text = ConfigurationManager.AppSettings["AreaName"].ToString();
 
             // Count monitor
             foreach (var screen in Screen.AllScreens)

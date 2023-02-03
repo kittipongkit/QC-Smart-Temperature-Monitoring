@@ -42,7 +42,6 @@ namespace Smart_Temperature_Monitoring
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtArea = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.PnReFeed = new System.Windows.Forms.Panel();
             this.panel60 = new System.Windows.Forms.Panel();
@@ -59,6 +58,7 @@ namespace Smart_Temperature_Monitoring
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.txtArea = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -222,18 +222,6 @@ namespace Smart_Temperature_Monitoring
             this.panel2.Size = new System.Drawing.Size(1920, 60);
             this.panel2.TabIndex = 3;
             // 
-            // txtArea
-            // 
-            this.txtArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
-            this.txtArea.Font = new System.Drawing.Font("Calibri", 28F);
-            this.txtArea.ForeColor = System.Drawing.Color.Yellow;
-            this.txtArea.Location = new System.Drawing.Point(676, 5);
-            this.txtArea.Name = "txtArea";
-            this.txtArea.Size = new System.Drawing.Size(739, 47);
-            this.txtArea.TabIndex = 3;
-            this.txtArea.Text = "AREA";
-            this.txtArea.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Left;
@@ -309,7 +297,7 @@ namespace Smart_Temperature_Monitoring
             // 
             this.LbTimeBlink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(174)))), ((int)(((byte)(68)))));
             this.LbTimeBlink.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LbTimeBlink.Font = new System.Drawing.Font("TH SarabunPSK", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbTimeBlink.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbTimeBlink.ForeColor = System.Drawing.Color.White;
             this.LbTimeBlink.Location = new System.Drawing.Point(0, 10);
             this.LbTimeBlink.Name = "LbTimeBlink";
@@ -418,6 +406,18 @@ namespace Smart_Temperature_Monitoring
             this.panelChildForm.Size = new System.Drawing.Size(1920, 980);
             this.panelChildForm.TabIndex = 4;
             // 
+            // txtArea
+            // 
+            this.txtArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(88)))), ((int)(((byte)(173)))));
+            this.txtArea.Font = new System.Drawing.Font("Calibri", 28F);
+            this.txtArea.ForeColor = System.Drawing.Color.Yellow;
+            this.txtArea.Location = new System.Drawing.Point(676, 5);
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(739, 47);
+            this.txtArea.TabIndex = 3;
+            this.txtArea.Text = "AREA";
+            this.txtArea.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -467,7 +467,6 @@ namespace Smart_Temperature_Monitoring
         private System.Windows.Forms.Panel panel59;
         private System.Windows.Forms.Panel panel58;
         private System.Windows.Forms.Panel panel55;
-        private System.Windows.Forms.Label txtArea;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel60;
         internal System.Windows.Forms.Label LbDate;
@@ -478,5 +477,6 @@ namespace Smart_Temperature_Monitoring
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label txtArea;
     }
 }
